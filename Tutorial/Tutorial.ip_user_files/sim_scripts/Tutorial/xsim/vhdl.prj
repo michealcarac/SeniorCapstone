@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../Tutorial.gen/sources_1/bd/Tutorial/ip/Tutorial_axi_gpio_0_0/sim/Tutorial_axi_gpio_0_0.vhd" \
+"../../../../Tutorial.gen/sources_1/bd/Tutorial/ip/Tutorial_rst_ps8_0_96M_0/sim/Tutorial_rst_ps8_0_96M_0.vhd" \
+
+nosort
