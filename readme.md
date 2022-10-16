@@ -10,6 +10,7 @@
 This project was created for the Computer Engineering Senior Capstone project at Clarkson University.   
 The idea is to implement a hardware-based keylogger that will check the inputted text against a database of prerecorded typing from the user to authorize access to the computer. Currently, this is implemented for a Fixed Text approach which means a arbitrary word is typed over and over for training and then tested on the same word once. If the user types the word in the same exact manner as the training, then the system shall authorize them access to the computer. Instead of fixed text, a free text approach can also be utilized. Free text would constantly compare the users keyboard input to their previous authorized inputs using a Deep Learning model.    
 This project was initially implemented as a web browser extension, but to enhance security, a hardware-based keylogger was developed- plus it's a great learning experience.    
+
 The following **hardware** was chosen:
 ```
 Xilinx Kria KV260 AI Vision Starter Kit -> MPSoC (Contains an FPGA and MPU)
@@ -55,10 +56,17 @@ Features
 Documentation
 * [Kria KV260 Product Page](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html)
 * [Data Sheet](https://docs.xilinx.com/r/en-US/ds986-kv260-starter-kit)
-* [User Guide](https://docs.xilinx.com/r/en-US/ug1089-kv260-starter-kit/Summary)\
+* [User Guide](https://docs.xilinx.com/r/en-US/ug1089-kv260-starter-kit/Summary)
 * [Wiki](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+K26+SOM)
+  * Has practically all needed information for developing on the Kria KV260
+* [Ubuntu 2022.04 Wiki](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2363129857/Getting+Started+with+Certified+Ubuntu+22.04+LTS+for+Xilinx+Devices)
+  * This is what we will be following
+* [Ubuntu 2020.04 Wiki](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2037317633/Getting+Started+with+Certified+Ubuntu+20.04+LTS+for+Xilinx+Devices)
+  * For those wanting an older approach, some items may not be discussed on this repository as Ubuntu 2022.04 was chosen.
+* [Creating a Custom Hardware Platform](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2057043969/Snaps+-+xlnx-config+Snap+for+Certified+Ubuntu+on+Xilinx+Devices)
+  * Crucial for moving the Vivado/Vitis design into the PS. 
 * [Carrier Card Design Guide](https://docs.xilinx.com/r/en-US/ug1091-carrier-card-design)
-  * (1) Important for mapping pins, details the connectors that come from the SOM and how they connect to the PL\
+  * (1) Important for mapping pins, details the connectors that come from the SOM and how they connect to the PL
   * (2) Contains a XDC file, the original is [here](./XilinxKriaKV260SOM_Mappings.xdc) and Edited one for the Vision AI Starter Kit is [here](./KV260_CarrierBoard.xdc) 
 * [Hardware Schematic](https://www.xilinx.com/member/forms/download/design-license.html?cid=3eb7e365-5378-461f-b8b0-bb3dad84eb4e&filename=xtp682-kria-k26-carrier-card-schematic.zip)
   * (3) Important for mapping pins, details the Vision AI Carrier Card board that connects to the SOM and those connectors
