@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/BTN_LED_Linux/ip/BTN_LED_Linux_axi_gpio_1_0/sim/BTN_LED_Linux_axi_gpio_1_0.vhd" \
+"../../../bd/BTN_LED_Linux/ip/BTN_LED_Linux_axi_timer_0_0/sim/BTN_LED_Linux_axi_timer_0_0.vhd" \
+"../../../bd/BTN_LED_Linux/ip/BTN_LED_Linux_axi_timer_1_0/sim/BTN_LED_Linux_axi_timer_1_0.vhd" \
+"../../../bd/BTN_LED_Linux/ip/BTN_LED_Linux_rst_ps8_0_99M_0/sim/BTN_LED_Linux_rst_ps8_0_99M_0.vhd" \
+
+nosort
