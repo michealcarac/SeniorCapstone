@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Oct 15 22:32:54 2022
+# Process ID: 26200
+# Current directory: C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/BTN_LED_btn_to_led_clk_0_0_synth_1
+# Command line: vivado.exe -log BTN_LED_btn_to_led_clk_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BTN_LED_btn_to_led_clk_0_0.tcl
+# Log file: C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/BTN_LED_btn_to_led_clk_0_0_synth_1/BTN_LED_btn_to_led_clk_0_0.vds
+# Journal file: C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/BTN_LED_btn_to_led_clk_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-8DKIKNE, OS: Windows, CPU Frequency: 3493 MHz, CPU Physical cores: 32, Host memory: 34299 MB
+#-----------------------------------------------------------
+source BTN_LED_btn_to_led_clk_0_0.tcl -notrace

@@ -88,6 +88,7 @@
 <li><a href="#kria-kv260">Kria KV260</a></li>
 <li><a href="#a-peek-into-manual-pin-mapping">A Peek into Manual Pin Mapping</a></li>
 <li><a href="#starting-a-vivado-project">Starting a Vivado Project</a></li>
+<li><a href="#working-on-the-project-in-vitis">Working on the project in Vitis</a></li>
 </ul>
 </li>
 </ul>
@@ -114,10 +115,9 @@ Nick Summerville
 <h2 id="getting-started">Getting Started</h2>
 <ul>
 <li>Download Vitis 2022.1, this will also install Vivado 2022.1</li>
-<li>Install PetaLinux on the Kria Board
+<li>Install Ubuntu on the board
 <ul>
-<li><a href="https://www.hackster.io/whitney-knitter/getting-started-with-the-kria-kv260-in-petalinux-2021-1-b491fd">Instructions Here</a></li>
-<li>Further notes to come as the guides may have issues</li>
+<li><a href="./ubuntu.html">Instructions Here</a></li>
 </ul>
 </li>
 <li>Ensure the USB drivers are installed
@@ -155,7 +155,8 @@ Nick Summerville
 <ul>
 <li><a href="https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html">Kria KV260 Product Page</a></li>
 <li><a href="https://docs.xilinx.com/r/en-US/ds986-kv260-starter-kit">Data Sheet</a></li>
-<li><a href="https://docs.xilinx.com/r/en-US/ug1089-kv260-starter-kit/Summary">User Guide</a></li>
+<li><a href="https://docs.xilinx.com/r/en-US/ug1089-kv260-starter-kit/Summary">User Guide</a>\</li>
+<li><a href="https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+K26+SOM">Wiki</a></li>
 <li><a href="https://docs.xilinx.com/r/en-US/ug1091-carrier-card-design">Carrier Card Design Guide</a>
 <ul>
 <li>(1) Important for mapping pins, details the connectors that come from the SOM and how they connect to the PL\</li>
@@ -238,7 +239,7 @@ HDL Signal        FPGA   SOM240 Carrier  PMOD
 </div></code></code></pre>
 <h2 id="starting-a-vivado-project">Starting a Vivado Project</h2>
 <p>A very basic project of switching the fan on/off with the Kria KV260 board is introduced by Tom Verbeure, and can be found <a href="https://github.com/tomverbeure/kv260_bringup">here</a> with his fantastic documentation.</p>
-<p>As this project requires the use of Vitis as a development platform, similar steps will be followed, but some will be different. Most notably, when a Vivado Project is created, ensure to make it an exensible Vitis Platform.<br>
+<p>As this project requires the use of Vitis as a development platform, similar steps will be followed, but some will be different. Most notably, when a Vivado Project is created, ensure to make it an exensible Vitis Platform.   (EDIT: DO NOT MAKE IT AN EXTENSIBLE VITIS PLATFORM)
 <img src="file:///c:\Users\spixy\Documents\00_Github\SeniorCapstone\Images\ExtensibleVitis.PNG" alt="ExtensibleVitis"><br>
 And also of course select the Kria KV260 Vision AI Starter Kit board as Tom did:<br>
 <img src="file:///c:\Users\spixy\Documents\00_Github\SeniorCapstone\Images\boardselection.PNG" alt="board"></p>
@@ -266,8 +267,14 @@ Now that the block diagram is completed, the diagram needs to be created into a 
 <img src="file:///c:\Users\spixy\Documents\00_Github\SeniorCapstone\Images\GenerateOutput.PNG" alt="generateout2"></li>
 <li>Do the same but for Create HDL Wrapper:<br>
 <img src="file:///c:\Users\spixy\Documents\00_Github\SeniorCapstone\Images\HDLWrapper.PNG" alt="generatewrapper"></li>
-<li>Next, adding the constraint file.</li>
+<li>Next, adding the constraint file.<br>
+<img src="file:///c:\Users\spixy\Documents\00_Github\SeniorCapstone\Images\editconstraints.PNG" alt="addConstraint"><br>
+<img src="file:///c:\Users\spixy\Documents\00_Github\SeniorCapstone\Images\addconstraint.PNG" alt="addConstrain2"></li>
+<li>Now that the file is created, add this information to the constraint file. The raw text can be found <a href="./Tutorial/Tutorial.srcs/constrs_1/new/Tutorial.xdc">here</a><br>
+<img src="file:///c:\Users\spixy\Documents\00_Github\SeniorCapstone\Images\TutorialXDC.PNG" alt="tutorialxdc"></li>
+<li>Last thing to do is to click the Green Play button on the top, and run Synthesis then Implementation, then Generate the Bitstream.</li>
 </ul>
+<h2 id="working-on-the-project-in-vitis">Working on the project in Vitis</h2>
 
         
         

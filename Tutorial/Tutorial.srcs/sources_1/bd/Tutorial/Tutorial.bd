@@ -5,6 +5,7 @@
       "device": "xck26-sfvc784-2LV-c",
       "gen_directory": "../../../../Tutorial.gen/sources_1/bd/Tutorial",
       "name": "Tutorial",
+      "pfm_name": "xilinx:kv260_som:Tutorial:0.0",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
       "tool_version": "2022.1",

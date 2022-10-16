@@ -1,0 +1,11 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../PL_BTN_LED.gen/sources_1/bd/BTN_LED/ipshared/4e49" --include "../../../../PL_BTN_LED.gen/sources_1/bd/BTN_LED/ipshared/ec67/hdl" --include "../../../../PL_BTN_LED.gen/sources_1/bd/BTN_LED/ipshared/8cdf/hdl" \
+"../../../bd/BTN_LED/sim/BTN_LED.v" \
+"../../../bd/BTN_LED/ip/BTN_LED_btn_to_led_0_0/sim/BTN_LED_btn_to_led_0_0.v" \
+"../../../bd/BTN_LED/ip/BTN_LED_btn_to_led_clk_0_0/sim/BTN_LED_btn_to_led_clk_0_0.v" \
+"../../../bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0_clk_wiz.v" \
+"../../../bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0.v" \
+"../../../bd/BTN_LED/ip/BTN_LED_zynq_ultra_ps_e_0_1/sim/BTN_LED_zynq_ultra_ps_e_0_1_vip_wrapper.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

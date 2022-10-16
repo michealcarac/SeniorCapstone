@@ -5,6 +5,7 @@
   - [Kria KV260](#kria-kv260)
   - [A Peek into Manual Pin Mapping](#a-peek-into-manual-pin-mapping)
   - [Starting a Vivado Project](#starting-a-vivado-project)
+  - [Working on the project in Vitis](#working-on-the-project-in-vitis)
 ## Introduction
 This project was created for the Computer Engineering Senior Capstone project at Clarkson University.   
 The idea is to implement a hardware-based keylogger that will check the inputted text against a database of prerecorded typing from the user to authorize access to the computer. Currently, this is implemented for a Fixed Text approach which means a arbitrary word is typed over and over for training and then tested on the same word once. If the user types the word in the same exact manner as the training, then the system shall authorize them access to the computer. Instead of fixed text, a free text approach can also be utilized. Free text would constantly compare the users keyboard input to their previous authorized inputs using a Deep Learning model.    
@@ -30,9 +31,8 @@ Nick Summerville
 ```
 ## Getting Started
 * Download Vitis 2022.1, this will also install Vivado 2022.1
-* Install PetaLinux on the Kria Board
-  * [Instructions Here](https://www.hackster.io/whitney-knitter/getting-started-with-the-kria-kv260-in-petalinux-2021-1-b491fd)
-  * Further notes to come as the guides may have issues
+* Install Ubuntu on the board
+  * [Instructions Here](./ubuntu.md)
 * Ensure the USB drivers are installed
   * If not, the cable drivers can be found in the Xilinx install directory.
 
@@ -55,7 +55,8 @@ Features
 Documentation
 * [Kria KV260 Product Page](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit.html)
 * [Data Sheet](https://docs.xilinx.com/r/en-US/ds986-kv260-starter-kit)
-* [User Guide](https://docs.xilinx.com/r/en-US/ug1089-kv260-starter-kit/Summary)
+* [User Guide](https://docs.xilinx.com/r/en-US/ug1089-kv260-starter-kit/Summary)\
+* [Wiki](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+K26+SOM)
 * [Carrier Card Design Guide](https://docs.xilinx.com/r/en-US/ug1091-carrier-card-design)
   * (1) Important for mapping pins, details the connectors that come from the SOM and how they connect to the PL\
   * (2) Contains a XDC file, the original is [here](./XilinxKriaKV260SOM_Mappings.xdc) and Edited one for the Vision AI Starter Kit is [here](./KV260_CarrierBoard.xdc) 
@@ -131,7 +132,7 @@ HDL Signal        FPGA   SOM240 Carrier  PMOD
 ## Starting a Vivado Project
 A very basic project of switching the fan on/off with the Kria KV260 board is introduced by Tom Verbeure, and can be found [here](https://github.com/tomverbeure/kv260_bringup) with his fantastic documentation.   
 
-As this project requires the use of Vitis as a development platform, similar steps will be followed, but some will be different. Most notably, when a Vivado Project is created, ensure to make it an exensible Vitis Platform.   
+As this project requires the use of Vitis as a development platform, similar steps will be followed, but some will be different. Most notably, when a Vivado Project is created, ensure to make it an exensible Vitis Platform.   (EDIT: DO NOT MAKE IT AN EXTENSIBLE VITIS PLATFORM)
 ![ExtensibleVitis](./Images/ExtensibleVitis.PNG)   
 And also of course select the Kria KV260 Vision AI Starter Kit board as Tom did:    
 ![board](./Images/boardselection.PNG)    
@@ -158,7 +159,15 @@ Now that the block diagram is completed, the diagram needs to be created into a 
 ![generateout2](./Images/GenerateOutput.PNG)   
 * Do the same but for Create HDL Wrapper:   
 ![generatewrapper](./Images/HDLWrapper.PNG)   
-* Next, adding the constraint file. 
+* Next, adding the constraint file.    
+![addConstraint](./Images/editconstraints.PNG)    
+![addConstrain2](./Images/addconstraint.PNG)   
+* Now that the file is created, add this information to the constraint file. The raw text can be found [here](./Tutorial/Tutorial.srcs/constrs_1/new/Tutorial.xdc)    
+![tutorialxdc](./Images/TutorialXDC.PNG)    
+* Last thing to do is to click the Green Play button on the top, and run Synthesis then Implementation, then Generate the Bitstream. 
+
+## Working on the project in Vitis
+
 
 
 

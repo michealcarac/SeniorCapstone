@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"BTN_LED": {
+			"proto_instances": {
+			}
+		}
+	}
+}

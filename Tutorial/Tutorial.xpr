@@ -57,6 +57,12 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="kv260_som"/>
+    <Option Name="DSAName" Val="Tutorial"/>
+    <Option Name="DSADefaultOutputType" Val="sd_card"/>
+    <Option Name="DSADesignIntentServerManaged" Val="false"/>
+    <Option Name="DSADesignIntentExternalHost" Val="false"/>
+    <Option Name="DSADesignIntentEmbedded" Val="true"/>
+    <Option Name="DSADesignIntentDatacenter" Val="false"/>
     <Option Name="WTXSimLaunchSim" Val="0"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
@@ -82,7 +88,7 @@
     <Option Name="SimTypes" Val="tlm_dpi"/>
     <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
     <Option Name="DcpsUptoDate" Val="TRUE"/>
-    <Option Name="DSAExtensible" Val="TRUE"/>
+    <Option Name="DSAExtensible" Val="FALSE"/>
     <Option Name="ClassicSocBoot" Val="FALSE"/>
     <Option Name="LocalIPRepoLeafDirName" Val="ip_repo"/>
   </Configuration>
@@ -95,29 +101,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_xbar_0/Tutorial_xbar_0.xci">
-          <Proxy FileSetName="Tutorial_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_ds_1/Tutorial_auto_ds_1.xci">
-          <Proxy FileSetName="Tutorial_auto_ds_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_pc_0/Tutorial_auto_pc_0.xci">
-          <Proxy FileSetName="Tutorial_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_pc_1/Tutorial_auto_pc_1.xci">
-          <Proxy FileSetName="Tutorial_auto_pc_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_ds_0/Tutorial_auto_ds_0.xci">
-          <Proxy FileSetName="Tutorial_auto_ds_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_rst_ps8_0_96M_0/Tutorial_rst_ps8_0_96M_0.xci">
-          <Proxy FileSetName="Tutorial_rst_ps8_0_96M_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_zynq_ultra_ps_e_0_0/Tutorial_zynq_ultra_ps_e_0_0.xci">
           <Proxy FileSetName="Tutorial_zynq_ultra_ps_e_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_axi_gpio_0_0/Tutorial_axi_gpio_0_0.xci">
           <Proxy FileSetName="Tutorial_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_xbar_0/Tutorial_xbar_0.xci">
+          <Proxy FileSetName="Tutorial_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_ds_0/Tutorial_auto_ds_0.xci">
+          <Proxy FileSetName="Tutorial_auto_ds_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_pc_0/Tutorial_auto_pc_0.xci">
+          <Proxy FileSetName="Tutorial_auto_pc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_ds_1/Tutorial_auto_ds_1.xci">
+          <Proxy FileSetName="Tutorial_auto_ds_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_auto_pc_1/Tutorial_auto_pc_1.xci">
+          <Proxy FileSetName="Tutorial_auto_pc_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Tutorial.bd" FileRelPathName="ip/Tutorial_rst_ps8_0_96M_0/Tutorial_rst_ps8_0_96M_0.xci">
+          <Proxy FileSetName="Tutorial_rst_ps8_0_96M_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/Tutorial/hdl/Tutorial_wrapper.v">
@@ -135,11 +141,18 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/Tutorial.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Tutorial_wrapper"/>
@@ -157,6 +170,15 @@
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
       <Filter Type="Utils"/>
+      <File Path="$PSRCDIR/utils_1/imports/synth_1/Tutorial_wrapper.dcp">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedInSteps" Val="synth_1"/>
+          <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+          <Attr Name="AutoDcp" Val="1"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
@@ -229,22 +251,21 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="19">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xck26-sfvc784-2LV-c" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xck26-sfvc784-2LV-c" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Tutorial_wrapper.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
           <Desc>Vivado Synthesis Defaults</Desc>
         </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
     <Run Id="Tutorial_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_zynq_ultra_ps_e_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_zynq_ultra_ps_e_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_zynq_ultra_ps_e_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -254,9 +275,7 @@
     </Run>
     <Run Id="Tutorial_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_axi_gpio_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_axi_gpio_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_axi_gpio_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_axi_gpio_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -266,9 +285,7 @@
     </Run>
     <Run Id="Tutorial_rst_ps8_0_96M_0_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_rst_ps8_0_96M_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_rst_ps8_0_96M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_rst_ps8_0_96M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_rst_ps8_0_96M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_rst_ps8_0_96M_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -278,9 +295,7 @@
     </Run>
     <Run Id="Tutorial_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_xbar_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_xbar_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_xbar_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_xbar_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -290,9 +305,7 @@
     </Run>
     <Run Id="Tutorial_auto_ds_0_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_auto_ds_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_ds_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_auto_ds_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -302,9 +315,7 @@
     </Run>
     <Run Id="Tutorial_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_auto_pc_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_auto_pc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -314,9 +325,7 @@
     </Run>
     <Run Id="Tutorial_auto_ds_1_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_auto_ds_1" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_ds_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_auto_ds_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_1_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -326,9 +335,7 @@
     </Run>
     <Run Id="Tutorial_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="Tutorial_auto_pc_1" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_pc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Tutorial_auto_pc_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_1_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -336,7 +343,26 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="synth_1_copy_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xck26-sfvc784-2LV-c" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Tutorial_wrapper.dcp" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1/synth_1_copy_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1_copy_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022" CtrlBit="true">
+        <ReportConfig DisplayName="synthesis_report" Name="synth_1_copy_1_synth_synthesis_report_0" Spec="" RunStep="synth_design">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+        </ReportConfig>
+        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_copy_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" Version="1" Minor="0">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
+        </ReportConfig>
+      </ReportStrategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
           <Desc>Default settings for Implementation.</Desc>
@@ -351,15 +377,14 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
     <Run Id="Tutorial_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_zynq_ultra_ps_e_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_zynq_ultra_ps_e_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -376,9 +401,7 @@
     </Run>
     <Run Id="Tutorial_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_axi_gpio_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_axi_gpio_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_axi_gpio_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -395,9 +418,7 @@
     </Run>
     <Run Id="Tutorial_rst_ps8_0_96M_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_rst_ps8_0_96M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_rst_ps8_0_96M_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_rst_ps8_0_96M_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_rst_ps8_0_96M_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -414,9 +435,7 @@
     </Run>
     <Run Id="Tutorial_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_xbar_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_xbar_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_xbar_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -433,9 +452,7 @@
     </Run>
     <Run Id="Tutorial_auto_ds_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_ds_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_auto_ds_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -452,9 +469,7 @@
     </Run>
     <Run Id="Tutorial_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_auto_pc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -471,9 +486,7 @@
     </Run>
     <Run Id="Tutorial_auto_ds_1_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_ds_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_auto_ds_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_ds_1_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -490,9 +503,7 @@
     </Run>
     <Run Id="Tutorial_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="Tutorial_auto_pc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Tutorial_auto_pc_1_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_1_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Tutorial_auto_pc_1_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

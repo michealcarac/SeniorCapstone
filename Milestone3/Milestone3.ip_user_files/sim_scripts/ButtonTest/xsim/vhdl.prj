@@ -1,5 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../BlockDesigns/ButtonTest/ButtonTest/ip/ButtonTest_axi_gpio_0_0/sim/ButtonTest_axi_gpio_0_0.vhd" \
-"../../../../BlockDesigns/ButtonTest/ButtonTest/ip/ButtonTest_rst_ps8_0_99M_0/sim/ButtonTest_rst_ps8_0_99M_0.vhd" \
-
-nosort

@@ -1,0 +1,591 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date              : Sat Oct 15 23:22:59 2022
+| Host              : DESKTOP-8DKIKNE running 64-bit major release  (build 9200)
+| Command           : report_timing_summary -max_paths 10 -report_unconstrained -file BTN_LED_wrapper_timing_summary_routed.rpt -pb BTN_LED_wrapper_timing_summary_routed.pb -rpx BTN_LED_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design            : BTN_LED_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.29 08-03-2020
+| Temperature Grade : C
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                                         Violations  
+---------  ----------------  --------------------------------------------------  ----------  
+TIMING-4   Critical Warning  Invalid primary clock redefinition on a clock tree  1           
+TIMING-27  Critical Warning  Invalid primary clock on hierarchical pin           1           
+CLKC-56    Advisory          MMCME4 with global clock driver has no LOC          1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (4)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (4)
+------------------------------
+ There are 4 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                    3          inf        0.000                      0                    3        2.063        0.000                       0                     5  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                           Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                           ------------       ----------      --------------
+BTN_LED_i/clk_wiz/inst/clk_in1  {0.000 5.156}      10.313          96.965          
+  clk_out1_BTN_LED_clk_wiz_0    {0.000 5.000}      10.000          100.000         
+clk_pl_0                        {0.000 5.156}      10.312          96.974          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+BTN_LED_i/clk_wiz/inst/clk_in1                                                                                                                                                    2.063        0.000                       0                     1  
+  clk_out1_BTN_LED_clk_wiz_0                                                                                                                                                      4.725        0.000                       0                     3  
+clk_pl_0                                                                                                                                                                          3.656        0.000                       0                     1  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group                  From Clock                  To Clock                  
+----------                  ----------                  --------                  
+(none)                                                                              
+(none)                      clk_out1_BTN_LED_clk_wiz_0                              
+(none)                                                  clk_out1_BTN_LED_clk_wiz_0  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  BTN_LED_i/clk_wiz/inst/clk_in1
+  To Clock:  BTN_LED_i/clk_wiz/inst/clk_in1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        2.063ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         BTN_LED_i/clk_wiz/inst/clk_in1
+Waveform(ns):       { 0.000 5.156 }
+Period(ns):         10.313
+Sources:            { BTN_LED_i/clk_wiz/inst/clk_in1 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location   Pin
+Min Period        n/a     MMCME4_ADV/CLKIN1  n/a            1.071         10.313      9.242      MMCM_X0Y3  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKIN1
+Max Period        n/a     MMCME4_ADV/CLKIN1  n/a            100.000       10.313      89.687     MMCM_X0Y3  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME4_ADV/CLKIN1  n/a            3.094         5.157       2.063      MMCM_X0Y3  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME4_ADV/CLKIN1  n/a            3.094         5.156       2.063      MMCM_X0Y3  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME4_ADV/CLKIN1  n/a            3.094         5.156       2.063      MMCM_X0Y3  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME4_ADV/CLKIN1  n/a            3.094         5.156       2.063      MMCM_X0Y3  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_BTN_LED_clk_wiz_0
+  To Clock:  clk_out1_BTN_LED_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        4.725ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_BTN_LED_clk_wiz_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFGCE/I            n/a            1.379         10.000      8.621      BUFGCE_X0Y76   BTN_LED_i/clk_wiz/inst/clkout1_buf/I
+Min Period        n/a     MMCME4_ADV/CLKOUT0  n/a            1.071         10.000      8.929      MMCM_X0Y3      BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKOUT0
+Min Period        n/a     FDRE/C              n/a            0.550         10.000      9.450      SLICE_X11Y152  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         5.000       4.725      SLICE_X11Y152  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.275         5.000       4.725      SLICE_X11Y152  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         5.000       4.725      SLICE_X11Y152  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+High Pulse Width  Fast    FDRE/C              n/a            0.275         5.000       4.725      SLICE_X11Y152  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_0
+  To Clock:  clk_pl_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.656ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_pl_0
+Waveform(ns):       { 0.000 5.156 }
+Period(ns):         10.312
+Sources:            { BTN_LED_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0] }
+
+Check Type        Corner  Lib Pin          Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     PS8/MAXIGP2ACLK  n/a            3.000         10.312      7.312      PS8_X0Y0  BTN_LED_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+Low Pulse Width   Slow    PS8/MAXIGP2ACLK  n/a            1.500         5.156       3.656      PS8_X0Y0  BTN_LED_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+Low Pulse Width   Fast    PS8/MAXIGP2ACLK  n/a            1.500         5.156       3.656      PS8_X0Y0  BTN_LED_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+High Pulse Width  Slow    PS8/MAXIGP2ACLK  n/a            1.500         5.156       3.656      PS8_X0Y0  BTN_LED_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+High Pulse Width  Fast    PS8/MAXIGP2ACLK  n/a            1.500         5.156       3.656      PS8_X0Y0  BTN_LED_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 btn_i[3]
+                            (input port)
+  Destination:            led_1
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.604ns  (logic 4.671ns (70.721%)  route 1.934ns (29.279%))
+  Logic Levels:           4  (IBUFCTRL=1 INBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    B11                                               0.000     0.000 r  btn_i[3] (IN)
+                         net (fo=0)                   0.000     0.000    btn_i_IBUF[3]_inst/I
+    B11                  INBUF (Prop_INBUF_HDIOB_M_PAD_O)
+                                                      1.253     1.253 r  btn_i_IBUF[3]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.253    btn_i_IBUF[3]_inst/OUT
+    B11                  IBUFCTRL (Prop_IBUFCTRL_HDIOB_M_I_O)
+                                                      0.000     1.253 r  btn_i_IBUF[3]_inst/IBUFCTRL_INST/O
+                         net (fo=2, routed)           0.910     2.163    BTN_LED_i/btn_to_led_0/inst/btn[3]
+    SLICE_X11Y152        LUT4 (Prop_H6LUT_SLICEL_I2_O)
+                                                      0.227     2.390 r  BTN_LED_i/btn_to_led_0/inst/led0/O
+                         net (fo=1, routed)           1.024     3.414    led_1_OBUF
+    H12                  OBUF (Prop_OUTBUF_HDIOB_S_I_O)
+                                                      3.190     6.604 r  led_1_OBUF_inst/O
+                         net (fo=0)                   0.000     6.604    led_1
+    H12                                                               r  led_1 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 btn_i[1]
+                            (input port)
+  Destination:            led_1
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        3.559ns  (logic 2.845ns (79.938%)  route 0.714ns (20.062%))
+  Logic Levels:           4  (IBUFCTRL=1 INBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E12                                               0.000     0.000 r  btn_i[1] (IN)
+                         net (fo=0)                   0.000     0.000    btn_i_IBUF[1]_inst/I
+    E12                  INBUF (Prop_INBUF_HDIOB_M_PAD_O)
+                                                      1.059     1.059 r  btn_i_IBUF[1]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.059    btn_i_IBUF[1]_inst/OUT
+    E12                  IBUFCTRL (Prop_IBUFCTRL_HDIOB_M_I_O)
+                                                      0.000     1.059 r  btn_i_IBUF[1]_inst/IBUFCTRL_INST/O
+                         net (fo=2, routed)           0.346     1.405    BTN_LED_i/btn_to_led_0/inst/btn[1]
+    SLICE_X11Y152        LUT4 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.068     1.473 r  BTN_LED_i/btn_to_led_0/inst/led0/O
+                         net (fo=1, routed)           0.368     1.841    led_1_OBUF
+    H12                  OBUF (Prop_OUTBUF_HDIOB_S_I_O)
+                                                      1.718     3.559 r  led_1_OBUF_inst/O
+                         net (fo=0)                   0.000     3.559    led_1
+    H12                                                               r  led_1 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  clk_out1_BTN_LED_clk_wiz_0
+  To Clock:  
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_BTN_LED_clk_wiz_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_0
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.331ns  (logic 3.330ns (76.886%)  route 1.001ns (23.114%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.733ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.350ns
+    Phase Error              (PE):    0.556ns
+  Clock Net Delay (Source):      2.360ns (routing 1.302ns, distribution 1.058ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_BTN_LED_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  BTN_LED_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2, routed)           1.209     1.209    BTN_LED_i/clk_wiz/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.106 r  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     1.454    BTN_LED_i/clk_wiz/inst/clk_out1_BTN_LED_clk_wiz_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     1.498 r  BTN_LED_i/clk_wiz/inst/clkout1_buf/O
+    X0Y2 (CLOCK_ROOT)    net (fo=1, routed)           2.360     3.858    BTN_LED_i/btn_to_led_clk_0/inst/clk
+    SLICE_X11Y152        FDRE                                         r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y152        FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.115     3.973 r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/Q
+                         net (fo=1, routed)           1.001     4.974    led_0_OBUF
+    E10                  OBUF (Prop_OUTBUF_HDIOB_M_I_O)
+                                                      3.215     8.189 r  led_0_OBUF_inst/O
+                         net (fo=0)                   0.000     8.189    led_0
+    E10                                                               r  led_0 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_BTN_LED_clk_wiz_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            led_0
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.216ns  (logic 1.829ns (82.533%)  route 0.387ns (17.467%))
+  Logic Levels:           1  (OBUF=1)
+  Clock Uncertainty:      0.733ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.350ns
+    Phase Error              (PE):    0.556ns
+  Clock Net Delay (Source):      1.301ns (routing 0.727ns, distribution 0.574ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_BTN_LED_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  BTN_LED_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2, routed)           0.645     0.645    BTN_LED_i/clk_wiz/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.566     1.211 r  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.179     1.390    BTN_LED_i/clk_wiz/inst/clk_out1_BTN_LED_clk_wiz_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.023     1.413 r  BTN_LED_i/clk_wiz/inst/clkout1_buf/O
+    X0Y2 (CLOCK_ROOT)    net (fo=1, routed)           1.301     2.714    BTN_LED_i/btn_to_led_clk_0/inst/clk
+    SLICE_X11Y152        FDRE                                         r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y152        FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.086     2.800 r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/Q
+                         net (fo=1, routed)           0.387     3.187    led_0_OBUF
+    E10                  OBUF (Prop_OUTBUF_HDIOB_M_I_O)
+                                                      1.743     4.930 r  led_0_OBUF_inst/O
+                         net (fo=0)                   0.000     4.930    led_0
+    E10                                                               r  led_0 (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  clk_out1_BTN_LED_clk_wiz_0
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 btn_i[0]
+                            (input port)
+  Destination:            BTN_LED_i/btn_to_led_clk_0/inst/led_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_BTN_LED_clk_wiz_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        2.459ns  (logic 1.482ns (60.263%)  route 0.977ns (39.737%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
+  Clock Path Skew:        4.316ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.316ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.733ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Discrete Jitter          (DJ):    0.350ns
+    Phase Error              (PE):    0.556ns
+  Clock Net Delay (Destination): 2.137ns (routing 1.197ns, distribution 0.940ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    B10                                               0.000     0.000 r  btn_i[0] (IN)
+                         net (fo=0)                   0.000     0.000    btn_i_IBUF[0]_inst/I
+    B10                  INBUF (Prop_INBUF_HDIOB_S_PAD_O)
+                                                      1.265     1.265 r  btn_i_IBUF[0]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.265    btn_i_IBUF[0]_inst/OUT
+    B10                  IBUFCTRL (Prop_IBUFCTRL_HDIOB_S_I_O)
+                                                      0.000     1.265 r  btn_i_IBUF[0]_inst/IBUFCTRL_INST/O
+                         net (fo=2, routed)           0.953     2.218    BTN_LED_i/btn_to_led_clk_0/inst/btn[0]
+    SLICE_X11Y152        LUT4 (Prop_D5LUT_SLICEL_I1_O)
+                                                      0.217     2.435 r  BTN_LED_i/btn_to_led_clk_0/inst/logic_btns0/O
+                         net (fo=1, routed)           0.024     2.459    BTN_LED_i/btn_to_led_clk_0/inst/logic_btns
+    SLICE_X11Y152        FDRE                                         r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_BTN_LED_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  BTN_LED_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2, routed)           1.094     1.094    BTN_LED_i/clk_wiz/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     1.833 r  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.140    BTN_LED_i/clk_wiz/inst/clk_out1_BTN_LED_clk_wiz_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.179 r  BTN_LED_i/clk_wiz/inst/clkout1_buf/O
+    X0Y2 (CLOCK_ROOT)    net (fo=1, routed)           2.137     4.316    BTN_LED_i/btn_to_led_clk_0/inst/clk
+    SLICE_X11Y152        FDRE                                         r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 btn_i[1]
+                            (input port)
+  Destination:            BTN_LED_i/btn_to_led_clk_0/inst/led_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_BTN_LED_clk_wiz_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        1.425ns  (logic 1.096ns (76.907%)  route 0.329ns (23.093%))
+  Logic Levels:           3  (IBUFCTRL=1 INBUF=1 LUT4=1)
+  Clock Path Skew:        2.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.269ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Net Delay (Destination): 1.419ns (routing 0.790ns, distribution 0.629ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    E12                                               0.000     0.000 r  btn_i[1] (IN)
+                         net (fo=0)                   0.000     0.000    btn_i_IBUF[1]_inst/I
+    E12                  INBUF (Prop_INBUF_HDIOB_M_PAD_O)
+                                                      1.059     1.059 r  btn_i_IBUF[1]_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     1.059    btn_i_IBUF[1]_inst/OUT
+    E12                  IBUFCTRL (Prop_IBUFCTRL_HDIOB_M_I_O)
+                                                      0.000     1.059 r  btn_i_IBUF[1]_inst/IBUFCTRL_INST/O
+                         net (fo=2, routed)           0.322     1.381    BTN_LED_i/btn_to_led_clk_0/inst/btn[1]
+    SLICE_X11Y152        LUT4 (Prop_D5LUT_SLICEL_I0_O)
+                                                      0.037     1.418 r  BTN_LED_i/btn_to_led_clk_0/inst/logic_btns0/O
+                         net (fo=1, routed)           0.007     1.425    BTN_LED_i/btn_to_led_clk_0/inst/logic_btns
+    SLICE_X11Y152        FDRE                                         r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_BTN_LED_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  BTN_LED_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=2, routed)           0.699     0.699    BTN_LED_i/clk_wiz/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.079     0.620 r  BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.204     0.824    BTN_LED_i/clk_wiz/inst/clk_out1_BTN_LED_clk_wiz_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.026     0.850 r  BTN_LED_i/clk_wiz/inst/clkout1_buf/O
+    X0Y2 (CLOCK_ROOT)    net (fo=1, routed)           1.419     2.269    BTN_LED_i/btn_to_led_clk_0/inst/clk
+    SLICE_X11Y152        FDRE                                         r  BTN_LED_i/btn_to_led_clk_0/inst/led_reg/C
+
+
+
+
+

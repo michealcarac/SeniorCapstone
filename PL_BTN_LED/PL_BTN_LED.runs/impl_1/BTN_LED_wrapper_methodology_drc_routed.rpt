@@ -1,0 +1,52 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sat Oct 15 23:22:56 2022
+| Host         : DESKTOP-8DKIKNE running 64-bit major release  (build 9200)
+| Command      : report_methodology -file BTN_LED_wrapper_methodology_drc_routed.rpt -pb BTN_LED_wrapper_methodology_drc_routed.pb -rpx BTN_LED_wrapper_methodology_drc_routed.rpx
+| Design       : BTN_LED_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
+| CLKC-56   | Advisory         | MMCME4 with global clock driver has no LOC         | 1          |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock BTN_LED_i/clk_wiz/inst/clk_in1 is defined downstream of clock clk_pl_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock BTN_LED_i/clk_wiz/inst/clk_in1 is created on an inappropriate internal pin BTN_LED_i/clk_wiz/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell BTN_LED_i/clk_wiz/inst/mmcme4_adv_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) BTN_LED_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+
