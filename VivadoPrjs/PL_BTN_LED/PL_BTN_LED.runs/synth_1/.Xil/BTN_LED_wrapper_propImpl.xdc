@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc rfile:../../../PL_BTN_LED.srcs/constrs_1/new/constraint.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc rfile:../../../PL_BTN_LED.srcs/constrs_1/new/constraint.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN H12 IOSTANDARD LVCMOS33}      [get_ports {led_1}] ;# Bank  45 VCCO - som240_1_b13 - IO_L4N_AD12N_45   PMOD_HDA11->som240_1_A17->H12 1
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]

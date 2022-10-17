@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
--- Date        : Sat Oct 15 23:10:57 2022
--- Host        : DESKTOP-8DKIKNE running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+-- Date        : Mon Oct 17 01:34:18 2022
+-- Host        : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0_stub.vhdl
+--               /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0_stub.vhdl
 -- Design      : BTN_LED_clk_wiz_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xck26-sfvc784-2LV-c

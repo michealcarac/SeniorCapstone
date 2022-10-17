@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/impl_1/BTN_LED_wrapper.tcl"
+  variable script "/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/impl_1/BTN_LED_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,99 +115,16 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
-OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
-start_step init_design
-set ACTIVE_STEP init_design
-set rc [catch {
-  create_msg_db init_design.pb
-  set_param power.BramSDPPropagationFix 1
-  set_param chipscope.maxJobs 8
-  set_param power.enableUnconnectedCarry8PinPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.enableLutRouteBelPower 1
-  set_param xicom.use_bs_reader 1
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xck26-sfvc784-2LV-c
-  set_property board_part xilinx.com:kv260_som:part0:1.3 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.cache/wt [current_project]
-  set_property parent.project_path C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.xpr [current_project]
-  set_property ip_output_repo C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/BTN_LED_wrapper.dcp
-  set_msg_config -source 4 -id {BD 41-1661} -limit 0
-  set_param project.isImplRun true
-  add_files C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/sources_1/bd/BTN_LED/BTN_LED.bd
-  set_param project.isImplRun false
-OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  set_param project.isImplRun true
-  link_design -top BTN_LED_wrapper -part xck26-sfvc784-2LV-c 
-OPTRACE "link_design" END { }
-  set_param project.isImplRun false
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
-OPTRACE "init_design_reports" START { REPORT }
-OPTRACE "init_design_reports" END { }
-OPTRACE "init_design_write_hwdef" START { }
-OPTRACE "init_design_write_hwdef" END { }
-  close_msg_db -file init_design.pb
-} RESULT]
-if {$rc} {
-  step_failed init_design
-  return -code error $RESULT
-} else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Init Design" END { }
-OPTRACE "Phase: Opt Design" START { ROLLUP_AUTO }
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-OPTRACE "read constraints: opt_design" START { }
-OPTRACE "read constraints: opt_design" END { }
-OPTRACE "opt_design" START { }
-  opt_design 
-OPTRACE "opt_design" END { }
-OPTRACE "read constraints: opt_design_post" START { }
-OPTRACE "read constraints: opt_design_post" END { }
-OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force BTN_LED_wrapper_opt.dcp
-OPTRACE "Opt Design: write_checkpoint" END { }
-OPTRACE "opt_design reports" START { REPORT }
-  create_report "impl_1_opt_report_drc_0" "report_drc -file BTN_LED_wrapper_drc_opted.rpt -pb BTN_LED_wrapper_drc_opted.pb -rpx BTN_LED_wrapper_drc_opted.rpx"
-OPTRACE "opt_design reports" END { }
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Opt Design" END { }
 OPTRACE "Phase: Place Design" START { ROLLUP_AUTO }
 start_step place_design
 set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
+  set_param chipscope.maxJobs 1
+  open_checkpoint BTN_LED_wrapper_opt.dcp
+  set_property webtalk.parent_dir /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.cache/wt [current_project]
 OPTRACE "read constraints: place_design" START { }
 OPTRACE "read constraints: place_design" END { }
   if { [llength [get_debug_cores -quiet] ] > 0 }  { 

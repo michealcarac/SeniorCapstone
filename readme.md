@@ -34,7 +34,7 @@ Nick Summerville
 ```
 ## Getting Started
 * Create an Ubuntu Virtual Machine
-  * Full guide [here](./UbuntuVM.md))
+  * [Instructions here](./UbuntuVM.md)
 * Install Ubuntu on the Kria KV260
   * [Instructions Here](./UbuntuKria.md)
 

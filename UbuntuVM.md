@@ -93,6 +93,14 @@ $ sudo mkdir Xilinx
 $ cd /
 $ sudo chmod ugo\+rwx tools/Xilinx/
 ```
+Install extra required packages:
+```
+$ sudo apt install libstdc++6:i386 libgtk2.0-0:i386 dpkg-dev:i386 libtinfo5 libncurses5
+```
+Make a link between GMake and Make as same binaries, different names
+```
+$ sudo ln -s /usr/bin/make /usr/bin/gmake
+```
 And now run the Unified Installer
 ```
 $ sudo chmod +x ./Xilinx_Unified_2022.1_0420_0327_Lin64.bin 
@@ -100,7 +108,24 @@ $ ./Xilinx_Unified_2022.1_0420_0327_Lin64.bin    ->>> MAKE SURE THIS IS NOT DONE
 ```
 
 Login to your Xilinx account, select Vitis (this will download Vivado too) and continue with the installation.   
-To install PetaLinux, run the Installer again but select PetaLinux instead of Vitis. It is reccomended to do this once the Vitis install has finished. 
+To install PetaLinux Tools, run the Installer again but select PetaLinux instead of Vitis. It is recommended to do this once the Vitis install has finished. 
+
+Do keep in mind that PetaLinux Tools is not the OS. It is merely a tool for configuring a PetaLinux OS, but includes some tools that we may use in development.    
+
+Once the programs are done installing, you will need to install the drivers.   
+
+Change directory to your Vivado Install:
+```
+$ cd /tools/Xilinx/Vivado/2022.1
+```
+Now navigate to your drivers directory, you must run the install script with sudo and in the directory.
+```
+$ cd /data/xicom/cable_drivers/lin64/install_script/install_drivers
+```
+Run the script
+```
+$ sudo ./install_drivers
+```
 
 
 

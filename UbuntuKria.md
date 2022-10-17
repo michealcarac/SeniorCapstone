@@ -29,6 +29,7 @@
   * To reboot: $ systemctl reboot -l                 
   * or $ sudo reboot
   * This will ensure the correct time is set.
+  * Optionally, (insert fancy time command)
 * Set up the Xilinx development and demonstration environment: [Reference](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2363129857/Getting+Started+with+Certified+Ubuntu+22.04+LTS+for+Xilinx+Devices#%5BinlineExtension%5DSet-up-the-Xilinx-Development-%26-Demonstration-Environment-for-Ubuntu-22.04-LTS)
   * $ sudo snap install xlnx-config --classic --channel=2.x   (2.x for 22.04, 1.x for 20.04 as described [here](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2057043969/Snaps+-+xlnx-config+Snap+for+Certified+Ubuntu+on+Xilinx+Devices))
   * To finish setting up the system, run the configure script. This script adds some Xilinx-specific PPAs to the package repo list and update the system. Say Yes to all.

@@ -2,19 +2,19 @@
 <Root MajorVersion="0" MinorVersion="40">
   <CompositeFile CompositeFileTopName="BTN_LED" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1665889800"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1665889800"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1665889800"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1665889800"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1665985046"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1665985046"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1665985046"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1665985046"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="synth\BTN_LED.v" Type="Verilog">
+      <File Name="synth/BTN_LED.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
-      <File Name="sim\BTN_LED.v" Type="Verilog">
+      <File Name="sim/BTN_LED.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
@@ -28,7 +28,7 @@
         <UsedIn Val="OUT_OF_CONTEXT"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
-      <File Name="hw_handoff\BTN_LED.hwh" Type="HwHandoff">
+      <File Name="hw_handoff/BTN_LED.hwh" Type="HwHandoff">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
@@ -40,13 +40,13 @@
         <UsedIn Val="HW_HANDOFF"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
-      <File Name="synth\BTN_LED.hwdef">
+      <File Name="synth/BTN_LED.hwdef">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
-      <File Name="sim\BTN_LED.protoinst">
+      <File Name="sim/BTN_LED.protoinst">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>

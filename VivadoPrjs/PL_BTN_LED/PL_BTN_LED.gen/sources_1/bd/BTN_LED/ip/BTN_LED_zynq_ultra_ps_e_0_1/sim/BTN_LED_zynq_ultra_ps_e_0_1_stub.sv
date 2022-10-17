@@ -66,98 +66,182 @@ typedef bit bit_as_bool;
 
 (* SC_MODULE_EXPORT *)
 module BTN_LED_zynq_ultra_ps_e_0_1 (
-  input bit_as_bool maxihpm0_lpd_aclk,
-  output bit [15 : 0] maxigp2_awid,
-  output bit [39 : 0] maxigp2_awaddr,
-  output bit [7 : 0] maxigp2_awlen,
-  output bit [2 : 0] maxigp2_awsize,
-  output bit [1 : 0] maxigp2_awburst,
-  output bit_as_bool maxigp2_awlock,
-  output bit [3 : 0] maxigp2_awcache,
-  output bit [2 : 0] maxigp2_awprot,
-  output bit_as_bool maxigp2_awvalid,
-  output bit [15 : 0] maxigp2_awuser,
-  input bit_as_bool maxigp2_awready,
-  output bit [31 : 0] maxigp2_wdata,
-  output bit [3 : 0] maxigp2_wstrb,
-  output bit_as_bool maxigp2_wlast,
-  output bit_as_bool maxigp2_wvalid,
-  input bit_as_bool maxigp2_wready,
-  input bit [15 : 0] maxigp2_bid,
-  input bit [1 : 0] maxigp2_bresp,
-  input bit_as_bool maxigp2_bvalid,
-  output bit_as_bool maxigp2_bready,
-  output bit [15 : 0] maxigp2_arid,
-  output bit [39 : 0] maxigp2_araddr,
-  output bit [7 : 0] maxigp2_arlen,
-  output bit [2 : 0] maxigp2_arsize,
-  output bit [1 : 0] maxigp2_arburst,
-  output bit_as_bool maxigp2_arlock,
-  output bit [3 : 0] maxigp2_arcache,
-  output bit [2 : 0] maxigp2_arprot,
-  output bit_as_bool maxigp2_arvalid,
-  output bit [15 : 0] maxigp2_aruser,
-  input bit_as_bool maxigp2_arready,
-  input bit [15 : 0] maxigp2_rid,
-  input bit [31 : 0] maxigp2_rdata,
-  input bit [1 : 0] maxigp2_rresp,
-  input bit_as_bool maxigp2_rlast,
-  input bit_as_bool maxigp2_rvalid,
-  output bit_as_bool maxigp2_rready,
-  output bit [3 : 0] maxigp2_awqos,
-  output bit [3 : 0] maxigp2_arqos,
+  input bit_as_bool maxihpm0_fpd_aclk,
+  output bit [15 : 0] maxigp0_awid,
+  output bit [39 : 0] maxigp0_awaddr,
+  output bit [7 : 0] maxigp0_awlen,
+  output bit [2 : 0] maxigp0_awsize,
+  output bit [1 : 0] maxigp0_awburst,
+  output bit_as_bool maxigp0_awlock,
+  output bit [3 : 0] maxigp0_awcache,
+  output bit [2 : 0] maxigp0_awprot,
+  output bit_as_bool maxigp0_awvalid,
+  output bit [15 : 0] maxigp0_awuser,
+  input bit_as_bool maxigp0_awready,
+  output bit [127 : 0] maxigp0_wdata,
+  output bit [15 : 0] maxigp0_wstrb,
+  output bit_as_bool maxigp0_wlast,
+  output bit_as_bool maxigp0_wvalid,
+  input bit_as_bool maxigp0_wready,
+  input bit [15 : 0] maxigp0_bid,
+  input bit [1 : 0] maxigp0_bresp,
+  input bit_as_bool maxigp0_bvalid,
+  output bit_as_bool maxigp0_bready,
+  output bit [15 : 0] maxigp0_arid,
+  output bit [39 : 0] maxigp0_araddr,
+  output bit [7 : 0] maxigp0_arlen,
+  output bit [2 : 0] maxigp0_arsize,
+  output bit [1 : 0] maxigp0_arburst,
+  output bit_as_bool maxigp0_arlock,
+  output bit [3 : 0] maxigp0_arcache,
+  output bit [2 : 0] maxigp0_arprot,
+  output bit_as_bool maxigp0_arvalid,
+  output bit [15 : 0] maxigp0_aruser,
+  input bit_as_bool maxigp0_arready,
+  input bit [15 : 0] maxigp0_rid,
+  input bit [127 : 0] maxigp0_rdata,
+  input bit [1 : 0] maxigp0_rresp,
+  input bit_as_bool maxigp0_rlast,
+  input bit_as_bool maxigp0_rvalid,
+  output bit_as_bool maxigp0_rready,
+  output bit [3 : 0] maxigp0_awqos,
+  output bit [3 : 0] maxigp0_arqos,
+  input bit_as_bool maxihpm1_fpd_aclk,
+  output bit [15 : 0] maxigp1_awid,
+  output bit [39 : 0] maxigp1_awaddr,
+  output bit [7 : 0] maxigp1_awlen,
+  output bit [2 : 0] maxigp1_awsize,
+  output bit [1 : 0] maxigp1_awburst,
+  output bit_as_bool maxigp1_awlock,
+  output bit [3 : 0] maxigp1_awcache,
+  output bit [2 : 0] maxigp1_awprot,
+  output bit_as_bool maxigp1_awvalid,
+  output bit [15 : 0] maxigp1_awuser,
+  input bit_as_bool maxigp1_awready,
+  output bit [127 : 0] maxigp1_wdata,
+  output bit [15 : 0] maxigp1_wstrb,
+  output bit_as_bool maxigp1_wlast,
+  output bit_as_bool maxigp1_wvalid,
+  input bit_as_bool maxigp1_wready,
+  input bit [15 : 0] maxigp1_bid,
+  input bit [1 : 0] maxigp1_bresp,
+  input bit_as_bool maxigp1_bvalid,
+  output bit_as_bool maxigp1_bready,
+  output bit [15 : 0] maxigp1_arid,
+  output bit [39 : 0] maxigp1_araddr,
+  output bit [7 : 0] maxigp1_arlen,
+  output bit [2 : 0] maxigp1_arsize,
+  output bit [1 : 0] maxigp1_arburst,
+  output bit_as_bool maxigp1_arlock,
+  output bit [3 : 0] maxigp1_arcache,
+  output bit [2 : 0] maxigp1_arprot,
+  output bit_as_bool maxigp1_arvalid,
+  output bit [15 : 0] maxigp1_aruser,
+  input bit_as_bool maxigp1_arready,
+  input bit [15 : 0] maxigp1_rid,
+  input bit [127 : 0] maxigp1_rdata,
+  input bit [1 : 0] maxigp1_rresp,
+  input bit_as_bool maxigp1_rlast,
+  input bit_as_bool maxigp1_rvalid,
+  output bit_as_bool maxigp1_rready,
+  output bit [3 : 0] maxigp1_awqos,
+  output bit [3 : 0] maxigp1_arqos,
+  input bit [0 : 0] pl_ps_irq0,
   output bit_as_bool pl_resetn0,
-  output bit_as_bool pl_clk0
+  output bit_as_bool pl_clk0,
+  output bit_as_bool pl_clk1
 );
 endmodule
 `endif
 
 `ifdef XCELIUM
 (* XMSC_MODULE_EXPORT *)
-module BTN_LED_zynq_ultra_ps_e_0_1 (maxihpm0_lpd_aclk,maxigp2_awid,maxigp2_awaddr,maxigp2_awlen,maxigp2_awsize,maxigp2_awburst,maxigp2_awlock,maxigp2_awcache,maxigp2_awprot,maxigp2_awvalid,maxigp2_awuser,maxigp2_awready,maxigp2_wdata,maxigp2_wstrb,maxigp2_wlast,maxigp2_wvalid,maxigp2_wready,maxigp2_bid,maxigp2_bresp,maxigp2_bvalid,maxigp2_bready,maxigp2_arid,maxigp2_araddr,maxigp2_arlen,maxigp2_arsize,maxigp2_arburst,maxigp2_arlock,maxigp2_arcache,maxigp2_arprot,maxigp2_arvalid,maxigp2_aruser,maxigp2_arready,maxigp2_rid,maxigp2_rdata,maxigp2_rresp,maxigp2_rlast,maxigp2_rvalid,maxigp2_rready,maxigp2_awqos,maxigp2_arqos,pl_resetn0,pl_clk0)
+module BTN_LED_zynq_ultra_ps_e_0_1 (maxihpm0_fpd_aclk,maxigp0_awid,maxigp0_awaddr,maxigp0_awlen,maxigp0_awsize,maxigp0_awburst,maxigp0_awlock,maxigp0_awcache,maxigp0_awprot,maxigp0_awvalid,maxigp0_awuser,maxigp0_awready,maxigp0_wdata,maxigp0_wstrb,maxigp0_wlast,maxigp0_wvalid,maxigp0_wready,maxigp0_bid,maxigp0_bresp,maxigp0_bvalid,maxigp0_bready,maxigp0_arid,maxigp0_araddr,maxigp0_arlen,maxigp0_arsize,maxigp0_arburst,maxigp0_arlock,maxigp0_arcache,maxigp0_arprot,maxigp0_arvalid,maxigp0_aruser,maxigp0_arready,maxigp0_rid,maxigp0_rdata,maxigp0_rresp,maxigp0_rlast,maxigp0_rvalid,maxigp0_rready,maxigp0_awqos,maxigp0_arqos,maxihpm1_fpd_aclk,maxigp1_awid,maxigp1_awaddr,maxigp1_awlen,maxigp1_awsize,maxigp1_awburst,maxigp1_awlock,maxigp1_awcache,maxigp1_awprot,maxigp1_awvalid,maxigp1_awuser,maxigp1_awready,maxigp1_wdata,maxigp1_wstrb,maxigp1_wlast,maxigp1_wvalid,maxigp1_wready,maxigp1_bid,maxigp1_bresp,maxigp1_bvalid,maxigp1_bready,maxigp1_arid,maxigp1_araddr,maxigp1_arlen,maxigp1_arsize,maxigp1_arburst,maxigp1_arlock,maxigp1_arcache,maxigp1_arprot,maxigp1_arvalid,maxigp1_aruser,maxigp1_arready,maxigp1_rid,maxigp1_rdata,maxigp1_rresp,maxigp1_rlast,maxigp1_rvalid,maxigp1_rready,maxigp1_awqos,maxigp1_arqos,pl_ps_irq0,pl_resetn0,pl_clk0,pl_clk1)
 (* integer foreign = "SystemC";
 *);
-  input bit maxihpm0_lpd_aclk;
-  output wire [15 : 0] maxigp2_awid;
-  output wire [39 : 0] maxigp2_awaddr;
-  output wire [7 : 0] maxigp2_awlen;
-  output wire [2 : 0] maxigp2_awsize;
-  output wire [1 : 0] maxigp2_awburst;
-  output wire maxigp2_awlock;
-  output wire [3 : 0] maxigp2_awcache;
-  output wire [2 : 0] maxigp2_awprot;
-  output wire maxigp2_awvalid;
-  output wire [15 : 0] maxigp2_awuser;
-  input bit maxigp2_awready;
-  output wire [31 : 0] maxigp2_wdata;
-  output wire [3 : 0] maxigp2_wstrb;
-  output wire maxigp2_wlast;
-  output wire maxigp2_wvalid;
-  input bit maxigp2_wready;
-  input bit [15 : 0] maxigp2_bid;
-  input bit [1 : 0] maxigp2_bresp;
-  input bit maxigp2_bvalid;
-  output wire maxigp2_bready;
-  output wire [15 : 0] maxigp2_arid;
-  output wire [39 : 0] maxigp2_araddr;
-  output wire [7 : 0] maxigp2_arlen;
-  output wire [2 : 0] maxigp2_arsize;
-  output wire [1 : 0] maxigp2_arburst;
-  output wire maxigp2_arlock;
-  output wire [3 : 0] maxigp2_arcache;
-  output wire [2 : 0] maxigp2_arprot;
-  output wire maxigp2_arvalid;
-  output wire [15 : 0] maxigp2_aruser;
-  input bit maxigp2_arready;
-  input bit [15 : 0] maxigp2_rid;
-  input bit [31 : 0] maxigp2_rdata;
-  input bit [1 : 0] maxigp2_rresp;
-  input bit maxigp2_rlast;
-  input bit maxigp2_rvalid;
-  output wire maxigp2_rready;
-  output wire [3 : 0] maxigp2_awqos;
-  output wire [3 : 0] maxigp2_arqos;
+  input bit maxihpm0_fpd_aclk;
+  output wire [15 : 0] maxigp0_awid;
+  output wire [39 : 0] maxigp0_awaddr;
+  output wire [7 : 0] maxigp0_awlen;
+  output wire [2 : 0] maxigp0_awsize;
+  output wire [1 : 0] maxigp0_awburst;
+  output wire maxigp0_awlock;
+  output wire [3 : 0] maxigp0_awcache;
+  output wire [2 : 0] maxigp0_awprot;
+  output wire maxigp0_awvalid;
+  output wire [15 : 0] maxigp0_awuser;
+  input bit maxigp0_awready;
+  output wire [127 : 0] maxigp0_wdata;
+  output wire [15 : 0] maxigp0_wstrb;
+  output wire maxigp0_wlast;
+  output wire maxigp0_wvalid;
+  input bit maxigp0_wready;
+  input bit [15 : 0] maxigp0_bid;
+  input bit [1 : 0] maxigp0_bresp;
+  input bit maxigp0_bvalid;
+  output wire maxigp0_bready;
+  output wire [15 : 0] maxigp0_arid;
+  output wire [39 : 0] maxigp0_araddr;
+  output wire [7 : 0] maxigp0_arlen;
+  output wire [2 : 0] maxigp0_arsize;
+  output wire [1 : 0] maxigp0_arburst;
+  output wire maxigp0_arlock;
+  output wire [3 : 0] maxigp0_arcache;
+  output wire [2 : 0] maxigp0_arprot;
+  output wire maxigp0_arvalid;
+  output wire [15 : 0] maxigp0_aruser;
+  input bit maxigp0_arready;
+  input bit [15 : 0] maxigp0_rid;
+  input bit [127 : 0] maxigp0_rdata;
+  input bit [1 : 0] maxigp0_rresp;
+  input bit maxigp0_rlast;
+  input bit maxigp0_rvalid;
+  output wire maxigp0_rready;
+  output wire [3 : 0] maxigp0_awqos;
+  output wire [3 : 0] maxigp0_arqos;
+  input bit maxihpm1_fpd_aclk;
+  output wire [15 : 0] maxigp1_awid;
+  output wire [39 : 0] maxigp1_awaddr;
+  output wire [7 : 0] maxigp1_awlen;
+  output wire [2 : 0] maxigp1_awsize;
+  output wire [1 : 0] maxigp1_awburst;
+  output wire maxigp1_awlock;
+  output wire [3 : 0] maxigp1_awcache;
+  output wire [2 : 0] maxigp1_awprot;
+  output wire maxigp1_awvalid;
+  output wire [15 : 0] maxigp1_awuser;
+  input bit maxigp1_awready;
+  output wire [127 : 0] maxigp1_wdata;
+  output wire [15 : 0] maxigp1_wstrb;
+  output wire maxigp1_wlast;
+  output wire maxigp1_wvalid;
+  input bit maxigp1_wready;
+  input bit [15 : 0] maxigp1_bid;
+  input bit [1 : 0] maxigp1_bresp;
+  input bit maxigp1_bvalid;
+  output wire maxigp1_bready;
+  output wire [15 : 0] maxigp1_arid;
+  output wire [39 : 0] maxigp1_araddr;
+  output wire [7 : 0] maxigp1_arlen;
+  output wire [2 : 0] maxigp1_arsize;
+  output wire [1 : 0] maxigp1_arburst;
+  output wire maxigp1_arlock;
+  output wire [3 : 0] maxigp1_arcache;
+  output wire [2 : 0] maxigp1_arprot;
+  output wire maxigp1_arvalid;
+  output wire [15 : 0] maxigp1_aruser;
+  input bit maxigp1_arready;
+  input bit [15 : 0] maxigp1_rid;
+  input bit [127 : 0] maxigp1_rdata;
+  input bit [1 : 0] maxigp1_rresp;
+  input bit maxigp1_rlast;
+  input bit maxigp1_rvalid;
+  output wire maxigp1_rready;
+  output wire [3 : 0] maxigp1_awqos;
+  output wire [3 : 0] maxigp1_arqos;
+  input bit [0 : 0] pl_ps_irq0;
   output wire pl_resetn0;
   output wire pl_clk0;
+  output wire pl_clk1;
 endmodule
 `endif

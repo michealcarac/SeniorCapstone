@@ -18,4 +18,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==BTN_LED_clk
 # IP: bd/BTN_LED/ip/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==BTN_LED_zynq_ultra_ps_e_0_1 || ORIG_REF_NAME==BTN_LED_zynq_ultra_ps_e_0_1} -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/BTN_LED_ooc.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/BTN_LED_ooc.xdc

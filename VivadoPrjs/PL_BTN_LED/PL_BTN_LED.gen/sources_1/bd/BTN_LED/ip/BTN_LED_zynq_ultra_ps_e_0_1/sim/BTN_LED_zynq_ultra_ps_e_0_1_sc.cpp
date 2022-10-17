@@ -95,7 +95,7 @@ BTN_LED_zynq_ultra_ps_e_0_1_sc::BTN_LED_zynq_ultra_ps_e_0_1_sc(const sc_core::sc
     model_param_props.addString("C_EN_FIFO_ENET2", "0");
     model_param_props.addString("C_EN_FIFO_ENET3", "0");
     model_param_props.addString("C_PL_CLK0_BUF", "TRUE");
-    model_param_props.addString("C_PL_CLK1_BUF", "FALSE");
+    model_param_props.addString("C_PL_CLK1_BUF", "TRUE");
     model_param_props.addString("C_PL_CLK2_BUF", "FALSE");
     model_param_props.addString("C_PL_CLK3_BUF", "FALSE");
     model_param_props.addString("COMPONENT_NAME", "BTN_LED_zynq_ultra_ps_e_0_1");
@@ -103,8 +103,10 @@ BTN_LED_zynq_ultra_ps_e_0_1_sc::BTN_LED_zynq_ultra_ps_e_0_1_sc(const sc_core::sc
   mp_impl = new zynq_ultra_ps_e_tlm("inst", model_param_props);
 
   // initialize AXI sockets
-  M_AXI_HPM0_LPD_rd_socket = mp_impl->M_AXI_HPM0_LPD_rd_socket;
-  M_AXI_HPM0_LPD_wr_socket = mp_impl->M_AXI_HPM0_LPD_wr_socket;
+  M_AXI_HPM0_FPD_rd_socket = mp_impl->M_AXI_HPM0_FPD_rd_socket;
+  M_AXI_HPM0_FPD_wr_socket = mp_impl->M_AXI_HPM0_FPD_wr_socket;
+  M_AXI_HPM1_FPD_rd_socket = mp_impl->M_AXI_HPM1_FPD_rd_socket;
+  M_AXI_HPM1_FPD_wr_socket = mp_impl->M_AXI_HPM1_FPD_wr_socket;
 }
 
 BTN_LED_zynq_ultra_ps_e_0_1_sc::~BTN_LED_zynq_ultra_ps_e_0_1_sc()

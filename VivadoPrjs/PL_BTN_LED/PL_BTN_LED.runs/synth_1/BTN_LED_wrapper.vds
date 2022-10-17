@@ -1,122 +1,144 @@
 #-----------------------------------------------------------
 # Vivado v2022.1 (64-bit)
-# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Oct 15 23:20:32 2022
-# Process ID: 5396
-# Current directory: C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1
-# Command line: vivado.exe -log BTN_LED_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BTN_LED_wrapper.tcl
-# Log file: C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/BTN_LED_wrapper.vds
-# Journal file: C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1\vivado.jou
-# Running On: DESKTOP-8DKIKNE, OS: Windows, CPU Frequency: 3493 MHz, CPU Physical cores: 32, Host memory: 34299 MB
+# Start of session at: Mon Oct 17 01:44:38 2022
+# Process ID: 8411
+# Current directory: /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1
+# Command line: vivado -log BTN_LED_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BTN_LED_wrapper.tcl
+# Log file: /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/BTN_LED_wrapper.vds
+# Journal file: /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/vivado.jou
+# Running On: UbuntuSeniorLab, OS: Linux, CPU Frequency: 3493.440 MHz, CPU Physical cores: 4, Host memory: 8335 MB
 #-----------------------------------------------------------
 source BTN_LED_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1632.449 ; gain = 0.000
-Command: read_checkpoint -auto_incremental -incremental C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/utils_1/imports/synth_1/BTN_LED_wrapper.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/utils_1/imports/synth_1/BTN_LED_wrapper.dcp for incremental synthesis
-INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2911.090 ; gain = 8.008 ; free physical = 2227 ; free virtual = 4122
 Command: synth_design -top BTN_LED_wrapper -part xck26-sfvc784-2LV-c
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7452
+INFO: [Synth 8-7075] Helper process launched with PID 8461
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2112.680 ; gain = 319.531
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3128.914 ; gain = 215.828 ; free physical = 129 ; free virtual = 1884
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'BTN_LED_wrapper' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/hdl/BTN_LED_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'BTN_LED' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:12]
-INFO: [Synth 8-6157] synthesizing module 'BTN_LED_btn_to_led_0_0' [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_btn_to_led_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_btn_to_led_0_0' (0#1) [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_btn_to_led_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'BTN_LED_btn_to_led_clk_0_0' [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_btn_to_led_clk_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_btn_to_led_clk_0_0' (0#1) [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_btn_to_led_clk_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'BTN_LED_clk_wiz_0' [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_clk_wiz_0' (0#1) [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_clk_wiz_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'locked' of module 'BTN_LED_clk_wiz_0' is unconnected for instance 'clk_wiz' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:34]
-WARNING: [Synth 8-7023] instance 'clk_wiz' of module 'BTN_LED_clk_wiz_0' has 4 connections declared, but only 3 given [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:34]
-INFO: [Synth 8-6157] synthesizing module 'BTN_LED_zynq_ultra_ps_e_0_1' [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_zynq_ultra_ps_e_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_zynq_ultra_ps_e_0_1' (0#1) [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-5396-DESKTOP-8DKIKNE/realtime/BTN_LED_zynq_ultra_ps_e_0_1_stub.v:5]
-WARNING: [Synth 8-7071] port 'maxigp2_awid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awaddr' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awlen' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awsize' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awburst' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awlock' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awcache' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awprot' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_wdata' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_wstrb' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_wlast' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_wvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_bready' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_araddr' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arlen' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arsize' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arburst' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arlock' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arcache' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arprot' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_rready' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_awqos' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'maxigp2_arqos' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7071] port 'pl_resetn0' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'BTN_LED_zynq_ultra_ps_e_0_1' has 42 connections declared, but only 13 given [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'BTN_LED' (0#1) [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_wrapper' (0#1) [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/hdl/BTN_LED_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'BTN_LED_wrapper' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/hdl/BTN_LED_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'BTN_LED' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:12]
+INFO: [Synth 8-6157] synthesizing module 'BTN_LED_btn_to_led_0_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_btn_to_led_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_btn_to_led_0_0' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_btn_to_led_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'BTN_LED_btn_to_led_clk_0_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_btn_to_led_clk_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_btn_to_led_clk_0_0' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_btn_to_led_clk_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'BTN_LED_clk_wiz_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_clk_wiz_0' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'locked' of module 'BTN_LED_clk_wiz_0' is unconnected for instance 'clk_wiz' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:34]
+WARNING: [Synth 8-7023] instance 'clk_wiz' of module 'BTN_LED_clk_wiz_0' has 4 connections declared, but only 3 given [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:34]
+INFO: [Synth 8-6157] synthesizing module 'BTN_LED_zynq_ultra_ps_e_0_1' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_zynq_ultra_ps_e_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_zynq_ultra_ps_e_0_1' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/.Xil/Vivado-8411-UbuntuSeniorLab/realtime/BTN_LED_zynq_ultra_ps_e_0_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp0_awid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awaddr' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awlen' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awsize' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awburst' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awlock' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awcache' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awprot' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_wdata' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_wstrb' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_wlast' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_wvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_bready' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_araddr' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arlen' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arsize' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arburst' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arlock' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arcache' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arprot' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_rready' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_awqos' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp0_arqos' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awaddr' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awlen' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awsize' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awburst' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awlock' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awcache' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awprot' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_wdata' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_wstrb' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_wlast' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_wvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_bready' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_araddr' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arlen' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arsize' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arburst' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arlock' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arcache' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arprot' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arvalid' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_rready' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_awqos' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'maxigp1_arqos' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'pl_resetn0' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'BTN_LED_zynq_ultra_ps_e_0_1' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'BTN_LED_zynq_ultra_ps_e_0_1' has 84 connections declared, but only 26 given [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'BTN_LED' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/synth/BTN_LED.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'BTN_LED_wrapper' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/hdl/BTN_LED_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2195.617 ; gain = 402.469
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3189.852 ; gain = 276.766 ; free physical = 1201 ; free virtual = 2964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2213.535 ; gain = 420.387
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3207.664 ; gain = 294.578 ; free physical = 1201 ; free virtual = 2964
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2213.535 ; gain = 420.387
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3207.664 ; gain = 294.578 ; free physical = 1201 ; free virtual = 2964
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2213.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3207.664 ; gain = 0.000 ; free physical = 1201 ; free virtual = 2964
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_0'
-Finished Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_0'
-Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_clk_0'
-Finished Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_clk_0'
-Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0_in_context.xdc] for cell 'BTN_LED_i/clk_wiz'
-Finished Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0_in_context.xdc] for cell 'BTN_LED_i/clk_wiz'
-Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1_in_context.xdc] for cell 'BTN_LED_i/zynq_ultra_ps_e_0'
-Finished Parsing XDC File [c:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1_in_context.xdc] for cell 'BTN_LED_i/zynq_ultra_ps_e_0'
-Parsing XDC File [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc]
-Finished Parsing XDC File [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BTN_LED_wrapper_propImpl.xdc].
+Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_0'
+Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0/BTN_LED_btn_to_led_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_0'
+Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_clk_0'
+Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0/BTN_LED_btn_to_led_clk_0_0_in_context.xdc] for cell 'BTN_LED_i/btn_to_led_clk_0'
+Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0_in_context.xdc] for cell 'BTN_LED_i/clk_wiz'
+Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0/BTN_LED_clk_wiz_0_in_context.xdc] for cell 'BTN_LED_i/clk_wiz'
+Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1_in_context.xdc] for cell 'BTN_LED_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.gen/sources_1/bd/BTN_LED/ip/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1/BTN_LED_zynq_ultra_ps_e_0_1_in_context.xdc] for cell 'BTN_LED_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BTN_LED_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/BTN_LED_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2250.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3257.426 ; gain = 0.000 ; free physical = 1085 ; free virtual = 2861
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2250.059 ; gain = 0.000
-INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
-INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3257.426 ; gain = 0.000 ; free physical = 1085 ; free virtual = 2861
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2250.059 ; gain = 456.910
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3257.426 ; gain = 344.340 ; free physical = 1152 ; free virtual = 2929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -124,7 +146,7 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2250.059 ; gain = 456.910
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3257.426 ; gain = 344.340 ; free physical = 1152 ; free virtual = 2929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -135,10 +157,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for BTN_LED_i/btn_to_led_clk_0. (cons
 Applied set_property KEEP_HIERARCHY = SOFT for BTN_LED_i/clk_wiz. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for BTN_LED_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2250.059 ; gain = 456.910
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3257.426 ; gain = 344.340 ; free physical = 1152 ; free virtual = 2929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2250.059 ; gain = 456.910
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3257.426 ; gain = 344.340 ; free physical = 1152 ; free virtual = 2929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -161,25 +183,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2250.059 ; gain = 456.910
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3257.426 ; gain = 344.340 ; free physical = 1141 ; free virtual = 2925
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2768.543 ; gain = 975.395
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3690.559 ; gain = 777.473 ; free physical = 563 ; free virtual = 2369
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2768.543 ; gain = 975.395
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3690.559 ; gain = 777.473 ; free physical = 563 ; free virtual = 2369
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2787.664 ; gain = 994.516
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3709.590 ; gain = 796.504 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -197,37 +219,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.527 ; gain = 802.441 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.527 ; gain = 802.441 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.527 ; gain = 802.441 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.527 ; gain = 802.441 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.527 ; gain = 802.441 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.527 ; gain = 802.441 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -255,27 +277,27 @@ Report Cell Usage:
 |6     |OBUF                      |     2|
 +------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.527 ; gain = 802.441 ; free physical = 554 ; free virtual = 2361
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 2793.406 ; gain = 963.734
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2793.406 ; gain = 1000.258
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3715.527 ; gain = 752.680 ; free physical = 595 ; free virtual = 2402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 3715.535 ; gain = 802.441 ; free physical = 595 ; free virtual = 2402
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2805.445 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3731.465 ; gain = 0.000 ; free physical = 675 ; free virtual = 2483
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2831.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3744.340 ; gain = 0.000 ; free physical = 614 ; free virtual = 2423
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
 
-Synth Design complete, checksum: 774b9c7c
+Synth Design complete, checksum: aad4bf99
 INFO: [Common 17-83] Releasing license: Synthesis
-37 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+31 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2831.453 ; gain = 1199.004
-INFO: [Common 17-1381] The checkpoint 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/PL_BTN_LED/PL_BTN_LED.runs/synth_1/BTN_LED_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 3744.340 ; gain = 833.250 ; free physical = 808 ; free virtual = 2617
+INFO: [Common 17-1381] The checkpoint '/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/PL_BTN_LED/PL_BTN_LED.runs/synth_1/BTN_LED_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file BTN_LED_wrapper_utilization_synth.rpt -pb BTN_LED_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 15 23:21:26 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 17 01:45:24 2022...
