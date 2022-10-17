@@ -20,9 +20,11 @@ USB Keyboard
 ```
 With the following **software** stack:
 ```
-Vivado 2022.1    -> For the PL (Programmable Logic)
-Vitis 2022.1     -> For the PS (Programmable System)
-PetaLinux 2022.1 -> For writing the bitstream and all Vitis files. 
+Windows 10 -> For installing Ubuntu 2022.1 on Kria and hosting Ubuntu 2020.4.3 VM for development. 
+Ubuntu 2020.4.3
+  Vivado 2022.1    -> For the PL (Programmable Logic)
+  Vitis 2022.1     -> For the PS (Programmable System)
+  PetaLinux 2022.1 -> For writing the bitstream and all Vitis files. 
 ```
 With the following **brains**:
 ```
@@ -31,11 +33,11 @@ Aaron Jones
 Nick Summerville
 ```
 ## Getting Started
-* Download Vitis 2022.1, this will also install Vivado 2022.1
-* Install Ubuntu on the board
-  * [Instructions Here](./ubuntu.md)
-* Ensure the USB drivers are installed
-  * If not, the cable drivers can be found in the Xilinx install directory.
+* Create an Ubuntu Virtual Machine
+  * Full guide [here](./UbuntuVM.md))
+* Install Ubuntu on the Kria KV260
+  * [Instructions Here](./UbuntuKria.md)
+
 
 ## Kria KV260 
 Features
@@ -92,7 +94,7 @@ The Vision AI Starter Kit populates a good amount of these banks as shown in the
 These won't make sense though unless the pins are mapped somewhere else. An example of this could be looking at how the PMOD on the Vision AI Starter Kit Carrier Card is implemented. From the Hardware Schematic above: 
 ![PMOD](./Images/PMOD.PNG)    
 From looking at the PMOD schematic and how the SOM 240 pin bank is implemented, a custom XDC for this PMOD can be created.  
-To create it, first view the [XDC File](./XilinxKriaKV260SOM_Mappings.xdc) provided by Xilinx in the Carrier Card Design Guide above.   
+To create it, first view the [XDC File](./VivadoPrjs/ConstraintFiles/KriaK26_SOM.xdc) provided by Xilinx in the Carrier Card Design Guide above.   
 From the image of the PMOD schematic, it is shown that it uses the pins of HDA(11-14) for PMOD pins (1,3,5,7) and HDA(15-18) for PMOD pins (2,4,6,8).
 ```
 PMOD Pin Mapping to Vision AI Carrier Board
@@ -106,9 +108,9 @@ PMOD7 -> HDA14
 PMOD8 -> HDA18
 Rest are VCC and GND.
 ```
-The Xilinx provided [XDC File](./XilinxKriaKV260SOM_Mappings.xdc) has mappings from the HD* and HP* banks to actual pins on the PL/PS:   
+The Xilinx provided [XDC File](./VivadoPrjs/ConstraintFiles/KriaK26_SOM.xdc) has mappings from the HD* and HP* banks to actual pins on the PL/PS:   
 ![CarrierToSOM](./Images/RelationCarrierToSOM.PNG)   
-Using this XDC, an XDC that is made to [translate the I/O from the Vision AI Carrier board](./KV260_CarrierBoard.xdc) can be created.   
+Using this XDC, an XDC that is made to [translate the I/O from the Vision AI Carrier board](./VivadoPrjs/ConstraintFiles/KV260_CarrierBoard.xdc) can be created.   
 ![PMODXDC](./Images/PMODXDC.PNG)   
 The   
 ```
@@ -170,7 +172,7 @@ Now that the block diagram is completed, the diagram needs to be created into a 
 * Next, adding the constraint file.    
 ![addConstraint](./Images/editconstraints.PNG)    
 ![addConstrain2](./Images/addconstraint.PNG)   
-* Now that the file is created, add this information to the constraint file. The raw text can be found [here](./Tutorial/Tutorial.srcs/constrs_1/new/Tutorial.xdc)    
+* Now that the file is created, add this information to the constraint file. The raw text can be found [here](./VivadoPrjs/Tutorial/Tutorial.srcs/constrs_1/new/Tutorial.xdc)    
 ![tutorialxdc](./Images/TutorialXDC.PNG)    
 * Last thing to do is to click the Green Play button on the top, and run Synthesis then Implementation, then Generate the Bitstream. 
 

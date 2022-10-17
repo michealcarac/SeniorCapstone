@@ -1,12 +1,12 @@
 
 Ubuntu/IMG/iot-limerick-kria-classic-desktop-2204-x06-20220614-78.img.xz
 Ubuntu/IMG/iot-limerick-kria-classic-desktop-2204-x06-20220614-78.img/iot-limerick-kria-classic-desktop-2204-x06-20220614-78.img
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/bl31.elf
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/boot.scr
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/Image
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/u-boot.elf
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/sdk.sh
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/rootfs.tar.gz
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/rootfs.manifest
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/rootfs.ext4
-kv260_btn_pwm/Vitis/xilinx-zynqmp-common-v2022.1/README.txt
+VitisPrjs/xilinx-zynqmp-common-v2022.1/bl31.elf
+VitisPrjs/xilinx-zynqmp-common-v2022.1/boot.scr
+VitisPrjs/xilinx-zynqmp-common-v2022.1/Image
+VitisPrjs/xilinx-zynqmp-common-v2022.1/u-boot.elf
+VitisPrjs/xilinx-zynqmp-common-v2022.1/sdk.sh
+VitisPrjs/xilinx-zynqmp-common-v2022.1/rootfs.tar.gz
+VitisPrjs/xilinx-zynqmp-common-v2022.1/rootfs.manifest
+VitisPrjs/xilinx-zynqmp-common-v2022.1/rootfs.ext4
+VitisPrjs/xilinx-zynqmp-common-v2022.1/README.txt
