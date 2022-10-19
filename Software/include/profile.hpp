@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/18/2022 
+   Last Edited: 10/19/2022 
    Purpose: This file defines the Profile class
 */
 
