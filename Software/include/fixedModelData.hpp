@@ -25,7 +25,7 @@ struct FixedModelData {
     FixedModelData(string password, float threshold); 
 
     /* OVERLOAD */
-    friend ostream& operator<<(ostream& os, const FixedModelData& data); // overloads the << operator
+    friend ostream& operator<<(ostream& os, const FixedModelData& data); // overloads the << operator for the struct
 
     /* DESTRUCTOR */
     ~FixedModelData();

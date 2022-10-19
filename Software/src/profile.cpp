@@ -10,19 +10,23 @@
 /* CONSTRUCTORS */
 // Creates a Profile with default name of "UNNAMED"
 Profile::Profile() {
-    Profile("UNNAMED");
+    name = "UNNAMED";
+    data = FixedModelData();
+    type = Fixed;
 }
 
 // Creates a Profile with the given name, using a FixedText model
-Profile::Profile(const string name) {
-    Profile(name, ModelType::Fixed);
+Profile::Profile(string newName) {
+    name = newName;
+    data = FixedModelData();
+    type = Fixed;
 }
 
 // Creates a Profile with the given name and ModelType
-Profile::Profile(string name, ModelType type) {
-    name = name;
+Profile::Profile(string newName, ModelType newType) {
+    name = newName;
     data = FixedModelData();
-    type = type;
+    type = newType;
 }
 
 /* FUNCTIONS */
@@ -68,7 +72,7 @@ void Profile::setThreshold(const float newThreshold) { data.threshold = newThres
 
 // Returns an array of length NUM_WEIGHTS, whose contents are a copy of this Profile's FixedModelData.weights
 float* Profile::getWeights() {
-    float weights[NUM_WEIGHTS];
+    float *weights = new float[NUM_WEIGHTS];
     for(int i = 0; i < NUM_WEIGHTS; i++) {
         weights[i] = data.weights[i];
     }
@@ -93,6 +97,7 @@ ostream& operator<<(ostream& os, const Profile& profile) {
     os << "Name: " << profile.name << endl;
     os << "FixedModelData: " << profile.data << endl;
     os << "ModelType: " << profile.type << endl;
+    return os;
 }
 
 /* DESTRUCTOR */

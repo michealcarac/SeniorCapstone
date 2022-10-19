@@ -8,24 +8,28 @@
 #include "profile.hpp"
 #include <iostream>
 
-/* NAMESPACE */
-using std::cout;
-using std::endl;
-
 /* MAIN */
 // run this to test the functionality of the Profile class
 int main() {
+    cout << endl << "Start of profileTest" << endl << endl;
+
     Profile* p1 = new Profile(); // default constructor
     Profile* p2 = new Profile("Aaron"); // normal constructor
     Profile* p3 = new Profile("Micheal", Fixed); // defining a modelType
 
     // Test the << operator overload, each constructor
-    cout << p1 << endl; 
-    cout << p2 << endl;
-    cout << p3 << endl;
-
+    cout << "-------------------------------------------------" << endl;
+    cout << "Testing overloaded << for p1, p2, p3" << endl;
+    cout << *p1 << endl; 
+    cout << *p2 << endl;
+    cout << *p3 << endl;
+    cout << "-------------------------------------------------" << endl;
 
     // Exit
+    delete p1;
+    delete p2;
+    delete p3;
+
     cout << endl << "End of profileTest" << endl;
     return 0;
 }

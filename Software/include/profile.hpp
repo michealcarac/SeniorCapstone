@@ -8,16 +8,18 @@
 #define PROFILE_H
 
 /* DEFINES */
-#define FOLDER_DELIM std::filesystem::path::preferred_separator
+#define FOLDER_DELIM "/" //std::filesystem::path::preferred_separator
 
 /* INCLUDES */
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <filesystem>
 #include "modelType.hpp"
 #include "fixedModelData.hpp"
 
 /* NAMESPACES */
+using std::cout;
 using std::endl;
 using std::string;
 using std::ostream;
@@ -27,8 +29,8 @@ class Profile {
     public:
         /* CONSTRUCTORS */
         Profile(); // default constructor, sets name to "UNNAMED", using Fixed text
-        Profile(string name); // Creates a Profile with given name, using Fixed text
-        Profile(string name, ModelType type); // Creates a profile with the given name and ModelType
+        Profile(string newName); // Creates a Profile with given name, using Fixed text
+        Profile(string newName, ModelType newType); // Creates a profile with the given name and ModelType
 
         /* FUNCTIONS */
         void clearData(); // clear this profile's data
