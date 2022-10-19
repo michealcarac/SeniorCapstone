@@ -11,3 +11,5 @@ VitisPrjs/xilinx-zynqmp-common-v2022.1/rootfs.manifest
 VitisPrjs/xilinx-zynqmp-common-v2022.1/rootfs.ext4
 VitisPrjs/xilinx-zynqmp-common-v2022.1/README.txt
 Software/.vscode/settings.json
+Software/.DS_Store
+Software/src/.DS_Store

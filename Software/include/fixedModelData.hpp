@@ -12,15 +12,20 @@
 
 /* INCLUDES */
 #include <string>
+#include <iostream>
 
 /* NAMESPACE */
 using std::string;
+using std::ostream;
 
 struct FixedModelData {
     /* CONSTRUCTOR */ 
     FixedModelData(); // Defaults the password to "password"
     FixedModelData(string password); // Defaults the threshold to -1
     FixedModelData(string password, float threshold); 
+
+    /* OVERLOAD */
+    friend ostream& operator<<(ostream& os, const FixedModelData& data); // overloads the << operator
 
     /* DESTRUCTOR */
     ~FixedModelData();

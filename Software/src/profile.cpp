@@ -14,7 +14,7 @@ Profile::Profile() {
 }
 
 // Creates a Profile with the given name, using a FixedText model
-Profile::Profile(string name) {
+Profile::Profile(const string name) {
     Profile(name, ModelType::Fixed);
 }
 
@@ -36,25 +36,33 @@ void Profile::incrementNumTrainings() {
     data.numTrainings++;
 }
 
+// Writes this profile to [filename].txt file using a standard format
+void Profile::writeProfile(const string filepath, const string filename) {
+    ofstream outfile;
+    outfile.open(filepath + FOLDER_DELIM + filename, std::ios::out);
+    outfile << this; // overloaded operator handles the formatt
+    outfile.close();
+}
+
 /* MUTATORS */
 
 // Updates the data in this Profile with the provided FixedModelData
-void Profile::setData(FixedModelData newData) { data = newData; }
+void Profile::setData(const FixedModelData newData) { data = newData; }
 
 // Updates the password in this Profile's FixedModelData
-void Profile::setPassword(string newPassword) { data.password = newPassword; }
+void Profile::setPassword(const string newPassword) { data.password = newPassword; }
 
 // Updates the weights in this Profile's FixedModelData
-void Profile::setWeights(float newWeights[]) { 
+void Profile::setWeights(const float newWeights[]) { 
     for(int i = 0; i < NUM_WEIGHTS; i++) {
         data.weights[i] = newWeights[i]; 
     }
 }
 // Updates the numTrainings in this Profile's FixedModelData
-void Profile::setNumTrainings(int newTrainings) { data.numTrainings = newTrainings; }
+void Profile::setNumTrainings(const int newTrainings) { data.numTrainings = newTrainings; }
 
 // Updates the threshold in this Profile's FixedModelData
-void Profile::setThreshold(float newThreshold) { data.threshold = newThreshold; }
+void Profile::setThreshold(const float newThreshold) { data.threshold = newThreshold; }
 
 /* ACCESSORS */
 
@@ -76,7 +84,18 @@ int Profile::getNumTrainings() { return data.numTrainings; }
 // Returns the threshold for this profile, as held in FixedModelData
 float Profile::getThreshold() { return data.threshold; }
 
-// Destructor
+// Returns the name of this profile
+string Profile::getName() { return name; }
+
+/* OVERLOADS */
+// Overloads the << operator (essentially toString())
+ostream& operator<<(ostream& os, const Profile& profile) {
+    os << "Name: " << profile.name << endl;
+    os << "FixedModelData: " << profile.data << endl;
+    os << "ModelType: " << profile.type << endl;
+}
+
+/* DESTRUCTOR */
 Profile::~Profile() {
     // intentionally empty
 }

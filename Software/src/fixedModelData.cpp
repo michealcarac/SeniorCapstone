@@ -22,6 +22,11 @@ FixedModelData::FixedModelData(string password, float threshold) {
     numTrainings = 0;
 }
 
+// Overloads the << operator (essentially toString())
+ostream& operator<<(ostream& os, const FixedModelData& data) {
+    os << "{" << data.password << ", " << data.weights << ", " << data.numTrainings << ", " << data.threshold << "}";
+}
+
 /* DESTRUCTOR */
 FixedModelData::~FixedModelData() {
     if(weights) delete[] weights;
