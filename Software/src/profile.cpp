@@ -30,8 +30,13 @@ Profile::Profile(string newName, ModelType newType) {
 }
 
 /* FUNCTIONS */
-// Resets the FixedModelData struct, maintaining the current password
+// Resets the FixedModelData struct
 void Profile::clearData() {
+    data = FixedModelData();
+}
+
+// Resets the FixedModelData struct, maintaining the current password
+void Profile::resetData() {
     data = FixedModelData(data.password);
 }
 
@@ -40,11 +45,11 @@ void Profile::incrementNumTrainings() {
     data.numTrainings++;
 }
 
-// Writes this profile to [filename].txt file using a standard format
+// Writes this profile to [filename] file using a standard format
 void Profile::writeProfile(const string filepath, const string filename) {
     ofstream outfile;
     outfile.open(filepath + FOLDER_DELIM + filename, std::ios::out);
-    outfile << this; // overloaded operator handles the formatt
+    outfile << *this; // overloaded operator handles the formatt
     outfile.close();
 }
 
@@ -69,6 +74,9 @@ void Profile::setNumTrainings(const int newTrainings) { data.numTrainings = newT
 void Profile::setThreshold(const float newThreshold) { data.threshold = newThreshold; }
 
 /* ACCESSORS */
+
+// Returns this profile's data struct
+FixedModelData Profile::getData() { return data; }
 
 // Returns an array of length NUM_WEIGHTS, whose contents are a copy of this Profile's FixedModelData.weights
 float* Profile::getWeights() {

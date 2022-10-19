@@ -21,8 +21,8 @@ using std::ostream;
 struct FixedModelData {
     /* CONSTRUCTOR */ 
     FixedModelData(); // Defaults the password to "password"
-    FixedModelData(string password); // Defaults the threshold to -1
-    FixedModelData(string password, float threshold); 
+    FixedModelData(string newPassword); // Defaults the threshold to -1
+    FixedModelData(string newPassword, float newThreshold); 
 
     /* OVERLOAD */
     friend ostream& operator<<(ostream& os, const FixedModelData& data); // overloads the << operator for the struct

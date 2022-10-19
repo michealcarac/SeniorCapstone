@@ -17,8 +17,8 @@ FixedModelData::FixedModelData() {
     }
 }
 
-FixedModelData::FixedModelData(string password) {
-    password = "password";
+FixedModelData::FixedModelData(string newPassword) {
+    password = newPassword;
     threshold = -1;
     numTrainings = 0;
     for(int i = 0; i < NUM_WEIGHTS; i++) {
@@ -26,9 +26,9 @@ FixedModelData::FixedModelData(string password) {
     }
 }
 
-FixedModelData::FixedModelData(string password, float threshold) {
-    password = password;
-    threshold = threshold;
+FixedModelData::FixedModelData(string newPassword, float newThreshold) {
+    password = newPassword;
+    threshold = newThreshold;
     numTrainings = 0;
     for(int i = 0; i < NUM_WEIGHTS; i++) {
         weights[i] = 0;

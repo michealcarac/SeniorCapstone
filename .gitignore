@@ -15,3 +15,4 @@ Software/.DS_Store
 Software/src/.DS_Store
 *.out
 *.o
+Software/testOutput/profileWriteTest.txt
