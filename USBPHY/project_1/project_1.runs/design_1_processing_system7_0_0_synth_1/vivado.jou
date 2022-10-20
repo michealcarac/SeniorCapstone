@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 19 20:10:15 2022
+# Process ID: 4008
+# Current directory: C:/Users/nicks/Documents/SeniorCapstone/USBPHY/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log design_1_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processing_system7_0_0.tcl
+# Log file: C:/Users/nicks/Documents/SeniorCapstone/USBPHY/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.vds
+# Journal file: C:/Users/nicks/Documents/SeniorCapstone/USBPHY/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-OJ12GV1, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 32, Host memory: 34227 MB
+#-----------------------------------------------------------
+source design_1_processing_system7_0_0.tcl -notrace
