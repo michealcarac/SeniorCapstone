@@ -8,16 +8,19 @@
 #define PROFILE_H
 
 /* DEFINES */
-#define FOLDER_DELIM std::filesystem::path::preferred_separator
+#define FOLDER_DELIM "/" //std::filesystem::path::preferred_separator
 
 /* INCLUDES */
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <filesystem>
+#include <sys/stat.h>
 #include "modelType.hpp"
 #include "fixedModelData.hpp"
 
 /* NAMESPACES */
+using std::cout;
 using std::endl;
 using std::string;
 using std::ostream;
@@ -27,11 +30,12 @@ class Profile {
     public:
         /* CONSTRUCTORS */
         Profile(); // default constructor, sets name to "UNNAMED", using Fixed text
-        Profile(string name); // Creates a Profile with given name, using Fixed text
-        Profile(string name, ModelType type); // Creates a profile with the given name and ModelType
+        Profile(string newName); // Creates a Profile with given name, using Fixed text
+        Profile(string newName, ModelType newType); // Creates a profile with the given name and ModelType
 
         /* FUNCTIONS */
         void clearData(); // clear this profile's data
+        void resetData(); // clear this profile's data, keeping the old password
         void incrementNumTrainings(); // increment the number of trainings for this profile
         void writeProfile(const string filepath, const string filename); // writes this profile to a .txt file
 
@@ -43,6 +47,7 @@ class Profile {
         void setThreshold(const float newThreshold); // set a new threshold for this profile 
 
         /* ACCESSORS */
+        FixedModelData getData(); // get the FixedModelData struct for this profile
         float* getWeights(); // get the weights for this profile
         string getPassword(); // get the password for this model
         int getNumTrainings(); // get the number of trainings for this profile

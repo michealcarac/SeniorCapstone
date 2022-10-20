@@ -9,25 +9,48 @@
 
 /* CONSTRUCTOR */
 FixedModelData::FixedModelData() {
-    FixedModelData("password");
-}
-
-FixedModelData::FixedModelData(string password) {
-    FixedModelData(password, -1);
-}
-
-FixedModelData::FixedModelData(string password, float threshold) {
-    password = password;
-    threshold = threshold;
+    password = "password";
+    threshold = -1;
     numTrainings = 0;
+    for(int i = 0; i < NUM_WEIGHTS; i++) {
+        weights[i] = 0;
+    }
+}
+
+FixedModelData::FixedModelData(string newPassword) {
+    password = newPassword;
+    threshold = -1;
+    numTrainings = 0;
+    for(int i = 0; i < NUM_WEIGHTS; i++) {
+        weights[i] = 0;
+    }
+}
+
+FixedModelData::FixedModelData(string newPassword, float newThreshold) {
+    password = newPassword;
+    threshold = newThreshold;
+    numTrainings = 0;
+    for(int i = 0; i < NUM_WEIGHTS; i++) {
+        weights[i] = 0;
+    }
 }
 
 // Overloads the << operator (essentially toString())
 ostream& operator<<(ostream& os, const FixedModelData& data) {
-    os << "{" << data.password << ", " << data.weights << ", " << data.numTrainings << ", " << data.threshold << "}";
+    os << "{" << data.password; // output password
+
+    os << ", ["; // ouput weights array
+    for(int i = 0; i < NUM_WEIGHTS - 1; i++) {
+        os << data.weights[i] << ", ";
+    }
+    os << data.weights[NUM_WEIGHTS - 1] << "]";
+
+    os<< ", " << data.numTrainings; // output training count
+    os<< ", " << data.threshold << "}"; // output threshold 
+    return os;
 }
 
 /* DESTRUCTOR */
 FixedModelData::~FixedModelData() {
-    if(weights) delete[] weights;
+    // intentionally empty
 }

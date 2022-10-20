@@ -10,24 +10,33 @@
 /* CONSTRUCTORS */
 // Creates a Profile with default name of "UNNAMED"
 Profile::Profile() {
-    Profile("UNNAMED");
+    name = "UNNAMED";
+    data = FixedModelData();
+    type = Fixed;
 }
 
 // Creates a Profile with the given name, using a FixedText model
-Profile::Profile(const string name) {
-    Profile(name, ModelType::Fixed);
+Profile::Profile(string newName) {
+    name = newName;
+    data = FixedModelData();
+    type = Fixed;
 }
 
 // Creates a Profile with the given name and ModelType
-Profile::Profile(string name, ModelType type) {
-    name = name;
+Profile::Profile(string newName, ModelType newType) {
+    name = newName;
     data = FixedModelData();
-    type = type;
+    type = newType;
 }
 
 /* FUNCTIONS */
-// Resets the FixedModelData struct, maintaining the current password
+// Resets the FixedModelData struct
 void Profile::clearData() {
+    data = FixedModelData();
+}
+
+// Resets the FixedModelData struct, maintaining the current password
+void Profile::resetData() {
     data = FixedModelData(data.password);
 }
 
@@ -36,11 +45,11 @@ void Profile::incrementNumTrainings() {
     data.numTrainings++;
 }
 
-// Writes this profile to [filename].txt file using a standard format
+// Writes this profile to [filename] file using a standard format
 void Profile::writeProfile(const string filepath, const string filename) {
     ofstream outfile;
     outfile.open(filepath + FOLDER_DELIM + filename, std::ios::out);
-    outfile << this; // overloaded operator handles the formatt
+    outfile << *this; // overloaded operator handles the formatt
     outfile.close();
 }
 
@@ -66,9 +75,12 @@ void Profile::setThreshold(const float newThreshold) { data.threshold = newThres
 
 /* ACCESSORS */
 
+// Returns this profile's data struct
+FixedModelData Profile::getData() { return data; }
+
 // Returns an array of length NUM_WEIGHTS, whose contents are a copy of this Profile's FixedModelData.weights
 float* Profile::getWeights() {
-    float weights[NUM_WEIGHTS];
+    float *weights = new float[NUM_WEIGHTS];
     for(int i = 0; i < NUM_WEIGHTS; i++) {
         weights[i] = data.weights[i];
     }
@@ -93,6 +105,7 @@ ostream& operator<<(ostream& os, const Profile& profile) {
     os << "Name: " << profile.name << endl;
     os << "FixedModelData: " << profile.data << endl;
     os << "ModelType: " << profile.type << endl;
+    return os;
 }
 
 /* DESTRUCTOR */

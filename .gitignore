@@ -13,3 +13,6 @@ VitisPrjs/xilinx-zynqmp-common-v2022.1/README.txt
 Software/.vscode/settings.json
 Software/.DS_Store
 Software/src/.DS_Store
+*.out
+*.o
+Software/testOutput/profileWriteTest.txt
