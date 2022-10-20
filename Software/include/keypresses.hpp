@@ -7,12 +7,20 @@
 #ifndef KEYPRESSES_H
 #define KEYPRESSES_H
 
+/* DEFINES */
+#define DEFAULT_SIZE 20
+
 /* INCLUDES */
 #include <vector>
+#include <iostream>
 #include "keypress.hpp"
 
 /* NAMESPACE */
+using std::sort;
+using std::endl;
 using std::vector;
+using std::ostream;
+using std::iterator;
 
 class Keypresses {
     public:
@@ -21,14 +29,20 @@ class Keypresses {
         Keypresses(int initLength); // initializes vectors to given lengths 
     
         /* FUNCTIONS */
+        vector<Keypress> getDownstrokes(); // returns a vector of all downstrokes 
+        vector<Keypress> getUpstrokes(); // returns a vector of all upstrokes
         float mean(); // returns the average of the DU, UD, DD, UU times
+
+        /* OVERLOADS */
+        friend ostream& operator<<(ostream& os, const Keypresses& presses); // overloads <<
 
         /* ACCESSORS */
         vector<Keypress> getKeystrokes(); // return a copy of the keystrokes vector
 
         /* MUTATORS */
-        void clearData(); // clears all vectors
-        void appendKeypress(Keypress keypress); // appends the keypress to keystrokes
+        void clearData(); // clears all vectors, returning them to DEFAULT_SIZE
+        void clearData(int newSize); // clears all vectors, returning them to newSize
+        void appendKeypress(Keypress& keypress); // appends the keypress to keystrokes
 
     private:
         /* FUNCTIONS */
@@ -36,7 +50,7 @@ class Keypresses {
         void calcUD(); // calculate DU times from keystrokes into ud
         void calcDD(); // calculate DU times from keystrokes into dd
         void calcUU(); // calculate DU times from keystrokes into uu
-    
+
         /* MEMBERS */
         vector<Keypress> keystrokes; // collection of keystrokes
         vector<float> du; // collection of down-up times
