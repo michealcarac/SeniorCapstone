@@ -85,7 +85,30 @@ int main() {
     }
     cout << endl;
 
+    // test DD
+    cout << "Testing getDD() and calcDD():" << endl;
+    vector<float> ddTimes = presses->getDD();
+    for(int i = 0; i < ddTimes.size(); i++) {
+        cout << "   " << ddTimes.at(i) << endl;
+    }
+    cout << endl;
+
+    // test UU
+    cout << "Testing getUU() and calcUU():" << endl;
+    vector<float> uuTimes = presses->getUU();
+    for(int i = 0; i < uuTimes.size(); i++) {
+        cout << "   " << uuTimes.at(i) << endl;
+    }
+    cout << endl;
+
     // test mean
+    cout << "Testing mean() [and all calcXX functions]" << endl;
+    vector<float> averages = presses->mean();
+    cout << "   DU: " << averages.at(0) << endl;
+    cout << "   UD: " << averages.at(1) << endl;
+    cout << "   DD: " << averages.at(2) << endl;
+    cout << "   UU: " << averages.at(3) << endl;
+    cout << endl;
 
     // test clearData
     cout << "Testing clearData():" << endl;

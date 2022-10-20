@@ -71,7 +71,22 @@ vector<Keypress> Keypresses::getUpstrokes() {
     return upstrokes;
 }
 
-// float Keypresses::mean() {}
+// Returns averages as: [DU, UD, DD, UU] in vector form
+vector<float> Keypresses::mean() {
+    vector<float> averages;
+
+    calcDU(); // calculate vectors
+    calcUD();
+    calcDD();
+    calcUU();
+
+    averages.push_back(accumulate(du.begin(), du.end(), 0.0f) / du.size()); // calculate averages 
+    averages.push_back(accumulate(ud.begin(), ud.end(), 0.0f) / ud.size());
+    averages.push_back(accumulate(dd.begin(), dd.end(), 0.0f) / dd.size());
+    averages.push_back(accumulate(uu.begin(), uu.end(), 0.0f) / uu.size());
+
+    return averages;
+}
 
 /* OVERLOAD */
 // Overloads the << operator (essentially toString())
@@ -100,6 +115,20 @@ vector<float> Keypresses::getDU() {
 vector<float> Keypresses::getUD() {
     calcUD(); // get the UD times 
     vector<float> toReturn = ud; // ensures copy
+    return toReturn;
+}
+
+// Returns a copy of the dd vector
+vector<float> Keypresses::getDD() {
+    calcDD(); // get the DD times 
+    vector<float> toReturn = dd; // ensures copy
+    return toReturn;
+}
+
+// Returns a copy of the uu vector
+vector<float> Keypresses::getUU() {
+    calcUU(); // get the UD times 
+    vector<float> toReturn = uu; // ensures copy
     return toReturn;
 }
 
@@ -140,6 +169,8 @@ void Keypresses::appendKeypress(Keypress& keypress) {
 /* PRIVATE FUNCTIONS */
 // calculates down-up times between each element of keystrokes
 void Keypresses::calcDU() {
+    du.clear();
+
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
@@ -162,6 +193,8 @@ void Keypresses::calcDU() {
 
 // calculates up-down times between each element of keystrokes
 void Keypresses::calcUD() {
+    ud.clear();
+
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
@@ -182,6 +215,34 @@ void Keypresses::calcUD() {
     }
 }
 
-//calcUD
-//calcUU
-//calcDD
+// calculates down-down times between each element of keystrokes
+void Keypresses::calcDD() {
+    dd.clear();
+
+    vector<Keypress> downstrokes = getDownstrokes();
+    sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
+
+    if(downstrokes.size() < 2) return; // only execute if there are enough downstrokes to count 
+
+    dd.reserve(downstrokes.size() - 1);
+
+    for(int i = 0; i < downstrokes.size() - 1; i++) {
+        dd.push_back(abs(downstrokes.at(i).time - downstrokes.at(i + 1).time));
+    }
+}
+
+// calculates up-up times between each element of keystrokes
+void Keypresses::calcUU() {
+    uu.clear();
+
+    vector<Keypress> upstrokes = getUpstrokes();
+    sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
+
+    if(upstrokes.size() < 2) return; // only execute if there are enough downstrokes to count 
+
+    uu.reserve(upstrokes.size() - 1);
+
+    for(int i = 0; i < upstrokes.size() - 1; i++) {
+        uu.push_back(abs(upstrokes.at(i).time - upstrokes.at(i + 1).time));
+    }
+}

@@ -12,6 +12,7 @@
 
 /* INCLUDES */
 #include <vector>
+#include <numeric>
 #include <iostream>
 #include "keypress.hpp"
 
@@ -21,6 +22,7 @@ using std::endl;
 using std::vector;
 using std::ostream;
 using std::iterator;
+using std::accumulate;
 
 class Keypresses {
     public:
@@ -31,7 +33,7 @@ class Keypresses {
         /* FUNCTIONS */
         vector<Keypress> getDownstrokes(); // returns a vector of all downstrokes 
         vector<Keypress> getUpstrokes(); // returns a vector of all upstrokes
-        float mean(); // returns the average of the DU, UD, DD, UU times
+        vector<float> mean(); // returns the average of the DU, UD, DD, UU times
 
         /* OVERLOADS */
         friend ostream& operator<<(ostream& os, const Keypresses& presses); // overloads <<
@@ -40,6 +42,8 @@ class Keypresses {
         vector<Keypress> getKeystrokes(); // return a copy of the keystrokes vector
         vector<float> getDU(); // returns the down-up times
         vector<float> getUD(); // returns the up-down times
+        vector<float> getDD(); // returns the up-down times
+        vector<float> getUU(); // returns the up-down times
 
         /* MUTATORS */
         void clearData(); // clears all vectors, returning them to DEFAULT_SIZE
