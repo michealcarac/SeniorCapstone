@@ -25,9 +25,9 @@ int main() {
 
     // test sortByTime()
     cout << "Testing sortByTime" << endl;
-    cout << "k1 is before k2: " << Keypress::sortByTime(*k1, *k2) << endl;
-    cout << "k2 is before k1: " << Keypress::sortByTime(*k2, *k1) << endl;
-    cout << "k1 is before k1: " << Keypress::sortByTime(*k1, *k1) << endl << endl;
+    cout << "k1 is after k2: " << Keypress::sortByTime(*k1, *k2) << endl;
+    cout << "k2 is after k1: " << Keypress::sortByTime(*k2, *k1) << endl;
+    cout << "k1 is after k1: " << Keypress::sortByTime(*k1, *k1) << endl << endl;
 
     // test sortByDirection
     cout << "Testing sortByDirection" << endl;

@@ -89,6 +89,20 @@ vector<Keypress> Keypresses::getKeystrokes() {
     return toReturn;
 }
 
+// Returns a copy of the du vector
+vector<float> Keypresses::getDU() {
+    calcDU(); // get the DU times 
+    vector<float> toReturn = du; // ensures copy
+    return toReturn;
+}
+
+// Returns a copy of the ud vector
+vector<float> Keypresses::getUD() {
+    calcUD(); // get the UD times 
+    vector<float> toReturn = ud; // ensures copy
+    return toReturn;
+}
+
 /* MUTATORS */
 // clears all vectors in this, returning the vectors to DEFAULT_SIZE
 void Keypresses::clearData() {
@@ -127,6 +141,45 @@ void Keypresses::appendKeypress(Keypress& keypress) {
 // calculates down-up times between each element of keystrokes
 void Keypresses::calcDU() {
     vector<Keypress> downstrokes = getDownstrokes();
+    sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
+
+    vector<Keypress> upstrokes = getUpstrokes();
+    sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
+
+    for(int j = 0; j < downstrokes.size(); j++) { 
+        int i;
+        
+        for(i = 0; i < upstrokes.size(); i++) { // get the closest upstroke to the current downstroke
+            if(downstrokes.at(j).time < upstrokes.at(i).time) break;
+        }
+
+        if(i != upstrokes.size()) { // if an upstroke was found 
+            du.push_back(abs(downstrokes.at(j).time - upstrokes.at(i).time)); // get the time
+            upstrokes.erase(upstrokes.begin() + i); // remove the upstroke we just calculated with 
+        }
+    }
+}
+
+// calculates up-down times between each element of keystrokes
+void Keypresses::calcUD() {
+    vector<Keypress> downstrokes = getDownstrokes();
+    sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
+
+    vector<Keypress> upstrokes = getUpstrokes();
+    sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
+
+    for(int j = 0; j < upstrokes.size(); j++) { 
+        int i;
+        
+        for(i = 0; i < downstrokes.size(); i++) { // get the closest upstroke to the current downstroke
+            if(upstrokes.at(j).time < downstrokes.at(i).time) break;
+        }
+
+        if(i != downstrokes.size()) { // if a downstroke was found
+            ud.push_back(abs(upstrokes.at(j).time - downstrokes.at(i).time)); // get the time
+            downstrokes.erase(downstrokes.begin() + i); // remove the upstroke we just calculated with 
+        }
+    }
 }
 
 //calcUD

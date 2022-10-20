@@ -34,9 +34,11 @@ int main() {
     presses->appendKeypress(*keypress);
     keypress = new Keypress(0.6, false, 'c'); // downstroke of c
     presses->appendKeypress(*keypress);
-    keypress = new Keypress(0.7, true, 'b'); // upstroke of c
+    keypress = new Keypress(0.8, true, 'b'); // upstroke of c
     presses->appendKeypress(*keypress);
-    keypress = new Keypress(0.9, true, 'c'); // upstroke of c
+    keypress = new Keypress(1.1, true, 'c'); // upstroke of c
+    presses->appendKeypress(*keypress);
+    keypress = new Keypress(1.3, false, 'd'); // downstroke of d
     presses->appendKeypress(*keypress);
 
     cout << "After adding keystrokes: " << endl;
@@ -64,6 +66,22 @@ int main() {
     vector<Keypress> upstrokes = presses->getUpstrokes();
     for(int i = 0; i < upstrokes.size(); i++) {
         cout << "   " << upstrokes.at(i) << endl;
+    }
+    cout << endl;
+
+    // test DU
+    cout << "Testing getDU() and calcDU():" << endl;
+    vector<float> duTimes = presses->getDU();
+    for(int i = 0; i < duTimes.size(); i++) {
+        cout << "   " << duTimes.at(i) << endl;
+    }
+    cout << endl;
+
+    // test UD
+    cout << "Testing getUD() and calcUD():" << endl;
+    vector<float> udTimes = presses->getUD();
+    for(int i = 0; i < udTimes.size(); i++) {
+        cout << "   " << udTimes.at(i) << endl;
     }
     cout << endl;
 

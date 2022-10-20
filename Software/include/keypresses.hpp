@@ -38,6 +38,8 @@ class Keypresses {
 
         /* ACCESSORS */
         vector<Keypress> getKeystrokes(); // return a copy of the keystrokes vector
+        vector<float> getDU(); // returns the down-up times
+        vector<float> getUD(); // returns the up-down times
 
         /* MUTATORS */
         void clearData(); // clears all vectors, returning them to DEFAULT_SIZE
