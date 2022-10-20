@@ -3,7 +3,7 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories profileTest.out
+all: directories profileTest.out profileReadTest.out
 
 # Flags, compiler, etc.
 CPPC = g++
@@ -14,6 +14,12 @@ BUILDDIR = ./build
 BINDIR = ./bin
 
 # Create the application
+profileReadTest.out: profileReadTest.o profile.o fixedModelData.o
+	$(CPPC) -o ./bin/profileReadTest.out ./build/profileReadTest.o ./build/profile.o ./build/fixedModelData.o
+
+profileReadTest.o: profileReadTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/profileReadTest.o ./*/profileReadTest.cpp
+
 profileTest.out: profileTest.o profile.o fixedModelData.o
 	$(CPPC) -o ./bin/profileTest.out ./build/profileTest.o ./build/profile.o ./build/fixedModelData.o
 

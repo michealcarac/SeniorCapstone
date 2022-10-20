@@ -15,6 +15,8 @@
 #include <iostream>
 
 /* NAMESPACE */
+using std::cerr;
+using std::endl;
 using std::string;
 using std::ostream;
 
@@ -23,9 +25,13 @@ struct FixedModelData {
     FixedModelData(); // Defaults the password to "password"
     FixedModelData(string newPassword); // Defaults the threshold to -1
     FixedModelData(string newPassword, float newThreshold); 
+    FixedModelData(string newPassword, float newWeights[], int newTrainingNum, float newThreshold); // used for recreating a FixedModelData strcut from a file 
 
     /* OVERLOAD */
     friend ostream& operator<<(ostream& os, const FixedModelData& data); // overloads the << operator for the struct
+
+    /* FUNCTIONS */
+    static FixedModelData* parseFixedModelData(string dataString);
 
     /* DESTRUCTOR */
     ~FixedModelData();
