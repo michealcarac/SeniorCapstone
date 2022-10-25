@@ -21,10 +21,13 @@
 
 /* NAMESPACES */
 using std::cout;
+using std::cerr;
 using std::endl;
 using std::string;
 using std::ostream;
+using std::getline;
 using std::ofstream;
+using std::ifstream;
 
 class Profile {
     public:
@@ -32,12 +35,14 @@ class Profile {
         Profile(); // default constructor, sets name to "UNNAMED", using Fixed text
         Profile(string newName); // Creates a Profile with given name, using Fixed text
         Profile(string newName, ModelType newType); // Creates a profile with the given name and ModelType
+        Profile(string newName, ModelType newType, FixedModelData newData); // creates a profile with specified options
 
         /* FUNCTIONS */
         void clearData(); // clear this profile's data
         void resetData(); // clear this profile's data, keeping the old password
         void incrementNumTrainings(); // increment the number of trainings for this profile
         void writeProfile(const string filepath, const string filename); // writes this profile to a .txt file
+        static Profile* readProfile(string filepath, string filename);
 
         /* MUTATORS */
         void setData(const FixedModelData newData);  // update the data held in this profile

@@ -3,22 +3,58 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories profileTest.out
+all: directories profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
 CPPC = g++
 CPPFLAGS = -I ./include
+LDFLAGS = -g -L/usr/X11/lib -lX11
 
 # Directory locations
 BUILDDIR = ./build
 BINDIR = ./bin
 
-# Create the application
+# Create the keyboardTest
+keyboardTest.out: keyboardTest.o keypresses.o keypress.o
+	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o $(LDFLAGS)
+
+keyboardTest.o: keyboardTest.cpp
+	$(CPPC) $(CPPFLAGS) $(LDFLAGS) -g -L/usr/X11/lib -lX11 -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
+
+# Create the keypressesTest
+keypressesTest.out: keypressesTest.o keypresses.o keypress.o
+	$(CPPC) -o ./bin/keypressesTest.out ./build/keypressesTest.o ./build/keypresses.o ./build/keypress.o
+
+keypressesTest.o: keypressesTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keypressesTest.o ./*/keypressesTest.cpp
+
+# Create keypressTest
+keypressTest.out: keypressTest.o keypress.o
+	$(CPPC) -o ./bin/keypressTest.out ./build/keypressTest.o ./build/keypress.o
+
+keypressTest.o: keypressTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keypressTest.o ./*/keypressTest.cpp
+
+# Create profileReadTest
+profileReadTest.out: profileReadTest.o profile.o fixedModelData.o
+	$(CPPC) -o ./bin/profileReadTest.out ./build/profileReadTest.o ./build/profile.o ./build/fixedModelData.o
+
+profileReadTest.o: profileReadTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/profileReadTest.o ./*/profileReadTest.cpp
+
+# Create profileTest
 profileTest.out: profileTest.o profile.o fixedModelData.o
 	$(CPPC) -o ./bin/profileTest.out ./build/profileTest.o ./build/profile.o ./build/fixedModelData.o
 
 profileTest.o: profileTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profileTest.o ./*/profileTest.cpp
+
+# Create components
+keypresses.o: keypresses.cpp keypresses.hpp	
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keypresses.o ./*/keypresses.cpp
+
+keypress.o: keypress.cpp keypress.hpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keypress.o ./*/keypress.cpp
 
 profile.o: profile.cpp profile.hpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profile.o ./*/profile.cpp

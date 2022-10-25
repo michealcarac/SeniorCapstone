@@ -29,6 +29,13 @@ Profile::Profile(string newName, ModelType newType) {
     type = newType;
 }
 
+// Creates a profile will all specified options
+Profile::Profile(string newName, ModelType newType, FixedModelData newData) {
+    name = newName;
+    data = newData;
+    type = newType;
+}
+
 /* FUNCTIONS */
 // Resets the FixedModelData struct
 void Profile::clearData() {
@@ -51,6 +58,37 @@ void Profile::writeProfile(const string filepath, const string filename) {
     outfile.open(filepath + FOLDER_DELIM + filename, std::ios::out);
     outfile << *this; // overloaded operator handles the formatt
     outfile.close();
+}
+
+// Reads a profile from the file at [filepath]/[filename]
+Profile* Profile::readProfile(string filepath, string filename) {
+    ifstream infile;
+    infile.open(filepath + FOLDER_DELIM + filename, std::ios::in);
+
+    if (!infile.is_open()) {
+        cerr << "readProfile() failed to open the file at " << filepath << FOLDER_DELIM << filename;
+    }
+
+    string fromFile, name, tmp;
+    FixedModelData data;
+    ModelType type;
+
+    while(getline(infile, fromFile)) {
+        // cout << "Read: " << fromFile << endl;
+        if       (fromFile.find("Name") == 0) {
+            name = fromFile.substr(6, fromFile.length() - 6);
+        } else if(fromFile.find("FixedModelData") == 0) {
+            int startPos = fromFile.find("{");
+            tmp = fromFile.substr(startPos, fromFile.length() - startPos);
+            data = *FixedModelData::parseFixedModelData(tmp);
+        } else if (fromFile.find("ModelType") == 0) {
+            type = ModelType(stoi(fromFile.substr(fromFile.find(" ") + 1)));
+        }
+    }
+
+    infile.close();
+
+    return new Profile(name, type, data);
 }
 
 /* MUTATORS */
