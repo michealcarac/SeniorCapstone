@@ -17,3 +17,4 @@ Software/src/.DS_Store
 *.o
 Software/testOutput/profileWriteTest.txt
 *.json
+.DS_Store

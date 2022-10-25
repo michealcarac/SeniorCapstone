@@ -1,7 +1,7 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
    Last Edited: 10/20/2022 
-   Purpose: This file describes the Keypressese class.
+   Purpose: This file describes the Keypresses class.
 */
 
 #ifndef KEYPRESSES_H
