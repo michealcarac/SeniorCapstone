@@ -13,6 +13,13 @@ CPPFLAGS = -I ./include
 BUILDDIR = ./build
 BINDIR = ./bin
 
+# Create the keyboardTest
+keyboardTest.out: keyboardTest.o keypresses.o keypress.o
+	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o
+
+keyboardTest.o: keyboardTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
+
 # Create the keypressesTest
 keypressesTest.out: keypressesTest.o keypresses.o keypress.o
 	$(CPPC) -o ./bin/keypressesTest.out ./build/keypressesTest.o ./build/keypresses.o ./build/keypress.o
