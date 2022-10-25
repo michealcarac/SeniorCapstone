@@ -8,6 +8,7 @@ all: directories profileTest.out profileReadTest.out keypressTest.out keypresses
 # Flags, compiler, etc.
 CPPC = g++
 CPPFLAGS = -I ./include
+LDFLAGS = -g -L/usr/X11/lib -lX11
 
 # Directory locations
 BUILDDIR = ./build
@@ -15,10 +16,10 @@ BINDIR = ./bin
 
 # Create the keyboardTest
 keyboardTest.out: keyboardTest.o keypresses.o keypress.o
-	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o
+	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o $(LDFLAGS)
 
 keyboardTest.o: keyboardTest.cpp
-	$(CPPC) $(CPPFLAGS) -g -L/usr/X11/lib -lX11 -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
+	$(CPPC) $(CPPFLAGS) $(LDFLAGS) -g -L/usr/X11/lib -lX11 -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
 
 # Create the keypressesTest
 keypressesTest.out: keypressesTest.o keypresses.o keypress.o

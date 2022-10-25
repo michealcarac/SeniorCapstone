@@ -87,7 +87,7 @@ int main() {
     }
 
     // close out vars
-    delete keypresses;
+    delete presses;
 
     // close out gui
     XDestroyWindow(d, win);
