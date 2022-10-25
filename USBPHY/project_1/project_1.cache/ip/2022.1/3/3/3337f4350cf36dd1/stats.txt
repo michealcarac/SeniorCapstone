@@ -1,2 +1,0 @@
-NumberHits:1
-Timestamp: Thu Oct 20 00:10:11 UTC 2022
