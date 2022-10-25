@@ -14,6 +14,7 @@
 #include <vector>
 #include <numeric>
 #include <iostream>
+#include <algorithm>
 #include "keypress.hpp"
 
 /* NAMESPACE */

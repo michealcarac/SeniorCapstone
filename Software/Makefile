@@ -3,7 +3,7 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories profileTest.out profileReadTest.out keypressTest.out keypressesTest.out
+all: directories profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
 CPPC = g++
