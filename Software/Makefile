@@ -18,7 +18,7 @@ keyboardTest.out: keyboardTest.o keypresses.o keypress.o
 	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o
 
 keyboardTest.o: keyboardTest.cpp
-	$(CPPC) $(CPPFLAGS) -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
+	$(CPPC) $(CPPFLAGS) -g -L/usr/X11/lib -lX11 -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
 
 # Create the keypressesTest
 keypressesTest.out: keypressesTest.o keypresses.o keypress.o
