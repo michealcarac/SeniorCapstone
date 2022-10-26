@@ -38,6 +38,9 @@ class Keylogger {
         void setCurrentMode(Modes newMode); // sets the system to the requested mode
         void setCurrentProfile(int newProfile); // moves to the specified entry in the profiles vector
 
+        /* DESTRUCTOR */
+        ~Keylogger();
+
     private:
         Modes currentMode;
         int currentProfile;
