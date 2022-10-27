@@ -8,6 +8,7 @@
 /* INCLUDES */
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/Xos.h>
@@ -33,6 +34,8 @@ bool was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_ty
 }
 
 int main() {
+    sleep(1); // sleep for one second, allowing the keys to be released 
+
     Display *d = XOpenDisplay(NULL);
     Window win = XCreateSimpleWindow(d, RootWindow(d, 0), 1, 1, 400, 300, 0, BlackPixel(d, 0), BlackPixel(d, 0));
     XSelectInput(d, win, KeyPressMask | KeyReleaseMask | ClientMessage);
@@ -67,10 +70,10 @@ int main() {
                     // print output
                     cout << *presses << endl;
                     vector<float> averages = presses->mean();
-                    cout << "   DU: " << averages.at(0) << endl;
-                    cout << "   UD: " << averages.at(1) << endl;
-                    cout << "   DD: " << averages.at(2) << endl;
-                    cout << "   UU: " << averages.at(3) << endl;
+                    cout << "DU: " << averages.at(0) << endl;
+                    cout << "UD: " << averages.at(1) << endl;
+                    cout << "DD: " << averages.at(2) << endl;
+                    cout << "UU: " << averages.at(3) << endl;
                     cout << endl;
 
                     cout << "---------------------------------------------------" << endl;

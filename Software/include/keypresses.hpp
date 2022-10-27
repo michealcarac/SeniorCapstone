@@ -11,6 +11,7 @@
 #define DEFAULT_SIZE 20
 
 /* INCLUDES */
+#include <cmath>
 #include <vector>
 #include <numeric>
 #include <iostream>
@@ -18,6 +19,7 @@
 #include "keypress.hpp"
 
 /* NAMESPACE */
+using std::abs;
 using std::sort;
 using std::endl;
 using std::vector;
