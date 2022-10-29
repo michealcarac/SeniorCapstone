@@ -216,7 +216,7 @@ void Keypresses::calcDU() {
         int i;
         
         for(i = 0; i < upstrokes.size(); i++) { // get the closest upstroke to the current downstroke
-            if(downstrokes.at(j).time < upstrokes.at(i).time) break;
+            if(downstrokes.at(j).time < upstrokes.at(i).time && downstrokes.at(j).character != upstrokes.at(i).character) break;
         }
 
         if(i != upstrokes.size()) { // if an upstroke was found 
