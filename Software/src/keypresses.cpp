@@ -11,6 +11,7 @@
 // Default constructor
 Keypresses::Keypresses() {
     keystrokes.reserve(DEFAULT_SIZE);
+    m.reserve(DEFAULT_SIZE);
     du.reserve(DEFAULT_SIZE);
     ud.reserve(DEFAULT_SIZE);
     dd.reserve(DEFAULT_SIZE);
@@ -20,6 +21,7 @@ Keypresses::Keypresses() {
 // Sets vectors to given initial length
 Keypresses::Keypresses(int initLength) {
     keystrokes.reserve(initLength);
+    m.reserve(initLength);
     du.reserve(initLength);
     ud.reserve(initLength);
     dd.reserve(initLength);
@@ -75,12 +77,14 @@ vector<Keypress> Keypresses::getUpstrokes() {
 vector<float> Keypresses::mean() {
     vector<float> averages;
 
-    calcDU(); // calculate vectors
+    calcM(); // calculate vectors
+    calcDU(); 
     calcUD();
     calcDD();
     calcUU();
 
-    averages.push_back(accumulate(du.begin(), du.end(), 0.0f) / du.size()); // calculate averages 
+    averages.push_back(accumulate(m.begin(), m.end(), 0.0f) / m.size()); // calculate averages 
+    averages.push_back(accumulate(du.begin(), du.end(), 0.0f) / du.size());
     averages.push_back(accumulate(ud.begin(), ud.end(), 0.0f) / ud.size());
     averages.push_back(accumulate(dd.begin(), dd.end(), 0.0f) / dd.size());
     averages.push_back(accumulate(uu.begin(), uu.end(), 0.0f) / uu.size());
@@ -101,6 +105,13 @@ ostream& operator<<(ostream& os, const Keypresses& presses) {
 // Returns a copy of the keystrokes vector
 vector<Keypress> Keypresses::getKeystrokes() {
     vector<Keypress> toReturn = keystrokes; // ensures copy
+    return toReturn;
+}
+
+// Returns a copy of the du vector
+vector<float> Keypresses::getM() {
+    calcM(); // get the DU times 
+    vector<float> toReturn = m; // ensures copy
     return toReturn;
 }
 
@@ -167,6 +178,30 @@ void Keypresses::appendKeypress(Keypress& keypress) {
 }
 
 /* PRIVATE FUNCTIONS */
+// calculates monograph times between each element of keystrokes
+void Keypresses::calcM() {
+    m.clear();
+
+    vector<Keypress> downstrokes = getDownstrokes();
+    sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
+
+    vector<Keypress> upstrokes = getUpstrokes();
+    sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
+
+    for(int j = 0; j < downstrokes.size(); j++) { 
+        int i;
+        
+        for(i = 0; i < upstrokes.size(); i++) { // get the closest upstroke to the current downstroke
+            if(downstrokes.at(j).character == upstrokes.at(i).character) break;
+        }
+
+        if(i != upstrokes.size()) { // if an upstroke was found 
+            m.push_back(abs(downstrokes.at(j).time - upstrokes.at(i).time)); // get the time
+            upstrokes.erase(upstrokes.begin() + i); // remove the upstroke we just calculated with 
+        }
+    }
+}
+
 // calculates down-up times between each element of keystrokes
 void Keypresses::calcDU() {
     du.clear();

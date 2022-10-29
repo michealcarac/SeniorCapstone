@@ -70,10 +70,11 @@ int main() {
                     // print output
                     cout << *presses << endl;
                     vector<float> averages = presses->mean();
-                    cout << "DU: " << averages.at(0) << endl;
-                    cout << "UD: " << averages.at(1) << endl;
-                    cout << "DD: " << averages.at(2) << endl;
-                    cout << "UU: " << averages.at(3) << endl;
+                    cout << "M:  " << averages.at(0) << endl;
+                    cout << "DU: " << averages.at(1) << endl;
+                    cout << "UD: " << averages.at(2) << endl;
+                    cout << "DD: " << averages.at(3) << endl;
+                    cout << "UU: " << averages.at(4) << endl;
                     cout << endl;
 
                     cout << "---------------------------------------------------" << endl;

@@ -43,6 +43,7 @@ class Keypresses {
 
         /* ACCESSORS */
         vector<Keypress> getKeystrokes(); // return a copy of the keystrokes vector
+        vector<float> getM();  // returns the monograph times
         vector<float> getDU(); // returns the down-up times
         vector<float> getUD(); // returns the up-down times
         vector<float> getDD(); // returns the up-down times
@@ -55,6 +56,7 @@ class Keypresses {
 
     private:
         /* FUNCTIONS */
+        void calcM(); // calculate M times from keystrokes into m
         void calcDU(); // calculate DU times from keystrokes into du
         void calcUD(); // calculate DU times from keystrokes into ud
         void calcDD(); // calculate DU times from keystrokes into dd
@@ -62,6 +64,7 @@ class Keypresses {
 
         /* MEMBERS */
         vector<Keypress> keystrokes; // collection of keystrokes
+        vector<float> m;  // collection of monograph times
         vector<float> du; // collection of down-up times
         vector<float> ud; // collection of up-down times
         vector<float> dd; // collection of down-down times
