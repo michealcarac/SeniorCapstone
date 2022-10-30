@@ -3,7 +3,8 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out
+#all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out
+all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
 CPPC = g++
@@ -56,6 +57,13 @@ profileTest.out: profileTest.o profile.o fixedModelData.o
 
 profileTest.o: profileTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profileTest.o ./*/profileTest.cpp
+
+# Create fixedModelDataTest
+fixedModelDataTest.out: fixedModelData.o fixedModelDataTest.o graph.o
+	$(CPPC) $(CPPFLAGS) -o ./bin/fixedModelDataTest.out ./build/fixedModelDataTest.o ./build/fixedModelData.o ./build/graph.o
+
+fixedModelDataTest.o: fixedModelDataTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/fixedModelDataTest.o ./*/fixedModelDataTest.cpp
 
 # Create components
 graph.o: graph.cpp graph.hpp
