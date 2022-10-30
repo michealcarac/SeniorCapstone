@@ -18,3 +18,4 @@ Software/src/.DS_Store
 Software/testOutput/profileWriteTest.txt
 *.json
 .DS_Store
+Software/profiles/testProfile.txt

@@ -3,7 +3,7 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out
+all: directories profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out
 
 # Flags, compiler, etc.
 CPPC = g++
@@ -13,6 +13,14 @@ LDFLAGS = -g -L/usr/X11/lib -lX11
 # Directory locations
 BUILDDIR = ./build
 BINDIR = ./bin
+PROFDIR = ./profiles
+
+# Create the fullTest
+fullTest.out: fullTest.o profile.o fixedModelData.o
+	$(CPPC) -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o $(LDFLAGS)
+
+fullTest.o: fullTest.cpp
+	$(CPPC) $(CPPFLAGS) $(LDFLAGS) -g -L/usr/X11/lib -lX11 -c -o ./build/fullTest.o ./*/fullTest.cpp
 
 # Create the keyboardTest
 keyboardTest.out: keyboardTest.o keypresses.o keypress.o
@@ -63,13 +71,16 @@ fixedModelData.o: fixedModelData.cpp fixedModelData.hpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/fixedModelData.o ./*/fixedModelData.cpp
 
 # Created needed directories
-directories: $(BUILDDIR) $(BINDIR)
+directories: $(BUILDDIR) $(BINDIR) $(PROFDIR)
 
 $(BUILDDIR): 
 	mkdir $(BUILDDIR)
 
 $(BINDIR): 
 	mkdir $(BINDIR)
+
+$(PROFDIR):
+	mkdir $(PROFDIR)
 
 # target to remove everything
 clean: 

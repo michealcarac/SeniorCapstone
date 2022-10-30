@@ -56,7 +56,7 @@ void Profile::incrementNumTrainings() {
 void Profile::writeProfile(const string filepath, const string filename) {
     ofstream outfile;
     outfile.open(filepath + FOLDER_DELIM + filename, std::ios::out);
-    outfile << *this; // overloaded operator handles the formatt
+    outfile << *this << endl; // overloaded operator handles the formatt
     outfile.close();
 }
 
@@ -142,7 +142,7 @@ string Profile::getName() { return name; }
 ostream& operator<<(ostream& os, const Profile& profile) {
     os << "Name: " << profile.name << endl;
     os << "FixedModelData: " << profile.data << endl;
-    os << "ModelType: " << profile.type << endl;
+    os << "ModelType: " << profile.type;
     return os;
 }
 
