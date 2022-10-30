@@ -58,6 +58,9 @@ profileTest.o: profileTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profileTest.o ./*/profileTest.cpp
 
 # Create components
+graph.o: graph.cpp graph.hpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/graph.o ./*/graph.cpp
+
 keypresses.o: keypresses.cpp keypresses.hpp	
 	$(CPPC) $(CPPFLAGS) -c -o ./build/keypresses.o ./*/keypresses.cpp
 
