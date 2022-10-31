@@ -7,9 +7,9 @@ VPATH = src:test:include:build:bin
 all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
-CPPC = g++
-CPPFLAGS = -I ./include
-LDFLAGS = -g -L/usr/X11/lib -lX11
+CPPC = g++ -std=c++11
+CPPFLAGS = -I./include -I/opt/X11/include
+LDFLAGS = -L/opt/X11/lib -lX11
 
 # Directory locations
 BUILDDIR = ./build
@@ -18,17 +18,17 @@ PROFDIR = ./profiles
 
 # Create the fullTest
 fullTest.out: fullTest.o profile.o fixedModelData.o
-	$(CPPC) -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o $(LDFLAGS)
+	$(CPPC) $(LDFLAGS) -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o
 
 fullTest.o: fullTest.cpp
-	$(CPPC) $(CPPFLAGS) $(LDFLAGS) -g -L/usr/X11/lib -lX11 -c -o ./build/fullTest.o ./*/fullTest.cpp
+	$(CPPC) $(CPPFLAGS) $(LDFLAGS) -c -o ./build/fullTest.o ./*/fullTest.cpp
 
 # Create the keyboardTest
 keyboardTest.out: keyboardTest.o keypresses.o keypress.o
-	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o $(LDFLAGS)
+	$(CPPC) $(LDFLAGS) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o
 
 keyboardTest.o: keyboardTest.cpp
-	$(CPPC) $(CPPFLAGS) $(LDFLAGS) -g -L/usr/X11/lib -lX11 -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
 
 # Create the keypressesTest
 keypressesTest.out: keypressesTest.o keypresses.o keypress.o
