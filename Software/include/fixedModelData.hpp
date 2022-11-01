@@ -1,6 +1,6 @@
     /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/19/2022 
+   Last Edited: 11/1/2022 
    Purpose: This file describes the FixedModelData struct.
 */
 
@@ -45,6 +45,9 @@ struct FixedModelData {
     unordered_map<string, Graph> ud; // maps a string to ud digraph
     unordered_map<string, Graph> dd; // maps a string to dd digraph
     unordered_map<string, Graph> uu; // maps a string to uu digraph
+
+    private:
+        static unordered_map<string, Graph> parseMap(string dataString); // parses a string to get the information for a single graph map
 };
 
 #endif

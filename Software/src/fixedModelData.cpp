@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/30/2022 
+   Last Edited: 11/1/2022 
    Purpose: This file implements the FixedModelData struct.
 */
 
@@ -99,60 +99,40 @@ FixedModelData* FixedModelData::parseFixedModelData(string dataString) {
 
     // get m
     unordered_map<string, Graph> m;
-    startPos = dataString.find("[", endPos) + 1;
-    endPos = dataString.find("|", startPos + 1);
-    int size = stoi(dataString.substr(startPos, endPos - startPos));
-    std::cout << "M Size: " << size << std::endl;
-    startPos = endPos + 1;
-    for(int i = 0; i < size; i++) { // go across graphs 
-        // find map code
-        endPos = dataString.find(":", startPos + 1);
-        string code = dataString.substr(startPos, endPos - startPos);
-        std::cout << "Found code: " << code << std::endl;
-
-        // find number of graphs
-        startPos = dataString.find("(", endPos) + 1;
-        endPos = dataString.find("|", startPos + 1);
-        int numGraphs = stoi(dataString.substr(startPos, endPos - startPos));
-        std::cout << "Found numGraphs: " << numGraphs << std::endl;
-
-        // get graphs
-        vector<float> times;
-        times.reserve(numGraphs);
-        for(int j = 0; j < numGraphs; j++) {
-            startPos = endPos + 1;
-            endPos = dataString.find(",", startPos + 1);
-            if(endPos == -1) endPos = dataString.find(")", startPos + 1);
-            float nextTime = stof(dataString.substr(startPos, endPos - startPos));
-
-            std::cout << "Found nextTime: " << nextTime << std::endl;
-
-            times.push_back(nextTime);
-            endPos++; // take care of additional " " after comma
-        }
-
-        // add to m
-        Graph *g = new Graph(numGraphs, times);
-        m[code] = *g;
-        delete g;
-
-        startPos = endPos + 1;
-    }
+    startPos = dataString.find("[", endPos);
+    endPos = dataString.find("]", startPos) + 1; 
+    m = parseMap(dataString.substr(startPos, endPos - startPos));
+    startPos = endPos;
 
     // get du
     unordered_map<string, Graph> du;
+    startPos = dataString.find("[", endPos);
+    endPos = dataString.find("]", startPos) + 1; 
+    du = parseMap(dataString.substr(startPos, endPos - startPos));
+    startPos = endPos;
 
     // get ud
     unordered_map<string, Graph> ud;
+    startPos = dataString.find("[", endPos);
+    endPos = dataString.find("]", startPos) + 1; 
+    ud = parseMap(dataString.substr(startPos, endPos - startPos));
+    startPos = endPos;
     
     // get dd
     unordered_map<string, Graph> dd;
+    startPos = dataString.find("[", endPos);
+    endPos = dataString.find("]", startPos) + 1; 
+    dd = parseMap(dataString.substr(startPos, endPos - startPos));
+    startPos = endPos;
 
     // get uu
     unordered_map<string, Graph> uu;
+    startPos = dataString.find("[", endPos);
+    endPos = dataString.find("]", startPos) + 1; 
+    uu = parseMap(dataString.substr(startPos, endPos - startPos));
+    startPos = endPos;
 
     return new FixedModelData(password, threshold, m, du, ud, dd, uu);
-    //return new FixedModelData(password, threshold); // placeholder
 }
 
 /* OVERLOAD */
@@ -205,6 +185,49 @@ ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << "}";
     return os;
 }
+/* HELPER FUNCTIONS */
+// parses a string to get the information for a single graph map
+unordered_map<string, Graph> FixedModelData::parseMap(string dataString) {
+    int startPos = dataString.find("[") + 1; // get the number of graphs in this map
+    int endPos = dataString.find("|", startPos + 1);
+    int size = stoi(dataString.substr(startPos, endPos - startPos));
+
+    unordered_map<string, Graph> map;
+
+    startPos = endPos + 1;
+    for(int i = 0; i < size; i++) { // go across graphs 
+        // find map code
+        endPos = dataString.find(":", startPos + 1);
+        string code = dataString.substr(startPos, endPos - startPos);
+
+        // find number of graphs
+        startPos = dataString.find("(", endPos) + 1;
+        endPos = dataString.find("|", startPos + 1);
+        int numGraphs = stoi(dataString.substr(startPos, endPos - startPos));
+
+        // get graphs
+        vector<float> times;
+        times.reserve(numGraphs);
+        for(int j = 0; j < numGraphs; j++) {
+            startPos = endPos + 1;
+            endPos = dataString.find(",", startPos + 1);
+            if(endPos == -1) endPos = dataString.find(")", startPos + 1);
+            float nextTime = stof(dataString.substr(startPos, endPos - startPos));
+
+            times.push_back(nextTime);
+            endPos++; // take care of additional " " after comma
+        }
+
+        // add to m
+        Graph *g = new Graph(numGraphs, times);
+        map[code] = *g;
+        delete g;
+
+        startPos = endPos + 1;
+    }
+
+    return map;
+} 
 
 /* DESTRUCTOR */
 FixedModelData::~FixedModelData() {
