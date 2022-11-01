@@ -11,21 +11,11 @@
 // Default constructor
 Keypresses::Keypresses() {
     keystrokes.reserve(DEFAULT_SIZE);
-    m.reserve(DEFAULT_SIZE);
-    du.reserve(DEFAULT_SIZE);
-    ud.reserve(DEFAULT_SIZE);
-    dd.reserve(DEFAULT_SIZE);
-    uu.reserve(DEFAULT_SIZE);
 }
 
 // Sets vectors to given initial length
 Keypresses::Keypresses(int initLength) {
     keystrokes.reserve(initLength);
-    m.reserve(initLength);
-    du.reserve(initLength);
-    ud.reserve(initLength);
-    dd.reserve(initLength);
-    uu.reserve(initLength);
 }
 
 /* FUNCTIONS */
@@ -73,25 +63,6 @@ vector<Keypress> Keypresses::getUpstrokes() {
     return upstrokes;
 }
 
-// Returns averages as: [DU, UD, DD, UU] in vector form
-vector<float> Keypresses::mean() {
-    vector<float> averages;
-
-    calcM(); // calculate vectors
-    calcDU(); 
-    calcUD();
-    calcDD();
-    calcUU();
-
-    averages.push_back(accumulate(m.begin(), m.end(), 0.0f) / m.size()); // calculate averages 
-    averages.push_back(accumulate(du.begin(), du.end(), 0.0f) / du.size());
-    averages.push_back(accumulate(ud.begin(), ud.end(), 0.0f) / ud.size());
-    averages.push_back(accumulate(dd.begin(), dd.end(), 0.0f) / dd.size());
-    averages.push_back(accumulate(uu.begin(), uu.end(), 0.0f) / uu.size());
-
-    return averages;
-}
-
 /* OVERLOAD */
 // Overloads the << operator (essentially toString())
 ostream& operator<<(ostream& os, const Keypresses& presses) {
@@ -108,68 +79,17 @@ vector<Keypress> Keypresses::getKeystrokes() {
     return toReturn;
 }
 
-// Returns a copy of the du vector
-vector<float> Keypresses::getM() {
-    calcM(); // get the DU times 
-    vector<float> toReturn = m; // ensures copy
-    return toReturn;
-}
-
-// Returns a copy of the du vector
-vector<float> Keypresses::getDU() {
-    calcDU(); // get the DU times 
-    vector<float> toReturn = du; // ensures copy
-    return toReturn;
-}
-
-// Returns a copy of the ud vector
-vector<float> Keypresses::getUD() {
-    calcUD(); // get the UD times 
-    vector<float> toReturn = ud; // ensures copy
-    return toReturn;
-}
-
-// Returns a copy of the dd vector
-vector<float> Keypresses::getDD() {
-    calcDD(); // get the DD times 
-    vector<float> toReturn = dd; // ensures copy
-    return toReturn;
-}
-
-// Returns a copy of the uu vector
-vector<float> Keypresses::getUU() {
-    calcUU(); // get the UD times 
-    vector<float> toReturn = uu; // ensures copy
-    return toReturn;
-}
-
 /* MUTATORS */
 // clears all vectors in this, returning the vectors to DEFAULT_SIZE
 void Keypresses::clearData() {
     keystrokes.clear();
-    du.clear();
-    ud.clear();
-    dd.clear();
-    uu.clear();
     keystrokes.reserve(DEFAULT_SIZE);
-    du.reserve(DEFAULT_SIZE);
-    ud.reserve(DEFAULT_SIZE);
-    dd.reserve(DEFAULT_SIZE);
-    dd.reserve(DEFAULT_SIZE);
 }
 
 // clears all vectors in this, returning the vectors to newSize
 void Keypresses::clearData(int newSize) {
     keystrokes.clear();
-    du.clear();
-    ud.clear();
-    dd.clear();
-    uu.clear();
     keystrokes.reserve(newSize);
-    du.reserve(newSize);
-    ud.reserve(newSize);
-    dd.reserve(newSize);
-    dd.reserve(newSize);
 }
 
 // Adds keyprses to keystrokes.  Does not run DU, etc. calculations
@@ -178,6 +98,9 @@ void Keypresses::appendKeypress(Keypress& keypress) {
 }
 
 /* PRIVATE FUNCTIONS */
+
+/* NO LONGER NEEDED IN THIS CLASS
+
 // calculates monograph times between each element of keystrokes
 void Keypresses::calcM() {
     m.clear();
@@ -281,3 +204,5 @@ void Keypresses::calcUU() {
         uu.push_back(abs(upstrokes.at(i).time - upstrokes.at(i + 1).time));
     }
 }
+
+*/ 

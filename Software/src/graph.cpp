@@ -34,7 +34,7 @@ void Graph::addDuration(float newDuration) {
 
 // overloads the << operator for the struct
 ostream& operator<<(ostream& os, const Graph& data) {
-    os << "(" << data.numTrainings << " | ";
+    os << "(" << data.numTrainings << "|";
     for(int i = 0; i < data.durations.size() - 1; i++) {
         os << data.durations.at(i) << ", ";
     }

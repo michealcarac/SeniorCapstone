@@ -94,21 +94,65 @@ FixedModelData* FixedModelData::parseFixedModelData(string dataString) {
 
     // get threshold
     startPos = dataString.find(",", endPos) + 1;
-    endPos = dataString.find("}", startPos + 1);
+    endPos = dataString.find(",", startPos + 1);
     float threshold = stof(dataString.substr(startPos, endPos - startPos));
 
     // get m
+    unordered_map<string, Graph> m;
+    startPos = dataString.find("[", endPos) + 1;
+    endPos = dataString.find("|", startPos + 1);
+    int size = stoi(dataString.substr(startPos, endPos - startPos));
+    std::cout << "M Size: " << size << std::endl;
+    startPos = endPos + 1;
+    for(int i = 0; i < size; i++) { // go across graphs 
+        // find map code
+        endPos = dataString.find(":", startPos + 1);
+        string code = dataString.substr(startPos, endPos - startPos);
+        std::cout << "Found code: " << code << std::endl;
+
+        // find number of graphs
+        startPos = dataString.find("(", endPos) + 1;
+        endPos = dataString.find("|", startPos + 1);
+        int numGraphs = stoi(dataString.substr(startPos, endPos - startPos));
+        std::cout << "Found numGraphs: " << numGraphs << std::endl;
+
+        // get graphs
+        vector<float> times;
+        times.reserve(numGraphs);
+        for(int j = 0; j < numGraphs; j++) {
+            startPos = endPos + 1;
+            endPos = dataString.find(",", startPos + 1);
+            if(endPos == -1) endPos = dataString.find(")", startPos + 1);
+            float nextTime = stof(dataString.substr(startPos, endPos - startPos));
+
+            std::cout << "Found nextTime: " << nextTime << std::endl;
+
+            times.push_back(nextTime);
+            endPos++; // take care of additional " " after comma
+        }
+
+        // add to m
+        Graph *g = new Graph(numGraphs, times);
+        m[code] = *g;
+        delete g;
+
+        startPos = endPos + 1;
+    }
 
     // get du
+    unordered_map<string, Graph> du;
 
     // get ud
+    unordered_map<string, Graph> ud;
     
     // get dd
+    unordered_map<string, Graph> dd;
 
     // get uu
+    unordered_map<string, Graph> uu;
 
-    // return new FixedModelData(password, threshold, m, du, ud, dd, uu);
-    return new FixedModelData(); // placeholder
+    return new FixedModelData(password, threshold, m, du, ud, dd, uu);
+    //return new FixedModelData(password, threshold); // placeholder
 }
 
 /* OVERLOAD */
@@ -119,6 +163,7 @@ ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << ", " << data.threshold; // output threshold 
 
     os << ", " << "m["; // output m
+    os << data.m.size() << "|";
     for(auto it = data.m.begin(); it != data.m.end(); ++it) {
         if(it != data.m.begin()) os << ", ";
         os << it->first << ":" << it->second;
@@ -126,6 +171,7 @@ ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << "]";
 
     os << ", " << "du["; // output du
+    os << data.du.size() << "|";
     for(auto it = data.du.begin(); it != data.du.end(); ++it) {
         if(it != data.du.begin()) os << ", ";
         os << it->first << ":" << it->second;
@@ -133,6 +179,7 @@ ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << "]";
 
     os << ", " << "ud["; // output ud
+    os << data.ud.size() << "|";
     for(auto it = data.ud.begin(); it != data.ud.end(); ++it) {
         if(it != data.ud.begin()) os << ", ";
         os << it->first << ":" << it->second;
@@ -140,6 +187,7 @@ ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << "]";
 
     os << ", " << "dd["; // output dd
+    os << data.dd.size() << "|";
     for(auto it = data.dd.begin(); it != data.dd.end(); ++it) {
         if(it != data.dd.begin()) os << ", ";
         os << it->first << ":" << it->second;
@@ -147,6 +195,7 @@ ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << "]";
 
     os << ", " << "uu["; // output uu
+    os << data.uu.size() << "|";
     for(auto it = data.uu.begin(); it != data.uu.end(); ++it) {
         if(it != data.uu.begin()) os << ", ";
         os << it->first << ":" << it->second;

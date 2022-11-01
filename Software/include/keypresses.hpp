@@ -36,18 +36,18 @@ class Keypresses {
         /* FUNCTIONS */
         vector<Keypress> getDownstrokes(); // returns a vector of all downstrokes 
         vector<Keypress> getUpstrokes(); // returns a vector of all upstrokes
-        vector<float> mean(); // returns the average of the DU, UD, DD, UU times
+        // vector<float> mean(); // returns the average of the DU, UD, DD, UU times
 
         /* OVERLOADS */
         friend ostream& operator<<(ostream& os, const Keypresses& presses); // overloads <<
 
         /* ACCESSORS */
         vector<Keypress> getKeystrokes(); // return a copy of the keystrokes vector
-        vector<float> getM();  // returns the monograph times
-        vector<float> getDU(); // returns the down-up times
-        vector<float> getUD(); // returns the up-down times
-        vector<float> getDD(); // returns the up-down times
-        vector<float> getUU(); // returns the up-down times
+        // vector<float> getM();  // returns the monograph times
+        // vector<float> getDU(); // returns the down-up times
+        // vector<float> getUD(); // returns the up-down times
+        // vector<float> getDD(); // returns the up-down times
+        // vector<float> getUU(); // returns the up-down times
 
         /* MUTATORS */
         void clearData(); // clears all vectors, returning them to DEFAULT_SIZE
@@ -56,19 +56,14 @@ class Keypresses {
 
     private:
         /* FUNCTIONS */
-        void calcM(); // calculate M times from keystrokes into m
-        void calcDU(); // calculate DU times from keystrokes into du
-        void calcUD(); // calculate DU times from keystrokes into ud
-        void calcDD(); // calculate DU times from keystrokes into dd
-        void calcUU(); // calculate DU times from keystrokes into uu
+        // void calcM(); // calculate M times from keystrokes into m
+        // void calcDU(); // calculate DU times from keystrokes into du
+        // void calcUD(); // calculate DU times from keystrokes into ud
+        // void calcDD(); // calculate DU times from keystrokes into dd
+        // void calcUU(); // calculate DU times from keystrokes into uu
 
         /* MEMBERS */
         vector<Keypress> keystrokes; // collection of keystrokes
-        vector<float> m;  // collection of monograph times
-        vector<float> du; // collection of down-up times
-        vector<float> ud; // collection of up-down times
-        vector<float> dd; // collection of down-down times
-        vector<float> uu; // collection of up-up times 
 };
 
 #endif
