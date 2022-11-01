@@ -3,13 +3,13 @@
 VPATH = src:test:include:build:bin
 
 # default target
-#all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out
-all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
+all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out
+#all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
 CPPC = g++ -std=c++11
 CPPFLAGS = -I./include -I/opt/X11/include
-LDFLAGS = -L/opt/X11/lib -lX11
+LDFLAGS = -g -L/opt/X11/lib -lX11
 
 # Directory locations
 BUILDDIR = ./build
@@ -17,15 +17,15 @@ BINDIR = ./bin
 PROFDIR = ./profiles
 
 # Create the fullTest
-fullTest.out: fullTest.o profile.o fixedModelData.o
-	$(CPPC) $(LDFLAGS) -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o
+fullTest.out: fullTest.o profile.o fixedModelData.o graph.o
+	$(CPPC)  -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o $(LDFLAGS)
 
 fullTest.o: fullTest.cpp
-	$(CPPC) $(CPPFLAGS) $(LDFLAGS) -c -o ./build/fullTest.o ./*/fullTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/fullTest.o ./*/fullTest.cpp
 
 # Create the keyboardTest
 keyboardTest.out: keyboardTest.o keypresses.o keypress.o
-	$(CPPC) $(LDFLAGS) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o
+	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o $(LDFLAGS)
 
 keyboardTest.o: keyboardTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
@@ -45,15 +45,15 @@ keypressTest.o: keypressTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/keypressTest.o ./*/keypressTest.cpp
 
 # Create profileReadTest
-profileReadTest.out: profileReadTest.o profile.o fixedModelData.o
-	$(CPPC) -o ./bin/profileReadTest.out ./build/profileReadTest.o ./build/profile.o ./build/fixedModelData.o
+profileReadTest.out: profileReadTest.o profile.o fixedModelData.o graph.o
+	$(CPPC) -o ./bin/profileReadTest.out ./build/profileReadTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o
 
 profileReadTest.o: profileReadTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profileReadTest.o ./*/profileReadTest.cpp
 
 # Create profileTest
-profileTest.out: profileTest.o profile.o fixedModelData.o
-	$(CPPC) -o ./bin/profileTest.out ./build/profileTest.o ./build/profile.o ./build/fixedModelData.o
+profileTest.out: profileTest.o profile.o fixedModelData.o graph.o
+	$(CPPC) -o ./bin/profileTest.out ./build/profileTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o
 
 profileTest.o: profileTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profileTest.o ./*/profileTest.cpp

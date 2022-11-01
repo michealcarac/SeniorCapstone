@@ -40,22 +40,17 @@ class Profile {
         /* FUNCTIONS */
         void clearData(); // clear this profile's data
         void resetData(); // clear this profile's data, keeping the old password
-        void incrementNumTrainings(); // increment the number of trainings for this profile
         void writeProfile(const string filepath, const string filename); // writes this profile to a .txt file
         static Profile* readProfile(string filepath, string filename);
 
         /* MUTATORS */
         void setData(const FixedModelData newData);  // update the data held in this profile
         void setPassword(const string newPassword); // update the password for this profile
-        void setWeights(const float newWeights[]); // update the weights for this profile
-        void setNumTrainings(const int newTrainings); // set the number of trainings for this model
         void setThreshold(const float newThreshold); // set a new threshold for this profile 
 
         /* ACCESSORS */
         FixedModelData getData(); // get the FixedModelData struct for this profile
-        float* getWeights(); // get the weights for this profile
         string getPassword(); // get the password for this model
-        int getNumTrainings(); // get the number of trainings for this profile
         float getThreshold(); // get the threshold for this profile
         string getName(); // get the name of this profile
 
