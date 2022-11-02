@@ -34,6 +34,9 @@ struct FixedModelData {
     void addGraph(graphType type, string graphCode, float duration); // adds the duration to the graph type
     static FixedModelData* parseFixedModelData(string dataString);
 
+    /* MUTATORS */
+    void setDd(unordered_map<string, Graph> newDd); // overwrites dd with specified map
+
     /* DESTRUCTOR */
     ~FixedModelData();
 

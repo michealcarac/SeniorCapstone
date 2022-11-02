@@ -12,23 +12,29 @@
 #define KEY_PRESSED false
 #define KEY_RELEASED true
 #define BACKSPACE 65288
+#define GRAPH_TIMEOUT 0.5f // if a graph is greater than .5 seconds, ignore it 
 
 /* INCLUDES */
 #include <cmath>
+#include <string>
 #include <vector>
 #include <numeric>
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
+#include "graph.hpp"
 #include "keypress.hpp"
 
 /* NAMESPACE */
 using std::abs;
 using std::sort;
 using std::endl;
+using std::string;
 using std::vector;
 using std::ostream;
 using std::iterator;
 using std::accumulate;
+using std::unordered_map;
 
 class Keypresses {
     public:
@@ -39,6 +45,7 @@ class Keypresses {
         /* FUNCTIONS */
         vector<Keypress> getDownstrokes(); // returns a vector of all downstrokes 
         vector<Keypress> getUpstrokes(); // returns a vector of all upstrokes
+        unordered_map<string, Graph> calcDD(); // calculate DU times from keystrokes into dd
         // vector<float> mean(); // returns the average of the DU, UD, DD, UU times
 
         /* OVERLOADS */
@@ -46,11 +53,6 @@ class Keypresses {
 
         /* ACCESSORS */
         vector<Keypress> getKeystrokes(); // return a copy of the keystrokes vector
-        // vector<float> getM();  // returns the monograph times
-        // vector<float> getDU(); // returns the down-up times
-        // vector<float> getUD(); // returns the up-down times
-        // vector<float> getDD(); // returns the up-down times
-        // vector<float> getUU(); // returns the up-down times
 
         /* MUTATORS */
         void clearData(); // clears all vectors, returning them to DEFAULT_SIZE
@@ -62,7 +64,6 @@ class Keypresses {
         // void calcM(); // calculate M times from keystrokes into m
         // void calcDU(); // calculate DU times from keystrokes into du
         // void calcUD(); // calculate DU times from keystrokes into ud
-        // void calcDD(); // calculate DU times from keystrokes into dd
         // void calcUU(); // calculate DU times from keystrokes into uu
 
         /* MEMBERS */

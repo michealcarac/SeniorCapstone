@@ -24,15 +24,15 @@ fullTest.o: fullTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/fullTest.o ./*/fullTest.cpp
 
 # Create the keyboardTest
-keyboardTest.out: keyboardTest.o keypresses.o keypress.o
-	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o $(LDFLAGS)
+keyboardTest.out: keyboardTest.o keypresses.o keypress.o graph.o
+	$(CPPC) -o ./bin/keyboardTest.out ./build/keyboardTest.o ./build/keypresses.o ./build/keypress.o ./build/graph.o $(LDFLAGS)
 
 keyboardTest.o: keyboardTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/keyboardTest.o ./*/keyboardTest.cpp
 
 # Create the keypressesTest
-keypressesTest.out: keypressesTest.o keypresses.o keypress.o
-	$(CPPC) -o ./bin/keypressesTest.out ./build/keypressesTest.o ./build/keypresses.o ./build/keypress.o
+keypressesTest.out: keypressesTest.o keypresses.o keypress.o graph.o
+	$(CPPC) -o ./bin/keypressesTest.out ./build/keypressesTest.o ./build/keypresses.o ./build/keypress.o ./build/graph.o
 
 keypressesTest.o: keypressesTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/keypressesTest.o ./*/keypressesTest.cpp

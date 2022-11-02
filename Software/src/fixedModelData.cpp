@@ -135,6 +135,13 @@ FixedModelData* FixedModelData::parseFixedModelData(string dataString) {
     return new FixedModelData(password, threshold, m, du, ud, dd, uu);
 }
 
+/* MUTATORS */
+
+// Overwrites DD with specified map
+void FixedModelData::setDd(unordered_map<string, Graph> newDd) {
+    dd = newDd;
+}
+
 /* OVERLOAD */
 
 // Overloads the << operator (essentially toString())

@@ -95,6 +95,11 @@ Profile* Profile::readProfile(string filepath, string filename) {
 
 /* MUTATORS */
 
+// Updates the FixedModelData with the specific DD times (overwrites existing)
+void Profile::setDataDd(unordered_map<string, Graph> dd) {
+    data.setDd(dd);
+}
+
 // Updates the data in this Profile with the provided FixedModelData
 void Profile::setData(const FixedModelData newData) { data = newData; }
 

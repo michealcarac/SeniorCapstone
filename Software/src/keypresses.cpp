@@ -172,23 +172,36 @@ void Keypresses::calcUD() {
         }
     }
 }
+*/
 
 // calculates down-down times between each element of keystrokes
-void Keypresses::calcDD() {
-    dd.clear();
+unordered_map<string, Graph> Keypresses::calcDD() {
+    unordered_map<string, Graph> dd;
 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
-    if(downstrokes.size() < 2) return; // only execute if there are enough downstrokes to count 
+    if(downstrokes.size() < 2) return dd; // only execute if there are enough downstrokes to count 
 
     dd.reserve(downstrokes.size() - 1);
 
     for(int i = 0; i < downstrokes.size() - 1; i++) {
-        dd.push_back(abs(downstrokes.at(i).time - downstrokes.at(i + 1).time));
+        float time = abs(downstrokes.at(i).time - downstrokes.at(i + 1).time);
+        if(time > GRAPH_TIMEOUT) continue; // ignore graphs that are too long
+        string code;
+        code.push_back(downstrokes.at(i).character);
+        code.push_back(downstrokes.at(i + 1).character);
+
+        if((dd).count(code) == 1) { // the graphCode already exists in the map
+            (dd)[code].addDuration(time);
+        } else { // the graphCode has not been seen in the map
+            (dd)[code] = Graph(time);
+        }
     }
+    return dd;
 }
 
+/*
 // calculates up-up times between each element of keystrokes
 void Keypresses::calcUU() {
     uu.clear();

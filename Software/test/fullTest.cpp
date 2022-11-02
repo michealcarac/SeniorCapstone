@@ -14,6 +14,7 @@
 
 #include <chrono>
 #include <string>
+#include <thread>
 #include <stdlib.h>
 #include <unistd.h>
 #include <iostream>
@@ -149,6 +150,7 @@ int main() {
                     k = new Keypress((float) time, KEY_RELEASED, char(received));
                     presses->appendKeypress(*k);
                     if(runningInput == profile->getPassword()) { // if the password has been entered
+                        std::this_thread::sleep_for(std::chrono::milliseconds(200)); // sleep for .5 seconds, forcing a large digraph time
                         cout << endl << "Password entered: " << runningInput << " Entry " << ++numEntries << " of " << MAX_TRAIN << endl;
                         runningInput = "";
                         if(numEntries == MAX_TRAIN) done = true;
@@ -163,6 +165,9 @@ int main() {
             }
         }
     }
+
+    // add the DD to the profile trained set
+    profile->setDataDd(presses->calcDD());
 
     cout << "Training Complete!" << endl;
 
