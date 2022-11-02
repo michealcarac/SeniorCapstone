@@ -17,8 +17,8 @@ BINDIR = ./bin
 PROFDIR = ./profiles
 
 # Create the fullTest
-fullTest.out: fullTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o
-	$(CPPC)  -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/keypress.o ./build/keypresses.o $(LDFLAGS)
+fullTest.out: fullTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o graphStats.o
+	$(CPPC)  -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/keypress.o ./build/keypresses.o ./build/graphStats.o $(LDFLAGS)
 
 fullTest.o: fullTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/fullTest.o ./*/fullTest.cpp
@@ -45,15 +45,15 @@ keypressTest.o: keypressTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/keypressTest.o ./*/keypressTest.cpp
 
 # Create profileReadTest
-profileReadTest.out: profileReadTest.o profile.o fixedModelData.o graph.o
-	$(CPPC) -o ./bin/profileReadTest.out ./build/profileReadTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o
+profileReadTest.out: profileReadTest.o profile.o fixedModelData.o graph.o graphStats.o
+	$(CPPC) -o ./bin/profileReadTest.out ./build/profileReadTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/graphStats.o
 
 profileReadTest.o: profileReadTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profileReadTest.o ./*/profileReadTest.cpp
 
 # Create profileTest
-profileTest.out: profileTest.o profile.o fixedModelData.o graph.o
-	$(CPPC) -o ./bin/profileTest.out ./build/profileTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o
+profileTest.out: profileTest.o profile.o fixedModelData.o graph.o graphStats.o
+	$(CPPC) -o ./bin/profileTest.out ./build/profileTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/graphStats.o
 
 profileTest.o: profileTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/profileTest.o ./*/profileTest.cpp
@@ -66,6 +66,9 @@ fixedModelDataTest.o: fixedModelDataTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/fixedModelDataTest.o ./*/fixedModelDataTest.cpp
 
 # Create components
+graphStats.o: graphStats.cpp graphStats.hpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/graphStats.o ./*/graphStats.cpp
+
 graph.o: graph.cpp graph.hpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/graph.o ./*/graph.cpp
 

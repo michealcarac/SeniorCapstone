@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/30/2022 
+   Last Edited: 11/2/2022 
    Purpose: This file implements the Graph struct.
 */
 
@@ -27,10 +27,52 @@ Graph::Graph(int newNumTrainings, vector<float> newDurations) {
     durations = newDurations;
 }
 
+/* FUNCTIONS */
+// adds the duration to this graph, increments numTrainings
 void Graph::addDuration(float newDuration) {
     durations.push_back(newDuration);
     numTrainings++;
 }
+
+// calculates the mean of this Graph
+float Graph::calculateMean() {
+    if(durations.size() < 2) return -1.0f; // prevent divide by 0 in calculateVariance()
+    float sum = accumulate(durations.begin(), durations.end(), 0.0f);
+    return (sum / durations.size());
+}
+
+// calculates the variance of this Graph
+float Graph::calculateVariance() {
+    if(durations.size() < 2) return -1.0f; // prevent divide by 0
+
+    float mean = calculateMean(); // get the mean
+    float sum = 0.0f;
+
+    for(int i = 0; i < durations.size(); i++) { // calculate sum of squares
+        sum += pow((durations.at(i) - mean), 2.0f);
+    }
+
+    return (sum / (durations.size() - 1));
+}
+
+string Graph::graphTypeAsString(graphType type) {
+    switch(type) {
+        case M: 
+            return "M";
+        case DU:
+            return "DU";
+        case UD: 
+            return "UD";
+        case DD:
+            return "DD";
+        case UU:
+            return "UU";
+        default:
+            return "Unknown graphType";
+    }
+}
+
+/* OVERLOADS */
 
 // overloads the << operator for the struct
 ostream& operator<<(ostream& os, const Graph& data) {
@@ -44,6 +86,7 @@ ostream& operator<<(ostream& os, const Graph& data) {
     return os;
 }
 
+/* DESTRUCTOR */
 Graph::~Graph() {
     // intentionally empty
 }

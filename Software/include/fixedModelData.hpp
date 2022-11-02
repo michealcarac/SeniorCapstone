@@ -1,6 +1,6 @@
     /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/1/2022 
+   Last Edited: 11/2/2022 
    Purpose: This file describes the FixedModelData struct.
 */
 
@@ -9,6 +9,7 @@
 
 /* INCLUDES */
 #include "graph.hpp"
+#include "graphStats.hpp"
 #include <string>
 #include <iostream>
 #include <unordered_map>
@@ -32,7 +33,9 @@ struct FixedModelData {
 
     /* FUNCTIONS */
     void addGraph(graphType type, string graphCode, float duration); // adds the duration to the graph type
-    static FixedModelData* parseFixedModelData(string dataString);
+    static FixedModelData* parseFixedModelData(string dataString); // parses a string into a FixedModelData
+    unordered_map<string, float> getMean(graphType type); // gets the means for the specified graph type
+    unordered_map<string, float> getVariance(graphType type); // gets the variances for the specified graph type
 
     /* MUTATORS */
     void setDd(unordered_map<string, Graph> newDd); // overwrites dd with specified map
@@ -51,6 +54,7 @@ struct FixedModelData {
 
     private:
         static unordered_map<string, Graph> parseMap(string dataString); // parses a string to get the information for a single graph map
+
 };
 
 #endif

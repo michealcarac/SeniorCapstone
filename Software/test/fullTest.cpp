@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone
    Writer(s): Aaron R. Jones
-   Last Edited: 10/30/2022
+   Last Edited: 11/2/2022
    Purpose: This file tests the use of a real keyboard for input to the system, 
             including profile creation, training, and testing.
    Adapted From: https://blog.robertelder.org/detect-keyup-event-linux-terminal/
@@ -10,6 +10,7 @@
 #include "profile.hpp"
 #include "modelType.hpp"
 #include "keypresses.hpp"
+#include "graphStats.hpp"
 #include "fixedModelData.hpp"
 
 #include <chrono>
@@ -91,7 +92,7 @@ void runTrain() {
                     k = new Keypress((float) time, KEY_RELEASED, char(received));
                     presses->appendKeypress(*k);
                     if(runningInput == profile->getPassword()) { // if the password has been entered
-                        std::this_thread::sleep_for(std::chrono::milliseconds(200)); // sleep for .5 seconds, forcing a large digraph time
+                        std::this_thread::sleep_for(std::chrono::milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
                         cout << endl << "Password entered: " << runningInput << " Entry " << ++numEntries << " of " << MAX_TRAIN << endl;
                         runningInput = "";
                         if(numEntries == MAX_TRAIN) done = true;
@@ -194,7 +195,7 @@ int main() {
     }
 
     // set up window for keystroke information
-    sleep(1); // sleep for one second, allowing the keys to be released 
+    std::this_thread::sleep_for(std::chrono::milliseconds(200)); // sleep for .2 seconds, allowing the keys to be released 
     createWindow();
 
     // Run training algorithm
@@ -204,6 +205,10 @@ int main() {
     
     // add the DD to the profile trained set
     profile->setDataDd(presses->calcDD());
+    GraphStats stats = profile->getTrainStats();
+
+    cout << "Got stats: " << endl;
+    cout << stats << endl;
 
     // save profile
     saveProfile(profile);

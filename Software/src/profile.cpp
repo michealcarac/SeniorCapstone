@@ -12,6 +12,7 @@
 Profile::Profile() {
     name = "UNNAMED";
     data = FixedModelData();
+    trainStats = GraphStats();
     type = Fixed;
 }
 
@@ -19,6 +20,7 @@ Profile::Profile() {
 Profile::Profile(string newName) {
     name = newName;
     data = FixedModelData();
+    trainStats = GraphStats();
     type = Fixed;
 }
 
@@ -26,6 +28,7 @@ Profile::Profile(string newName) {
 Profile::Profile(string newName, ModelType newType) {
     name = newName;
     data = FixedModelData();
+    trainStats = GraphStats();
     type = newType;
 }
 
@@ -34,13 +37,16 @@ Profile::Profile(string newName, ModelType newType, FixedModelData newData) {
     name = newName;
     data = newData;
     type = newType;
+    updateTrainStats();
 }
 
 // Copy constructor
 Profile::Profile(Profile *p) {
     name = p->getName();
     data = p->getData();
+    trainStats = p->getTrainStats();
     type = p->getType();
+
 }
 
 /* FUNCTIONS */
@@ -93,6 +99,12 @@ Profile* Profile::readProfile(string filepath, string filename) {
     return new Profile(name, type, data);
 }
 
+/* PRIVATE FUNCTIONS */
+void Profile::updateTrainStats() {
+    trainStats.means[DD] = data.getMean(DD); // calculate DD means
+    trainStats.variances[DD] = data.getVariance(DD); // calculate DD variances
+}
+
 /* MUTATORS */
 
 // Updates the FixedModelData with the specific DD times (overwrites existing)
@@ -110,6 +122,12 @@ void Profile::setPassword(const string newPassword) { data.password = newPasswor
 void Profile::setThreshold(const float newThreshold) { data.threshold = newThreshold; }
 
 /* ACCESSORS */
+
+// Returns the most updated version of TrainStats
+GraphStats Profile::getTrainStats() { 
+    updateTrainStats();
+    return trainStats; 
+}
 
 // Returns this profile's data struct
 FixedModelData Profile::getData() { return data; }

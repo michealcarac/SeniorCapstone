@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/19/2022 
+   Last Edited: 11/2/2022 
    Purpose: This file defines the Profile class
 */
 
@@ -16,7 +16,9 @@
 #include <fstream>
 #include <filesystem>
 #include <sys/stat.h>
+#include <unordered_map>
 #include "modelType.hpp"
+#include "graphStats.hpp"
 #include "fixedModelData.hpp"
 
 /* NAMESPACES */
@@ -28,6 +30,7 @@ using std::ostream;
 using std::getline;
 using std::ofstream;
 using std::ifstream;
+using std::unordered_map;
 
 class Profile {
     public:
@@ -42,15 +45,19 @@ class Profile {
         void clearData(); // clear this profile's data
         void resetData(); // clear this profile's data, keeping the old password
         void writeProfile(const string filepath, const string filename); // writes this profile to a .txt file
-        static Profile* readProfile(string filepath, string filename);
+        static Profile* readProfile(string filepath, string filename); // reads a profile.txt file
+
+        /* FUNCTIONS FOR ALGORITHMS */
+        
 
         /* MUTATORS */
-        void setDataDd(unordered_map<string, Graph> dd);
+        void setDataDd(unordered_map<string, Graph> dd); // set the DD data in this profile's FixedModelData
         void setData(const FixedModelData newData);  // update the data held in this profile
         void setPassword(const string newPassword); // update the password for this profile
         void setThreshold(const float newThreshold); // set a new threshold for this profile 
 
         /* ACCESSORS */
+        GraphStats getTrainStats(); // returns the most updated version of TrainStats()
         FixedModelData getData(); // get the FixedModelData struct for this profile
         string getPassword(); // get the password for this model
         float getThreshold(); // get the threshold for this profile
@@ -63,9 +70,14 @@ class Profile {
         /* DESTRUCTOR */
         ~Profile();
     private:
+        /* MEMBERS */
         string name; // The name of the profile
         FixedModelData data; // the data contained by this profile 
-        ModelType type;
+        GraphStats trainStats; // trained model mean, variance
+        ModelType type; // the type of the model (Fixed, Free)
+
+        /* FUNCTIONS */
+        void updateTrainStats(); // update the trainStats graph 
 };
 
 #endif

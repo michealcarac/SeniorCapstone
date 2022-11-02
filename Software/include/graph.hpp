@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/30/2022 
+   Last Edited: 11/2/2022 
    Purpose: This file describes the Graph struct.
 */
 
@@ -11,13 +11,29 @@
 #define DEFAULT_SIZE 20
 
 /* INCLUDES */
+#include <cmath>
+#include <string>
 #include <vector>
 #include <ostream>
+#include <numeric>
 
 /* NAMESPACE */
+using std::pow;
+using std::string;
 using std::vector;
 using std::ostream;
+using std::accumulate;
 
+// Defines the possible Graph Types supported by this model
+enum graphType {
+    M,
+    DU,
+    UD,
+    DD,
+    UU
+};
+
+// Defines the Graph struct
 struct Graph {
     /* CONSTRUCTOR */ 
     Graph();
@@ -26,6 +42,9 @@ struct Graph {
 
     /* FUNCTIONS */
     void addDuration(float newDuration); // adds a new duration to the list, increments numTrainings
+    float calculateMean(); // returns the mean of durations
+    float calculateVariance(); // returns the mean of durations
+    static string graphTypeAsString(graphType type); // converts graphType to a readable string
 
     /* OVERLOAD */
     friend ostream& operator<<(ostream& os, const Graph& data); // overloads the << operator for the struct
@@ -36,15 +55,6 @@ struct Graph {
     /* MEMBERS */
     int numTrainings;
     vector<float> durations;
-};
-
-// Defines the possible Graph Types supported by this model
-enum graphType {
-    M,
-    DU,
-    UD,
-    DD,
-    UU
 };
 
 #endif

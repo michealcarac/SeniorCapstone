@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/1/2022 
+   Last Edited: 11/2/2022 
    Purpose: This file implements the FixedModelData struct.
 */
 
@@ -135,6 +135,78 @@ FixedModelData* FixedModelData::parseFixedModelData(string dataString) {
     return new FixedModelData(password, threshold, m, du, ud, dd, uu);
 }
 
+// get the means for the specified graph type
+unordered_map<string, float> FixedModelData::getMean(graphType type) {
+    unordered_map<string, Graph> *currentMap;
+    unordered_map<string, float> means;
+
+    // select a map
+    switch(type) {
+        case M:
+            currentMap = &m;
+            break;
+        case DU:
+            currentMap = &du;
+            break;
+        case UD:
+            currentMap = &ud;
+            break;
+        case DD:
+            currentMap = &dd;
+            break;
+        case UU:
+            currentMap = &uu;
+            break;
+        default: // to avoid questionable behavior 
+            currentMap = &m;
+    }
+
+    // for each element of currentMap, calculate the mean
+    for(auto it = (*currentMap).begin(); it != (*currentMap).end(); ++it) {
+        float mean = it->second.calculateMean();
+        if(mean == -1) continue; // -1 means this is invalid, so don't include it
+        means[it->first] = mean;
+    }
+
+    return means;
+}
+
+// get the means for the specified graph type
+unordered_map<string, float> FixedModelData::getVariance(graphType type) {
+    unordered_map<string, Graph> *currentMap;
+    unordered_map<string, float> variances;
+
+    // select a map
+    switch(type) {
+        case M:
+            currentMap = &m;
+            break;
+        case DU:
+            currentMap = &du;
+            break;
+        case UD:
+            currentMap = &ud;
+            break;
+        case DD:
+            currentMap = &dd;
+            break;
+        case UU:
+            currentMap = &uu;
+            break;
+        default: // to avoid questionable behavior 
+            currentMap = &m;
+    }
+
+    // for each element of currentMap, calculate the mean
+    for(auto it = (*currentMap).begin(); it != (*currentMap).end(); ++it) {
+        float variance = it->second.calculateVariance();
+        if(variance == -1) continue; // -1 means invalid, so don't calculate this
+        variances[it->first] = variance;
+    }
+
+    return variances;
+}
+
 /* MUTATORS */
 
 // Overwrites DD with specified map
@@ -192,6 +264,7 @@ ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << "}";
     return os;
 }
+
 /* HELPER FUNCTIONS */
 // parses a string to get the information for a single graph map
 unordered_map<string, Graph> FixedModelData::parseMap(string dataString) {

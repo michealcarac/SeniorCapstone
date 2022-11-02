@@ -15,10 +15,8 @@
 #define GRAPH_TIMEOUT 0.5f // if a graph is greater than .5 seconds, ignore it 
 
 /* INCLUDES */
-#include <cmath>
 #include <string>
 #include <vector>
-#include <numeric>
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
@@ -33,7 +31,6 @@ using std::string;
 using std::vector;
 using std::ostream;
 using std::iterator;
-using std::accumulate;
 using std::unordered_map;
 
 class Keypresses {
