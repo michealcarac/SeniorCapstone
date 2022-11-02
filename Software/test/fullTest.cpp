@@ -35,95 +35,36 @@ using std::chrono::milliseconds;
 using std::chrono::system_clock;
 using std::chrono::duration_cast;
 
+/* VARIABLES */
+// some global variables, mostly to run the keystroke detection window
+Display *d;
+Window win;
+Atom closeMessage;
+XEvent event;
+Profile *profile;
+Keypresses *presses;
+
+/* FUNCTION PROTOTYPES */
+void runTrain(); // run the train algorithm
+void saveProfile(Profile* p); // save a profile to a file, if prompted
+Profile* buildProfile(); // build a profile from user input 
+void createWindow(); // creates a X11 window for keypress receipt, requires global vars
+bool was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_type); // checks is a keypress in the global window was held down
+
 /* FUNCTIONS */
-void saveProfile(Profile* p) {
-    string input;
-    
-    cout << "Save Profile to ./profiles/profile0.txt (y/n)? ";
-    cin >> input;
-
-    if(input == "y") {
-        cout << "Saving:" << endl << *p << endl;
-        p->writeProfile("./profiles", "profile0.txt");
-    }
-}
-
-Profile* buildProfile() {
-    string name, input, password;
-    Profile* p;
-
-    while(true) {
-        cout << "Enter a name for the profile: ";
-        cin >> name;
-
-        cout << "Enter a password for the profile: ";
-        cin >> password;
-
-        FixedModelData data = FixedModelData(password);
-        p = new Profile(name, Fixed, data);
-
-        cout << "Creating profile: " << endl << *p << endl;
-        cout << "Correct (y/n)? ";
-        cin >> input;
-        if(input == "y") break;
-    }
-
-    return p;
-}
-
-bool was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_type) {
-    /*  Holding down a key will cause 'autorepeat' to send fake keyup/keydown events, but we want to ignore these: '*/
-    if (event->type == current_type && XEventsQueued(d, QueuedAfterReading)) {
-        XEvent nev;
-        XPeekEvent(d, &nev);
-        return (nev.type == next_type && nev.xkey.time == event->xkey.time && nev.xkey.keycode == event->xkey.keycode);
-    }
-    return false;
-}
-
-/* MAIN */
-int main() {
-    // build the profile
-    string input;
-    Profile *profile;
-
-    cout << "Create a new profile (y/n)? ";
-    cin >> input;
-
-    if(input == "y") {
-        profile = buildProfile();
-    } else { // input == n
-        cout << "Attempting to load ./profiles/testProfile.txt...";
-        profile = Profile::readProfile("./profiles", "profile0.txt");
-        cout << "Loaded" << endl << *profile << endl;
-    }
-
-    // set up window for keystroke information
-    sleep(1); // sleep for one second, allowing the keys to be released 
-    Display *d = XOpenDisplay(NULL);
-    Window win = XCreateSimpleWindow(d, RootWindow(d, 0), 1, 1, 400, 300, 0, BlackPixel(d, 0), BlackPixel(d, 0));
-    XSelectInput(d, win, KeyPressMask | KeyReleaseMask | ClientMessage);
-    XMapWindow(d, win);
-    XFlush(d);
-    XEvent event;
-    Atom closeMessage = XInternAtom(d, "WM_DELETE_WINDOW", True);
-    XSetWMProtocols(d, win, &closeMessage, 1);
-    bool done = false;
-
+void runTrain() {
     // set up time
     double time, start;
     start = duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count();
-    
+
     // set up vars
     string runningInput = "";
     int numEntries = 0;
     long received;
-    Keypresses *presses = new Keypresses();
     Keypress *k;
 
-    cout << "Enter the password " << MAX_TRAIN << " times.  Do not press enter." << endl;
-    // infinite loop until gui closed
-    while (!done) {
+    bool done = false;
+    while (!done) { // loop until fully trained, or gui is done
         XNextEvent(d, &event);
         time = (duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count() - start) / 1000.0f; // get keystroke time
         switch (event.type) {
@@ -166,15 +107,103 @@ int main() {
         }
     }
 
-    // add the DD to the profile trained set
-    profile->setDataDd(presses->calcDD());
-
-    cout << "Training Complete!" << endl;
-
+    // close out vars
+    delete k;
 
     // close out gui
     XDestroyWindow(d, win);
     XCloseDisplay(d);
+}
+
+// Prompts the user for potential to save profile
+void saveProfile(Profile* p) {
+    string input;
+    
+    cout << "Save Profile to ./profiles/profile0.txt (y/n)? ";
+    cin >> input;
+
+    if(input == "y") {
+        cout << "Saving:" << endl << *p << endl;
+        p->writeProfile("./profiles", "profile0.txt");
+    }
+}
+
+// Prompts the user for the creation of a profile
+Profile* buildProfile() {
+    string name, input, password;
+    Profile* p;
+
+    while(true) {
+        cout << "Enter a name for the profile: ";
+        cin >> name;
+
+        cout << "Enter a password for the profile: ";
+        cin >> password;
+
+        FixedModelData data = FixedModelData(password);
+        p = new Profile(name, Fixed, data);
+
+        cout << "Creating profile: " << endl << *p << endl;
+        cout << "Correct (y/n)? ";
+        cin >> input;
+        if(input == "y") break;
+    }
+
+    return p;
+}
+
+// create a window
+void createWindow() {
+    d = XOpenDisplay(NULL);
+    win = XCreateSimpleWindow(d, RootWindow(d, 0), 1, 1, 400, 300, 0, BlackPixel(d, 0), BlackPixel(d, 0));
+    XSelectInput(d, win, KeyPressMask | KeyReleaseMask | ClientMessage);
+    XMapWindow(d, win);
+    XFlush(d);
+    closeMessage = XInternAtom(d, "WM_DELETE_WINDOW", True);
+    XSetWMProtocols(d, win, &closeMessage, 1);
+}
+
+// detection of held keys
+bool was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_type) {
+    /*  Holding down a key will cause 'autorepeat' to send fake keyup/keydown events, but we want to ignore these: '*/
+    if (event->type == current_type && XEventsQueued(d, QueuedAfterReading)) {
+        XEvent nev;
+        XPeekEvent(d, &nev);
+        return (nev.type == next_type && nev.xkey.time == event->xkey.time && nev.xkey.keycode == event->xkey.keycode);
+    }
+    return false;
+}
+
+/* MAIN */
+int main() {
+    // variable setup
+    presses = new Keypresses();
+
+    // build the profile
+    string input;
+
+    cout << "Create a new profile (y/n)? ";
+    cin >> input;
+
+    if(input == "y") {
+        profile = buildProfile();
+    } else { // input == n
+        cout << "Attempting to load ./profiles/testProfile.txt...";
+        profile = Profile::readProfile("./profiles", "profile0.txt");
+        cout << "Loaded" << endl << *profile << endl;
+    }
+
+    // set up window for keystroke information
+    sleep(1); // sleep for one second, allowing the keys to be released 
+    createWindow();
+
+    // Run training algorithm
+    cout << "Enter the password " << MAX_TRAIN << " times.  Do not press enter." << endl;
+    runTrain();
+    cout << "Training Complete!" << endl;
+    
+    // add the DD to the profile trained set
+    profile->setDataDd(presses->calcDD());
 
     // save profile
     saveProfile(profile);
@@ -182,7 +211,6 @@ int main() {
     // close out vars
     delete profile;
     delete presses;
-    delete k;
 
     return 0;
 }
