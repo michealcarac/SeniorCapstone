@@ -9,6 +9,7 @@
 /* INCLUDES */
 #include "profile.hpp"
 #include "modelType.hpp"
+#include "keypresses.hpp"
 #include "fixedModelData.hpp"
 
 #include <chrono>
@@ -22,6 +23,9 @@
 #include <X11/Xatom.h>
 #include <X11/keysym.h>
 
+/* DEFINES */
+int MAX_TRAIN = 10;
+
 /* NAMESPACE */
 using std::cin;
 using std::cout;
@@ -34,12 +38,12 @@ using std::chrono::duration_cast;
 void saveProfile(Profile* p) {
     string input;
     
-    cout << "Save Profile to ./profiles/testProfile.txt (y/n)? ";
+    cout << "Save Profile to ./profiles/profile0.txt (y/n)? ";
     cin >> input;
 
     if(input == "y") {
         cout << "Saving:" << endl << *p << endl;
-        p->writeProfile("./profiles", "testProfile.txt");
+        p->writeProfile("./profiles", "profile0.txt");
     }
 }
 
@@ -80,17 +84,17 @@ bool was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_ty
 int main() {
     // build the profile
     string input;
-    Profile *p;
+    Profile *profile;
 
     cout << "Create a new profile (y/n)? ";
     cin >> input;
 
     if(input == "y") {
-        p = buildProfile();
+        profile = buildProfile();
     } else { // input == n
         cout << "Attempting to load ./profiles/testProfile.txt...";
-        p = Profile::readProfile("./profiles", "testProfile.txt");
-        cout << "Loaded" << endl << *p << endl;
+        profile = Profile::readProfile("./profiles", "profile0.txt");
+        cout << "Loaded" << endl << *profile << endl;
     }
 
     // set up window for keystroke information
@@ -108,21 +112,47 @@ int main() {
     // set up time
     double time, start;
     start = duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count();
-    //time = (duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count() - start) / 1000.0f; // later, in units of seconds 
+    
+    // set up vars
+    string runningInput = "";
+    int numEntries = 0;
+    long received;
+    Keypresses *presses = new Keypresses();
+    Keypress *k;
 
+    cout << "Enter the password " << MAX_TRAIN << " times.  Do not press enter." << endl;
     // infinite loop until gui closed
     while (!done) {
         XNextEvent(d, &event);
+        time = (duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count() - start) / 1000.0f; // get keystroke time
         switch (event.type) {
             case KeyPress: {
-                //fprintf(stdout, "key #%ld was pressed.\n", (long)XLookupKeysym(&event.xkey, 0));
+                received = XLookupKeysym(&event.xkey, 0);
+                if(received == BACKSPACE && runningInput.length() != 0) {
+                    runningInput.pop_back();
+                    cout << "\b \b"; // remove the character from the console
+                    cout.flush();
+                    break;
+                }
+                runningInput += char(received); // add the input key to the runningInput
+                cout << char(received);
+                cout.flush();
+                k = new Keypress((float) time, KEY_PRESSED, char(received));
+                presses->appendKeypress(*k);
                 break;
             } case KeyRelease: {
                 if (was_it_auto_repeat(d, &event, KeyRelease, KeyPress)) {
                     XNextEvent(d, &event); /* Consume the extra event so we can ignore it. */
                 } else {
-                    
-                    //fprintf(stdout, "key #%ld was released.\n", (long)XLookupKeysym(&event.xkey, 0));
+                    received = XLookupKeysym(&event.xkey, 0);
+                    if(received == BACKSPACE) break;
+                    k = new Keypress((float) time, KEY_RELEASED, char(received));
+                    presses->appendKeypress(*k);
+                    if(runningInput == profile->getPassword()) { // if the password has been entered
+                        cout << endl << "Password entered: " << runningInput << " Entry " << ++numEntries << " of " << MAX_TRAIN << endl;
+                        runningInput = "";
+                        if(numEntries == MAX_TRAIN) done = true;
+                    }
                 }
                 break;
             } case ClientMessage: {
@@ -134,6 +164,7 @@ int main() {
         }
     }
 
+    cout << "Training Complete!" << endl;
 
 
     // close out gui
@@ -141,10 +172,12 @@ int main() {
     XCloseDisplay(d);
 
     // save profile
-    saveProfile(p);
+    saveProfile(profile);
 
     // close out vars
-    delete p;
+    delete profile;
+    delete presses;
+    delete k;
 
     return 0;
 }

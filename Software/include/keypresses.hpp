@@ -9,6 +9,9 @@
 
 /* DEFINES */
 #define DEFAULT_SIZE 20
+#define KEY_PRESSED false
+#define KEY_RELEASED true
+#define BACKSPACE 65288
 
 /* INCLUDES */
 #include <cmath>

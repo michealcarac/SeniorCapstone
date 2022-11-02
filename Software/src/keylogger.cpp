@@ -19,6 +19,46 @@ Keylogger::Keylogger() {
     currentProfile = 0;
     presses = new Keypresses();
 
-    // get list of profiles
-    // load profiles
+    while(true) { // get possible profiles
+        // try to open file    
+        string filepath =  "./profiles/profile" + std::to_string(currentProfile++) + ".txt"; 
+        ifstream infile;
+        infile.open(filepath, std::ios::in);
+        
+        if(infile.is_open() != true) break;  // exit if there are no more files
+
+        // load profiles
+        Profile *p = Profile::readProfile(filepath, "");
+        profiles.push_back(*p);
+    }
+
+    currentProfile = 0; // select the first profile
+}
+
+/* FUNCTIONS */
+
+/* ACCESSORS */
+// Return the current mode
+Modes Keylogger::getCurrentMode() { return currentMode; }
+
+// Returns a copy of the current Profile object
+Profile* Keylogger::getCurrentProfile() {
+    Profile *p = new Profile(profiles.at(currentProfile));
+    return p;
+}
+
+/* MUTATORS */
+// sets the mode of the Keylogger
+void Keylogger::setCurrentMode(Modes newMode) {
+    currentMode = newMode;
+}
+
+// sets the current profile (int location) of the Keylogger
+void Keylogger::setCurrentProfile(int newProfile) {
+    currentProfile = newProfile;
+}
+
+/* DESTRUCTOR */
+Keylogger::~Keylogger() {
+    delete presses;
 }

@@ -17,8 +17,8 @@ BINDIR = ./bin
 PROFDIR = ./profiles
 
 # Create the fullTest
-fullTest.out: fullTest.o profile.o fixedModelData.o graph.o
-	$(CPPC)  -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o $(LDFLAGS)
+fullTest.out: fullTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o
+	$(CPPC)  -o ./bin/fullTest.out ./build/fullTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/keypress.o ./build/keypresses.o $(LDFLAGS)
 
 fullTest.o: fullTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/fullTest.o ./*/fullTest.cpp

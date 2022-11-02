@@ -36,6 +36,7 @@ class Profile {
         Profile(string newName); // Creates a Profile with given name, using Fixed text
         Profile(string newName, ModelType newType); // Creates a profile with the given name and ModelType
         Profile(string newName, ModelType newType, FixedModelData newData); // creates a profile with specified options
+        Profile(Profile *p); // copy constructor
 
         /* FUNCTIONS */
         void clearData(); // clear this profile's data
@@ -53,6 +54,7 @@ class Profile {
         string getPassword(); // get the password for this model
         float getThreshold(); // get the threshold for this profile
         string getName(); // get the name of this profile
+        ModelType getType(); // get the type of this profile
 
         /* OVERLOADS */
         friend ostream& operator<<(ostream& os, const Profile& profile);

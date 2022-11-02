@@ -36,6 +36,13 @@ Profile::Profile(string newName, ModelType newType, FixedModelData newData) {
     type = newType;
 }
 
+// Copy constructor
+Profile::Profile(Profile *p) {
+    name = p->getName();
+    data = p->getData();
+    type = p->getType();
+}
+
 /* FUNCTIONS */
 // Resets the FixedModelData struct
 void Profile::clearData() {
@@ -110,6 +117,9 @@ float Profile::getThreshold() { return data.threshold; }
 
 // Returns the name of this profile
 string Profile::getName() { return name; }
+
+// return the type of this profile
+ModelType Profile::getType() { return type; }
 
 /* OVERLOADS */
 // Overloads the << operator (essentially toString())

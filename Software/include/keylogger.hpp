@@ -8,6 +8,7 @@
 #define KEYLOGGER_H
 
 /* DEFINES */
+#define PROFILE_SAVE_DIR "./profiles"
 
 /* INCLUDES */
 #include <vector>
@@ -32,7 +33,7 @@ class Keylogger {
 
         /* ACCESSORS */
         Modes getCurrentMode(); // returns the current mode
-        Profile getCurrentProfile(); // returns the current Profile object 
+        Profile* getCurrentProfile(); // returns the current Profile object 
         
         /* MUTATORS */
         void setCurrentMode(Modes newMode); // sets the system to the requested mode

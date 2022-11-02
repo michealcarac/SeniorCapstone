@@ -19,3 +19,4 @@ Software/testOutput/profileWriteTest.txt
 *.json
 .DS_Store
 Software/profiles/testProfile.txt
+Software/profiles/*
