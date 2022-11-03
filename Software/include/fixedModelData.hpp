@@ -1,6 +1,6 @@
     /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/2/2022 
+   Last Edited: 11/3/2022 
    Purpose: This file describes the FixedModelData struct.
 */
 
@@ -36,6 +36,7 @@ struct FixedModelData {
     static FixedModelData* parseFixedModelData(string dataString); // parses a string into a FixedModelData
     unordered_map<string, float> getMean(graphType type); // gets the means for the specified graph type
     unordered_map<string, float> getVariance(graphType type); // gets the variances for the specified graph type
+    float calcScore(graphType type, unordered_map<string, Graph> instance); // creates a score, given typing instance 
 
     /* MUTATORS */
     void setDd(unordered_map<string, Graph> newDd); // overwrites dd with specified map

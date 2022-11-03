@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/2/2022 
+   Last Edited: 11/3/2022 
    Purpose: This file implements the FixedModelData struct.
 */
 
@@ -205,6 +205,27 @@ unordered_map<string, float> FixedModelData::getVariance(graphType type) {
     }
 
     return variances;
+}
+
+// Create a score, comparing this FixedModelData to a given instance
+float FixedModelData::calcScore(graphType type, unordered_map<string, Graph> instance) {
+    // Get vars
+    float score = 0.0f;
+    unordered_map<string, float> mean = getMean(type); // this should be a private variable eventually 
+    unordered_map<string, float> variance = getVariance(type); // this should be a private variable eventually
+
+    // loop through instance
+    for(auto it = instance.begin(); it != instance.end(); ++it) {
+        if(mean.count(it->first) == 1) { // if graph also exists in in mean
+            for(int i = 0; i < instance[it->first].durations.size(); i++) { // and for each occurrence of that graph in the instance
+                score += fabs(mean[it->first] - instance[it->first].durations.at(i)) / (variance[it->first] * 25); // calculate the score, inflate variance 
+            }
+        } else { // graph in instance not seen in mean
+            // intentionally empty 
+        }
+    }
+
+    return score;
 }
 
 /* MUTATORS */

@@ -52,7 +52,11 @@ float Graph::calculateVariance() {
         sum += pow((durations.at(i) - mean), 2.0f);
     }
 
-    return (sum / (durations.size() - 1));
+    float variance = sum / (durations.size() - 1);
+
+    // ensure a minimum value of 1 ms is always given for variance
+    if(variance > 0.001f) return variance;
+    return 0.001f;
 }
 
 string Graph::graphTypeAsString(graphType type) {
