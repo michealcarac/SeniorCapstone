@@ -3,7 +3,7 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out
+all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out keyloggerTest.out
 #all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
@@ -15,6 +15,13 @@ LDFLAGS = -g -L/opt/X11/lib -lX11
 BUILDDIR = ./build
 BINDIR = ./bin
 PROFDIR = ./profiles
+
+# Create the keyloggerTest
+keyloggerTest.out: keyloggerTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o graphStats.o keylogger.o
+	$(CPPC)  -o ./bin/keyloggerTest.out ./build/keyloggerTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/keypress.o ./build/keypresses.o ./build/graphStats.o ./build/keylogger.o $(LDFLAGS)
+
+keyloggerTest.o: keyloggerTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keyloggerTest.o ./*/keyloggerTest.cpp
 
 # Create the fullTest
 fullTest.out: fullTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o graphStats.o
@@ -66,6 +73,9 @@ fixedModelDataTest.o: fixedModelDataTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/fixedModelDataTest.o ./*/fixedModelDataTest.cpp
 
 # Create components
+keylogger.o: keylogger.cpp keylogger.hpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/keylogger.o ./*/keylogger.cpp
+
 graphStats.o: graphStats.cpp graphStats.hpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/graphStats.o ./*/graphStats.cpp
 

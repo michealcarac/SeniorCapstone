@@ -71,7 +71,8 @@ void Profile::writeProfile(const string filepath, const string filename) {
 // Reads a profile from the file at [filepath]/[filename]
 Profile* Profile::readProfile(string filepath, string filename) {
     ifstream infile;
-    infile.open(filepath + FOLDER_DELIM + filename, std::ios::in);
+    if(filename == "") infile.open(filepath, std::ios::in);
+    else infile.open(filepath + FOLDER_DELIM + filename, std::ios::in);
 
     if (!infile.is_open()) {
         cerr << "readProfile() failed to open the file at " << filepath << FOLDER_DELIM << filename;
