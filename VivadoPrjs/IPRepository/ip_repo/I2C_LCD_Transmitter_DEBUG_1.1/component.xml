@@ -2,8 +2,8 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>clarkson.edu</spirit:vendor>
   <spirit:library>SeniorLab</spirit:library>
-  <spirit:name>I2C_LCD_Transmitter_DEBUG</spirit:name>
-  <spirit:version>1.1</spirit:version>
+  <spirit:name>AXI_I2C_LCD_Transmitter</spirit:name>
+  <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>S00_AXI</spirit:name>
@@ -795,7 +795,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/I2C_LCD_Transmitter_DEBUG_v1_1.tcl</spirit:name>
+        <spirit:name>xgui/AXI_I2C_LCD_Transmitter_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_2f7a20ee</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -809,7 +809,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>I2C Based LCD Transmitter/Driver</spirit:description>
+  <spirit:description>AXI I2C Based LCD Transmitter/Driver</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
@@ -870,14 +870,15 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>I2C_LCD_Transmitter_DEBUG_v1.1</xilinx:displayName>
+      <xilinx:displayName>AXI I2C_LCD_Transmitter_1.0</xilinx:displayName>
       <xilinx:autoFamilySupportLevel>level_1</xilinx:autoFamilySupportLevel>
-      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:I2C_LCD_Transmitter:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>clarkson.edu:SeniorLab:I2C_LCD_Transmitter:1.1</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>clarkson.edu:SeniorLab:I2C_LCD_Transmitter_DEBUG:1.1</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2022-11-05T18:24:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2022-11-06T08:47:02Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.1.2</xilinx:xilinxVersion>

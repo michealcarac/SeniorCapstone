@@ -246,3 +246,15 @@ timestamp=[2022-11-06 02:52:35], mode=BUILD, duration=0:00:00.801, duration_ms=8
 timestamp=[2022-11-06 03:21:11], mode=WORKBENCH_START, duration=0:00:05.123, duration_ms=5123, data={}
 timestamp=[2022-11-06 03:21:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.369, duration_ms=369, data={}
 timestamp=[2022-11-06 03:21:12], mode=WORKBENCH_UI_INIT, duration=0:00:00.917, duration_ms=917, data={editors_count=12, platform_editors_count=4, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_LCD,Zybo_LCD_,Zybo_LCD__app,Zybo_LCD_cpp,Zybo_LCD_cpp_app}
+timestamp=[2022-11-06 03:37:25], mode=WORKBENCH_START, duration=0:00:05.601, duration_ms=5601, data={}
+timestamp=[2022-11-06 03:37:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.424, duration_ms=424, data={}
+timestamp=[2022-11-06 03:37:26], mode=WORKBENCH_UI_INIT, duration=0:00:01.014, duration_ms=1014, data={editors_count=11, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_LCD,Zybo_LCD_cpp,Zybo_LCD_cpp_app}
+timestamp=[2022-11-06 03:37:43], mode=PLATFORM_GENERATION, duration=0:00:14.978, duration_ms=14978, data={name=Zybo_LCD}
+timestamp=[2022-11-06 03:37:46], mode=BUILD, duration=0:00:01.148, duration_ms=1148, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-06 03:37:53], mode=BUILD, duration=0:00:06.244, duration_ms=6244, data={name=Zybo_LCD_cpp_app, configuration=Debug, clean_build=false}
+timestamp=[2022-11-06 04:14:50], mode=WORKBENCH_START, duration=0:00:05.047, duration_ms=5047, data={}
+timestamp=[2022-11-06 04:14:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.362, duration_ms=362, data={}
+timestamp=[2022-11-06 04:14:51], mode=WORKBENCH_UI_INIT, duration=0:00:00.921, duration_ms=921, data={editors_count=11, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_LCD,Zybo_LCD_cpp,Zybo_LCD_cpp_app}
+timestamp=[2022-11-06 04:15:59], mode=PLATFORM_GENERATION, duration=0:00:06.542, duration_ms=6542, data={name=Zybo_LCD}
+timestamp=[2022-11-06 04:16:36], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-06 04:16:43], mode=BUILD, duration=0:00:06.272, duration_ms=6272, data={name=Zybo_LCD_cpp_app, configuration=Debug, clean_build=false}

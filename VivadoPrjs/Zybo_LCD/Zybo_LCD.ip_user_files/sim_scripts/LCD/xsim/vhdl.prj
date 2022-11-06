@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/LCD/ipshared/f510/hdl/I2C_LCD_Transmitter_v1_0_S00_AXI.vhd" \
+"../../../bd/LCD/ipshared/f510/src/I2C_Master.vhd" \
+"../../../bd/LCD/ipshared/f510/src/i2c_user_lcd.vhd" \
+"../../../bd/LCD/ipshared/f510/hdl/I2C_LCD_Transmitter_v1_0.vhd" \
+"../../../bd/LCD/ip/LCD_I2C_LCD_Transmitter_1_0/sim/LCD_I2C_LCD_Transmitter_1_0.vhd" \
+"../../../bd/LCD/ip/LCD_rst_sysclk_100Mhz_100M_0/sim/LCD_rst_sysclk_100Mhz_100M_0.vhd" \
+"../../../bd/LCD/sim/LCD.vhd" \
+
+nosort

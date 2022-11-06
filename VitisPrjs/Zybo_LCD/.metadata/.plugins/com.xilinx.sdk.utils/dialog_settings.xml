@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="scw_hwspec" value="/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp"/>
+	<item key="scw_hwspec_file_selection" value="/home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/Zybo_LCD"/>
 </section>

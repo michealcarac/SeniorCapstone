@@ -24,3 +24,7 @@ platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Z
 platform generate -domains 
 platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_LCD.xsa}
 platform generate -domains 
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {Zybo_LCD}
+platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/Zybo_LCD/Zybo_LCD.xsa}
+platform generate -domains 
