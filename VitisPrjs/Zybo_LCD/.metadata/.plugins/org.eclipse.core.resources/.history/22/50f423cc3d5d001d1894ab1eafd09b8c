@@ -1,0 +1,11 @@
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xil_types.h"
+#include <stdlib.h>
+#include <string>
+
+static void LCD_Write32(UINTPTR BaseAddr, string data);
+static void LCD_WriteTop(UINTPTR BaseAddr, string data);
+static void LCD_WriteBottom(UINTPTR BaseAddr, string data);

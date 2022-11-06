@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../Zybo_Imp.gen/sources_1/bd/Imp/ipshared/ec67/hdl" --include "../../../../Zybo_Imp.gen/sources_1/bd/Imp/ipshared/5765/hdl" \
+"../../../bd/Imp/ip/Imp_processing_system7_0_0/sim/Imp_processing_system7_0_0.v" \
+"../../../bd/Imp/ip/Imp_xbar_1/sim/Imp_xbar_1.v" \
+"../../../bd/Imp/ip/Imp_auto_pc_0/sim/Imp_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

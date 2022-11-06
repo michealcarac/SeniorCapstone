@@ -1,0 +1,57 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.332",
+   "Default View_TopLeft":"1083,-79",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/axi_gpio_2|/axi_gpio_0|",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1780 -y 180 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1780 -y 200 -defaultsOSRD
+preplace port btn -pg 1 -lvl 5 -x 1780 -y 460 -defaultsOSRD
+preplace port led5_rgb -pg 1 -lvl 5 -x 1780 -y 420 -defaultsOSRD
+preplace port led6_rgb -pg 1 -lvl 5 -x 1780 -y 440 -defaultsOSRD
+preplace port led -pg 1 -lvl 5 -x 1780 -y 290 -defaultsOSRD
+preplace port pmod -pg 1 -lvl 5 -x 1780 -y 570 -defaultsOSRD
+preplace port port-id_sysclk_100Mhz -pg 1 -lvl 0 -x -150 -y 120 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -150 -y 340 -defaultsOSRD
+preplace port port-id_lcd_reset_n -pg 1 -lvl 0 -x -150 -y 90 -defaultsOSRD
+preplace port port-id_LCD_SDA_0 -pg 1 -lvl 5 -x 1780 -y 90 -defaultsOSRD
+preplace port port-id_LCD_SCL_0 -pg 1 -lvl 5 -x 1780 -y 110 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 450 -y 300 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1620 -y 430 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 1 -x 60 -y 200 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 4 -x 1620 -y 290 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 4 -x 1620 -y 570 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 830 -y 450 -defaultsOSRD
+preplace inst rst_sysclk_100Mhz_100M -pg 1 -lvl 1 -x 60 -y 360 -defaultsOSRD
+preplace inst I2C_LCD_Transmitter_1 -pg 1 -lvl 4 -x 1620 -y 100 -defaultsOSRD
+preplace netloc M_AXI_GP0_ACLK_0_1 1 0 4 -130 120 250 180 680 180 1010
+preplace netloc Net 1 4 1 N 90
+preplace netloc Net1 1 4 1 N 110
+preplace netloc axi_gpio_1_ip2intc_irpt 1 1 1 240 210n
+preplace netloc ext_reset_in_0_1 1 0 1 N 340
+preplace netloc lcd_reset_n_0_1 1 0 4 NJ 90 NJ 90 NJ 90 NJ
+preplace netloc rst_sysclk_100Mhz_100M_peripheral_aresetn 1 0 4 -120 460 250 410 670J 250 1020
+preplace netloc axi_gpio_0_GPIO 1 4 1 NJ 420
+preplace netloc axi_gpio_0_GPIO2 1 4 1 NJ 440
+preplace netloc axi_gpio_1_GPIO 1 1 4 N 190 N 190 N 190 1750
+preplace netloc axi_gpio_2_GPIO 1 4 1 NJ 290
+preplace netloc axi_gpio_3_GPIO 1 4 1 N 570
+preplace netloc processing_system7_0_DDR 1 2 3 660 210 N 210 1760J
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 650 200 N 200 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 N 310
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 NJ 410
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 4 -120 110 NJ 110 N 110 980
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1000J 270n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 3 1 1000J 470n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 3 1 990 70n
+levelinfo -pg 1 -150 60 450 830 1620 1780
+pagesize -pg 1 -db -bbox -sgen -310 -390 1920 1520
+"
+}
+{
+   "da_axi4_cnt":"14",
+   "da_board_cnt":"4",
+   "da_ps7_cnt":"1"
+}

@@ -1,0 +1,89 @@
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xil_types.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+#include <sstream>
+#include <iterator>
+#include <iomanip>
+#include <cstring>
+#include <iostream>
+using namespace std;
+
+
+
+void LCD_Write32(UINTPTR BaseAddr, string data){
+	string reg[8] = {"20202020","20202020","20202020","20202020","20202020","20202020","20202020","20202020"};
+	string buf;
+	char temp[200];
+	int i=0;
+	int j=7;
+
+	// If there is data, perform the ASCII to HEX Conversion
+	if (!data.empty()){
+		// Cast string to Char*
+		const char* temp1 = const_cast<char*>(data.c_str());
+		// Convert Char* Data to Hex Char Array
+		for (const char* p = temp1;*p;++p){
+			i += sprintf(temp+i,"%02x",*p);
+		}
+		// Cast back to a string
+		buf = temp;
+		// Create registers
+		for(j=7;j>=0;--j){
+			// Pad just in case
+			reg[j] = buf.substr(0,8) + "20202020";
+			// Reduce back to 8 values
+			reg[j] = reg[j].substr(0,8);
+			// Erase last 8 values
+			buf.erase(0,8);
+		}
+	}
+
+	for(j=7;j>=0;--j){
+		// Write out to LCD
+		Xil_Out32(BaseAddr+4*(j+1),strtoul(reg[j].data(),NULL,16));
+	}
+
+	Xil_Out32(BaseAddr,0x00000001); // Enable and turn off refresh
+}
+
+void LCD_WriteTop(UINTPTR BaseAddr, string data){
+	string reg[8] = {"20202020","20202020","20202020","20202020","20202020","20202020","20202020","20202020"};
+	string buf;
+	char temp[200];
+	int i=0;
+	int j=7;
+
+	// If there is data, perform the ASCII to HEX Conversion
+	if (!data.empty()){
+		// Cast string to Char*
+		const char* temp1 = const_cast<char*>(data.c_str());
+		// Convert Char* Data to Hex Char Array
+		for (const char* p = temp1;*p;++p){
+			i += sprintf(temp+i,"%02x",*p);
+		}
+		// Cast back to a string
+		buf = temp;
+		// Create registers
+		for(j=3;j>=0;--j){
+			// Pad just in case
+			reg[j] = buf.substr(0,8) + "20202020";
+			// Reduce back to 8 values
+			reg[j] = reg[j].substr(0,8);
+			// Erase last 8 values
+			buf.erase(0,8);
+		}
+	}
+
+	for(j=7;j>=0;--j){
+		// Write out to LCD
+		Xil_Out32(BaseAddr+4*(j+1),strtoul(reg[j].data(),NULL,16));
+	}
+
+	Xil_Out32(BaseAddr,0x00000001); // Enable and turn off refresh
+}
+

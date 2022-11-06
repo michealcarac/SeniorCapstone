@@ -1,0 +1,38 @@
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xil_types.h"
+#include <stdlib.h>
+#include <string>
+#include <sleep.h>
+#include "LCD.hpp"
+
+// Addresses
+#define LCD_I2C_Base 0x43C00000
+#define LCD_I2C_Reg0 0
+#define LCD_I2C_Reg1 4
+#define LCD_I2C_Reg2 8
+#define LCD_I2C_Reg3 12
+#define LCD_I2C_Reg4 16
+#define LCD_I2C_Reg5 20
+#define LCD_I2C_Reg6 24
+#define LCD_I2C_Reg7 28
+#define LCD_I2C_Reg8 32
+
+
+int main() {
+	u32 data_o;
+	int i;
+	string string1 = "fuck youuuu";
+	string string2 = "fuck youuuuuuuuuuuuuuuuuuuuuu";
+	LCD_Write32(LCD_I2C_Base,string1);
+	LCD_Refresh(LCD_I2C_Base);
+	usleep(1000);
+	//LCD_Write32(LCD_I2C_Base,string2);
+	//LCD_WriteTop(LCD_I2C_Base,string1);
+	//LCD_WriteBottom(LCD_I2C_Base,string2);
+
+
+
+}
