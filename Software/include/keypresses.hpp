@@ -12,6 +12,8 @@
 #define KEY_PRESSED false
 #define KEY_RELEASED true
 #define BACKSPACE 65288
+#define L_SHIFT 65505
+#define R_SHIFT 65506
 #define GRAPH_TIMEOUT 0.5f // if a graph is greater than .5 seconds, ignore it 
 
 /* INCLUDES */

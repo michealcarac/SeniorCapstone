@@ -53,6 +53,8 @@ void Keylogger::runAuthPi() {
     string runningInput = "";
     int numTries = 0, numAllowed = 0;
     long received;
+    char receivedChar;
+    bool upper = false;
     Keypress *k;
     presses->clearData();
 
@@ -65,16 +67,24 @@ void Keylogger::runAuthPi() {
         switch (event.type) {
             case KeyPress: {
                 received = XLookupKeysym(&event.xkey, 0);
+
                 if(received == BACKSPACE && runningInput.length() != 0) {
                     runningInput.pop_back();
                     cout << "\b \b"; // remove the character from the console
                     cout.flush();
                     break;
+                } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
+                    upper = true;
+                    break;
                 }
-                runningInput += char(received); // add the input key to the runningInput
-                cout << char(received);
+
+                if(upper) receivedChar = toupper(char(received)); // get the character 
+                else receivedChar = char(received);
+
+                runningInput += receivedChar; // add the input key to the runningInput
+                cout << receivedChar;
                 cout.flush();
-                k = new Keypress((float) time, KEY_PRESSED, char(received));
+                k = new Keypress((float) time, KEY_PRESSED, receivedChar);
                 presses->appendKeypress(*k);
                 break;
             } case KeyRelease: {
@@ -82,8 +92,17 @@ void Keylogger::runAuthPi() {
                     XNextEvent(d, &event); /* Consume the extra event so we can ignore it. */
                 } else {
                     received = XLookupKeysym(&event.xkey, 0);
-                    if(received == BACKSPACE) break;
-                    k = new Keypress((float) time, KEY_RELEASED, char(received));
+                    if(received == BACKSPACE) {
+                        break;
+                    } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
+                        upper = false;
+                        break;
+                    }
+
+                    if(upper) receivedChar = toupper(char(received)); // get the character 
+                    else receivedChar = char(received);
+
+                    k = new Keypress((float) time, KEY_RELEASED, receivedChar);
                     presses->appendKeypress(*k);
                     if(runningInput == profiles.at(currentProfile).getPassword()) { // if the password has been entered
                         sleep_for(milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
@@ -141,6 +160,8 @@ void Keylogger::runTrainPi() {
     string runningInput = "";
     int numEntries = 0;
     long received;
+    char receivedChar;
+    bool upper = false;
     Keypress *k;
     presses->clearData();
 
@@ -150,17 +171,25 @@ void Keylogger::runTrainPi() {
         time = (duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count() - start) / 1000.0f; // get keystroke time
         switch (event.type) {
             case KeyPress: {
-                received = XLookupKeysym(&event.xkey, 0);
-                if(received == BACKSPACE && runningInput.length() != 0) {
+                received = XLookupKeysym(&event.xkey, 0); // get the keypress
+
+                if(received == BACKSPACE && runningInput.length() != 0) { // handle backspace
                     runningInput.pop_back();
                     cout << "\b \b"; // remove the character from the console
                     cout.flush();
                     break;
+                } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
+                    upper = true;
+                    break;
                 }
-                runningInput += char(received); // add the input key to the runningInput
-                cout << char(received);
+
+                if(upper) receivedChar = toupper(char(received)); // get the character 
+                else receivedChar = char(received);
+                
+                runningInput += receivedChar; // add the input key to the runningInput
+                cout << receivedChar;
                 cout.flush();
-                k = new Keypress((float) time, KEY_PRESSED, char(received));
+                k = new Keypress((float) time, KEY_PRESSED, receivedChar);
                 presses->appendKeypress(*k);
                 break;
             } case KeyRelease: {
@@ -168,8 +197,17 @@ void Keylogger::runTrainPi() {
                     XNextEvent(d, &event); /* Consume the extra event so we can ignore it. */
                 } else {
                     received = XLookupKeysym(&event.xkey, 0);
-                    if(received == BACKSPACE) break;
-                    k = new Keypress((float) time, KEY_RELEASED, char(received));
+                    if(received == BACKSPACE) {
+                        break;
+                    } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
+                        upper = false;
+                        break;
+                    }
+
+                    if(upper) receivedChar = toupper(char(received)); // get the character 
+                    else receivedChar = char(received);
+
+                    k = new Keypress((float) time, KEY_RELEASED, receivedChar);
                     presses->appendKeypress(*k);
                     if(runningInput == profiles.at(currentProfile).getPassword()) { // if the password has been entered
                         sleep_for(milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
