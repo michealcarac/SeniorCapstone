@@ -1,0 +1,72 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sun Nov  6 18:29:26 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_methodology -file LCD_wrapper_methodology_drc_routed.rpt -pb LCD_wrapper_methodology_drc_routed.pb -rpx LCD_wrapper_methodology_drc_routed.rpx
+| Design       : LCD_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 7
++-----------+----------+----------------------------------+------------+
+| Rule      | Severity | Description                      | Violations |
++-----------+----------+----------------------------------+------------+
+| HPDR-1    | Warning  | Port pin direction inconsistency | 1          |
+| HPDR-2    | Warning  | Port pin INOUT inconsistency     | 2          |
+| TIMING-18 | Warning  | Missing input or output delay    | 4          |
++-----------+----------+----------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+HPDR-1#1 Warning
+Port pin direction inconsistency  
+Hierarchical port(pin) LCD_SDA direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (LCD_SDA) connected to this Port, but both were not found.
+Related violations: <none>
+
+HPDR-2#1 Warning
+Port pin INOUT inconsistency  
+Hierarchical port(pin) LCD_i/AXI_I2C_LCD_Transmitter_0/LCD_SDA direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (LCD_i/AXI_I2C_LCD_Transmitter_0/LCD_SDA) connected to this hierarchical pin/port, but both were not found.
+Related violations: <none>
+
+HPDR-2#2 Warning
+Port pin INOUT inconsistency  
+Hierarchical port(pin) LCD_i/LCD_SDA direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (LCD_SDA_OBUF) connected to this hierarchical pin/port, but both were not found.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on LCD_SCL relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on LCD_SDA relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on lcd_reset_n relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+

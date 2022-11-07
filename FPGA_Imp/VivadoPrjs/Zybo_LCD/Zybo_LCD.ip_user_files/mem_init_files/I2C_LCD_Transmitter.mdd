@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER I2C_LCD_Transmitter
+	OPTION supported_peripherals = (I2C_LCD_Transmitter);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = I2C_LCD_Transmitter;
+END DRIVER

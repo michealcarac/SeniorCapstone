@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Zybo_Imp.srcs/sources_1/new/pass.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_axi_gpio_0_0/sim/Imp_axi_gpio_0_0.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_axi_gpio_1_0/sim/Imp_axi_gpio_1_0.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_axi_gpio_0_1/sim/Imp_axi_gpio_0_1.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_axi_gpio_3_0/sim/Imp_axi_gpio_3_0.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_rst_sysclk_100Mhz_100M_0/sim/Imp_rst_sysclk_100Mhz_100M_0.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ipshared/cb2d/hdl/I2C_LCD_Transmitter_v1_0_S00_AXI.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ipshared/cb2d/src/I2C_Master.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ipshared/cb2d/src/i2c_user_lcd.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ipshared/cb2d/hdl/I2C_LCD_Transmitter_v1_0.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_I2C_LCD_Transmitter_1_0/sim/Imp_I2C_LCD_Transmitter_1_0.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/sim/Imp.vhd" \
+"../../../../Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_pass_0_0/sim/Imp_pass_0_0.vhd" \
+"../../../../Zybo_Imp.gen/sources_1/bd/Imp/hdl/Imp_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

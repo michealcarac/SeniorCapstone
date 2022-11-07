@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Zybo_LCD__app&apos;" deleteContents="true" description="Delete resource &apos;Zybo_LCD__app&apos;" element1="/Zybo_LCD__app" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1667722878173"/>
+</session>

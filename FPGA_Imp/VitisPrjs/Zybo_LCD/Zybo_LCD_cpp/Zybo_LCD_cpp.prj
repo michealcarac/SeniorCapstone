@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Zybo_LCD_cpp" location="/home/cekp/Desktop/GitHub/SeniorCapstone/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp" platform="/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/Zybo_LCD.xpfm" platformUID="xilinx:zybo-z7-20::0.0(custom)" systemProject="Zybo_LCD_cpp_app" sysConfig="Zybo_LCD" runtime="C/C++" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" language="CPP" mssSignature="9bcba7750fe5e56b1724c6767f98a13c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.149747026" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.286750664" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

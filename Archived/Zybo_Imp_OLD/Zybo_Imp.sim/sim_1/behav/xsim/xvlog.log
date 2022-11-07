@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_processing_system7_0_0/sim/Imp_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imp_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_xbar_1/sim/Imp_xbar_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imp_xbar_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_Imp.ip_user_files/bd/Imp/ip/Imp_auto_pc_0/sim/Imp_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imp_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_Imp.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

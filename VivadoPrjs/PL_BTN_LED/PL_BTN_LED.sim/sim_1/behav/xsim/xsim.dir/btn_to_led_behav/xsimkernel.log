@@ -1,7 +1,0 @@
-Running: xsim.dir/btn_to_led_behav/xsimk.exe -simmode gui -wdb btn_to_led_behav.wdb -simrunnum 0 -socket 57498
-Design successfully loaded
-Design Loading Memory Usage: 7592 KB (Peak: 7592 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 8136 KB (Peak: 8136 KB)
-Simulation CPU Usage: 15 ms

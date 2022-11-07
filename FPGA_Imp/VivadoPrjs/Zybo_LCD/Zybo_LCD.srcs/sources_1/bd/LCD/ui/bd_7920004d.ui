@@ -1,0 +1,35 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.80402",
+   "Default View_TopLeft":"127,123",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1120 -y 70 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1120 -y 90 -defaultsOSRD
+preplace port port-id_LCD_SCL -pg 1 -lvl 4 -x 1120 -y 310 -defaultsOSRD
+preplace port port-id_LCD_SDA -pg 1 -lvl 4 -x 1120 -y 290 -defaultsOSRD
+preplace port port-id_lcd_reset_n -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port port-id_sysclk_100Mhz -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 900 -y 120 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 540 -y 160 -defaultsOSRD
+preplace inst rst_sysclk_100Mhz_100M -pg 1 -lvl 1 -x 200 -y 390 -defaultsOSRD
+preplace inst AXI_I2C_LCD_Transmitter_0 -pg 1 -lvl 3 -x 900 -y 300 -defaultsOSRD
+preplace netloc M_AXI_GP0_ACLK_0_1 1 0 3 20 200 380 40 700
+preplace netloc ext_reset_in_0_1 1 0 1 NJ 370
+preplace netloc lcd_reset_n_0_1 1 0 3 NJ 290 NJ 290 NJ
+preplace netloc rst_sysclk_100Mhz_100M_peripheral_aresetn 1 1 2 390 330 NJ
+preplace netloc Net 1 3 1 NJ 310
+preplace netloc Net1 1 3 1 NJ 290
+preplace netloc processing_system7_0_DDR 1 3 1 NJ 70
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 90
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 390 10 NJ 10 1100
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 690 160n
+levelinfo -pg 1 0 200 540 900 1120
+pagesize -pg 1 -db -bbox -sgen -160 0 1240 490
+"
+}
+{
+   "da_axi4_cnt":"1"
+}

@@ -1,0 +1,37 @@
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xgpio.h"
+#include "xil_types.h"
+#include "I2C_LCD_Transmitter.h"
+
+// Device IDs from xparameters.h
+#define LCD_I2C_ID  XPAR_I2C_LCD_TRANSMITTER_0_DEVICE_ID // LCD I2C IP
+
+// Addresses
+#define LCD_I2C_Base XPAR_I2C_LCD_TRANSMITTER_0_S00_AXI_BASEADDR
+#define LCD_I2C_Reg0 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG0_OFFSET
+#define LCD_I2C_Reg1 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG1_OFFSET
+#define LCD_I2C_Reg2 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG2_OFFSET
+#define LCD_I2C_Reg3 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG3_OFFSET
+#define LCD_I2C_Reg4 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG4_OFFSET
+#define LCD_I2C_Reg5 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG5_OFFSET
+#define LCD_I2C_Reg6 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG6_OFFSET
+#define LCD_I2C_Reg7 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG7_OFFSET
+#define LCD_I2C_Reg8 I2C_LCD_TRANSMITTER_S00_AXI_SLV_REG8_OFFSET
+
+
+int main() {
+	u32 data_o;
+
+	Xil_Out32(LCD_I2C_Base + LCD_I2C_Reg8,(u32)0x626C7565); //Put "blue" in first part of LCD
+	Xil_Out32(LCD_I2C_Base + LCD_I2C_Reg0,(u32)0x00000003); // Enable LCD
+	xil_printf("wrote 0x%08X to 0x%08X \n\r",(u32)0x00000003,(u32)(LCD_I2C_Base + LCD_I2C_Reg0));
+	xil_printf("wrote 0x%08X to 0x%08X \n\r",(u32)0x626C7565,(u32)(LCD_I2C_Base + LCD_I2C_Reg8));
+
+	data_o = Xil_In32(LCD_I2C_Base + LCD_I2C_Reg0);
+	xil_printf("read 0x%08X from 0x%08X \n\r",data_o,(u32)(LCD_I2C_Base + LCD_I2C_Reg0));
+	data_o = Xil_In32(LCD_I2C_Base + LCD_I2C_Reg8);
+	xil_printf("read 0x%08X from 0x%08X \n\r",data_o,(u32)(LCD_I2C_Base + LCD_I2C_Reg8));
+
+
+}

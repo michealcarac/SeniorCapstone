@@ -1,0 +1,2869 @@
+!SESSION 2022-11-06 04:14:34.684 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+This is a continuation of log file /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/.metadata/.bak_0.log
+Created Time: 2022-11-06 04:16:44.595
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.595
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.598
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.603
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.603
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.617
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.618
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.623
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.623
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.637
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.638
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.643
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.643
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.657
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.658
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481DFA" && level == 0}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.672
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481DFA" && level == 0}], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.673
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.674
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.675
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.700
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.701
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.917
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:44.917
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:47.921
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:47.941
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:47.946
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:47.947
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:47.962
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:47.966
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:48.138
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:48.139
+!MESSAGE XSCT Command: [fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.112
+!MESSAGE XSCT command with result: [fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.125
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.168
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.169
+!MESSAGE XSCT Command: [loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.275
+!MESSAGE XSCT command with result: [loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, Imp_wrapper_0]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.275
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.277
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.278
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.287
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.288
+!MESSAGE XSCT Command: [source /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.289
+!MESSAGE XSCT command with result: [source /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:51.289
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:57.609
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:57.610
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:57.679
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:57.680
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:57.765
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:16:57.766
+!MESSAGE XSCT Command: [dow /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:14.007
+!MESSAGE XSCT command with result: [dow /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:14.008
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:14.913
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:15.022
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:15.030
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:15.031
+!MESSAGE XSCT Command: [con], Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:15.104
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-3: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:27.075
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-135
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 04:17:27.081
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-135
+!SESSION 2022-11-06 18:38:27.868 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-11-06 18:38:28.347
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-11-06 18:38:28.371
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2022-11-06 18:38:31.482
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-06 18:38:34.906
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../../../.git', absolute path: '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:533)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:499)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:473)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:466)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:206)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:86)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:326)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.triggerRefresh(Activator.java:466)
+	at org.eclipse.egit.ui.Activator$1.windowActivated(Activator.java:317)
+	at org.eclipse.ui.internal.Workbench$8.run(Workbench.java:1039)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.fireWindowActivated(Workbench.java:1036)
+	at org.eclipse.ui.internal.WorkbenchWindow$8.shellActivated(WorkbenchWindow.java:2489)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1449)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1428)
+	at org.eclipse.swt.widgets.Shell.gtk_focus_in_event(Shell.java:1561)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2265)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6679)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5928)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1486)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4446)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-06 18:38:34.908
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../../../.git', absolute path: '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:533)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:499)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:473)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:466)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:206)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:86)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:326)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.triggerRefresh(Activator.java:466)
+	at org.eclipse.egit.ui.Activator$1.windowActivated(Activator.java:317)
+	at org.eclipse.ui.internal.Workbench$8.run(Workbench.java:1039)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.fireWindowActivated(Workbench.java:1036)
+	at org.eclipse.ui.internal.WorkbenchWindow$8.shellActivated(WorkbenchWindow.java:2489)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1449)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1428)
+	at org.eclipse.swt.widgets.Shell.gtk_focus_in_event(Shell.java:1561)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2265)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6679)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5928)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1486)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4446)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-06 18:38:34.912
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../../../.git', absolute path: '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:533)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:499)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:473)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:466)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:206)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:86)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:326)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.triggerRefresh(Activator.java:466)
+	at org.eclipse.egit.ui.Activator$1.windowActivated(Activator.java:317)
+	at org.eclipse.ui.internal.Workbench$8.run(Workbench.java:1039)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.fireWindowActivated(Workbench.java:1036)
+	at org.eclipse.ui.internal.WorkbenchWindow$8.shellActivated(WorkbenchWindow.java:2489)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1449)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1428)
+	at org.eclipse.swt.widgets.Shell.gtk_focus_in_event(Shell.java:1561)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2265)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6679)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5928)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1486)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4446)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.egit.core 4 0 2022-11-06 18:38:34.914
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../../../.git', absolute path: '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:533)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:499)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:473)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:466)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:206)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:86)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:326)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.triggerRefresh(Activator.java:466)
+	at org.eclipse.egit.ui.Activator$1.windowActivated(Activator.java:317)
+	at org.eclipse.ui.internal.Workbench$8.run(Workbench.java:1039)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.fireWindowActivated(Workbench.java:1036)
+	at org.eclipse.ui.internal.WorkbenchWindow$8.shellActivated(WorkbenchWindow.java:2489)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1449)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1428)
+	at org.eclipse.swt.widgets.Shell.gtk_focus_in_event(Shell.java:1561)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2265)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6679)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5928)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(Native Method)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1486)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4446)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.529
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.529
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.529
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.595
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.596
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.596
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.596
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.597
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.1/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.597
+!MESSAGE XSCT Command: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:35.599
+!MESSAGE XSCT command with result: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD], Result: [null, ]. Thread: Thread-19
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-06 18:38:36.459
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-06 18:38:36.460
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-11-06 18:38:36.460
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:46.376
+!MESSAGE XSCT Command: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/platform.spr}], Thread: Worker-5: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:47.878
+!MESSAGE XSCT command with result: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/platform.spr}], Result: [null, ]. Thread: Worker-5: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:47.909
+!MESSAGE XSCT Command: [platform active {Zybo_LCD}], Thread: Worker-5: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:47.910
+!MESSAGE XSCT command with result: [platform active {Zybo_LCD}], Result: [null, ]. Thread: Worker-5: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-06 18:38:50.931
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: scw_hwspec_file_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-06 18:38:50.931
+!MESSAGE Preference loaded using local preference: /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/Zybo_LCD
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:38:59.096
+!MESSAGE XSCT Command: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.xsa}], Thread: Worker-0: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:02.295
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.xsa}], Result: [null, ]. Thread: Worker-0: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:23.065
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.461
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.471
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.473
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.474
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.475
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-06 18:39:24.476
+!MESSAGE Generating MD5 hash for file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.485
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.494
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_11": {"name": "freertos10_xilinx",
+"version": "1.11",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_11",
+},
+"standalone_v7_7": {"name": "standalone",
+"version": "7.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/lib/bsp/standalone_v7_7",
+},
+},
+"ps7_cortexa9_1": {"freertos10_xilinx_v1_11": {"name": "freertos10_xilinx",
+"version": "1.11",
+"desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.4.6",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_11",
+},
+"standalone_v7_7": {"name": "standalone",
+"version": "7.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/lib/bsp/standalone_v7_7",
+},
+},
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.495
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.496
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.496
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.498
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, {}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.498
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.500
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0], Result: [null, AXI_I2C_LCD_Transmitter_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.501
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.504
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.8",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.2",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.7",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.8",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.16",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.9",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.9",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "4.7",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.4",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.4",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.14",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "3.1",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.11",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.7",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.6",
+},
+"AXI_I2C_LCD_Transmitter_0": {"name": "AXI_I2C_LCD_Transmitter",
+"ver": "1.0",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.11",
+},
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.506
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.611
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"AXI_I2C_LCD_Transmitter_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"AXI_I2C_LCD_Transmitter_v1_0": {"name": "AXI_I2C_LCD_Transmitter",
+"version": "1.0",
+"repo": "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/drivers/AXI_I2C_LCD_Transmitter_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"processing_system7_0": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"rst_sysclk_100Mhz_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"uartps_v3_11": {"name": "uartps",
+"version": "3.11",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_qspi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"qspips_v3_9": {"name": "qspips",
+"version": "3.9",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/qspips_v3_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_qspi_linear_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_cortexa9_v2_11": {"name": "cpu_cortexa9",
+"version": "2.11",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"cpu_cortexa9_v2_11": {"name": "cpu_cortexa9",
+"version": "2.11",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_11",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"ddrps_v1_2": {"name": "ddrps",
+"version": "1.2",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ethernet_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"emacps_v3_16": {"name": "emacps",
+"version": "3.16",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/emacps_v3_16",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_usb_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"usbps_v2_7": {"name": "usbps",
+"version": "2.7",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/usbps_v2_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_sd_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"sdps_v3_14": {"name": "sdps",
+"version": "3.14",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v3_14",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpio_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"gpiops_v3_9": {"name": "gpiops",
+"version": "3.9",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"devcfg_v3_7": {"name": "devcfg",
+"version": "3.7",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"xadcps_v2_6": {"name": "xadcps",
+"version": "2.6",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"coresightps_dcc_v1_8": {"name": "coresightps_dcc",
+"version": "1.8",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"dmaps_v2_8": {"name": "dmaps",
+"version": "2.8",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scugic_v4_7": {"name": "scugic",
+"version": "4.7",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v4_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scutimer_v2_4": {"name": "scutimer",
+"version": "2.4",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"scuwdt_v2_4": {"name": "scuwdt",
+"version": "2.4",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+"dmaps_v2_8": {"name": "dmaps",
+"version": "2.8",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_8",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "3.0 3.1",
+"repo": "/tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_0 /tools/Xilinx/Vitis/2022.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v3_1",
+},
+},
+},
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.614
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.616
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.616
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.617
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, {}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.710
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:24.711
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2022-11-06 18:39:25.428
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:25.893
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:25.895
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:25.897
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream}], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:25.912
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream}], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:25.914
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:25.916
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Sun Nov  6 18:27:18 2022",
+"vivado_version": "2022.1.2",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:25.917
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit} -quiet], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:30.693
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit} -quiet], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:30.701
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:30.711
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"AXI_I2C_LCD_Transmitter_0": {"hier_name": "AXI_I2C_LCD_Transmitter_0",
+"type": "AXI_I2C_LCD_Transmitter",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_sysclk_100Mhz_100M": {"hier_name": "rst_sysclk_100Mhz_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:38.841
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:38.843
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:38.844
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:38.845
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-06 18:39:38.846
+!MESSAGE Generating MD5 hash for file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:38.847
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:39:38.851
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:54.696
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:54.698
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:54.699
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:54.700
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-06 18:47:54.700
+!MESSAGE Generating MD5 hash for file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:54.701
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:54.702
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.281
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.286
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "50",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333333",
+}]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.286
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.294
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0], Result: [null, {"AXI_I2C_LCD_Transmitter_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.295
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.305
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0], Result: [null, {"AXI_I2C_LCD_Transmitter_0_S00_AXI": {"name": "AXI_I2C_LCD_Transmitter_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.306
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.307
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.307
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.309
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.309
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.310
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.310
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.311
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.311
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.313
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.313
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.314
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.315
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.317
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.318
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.325
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1], Result: [null, {"AXI_I2C_LCD_Transmitter_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.326
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.336
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1], Result: [null, {"AXI_I2C_LCD_Transmitter_0_S00_AXI": {"name": "AXI_I2C_LCD_Transmitter_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x3FFFFFFF",
+"size": "1072693248",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.338
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.339
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.339
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.340
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.340
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.341
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.342
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.342
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.343
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.343
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.344
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.345
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.348
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa bit], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.350
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa bit], Result: [null, Zybo_LCD.bit]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.353
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY org.eclipse.tcf 4 0 2022-11-06 18:47:58.602
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.604
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:47:58.606
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:01.639
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:04.641
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:07.647
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:07.649
+!MESSAGE XSCT Command: [version -server], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:07.651
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1.0]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:07.651
+!MESSAGE XSCT Command: [version], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:07.652
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.2
+SW Build 3602371 on 2022-08-02-23:13:43
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:07.659
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:10.663
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:13.664
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:16.669
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-4: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.368
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.370
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.370
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.494
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.495
+!MESSAGE XSCT Command: [version -server], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.496
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1.0]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.496
+!MESSAGE XSCT Command: [version], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.497
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.2
+SW Build 3602371 on 2022-08-02-23:13:43
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.498
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.503
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.503
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.518
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.522
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.527
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.528
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.542
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.544
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.550
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.550
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.565
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.568
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.574
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.574
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.589
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.590
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.596
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.596
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.611
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.612
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.617
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zybo Z7 210351B481DFA]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.618
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.633
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.636
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481DFA" && level == 0}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.651
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481DFA" && level == 0}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.652
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.653
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.654
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.702
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.702
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.942
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:26.943
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:29.948
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:29.962
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:29.967
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:29.967
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:29.982
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:29.991
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:30.116
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:30.116
+!MESSAGE XSCT Command: [fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.149
+!MESSAGE XSCT command with result: [fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.163
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.190
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.191
+!MESSAGE XSCT Command: [loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.317
+!MESSAGE XSCT command with result: [loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, LCD_wrapper_2]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.318
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.320
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.320
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.327
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.328
+!MESSAGE XSCT Command: [source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.328
+!MESSAGE XSCT command with result: [source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:33.329
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:39.899
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:39.900
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:39.970
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:39.971
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:40.058
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:40.059
+!MESSAGE XSCT Command: [dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:57.039
+!MESSAGE XSCT command with result: [dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:57.040
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:58.009
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:58.114
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:58.122
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:58.123
+!MESSAGE XSCT Command: [con], Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:48:58.199
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-5: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.067
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-283
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.072
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-283
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.079
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.084
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.085
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.216
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.217
+!MESSAGE XSCT Command: [version -server], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.218
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.1.0]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.218
+!MESSAGE XSCT Command: [version], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.219
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.1.2
+SW Build 3602371 on 2022-08-02-23:13:43
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.219
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.224
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.224
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.238
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.238
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.243
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.243
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.257
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.258
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.263
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.263
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.277
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.278
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.283
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.283
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.296
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.297
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.302
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.303
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.317
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.317
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.322
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.323
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.337
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.337
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481DFA" && level == 0}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.352
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B481DFA" && level == 0}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.352
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.368
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.369
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.379
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.379
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.509
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:18.510
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.514
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.527
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.532
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B481DFA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.532
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.546
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.547
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.575
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:21.576
+!MESSAGE XSCT Command: [fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.473
+!MESSAGE XSCT command with result: [fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.486
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.494
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.495
+!MESSAGE XSCT Command: [loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.501
+!MESSAGE XSCT command with result: [loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, LCD_wrapper_2]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.502
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.504
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.505
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.512
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.513
+!MESSAGE XSCT Command: [source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.514
+!MESSAGE XSCT command with result: [source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:24.515
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:31.239
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:31.239
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:31.313
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:31.313
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:31.321
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:31.322
+!MESSAGE XSCT Command: [dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:48.283
+!MESSAGE XSCT command with result: [dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:48.283
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:49.242
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:49.250
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:49.258
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:49.258
+!MESSAGE XSCT Command: [con], Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 18:50:49.411
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-12: Launching SystemDebugger_Zybo_LCD_cpp_app
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-11-06 18:52:37.517
+!MESSAGE Opening file dialog using preferences. Current path: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs, Local preference: sdx_export_archive_directory, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 19:13:44.437
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-334
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-11-06 19:13:44.441
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-334

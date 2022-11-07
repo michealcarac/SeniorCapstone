@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.2 (64-bit)
+# SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
+# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+# Start of session at: Sat Nov  5 14:27:09 2022
+# Process ID: 202207
+# Current directory: /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_Imp.runs/impl_1
+# Command line: vivado -log Imp_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Imp_wrapper.tcl -notrace
+# Log file: /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_Imp.runs/impl_1/Imp_wrapper.vdi
+# Journal file: /home/cekp/Desktop/GitHub/SeniorCapstone/VivadoPrjs/Zybo_Imp/Zybo_Imp.runs/impl_1/vivado.jou
+# Running On: UbuntuSeniorLab, OS: Linux, CPU Frequency: 3493.442 MHz, CPU Physical cores: 12, Host memory: 16776 MB
+#-----------------------------------------------------------
+source Imp_wrapper.tcl -notrace

@@ -1,0 +1,14 @@
+#include "xil_types.h"
+#include "xil_io.h"
+#include <stdlib.h>
+#include <string>
+#include <iostream>
+using namespace std;
+
+#define LCD_Refresh_Mask 0x00000002;
+#define LCD_EN_Mask 0x00000001;
+
+void LCD_Write32(UINTPTR BaseAddr, string data);
+void LCD_WriteTop(UINTPTR BaseAddr, string data);
+void LCD_WriteBottom(UINTPTR BaseAddr, string data);
+void LCD_Refresh(UINTPTR BaseAddr);

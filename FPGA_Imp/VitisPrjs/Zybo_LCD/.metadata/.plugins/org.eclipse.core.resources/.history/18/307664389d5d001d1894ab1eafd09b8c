@@ -1,0 +1,6 @@
+
+using namespace std;
+
+void LCD_Write32(UINTPTR BaseAddr, string data);
+void LCD_WriteTop(UINTPTR BaseAddr, string data);
+void LCD_WriteBottom(UINTPTR BaseAddr, string data);

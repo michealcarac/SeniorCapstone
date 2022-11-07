@@ -1,0 +1,86 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Fri Nov  4 23:54:55 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    23 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            7 |
+| No           | No                    | Yes                    |              18 |            7 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              18 |            6 |
+| Yes          | No                    | Yes                    |               7 |            3 |
+| Yes          | Yes                   | No                     |              36 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |               Enable Signal               |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | Inst_top_level/skip_nibble                | Inst_top_level/Inst_i2c_master/sw[0] |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | Inst_top_level/byteSel[5]_i_1_n_0         |                                      |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | Inst_top_level/Inst_i2c_master/addr_rw0   |                                      |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | Inst_top_level/lcd_delay_cnst[18]_i_1_n_0 |                                      |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | Inst_top_level/Inst_i2c_master/busy1      | Inst_top_level/Inst_i2c_master/sw[0] |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG |                                           |                                      |                7 |             10 |         1.43 |
+|  clk_IBUF_BUFG |                                           | Inst_top_level/Inst_i2c_master/sw[0] |                7 |             18 |         2.57 |
+|  clk_IBUF_BUFG | Inst_top_level/lcd_delay                  | Inst_top_level/Inst_i2c_master/sw[0] |                5 |             32 |         6.40 |
++----------------+-------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+
+

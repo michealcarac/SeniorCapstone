@@ -1,0 +1,13 @@
+#include "LCD_Handler.hpp"
+
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xgpio.h"
+#include "xil_types.h"
+
+
+static void LCD_Write32(UINTPTR Addr, u32 Value);
+
+
+
