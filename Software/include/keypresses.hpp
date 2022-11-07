@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/20/2022 
+   Last Edited: 11/7/2022 
    Purpose: This file describes the Keypresses class.
 */
 
@@ -14,6 +14,7 @@
 #define BACKSPACE 65288
 #define L_SHIFT 65505
 #define R_SHIFT 65506
+#define ENTER 65293
 #define GRAPH_TIMEOUT 0.5f // if a graph is greater than .5 seconds, ignore it 
 
 /* INCLUDES */

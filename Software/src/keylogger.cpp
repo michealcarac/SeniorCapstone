@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/3/2022 
+   Last Edited: 11/7/2022 
    Purpose: This file implements the Keylogger class.
 */
 
@@ -76,6 +76,8 @@ void Keylogger::runAuthPi() {
                 } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
                     upper = true;
                     break;
+                } else if(received == ENTER) {
+                    break;
                 }
 
                 if(upper) receivedChar = toupper(char(received)); // get the character 
@@ -96,6 +98,8 @@ void Keylogger::runAuthPi() {
                         break;
                     } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
                         upper = false;
+                        break;
+                    } else if(received == ENTER) {
                         break;
                     }
 
@@ -181,6 +185,8 @@ void Keylogger::runTrainPi() {
                 } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
                     upper = true;
                     break;
+                } else if(received == ENTER) {
+                    break;
                 }
 
                 if(upper) receivedChar = toupper(char(received)); // get the character 
@@ -201,6 +207,8 @@ void Keylogger::runTrainPi() {
                         break;
                     } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
                         upper = false;
+                        break;
+                    } else if(received == ENTER) {
                         break;
                     }
 
