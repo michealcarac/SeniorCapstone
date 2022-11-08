@@ -45,12 +45,13 @@ void Keylogger::runAuthPi() {
     createWindow();
 
     // set up time
-    double time, start;
+    double lastTime, time = 0, start;
     start = duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count();
 
     // set up vars
     vector<float> scores;
     string runningInput = "";
+    int inputLength = 0;
     int numTries = 0, numAllowed = 0;
     long received;
     char receivedChar;
@@ -63,27 +64,30 @@ void Keylogger::runAuthPi() {
     bool done = false;
     while (!done) { // loop until fully trained, or gui is done
         XNextEvent(d, &event);
+        lastTime = time;
         time = (duration_cast<milliseconds >(system_clock::now().time_since_epoch()).count() - start) / 1000.0f; // get keystroke time
         switch (event.type) {
             case KeyPress: {
                 received = XLookupKeysym(&event.xkey, 0);
 
-                if(received == BACKSPACE && runningInput.length() != 0) {
+                if(received == BACKSPACE && inputLength != 0 && (time - lastTime) > .075) {
                     runningInput.pop_back();
+                    inputLength--;
+                    cout.flush();
                     cout << "\b \b"; // remove the character from the console
                     cout.flush();
-                    break;
+                    continue;
                 } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
                     upper = true;
                     break;
-                } else if(received == ENTER) {
+                } else if(received == ENTER || received == BACKSPACE) { // intercept and ignore
                     break;
                 }
 
                 if(upper) receivedChar = toupper(char(received)); // get the character 
                 else receivedChar = char(received);
-
                 runningInput += receivedChar; // add the input key to the runningInput
+                inputLength++;
                 cout << receivedChar;
                 cout.flush();
                 k = new Keypress((float) time, KEY_PRESSED, receivedChar);
@@ -112,6 +116,7 @@ void Keylogger::runAuthPi() {
                         //sleep_for(milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
                         cout << endl << "Password entered: " << runningInput << " Attempt " << ++numTries;
                         runningInput = "";
+                        inputLength = 0;
 
                         unordered_map<string, Graph> attemptM = presses->calcM();// get M stats from keypresses
                         unordered_map<string, Graph> attemptDU = presses->calcDU();// get DU stats from keypresses
@@ -146,6 +151,8 @@ void Keylogger::runAuthPi() {
             }
         }
     }
+
+    // cout << endl << "Running input was '" << runningInput << "'" << endl;
 
     // print out percentage of allowed entries
     cout << "Allowed " << numAllowed << " of " << numTries << " attempts. Percentage allowed: " << round(((double) numAllowed) / numTries * 1000) / 10.0 << "%" << endl;

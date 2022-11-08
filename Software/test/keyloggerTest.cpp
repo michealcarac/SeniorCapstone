@@ -13,7 +13,7 @@ using std::cout;
 using std::endl;
 
 int main() {
-    cout << "Start of keyloggerTest." << endl << endl;
+    cout << "Start of keyloggerTest." << endl;
 
     // create the keylogger
     Keylogger *logger = new Keylogger();

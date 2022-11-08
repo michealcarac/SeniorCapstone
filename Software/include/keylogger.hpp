@@ -72,6 +72,7 @@ class Keylogger {
         Keypresses *presses;
 
         /* PRIVATE FUNCTIONS */
+        float scoreAuth(); // score authentication
 
         /* FOR USE WITH PI */
         Display *d;
