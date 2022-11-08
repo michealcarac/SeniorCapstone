@@ -51,7 +51,7 @@ class Profile {
         
 
         /* MUTATORS */
-        void setDataDd(unordered_map<string, Graph> dd); // set the DD data in this profile's FixedModelData
+        void setDataGraph(graphType type, unordered_map<string, Graph> graph); // set the graph data in this profile's FixedModelData
         void setData(const FixedModelData newData);  // update the data held in this profile
         void setPassword(const string newPassword); // update the password for this profile
         void setThreshold(const float newThreshold); // set a new threshold for this profile 

@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/19/2022 
+   Last Edited: 11/8/2022 
    Purpose: This file implements the Profile class 
 */
 
@@ -102,15 +102,27 @@ Profile* Profile::readProfile(string filepath, string filename) {
 
 /* PRIVATE FUNCTIONS */
 void Profile::updateTrainStats() {
-    trainStats.means[DD] = data.getMean(DD); // calculate DD means
-    trainStats.variances[DD] = data.getVariance(DD); // calculate DD variances
+    // means
+    trainStats.means[M] = data.getMean(M);
+    trainStats.means[DU] = data.getMean(DU);
+    trainStats.means[UD] = data.getMean(UD);
+    trainStats.means[DD] = data.getMean(DD);
+    trainStats.means[UU] = data.getMean(UU);
+
+
+    // variances
+    trainStats.variances[M] = data.getVariance(M);
+    trainStats.variances[DU] = data.getVariance(DU);
+    trainStats.variances[UD] = data.getVariance(UD);
+    trainStats.variances[DD] = data.getVariance(DD);
+    trainStats.variances[UU] = data.getVariance(UU);
 }
 
 /* MUTATORS */
 
-// Updates the FixedModelData with the specific DD times (overwrites existing)
-void Profile::setDataDd(unordered_map<string, Graph> dd) {
-    data.setDd(dd);
+// Updates the FixedModelData with the specific graph times (overwrites existing)
+void Profile::setDataGraph(graphType type, unordered_map<string, Graph> graph) {
+    data.setGraph(type, graph);
 }
 
 // Updates the data in this Profile with the provided FixedModelData

@@ -39,7 +39,7 @@ struct FixedModelData {
     float calcScore(graphType type, unordered_map<string, Graph> instance); // creates a score, given typing instance 
 
     /* MUTATORS */
-    void setDd(unordered_map<string, Graph> newDd); // overwrites dd with specified map
+    void setGraph(graphType type, unordered_map<string, Graph> graph); // overwrites dd with specified map
 
     /* DESTRUCTOR */
     ~FixedModelData();

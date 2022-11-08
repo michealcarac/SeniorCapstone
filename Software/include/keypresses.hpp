@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/7/2022 
+   Last Edited: 11/8/2022 
    Purpose: This file describes the Keypresses class.
 */
 
@@ -34,6 +34,7 @@ using std::string;
 using std::vector;
 using std::ostream;
 using std::iterator;
+using std::to_string;
 using std::unordered_map;
 
 class Keypresses {
@@ -45,7 +46,11 @@ class Keypresses {
         /* FUNCTIONS */
         vector<Keypress> getDownstrokes(); // returns a vector of all downstrokes 
         vector<Keypress> getUpstrokes(); // returns a vector of all upstrokes
-        unordered_map<string, Graph> calcDD(); // calculate DU times from keystrokes into dd
+        unordered_map<string, Graph> calcM(); // calculate M times from keystrokes
+        unordered_map<string, Graph> calcDU(); // calculate DU times from keystrokes 
+        unordered_map<string, Graph> calcUD(); // calculate UD times from keystrokes 
+        unordered_map<string, Graph> calcDD(); // calculate DD times from keystrokes
+        unordered_map<string, Graph> calcUU(); // calculate UU times from keystrokes
         // vector<float> mean(); // returns the average of the DU, UD, DD, UU times
 
         /* OVERLOADS */
@@ -60,12 +65,6 @@ class Keypresses {
         void appendKeypress(Keypress& keypress); // appends the keypress to keystrokes
 
     private:
-        /* FUNCTIONS */
-        // void calcM(); // calculate M times from keystrokes into m
-        // void calcDU(); // calculate DU times from keystrokes into du
-        // void calcUD(); // calculate DU times from keystrokes into ud
-        // void calcUU(); // calculate DU times from keystrokes into uu
-
         /* MEMBERS */
         vector<Keypress> keystrokes; // collection of keystrokes
 };

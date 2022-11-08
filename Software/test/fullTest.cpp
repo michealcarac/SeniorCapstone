@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone
    Writer(s): Aaron R. Jones
-   Last Edited: 11/3/2022
+   Last Edited: 11/8/2022
    Purpose: This file tests the use of a real keyboard for input to the system, 
             including profile creation, training, and testing.
    Adapted From: https://blog.robertelder.org/detect-keyup-event-linux-terminal/
@@ -288,7 +288,7 @@ int main() {
     cout << "Training Complete!" << endl << endl;
     
     // add the DD to the profile trained set
-    profile->setDataDd(presses->calcDD());
+    profile->setDataGraph(DD, presses->calcDD());
     GraphStats stats = profile->getTrainStats();
 
     cout << "Got stats: " << endl;

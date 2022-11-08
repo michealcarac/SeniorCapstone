@@ -231,8 +231,27 @@ float FixedModelData::calcScore(graphType type, unordered_map<string, Graph> ins
 /* MUTATORS */
 
 // Overwrites DD with specified map
-void FixedModelData::setDd(unordered_map<string, Graph> newDd) {
-    dd = newDd;
+void FixedModelData::setGraph(graphType type, unordered_map<string, Graph> graph) {
+    switch(type) {
+        case M:
+            m = graph;
+            break;
+        case DU:
+            du = graph;
+            break;
+        case UD:
+            ud = graph;
+            break;
+        case DD:
+            dd = graph;
+            break;
+        case UU:
+            uu = graph;
+            break;
+        default: // to avoid questionable behavior 
+            // intentionally empty
+            break;
+    }
 }
 
 /* OVERLOAD */

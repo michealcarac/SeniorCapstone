@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/20/2022 
+   Last Edited: 11/8/2022 
    Purpose: This file implements the Keypresses class 
 */
 
@@ -99,17 +99,19 @@ void Keypresses::appendKeypress(Keypress& keypress) {
 
 /* PRIVATE FUNCTIONS */
 
-/* NO LONGER NEEDED IN THIS CLASS
-
 // calculates monograph times between each element of keystrokes
-void Keypresses::calcM() {
-    m.clear();
+unordered_map<string, Graph> Keypresses::calcM() {
+    unordered_map<string, Graph> m;
 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
     vector<Keypress> upstrokes = getUpstrokes();
     sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
+
+    if(downstrokes.size() < 1 || upstrokes.size() < 1) return m; // not valid for finding monographs
+
+    m.reserve(downstrokes.size()); // create space 
 
     for(int j = 0; j < downstrokes.size(); j++) { 
         int i;
@@ -119,21 +121,36 @@ void Keypresses::calcM() {
         }
 
         if(i != upstrokes.size()) { // if an upstroke was found 
-            m.push_back(abs(downstrokes.at(j).time - upstrokes.at(i).time)); // get the time
-            upstrokes.erase(upstrokes.begin() + i); // remove the upstroke we just calculated with 
+            float time = abs(downstrokes.at(j).time - upstrokes.at(i).time); // get the time
+            if(time > GRAPH_TIMEOUT) continue; // ignore graphs that are too long
+
+            string code;
+            code.push_back(downstrokes.at(j).character); // get the monograph code
+            
+            if((m).count(code) == 1) { // the graphCode already exists in the map
+                (m)[code].addDuration(time);
+            } else { // the graphCode has not been seen in the map
+                (m)[code] = Graph(time);
+            }
+            
+            upstrokes.erase(upstrokes.begin() + i); // remove the upstroke we just calculated with.  not needed for downstrokes
         }
     }
+
+    return m;
 }
 
 // calculates down-up times between each element of keystrokes
-void Keypresses::calcDU() {
-    du.clear();
+unordered_map<string, Graph> Keypresses::calcDU() {
+    unordered_map<string, Graph> du;
 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
     vector<Keypress> upstrokes = getUpstrokes();
     sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
+
+    if(downstrokes.size() < 2 || upstrokes.size() < 2) return du; // not valid for finding du graphs
 
     for(int j = 0; j < downstrokes.size(); j++) { 
         int i;
@@ -143,21 +160,37 @@ void Keypresses::calcDU() {
         }
 
         if(i != upstrokes.size()) { // if an upstroke was found 
-            du.push_back(abs(downstrokes.at(j).time - upstrokes.at(i).time)); // get the time
+            float time = abs(downstrokes.at(j).time - upstrokes.at(i).time); // get time
+            if(time > GRAPH_TIMEOUT) continue; // ignore graphs that are too long
+
+            string code; // get code
+            code.push_back(downstrokes.at(j).character);
+            code.push_back(upstrokes.at(i).character);
+
+            if((du).count(code) == 1) { // the graphCode already exists in the map
+                (du)[code].addDuration(time);
+            } else { // the graphCode has not been seen in the map
+                (du)[code] = Graph(time);
+            }
+
             upstrokes.erase(upstrokes.begin() + i); // remove the upstroke we just calculated with 
         }
     }
+
+    return du;
 }
 
 // calculates up-down times between each element of keystrokes
-void Keypresses::calcUD() {
-    ud.clear();
+unordered_map<string, Graph> Keypresses::calcUD() {
+    unordered_map<string, Graph> ud;
 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
     vector<Keypress> upstrokes = getUpstrokes();
     sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
+
+    if(downstrokes.size() < 2 || upstrokes.size() < 2) return ud; // not valid for finding ud graphs
 
     for(int j = 0; j < upstrokes.size(); j++) { 
         int i;
@@ -167,12 +200,25 @@ void Keypresses::calcUD() {
         }
 
         if(i != downstrokes.size()) { // if a downstroke was found
-            ud.push_back(abs(upstrokes.at(j).time - downstrokes.at(i).time)); // get the time
+            float time = abs(upstrokes.at(j).time - downstrokes.at(i).time); // get time
+            if(time > GRAPH_TIMEOUT) continue; // ignore graphs that are too long
+
+            string code; // get code
+            code.push_back(upstrokes.at(j).character);
+            code.push_back(downstrokes.at(i).character);
+
+            if((ud).count(code) == 1) { // the graphCode already exists in the map
+                (ud)[code].addDuration(time);
+            } else { // the graphCode has not been seen in the map
+                (ud)[code] = Graph(time);
+            }
+
             downstrokes.erase(downstrokes.begin() + i); // remove the upstroke we just calculated with 
         }
     }
+
+    return ud;
 }
-*/
 
 // calculates down-down times between each element of keystrokes
 unordered_map<string, Graph> Keypresses::calcDD() {
@@ -201,21 +247,31 @@ unordered_map<string, Graph> Keypresses::calcDD() {
     return dd;
 }
 
-/*
 // calculates up-up times between each element of keystrokes
-void Keypresses::calcUU() {
-    uu.clear();
+unordered_map<string, Graph> Keypresses::calcUU() {
+    unordered_map<string, Graph> uu;
 
     vector<Keypress> upstrokes = getUpstrokes();
     sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
 
-    if(upstrokes.size() < 2) return; // only execute if there are enough downstrokes to count 
+    if(upstrokes.size() < 2) return uu; // only execute if there are enough upstrokes to count 
 
     uu.reserve(upstrokes.size() - 1);
 
     for(int i = 0; i < upstrokes.size() - 1; i++) {
-        uu.push_back(abs(upstrokes.at(i).time - upstrokes.at(i + 1).time));
-    }
-}
+        float time = abs(upstrokes.at(i).time - upstrokes.at(i + 1).time);
+        if(time > GRAPH_TIMEOUT) continue; // ignore graphs that are too long
+        
+        string code;
+        code.push_back(upstrokes.at(i).character);
+        code.push_back(upstrokes.at(i + 1).character);
 
-*/ 
+        if((uu).count(code) == 1) { // the graphCode already exists in the map
+            (uu)[code].addDuration(time);
+        } else { // the graphCode has not been seen in the map
+            (uu)[code] = Graph(time);
+        }
+    }
+
+    return uu;
+}

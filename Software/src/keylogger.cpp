@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/7/2022 
+   Last Edited: 11/8/2022 
    Purpose: This file implements the Keylogger class.
 */
 
@@ -109,11 +109,23 @@ void Keylogger::runAuthPi() {
                     k = new Keypress((float) time, KEY_RELEASED, receivedChar);
                     presses->appendKeypress(*k);
                     if(runningInput == profiles.at(currentProfile).getPassword()) { // if the password has been entered
-                        sleep_for(milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
+                        //sleep_for(milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
                         cout << endl << "Password entered: " << runningInput << " Attempt " << ++numTries;
                         runningInput = "";
+
+                        unordered_map<string, Graph> attemptM = presses->calcM();// get M stats from keypresses
+                        unordered_map<string, Graph> attemptDU = presses->calcDU();// get DU stats from keypresses
+                        unordered_map<string, Graph> attemptUD = presses->calcUD();// get UD stats from keypresses
                         unordered_map<string, Graph> attemptDD = presses->calcDD();// get DD stats from keypresses
-                        float score = profiles.at(currentProfile).getData().calcScore(DD, attemptDD); // generate score, get value for threshold
+                        unordered_map<string, Graph> attemptUU = presses->calcUU();// get UU stats from keypresses
+
+                        float score = 0.0f;
+                        // score += profiles.at(currentProfile).getData().calcScore(M, attemptM); // generate score, get value for threshold
+                        // score += profiles.at(currentProfile).getData().calcScore(DU, attemptDU); // generate score, get value for threshold
+                        // score += profiles.at(currentProfile).getData().calcScore(UD, attemptUD); // generate score, get value for threshold
+                        score += profiles.at(currentProfile).getData().calcScore(DD, attemptDD); // generate score, get value for threshold
+                        // score += profiles.at(currentProfile).getData().calcScore(UU, attemptUU); // generate score, get value for threshold
+
                         scores.push_back(score);
                         cout << ", Score: " << score;
                         if(score <= threshold) {
@@ -234,7 +246,12 @@ void Keylogger::runTrainPi() {
     }
 
     // give user statistics
-    profiles.at(currentProfile).setDataDd(presses->calcDD());
+    profiles.at(currentProfile).setDataGraph(M, presses->calcM());
+    profiles.at(currentProfile).setDataGraph(DU, presses->calcDU());
+    profiles.at(currentProfile).setDataGraph(UD, presses->calcUD());
+    profiles.at(currentProfile).setDataGraph(DD, presses->calcDD());
+    profiles.at(currentProfile).setDataGraph(UU, presses->calcUU());
+
     GraphStats stats = profiles.at(currentProfile).getTrainStats();
     cout << "Got Stats: " << endl;
     cout << stats << endl;

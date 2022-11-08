@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/3/2022 
+   Last Edited: 11/8/2022 
    Purpose: This file implements the GraphStats struct.
 */
 
@@ -23,17 +23,19 @@ ostream& operator<<(ostream& os, const GraphStats& stats) {
         for(auto iter = it->second.begin(); iter != it->second.end(); ++iter) {
             os << iter->first << "(" << iter->second << "), ";
         }
-        os << "\b\b] " << endl;
+        os << "\b\b] ";
     }
 
-    os << "Variances: ";
+    os << endl << "Variances: ";
     for(auto it = stats.variances.begin(); it != stats.variances.end(); ++it) {
         os << Graph::graphTypeAsString(it->first) << "[";
         for(auto iter = it->second.begin(); iter != it->second.end(); ++iter) {
             os << iter->first << "(" << iter->second << "), ";
         }
-        os << "\b\b]";
+        os << "\b\b] ";
     }
+
+    os << endl;
 
     return os;
 }
