@@ -18,6 +18,7 @@
 #define LCD_DRIVER_H
 
 #include <string>
+#include "i2cControl.hpp"
 using std::string;
 
 // Define some device parameters

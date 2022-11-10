@@ -6,6 +6,7 @@
    Adapted From: https://blog.robertelder.org/detect-keyup-event-linux-terminal/
 */
 
+/* INCLUDES */
 #include "keylogger.hpp"
 
 /* NAMESPACE */
@@ -66,5 +67,6 @@ int main() {
 
     // closeout
     delete logger;
+
     cout << endl << "End of keyloggerTest" << endl;
 }

@@ -33,6 +33,16 @@ Keylogger::Keylogger() {
     }
 
     currentProfile = 0; // select the first profile
+
+    // create LCD 
+    I2cControl *i2c = new I2cControl(1); //Using software i2c
+    lcd = new LcdDriver(LCD_ADDRESS, i2c);
+    lcd->setDisplayOnCursorOff();
+    lcd->setLine(TOP, getModeAsString());
+    lcd->setLine(BOTTOM, getCurrentProfile()->getName());
+
+    // set up com port
+    system("stty -F /dev/ttyUSB0 115200");
 }
 
 /* FUNCTIONS */
@@ -168,6 +178,9 @@ void Keylogger::runAuthPi() {
 
 // run the training algorithm
 void Keylogger::runTrainPi() {
+    ofstream outfile;
+    outfile.open("/dev/ttyUSB0", std::ios::out);\
+
     if(currentProfile >= profiles.size()) {
         cerr << "Error in runTrainPi(): select a valid profile." << endl;
         return;
@@ -188,6 +201,9 @@ void Keylogger::runTrainPi() {
     Keypress *k;
     presses->clearData();
 
+    lcd->clearLine(TOP);
+    lcd->setLine(TOP, getModeAsString() + " " + to_string(numEntries));
+
     bool done = false;
     while (!done) { // loop until fully trained, or gui is done
         XNextEvent(d, &event);
@@ -198,19 +214,34 @@ void Keylogger::runTrainPi() {
 
                 if(received == BACKSPACE && runningInput.length() != 0) { // handle backspace
                     runningInput.pop_back();
+                    outfile << (char) 0x7f;
+                    outfile.flush();
                     cout << "\b \b"; // remove the character from the console
                     cout.flush();
                     break;
                 } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
-                    upper = true;
+                    upper = !upper;
                     break;
                 } else if(received == ENTER) {
+                    outfile << "\r";
+                    outfile.flush();
                     break;
+                } else if (received == CAPS) {
+                    upper = !upper;
+                    break;
+                } else if (received == BACKSPACE) {
+                    outfile << (char) 0x7f;
+                    outfile.flush();
+                    break;
+                } else if (upper && received >= 48 && received <= 57) {
+                    receivedChar = intToSpecial(received);
+                } else {
+                    if(upper) receivedChar = toupper(char(received)); // get the character 
+                    else receivedChar = char(received);
                 }
 
-                if(upper) receivedChar = toupper(char(received)); // get the character 
-                else receivedChar = char(received);
-                
+                outfile << receivedChar;
+                outfile.flush();
                 runningInput += receivedChar; // add the input key to the runningInput
                 cout << receivedChar;
                 cout.flush();
@@ -225,7 +256,7 @@ void Keylogger::runTrainPi() {
                     if(received == BACKSPACE) {
                         break;
                     } else if(received == L_SHIFT || received == R_SHIFT) { // handle shift
-                        upper = false;
+                        upper = !upper;
                         break;
                     } else if(received == ENTER) {
                         break;
@@ -239,6 +270,8 @@ void Keylogger::runTrainPi() {
                     if(runningInput == profiles.at(currentProfile).getPassword()) { // if the password has been entered
                         sleep_for(milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
                         cout << endl << "Password entered: " << runningInput << " Entry " << ++numEntries << endl;
+                        lcd->clearLine(TOP);
+                        lcd->setLine(TOP, getModeAsString() + " " + to_string(numEntries));
                         runningInput = "";
                     }
                 }
@@ -263,6 +296,13 @@ void Keylogger::runTrainPi() {
     cout << "Got Stats: " << endl;
     cout << stats << endl;
 
+    // reset LCD
+    lcd->clearLine(TOP);
+    lcd->setLine(TOP, getModeAsString());
+
+    // close out com port
+    outfile.close();
+
     // close out vars
     delete k;
 
@@ -286,15 +326,21 @@ void Keylogger::nextMode() {
         default:
             currentMode = Disable;
     }
+    lcd->clearLine(TOP);
+    lcd->setLine(TOP, getModeAsString());
 }
 
 // Move to the next mode in the sequence
 void Keylogger::nextProfile() {
+    lcd->clearLine(BOTTOM);
+
     if(currentProfile < ((int) profiles.size() - 1)) { // if we can just increment
         currentProfile++; // do it
+        lcd->setLine(BOTTOM, profiles.at(currentProfile).getName());
         return;
     } else if (currentProfile == ((int) profiles.size() - 1)) { // if we are at the last profile
         // prompt for removal of profile
+        lcd->setLine(BOTTOM, "Delete Profile");
         string input;
         cout << "Would you like to delete a profile (y/n)? ";
         cin >> input;
@@ -311,6 +357,7 @@ void Keylogger::nextProfile() {
     } else { 
         // prompt for a new profile
         string input;
+        lcd->setLine(BOTTOM, "Create Profile");
         cout << "Would you like to create a profile (y/n)? ";
         cin >> input;
         if(input == "y") {
@@ -318,6 +365,8 @@ void Keylogger::nextProfile() {
             profiles.insert(profiles.begin(), p); // add the profile, if it was created
         }
         currentProfile = 0;
+        lcd->clearLine(BOTTOM);
+        lcd->setLine(BOTTOM, profiles.at(currentProfile).getName());
         return;
     }
 
@@ -343,8 +392,12 @@ Profile* Keylogger::getCurrentProfile() {
         Profile *p = new Profile(profiles.at(currentProfile));
         return p;
     }
+
+    if (currentProfile == ((int) profiles.size() - 1)) { // if we are at the last profile
+        return new Profile("Delete Profile");
+    }
     
-    return new Profile("Delete Profile");
+    return new Profile("Create Profile");
 }
 
 // returns the current mode as a string
@@ -373,6 +426,23 @@ void Keylogger::setCurrentMode(Modes newMode) {
 // sets the current profile (int location) of the Keylogger
 void Keylogger::setCurrentProfile(int newProfile) {
     currentProfile = newProfile;
+}
+
+/* PRIVATE FUNCTIONS */
+char Keylogger::intToSpecial(long received) {
+    switch(received) {
+        case 48: return ')';
+        case 49: return '!';
+        case 50: return '@';
+        case 51: return '#';
+        case 52: return '$';
+        case 53: return '%';
+        case 54: return '^';
+        case 55: return '&';
+        case 56: return '*';
+        case 57: return '(';
+    }
+    return ' ';
 }
 
 /* PRIVATE FUNCTIONS FOR PI */
@@ -426,4 +496,9 @@ void Keylogger::createWindow() {
 Keylogger::~Keylogger() {
     saveAllProfiles();
     if(presses) delete presses;
+    if(i2c) delete i2c;
+    if(lcd) {
+        lcd->clearDisplayClearMem();
+        delete lcd;
+    }
 }

@@ -15,6 +15,7 @@
 #define L_SHIFT 65505
 #define R_SHIFT 65506
 #define ENTER 65293
+#define CAPS 65509
 #define GRAPH_TIMEOUT 0.5f // if a graph is greater than .5 seconds, ignore it 
 
 /* INCLUDES */

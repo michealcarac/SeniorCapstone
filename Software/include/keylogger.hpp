@@ -16,9 +16,12 @@
 #include <vector>
 #include <thread>
 #include <iostream>
+#include <fstream>
 #include "modes.hpp"
 #include "profile.hpp"
+#include "lcdDriver.hpp"
 #include "keypresses.hpp"
+#include "i2cControl.hpp"
 
 /* FOR USE WITH PI */
 #include <X11/Xlib.h>
@@ -27,12 +30,18 @@
 #include <X11/Xatom.h>
 #include <X11/keysym.h>
 
+/* DEFINES */
+#define LCD_ADDRESS 0x27
+#define TOP 1
+#define BOTTOM 2
+
 /* NAMESPACES */
 using std::cin;
 using std::cout;
 using std::cerr;
 using std::endl;
 using std::vector;
+using std::ofstream;
 using std::to_string;
 using std::chrono::system_clock;
 using std::chrono::milliseconds;
@@ -80,9 +89,13 @@ class Keylogger {
         Atom closeMessage;
         XEvent event;
 
+        I2cControl *i2c;
+        LcdDriver *lcd;
+
         bool was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_type); // checks is a keypress in the global window was held down
         void createWindow(); // creates a X11 window for keypress receipt, requires global vars
         static Profile* buildProfile(); // Prompts the user for the creation of a file 
+        static char intToSpecial(long received); // converts a long from the keyboard into a special character
 };
 
 #endif

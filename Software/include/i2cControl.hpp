@@ -15,6 +15,9 @@
     along with RaspLCDDriver.  If not, see <http://www.gnu.org/licenses/>. 
 */
 
+#ifndef I2C_CONTROL_HPP
+#define I2C_CONTROL_HPP
+
 #include <unistd.h>				//Needed for I2C port
 #include <fcntl.h>				//Needed for I2C port
 #include <sys/ioctl.h>			//Needed for I2C port
@@ -32,3 +35,5 @@ class I2cControl
         void readI2c();
         void writeByte(unsigned char address, unsigned char byte);
 };
+
+#endif

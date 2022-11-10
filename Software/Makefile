@@ -24,8 +24,8 @@ lcdTest.o: lcdTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/lcdTest.o ./*/lcdTest.cpp
 
 # Create the keyloggerTest
-keyloggerTest.out: keyloggerTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o graphStats.o keylogger.o
-	$(CPPC)  -o ./bin/keyloggerTest.out ./build/keyloggerTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/keypress.o ./build/keypresses.o ./build/graphStats.o ./build/keylogger.o $(LDFLAGS)
+keyloggerTest.out: keyloggerTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o graphStats.o keylogger.o i2cControl.o lcdDriver.o
+	$(CPPC)  -o ./bin/keyloggerTest.out ./build/keyloggerTest.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/keypress.o ./build/keypresses.o ./build/graphStats.o ./build/keylogger.o ./build/i2cControl.o ./build/lcdDriver.o $(LDFLAGS)
 
 keyloggerTest.o: keyloggerTest.cpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/keyloggerTest.o ./*/keyloggerTest.cpp
