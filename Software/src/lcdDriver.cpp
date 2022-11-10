@@ -214,6 +214,7 @@ unsigned char LcdDriver::convertRowColtoHex(int row, int col)
         sprintf(buffer, "No such col number %i\n.Valid cols are 0 -  %i", col, LCD_WIDTH-1);
         error(buffer);
     }
+    return currentLineHex;
 }
 
 

@@ -3,7 +3,7 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out keyloggerTest.out
+all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out keyloggerTest.out lcdTest.out
 #all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
@@ -15,6 +15,13 @@ LDFLAGS = -g -L/opt/X11/lib -lX11
 BUILDDIR = ./build
 BINDIR = ./bin
 PROFDIR = ./profiles
+
+# Create the lcdTest
+lcdTest.out: lcdTest.o i2cControl.o lcdDriver.o
+	$(CPPC)  -o ./bin/lcdTest.out ./build/lcdTest.o ./build/i2cControl.o ./build/lcdDriver.o 
+
+lcdTest.o: lcdTest.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/lcdTest.o ./*/lcdTest.cpp
 
 # Create the keyloggerTest
 keyloggerTest.out: keyloggerTest.o profile.o fixedModelData.o graph.o keypress.o keypresses.o graphStats.o keylogger.o
@@ -93,6 +100,12 @@ profile.o: profile.cpp profile.hpp
 
 fixedModelData.o: fixedModelData.cpp fixedModelData.hpp
 	$(CPPC) $(CPPFLAGS) -c -o ./build/fixedModelData.o ./*/fixedModelData.cpp
+
+i2cControl.o: i2cControl.cpp i2cControl.hpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/i2cControl.o ./*/i2cControl.cpp
+
+lcdDriver.o: lcdDriver.cpp lcdDriver.hpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/lcdDriver.o ./*/lcdDriver.cpp
 
 # Created needed directories
 directories: $(BUILDDIR) $(BINDIR) $(PROFDIR)
