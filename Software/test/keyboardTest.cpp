@@ -77,13 +77,13 @@ int main() {
 
                     // print output
                     cout << *presses << endl;
-                    vector<float> averages = presses->mean();
-                    cout << "M:  " << averages.at(0) << endl;
-                    cout << "DU: " << averages.at(1) << endl;
-                    cout << "UD: " << averages.at(2) << endl;
-                    cout << "DD: " << averages.at(3) << endl;
-                    cout << "UU: " << averages.at(4) << endl;
-                    cout << endl;
+                    // vector<float> averages = presses->mean();
+                    // cout << "M:  " << averages.at(0) << endl;
+                    // cout << "DU: " << averages.at(1) << endl;
+                    // cout << "UD: " << averages.at(2) << endl;
+                    // cout << "DD: " << averages.at(3) << endl;
+                    // cout << "UU: " << averages.at(4) << endl;
+                    // cout << endl;
 
                     cout << "---------------------------------------------------" << endl;
                     //fprintf(stdout, "key #%ld was released.\n", (long)XLookupKeysym(&event.xkey, 0));

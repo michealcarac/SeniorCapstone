@@ -69,6 +69,7 @@ int main() {
     }
     cout << endl;
 
+    /* NO LONGER IN THIS CLASS
     // test M
     cout << "Testing getM() and calcM():" << endl;
     vector<float> mTimes = presses->getM();
@@ -118,6 +119,8 @@ int main() {
     cout << "   DD: " << averages.at(3) << endl;
     cout << "   UU: " << averages.at(4) << endl;
     cout << endl;
+
+    */ 
 
     // test clearData
     cout << "Testing clearData():" << endl;

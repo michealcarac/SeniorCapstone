@@ -11,9 +11,6 @@
 /* DEFINES */
 #define PROFILE_SAVE_DIR "./testOutput"
 
-/* FUNCTION DEFINITIONS */
-void printWeights(Profile* p);
-
 /* MAIN */
 // run this to test the functionality of the Profile class
 int main() {
@@ -30,16 +27,17 @@ int main() {
     cout << *p2 << endl;
     cout << *p3 << endl;
 
+    /* NO LONGER APPLICABLE */
     // Test the various set/get trainings
-    p1->incrementNumTrainings();
-    p2->setNumTrainings(5);
-    for(int i = 0; i < 9; i++) p3->incrementNumTrainings();
-    cout << "-------------------------------------------------" << endl;
-    cout << "Testing get/set/increment numTrainings" << endl;
-    cout << "p1->incrementNumTrainings():                            " << p1->getNumTrainings() << endl; 
-    cout << "p2->setNumTrainings(5):                                 " << p2->getNumTrainings() << endl; 
-    cout << "for(int i = 0; i < 9; i++) p3->incrementNumTrainings(): " << p3->getNumTrainings() << endl; 
-    cout << endl;
+    // p1->incrementNumTrainings();
+    // p2->setNumTrainings(5);
+    // for(int i = 0; i < 9; i++) p3->incrementNumTrainings();
+    // cout << "-------------------------------------------------" << endl;
+    // cout << "Testing get/set/increment numTrainings" << endl;
+    // cout << "p1->incrementNumTrainings():                            " << p1->getNumTrainings() << endl; 
+    // cout << "p2->setNumTrainings(5):                                 " << p2->getNumTrainings() << endl; 
+    // cout << "for(int i = 0; i < 9; i++) p3->incrementNumTrainings(): " << p3->getNumTrainings() << endl; 
+    // cout << endl;
 
     // Test setPassword/getPassword
     cout << "-------------------------------------------------" << endl;
@@ -78,17 +76,18 @@ int main() {
     cout << "p2 before: " << p1->getData() << endl;
     cout << endl;
 
+    /* NO LONGER APPLICABLE */
     // Test setWeights/getWeights
-    cout << "-------------------------------------------------" << endl;
-    cout << "Testing setWeights()/getWeights()" << endl;
-    cout << "p1 before: ";
-    printWeights(p1);
-    cout << endl;
-    float weightTest[] = {.1, .2, .3, .4};
-    p1->setWeights(weightTest);
-    cout << "p1 after: ";
-    printWeights(p1);
-    cout << endl << endl;
+    // cout << "-------------------------------------------------" << endl;
+    // cout << "Testing setWeights()/getWeights()" << endl;
+    // cout << "p1 before: ";
+    // printWeights(p1);
+    // cout << endl;
+    // float weightTest[] = {.1, .2, .3, .4};
+    // p1->setWeights(weightTest);
+    // cout << "p1 after: ";
+    // printWeights(p1);
+    // cout << endl << endl;
 
     // Test getThreshold/setThreshold
     cout << "-------------------------------------------------" << endl;
@@ -118,10 +117,4 @@ int main() {
 
     cout << endl << "End of profileTest" << endl << endl;
     return 0;
-}
-
-void printWeights(Profile* p) {
-    cout << "[";
-    for(int i = 0; i < NUM_WEIGHTS - 1; i++) cout << p->getWeights()[i] << ", ";
-    cout << p->getWeights()[NUM_WEIGHTS-1] << "]";
 }

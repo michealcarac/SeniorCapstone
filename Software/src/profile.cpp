@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/19/2022 
+   Last Edited: 11/8/2022 
    Purpose: This file implements the Profile class 
 */
 
@@ -12,6 +12,7 @@
 Profile::Profile() {
     name = "UNNAMED";
     data = FixedModelData();
+    trainStats = GraphStats();
     type = Fixed;
 }
 
@@ -19,6 +20,7 @@ Profile::Profile() {
 Profile::Profile(string newName) {
     name = newName;
     data = FixedModelData();
+    trainStats = GraphStats();
     type = Fixed;
 }
 
@@ -26,6 +28,7 @@ Profile::Profile(string newName) {
 Profile::Profile(string newName, ModelType newType) {
     name = newName;
     data = FixedModelData();
+    trainStats = GraphStats();
     type = newType;
 }
 
@@ -34,6 +37,16 @@ Profile::Profile(string newName, ModelType newType, FixedModelData newData) {
     name = newName;
     data = newData;
     type = newType;
+    updateTrainStats();
+}
+
+// Copy constructor
+Profile::Profile(Profile *p) {
+    name = p->getName();
+    data = p->getData();
+    trainStats = p->getTrainStats();
+    type = p->getType();
+
 }
 
 /* FUNCTIONS */
@@ -47,11 +60,6 @@ void Profile::resetData() {
     data = FixedModelData(data.password);
 }
 
-// Increments the number of trainings that the profile has undergone 
-void Profile::incrementNumTrainings() {
-    data.numTrainings++;
-}
-
 // Writes this profile to [filename] file using a standard format
 void Profile::writeProfile(const string filepath, const string filename) {
     ofstream outfile;
@@ -63,7 +71,8 @@ void Profile::writeProfile(const string filepath, const string filename) {
 // Reads a profile from the file at [filepath]/[filename]
 Profile* Profile::readProfile(string filepath, string filename) {
     ifstream infile;
-    infile.open(filepath + FOLDER_DELIM + filename, std::ios::in);
+    if(filename == "") infile.open(filepath, std::ios::in);
+    else infile.open(filepath + FOLDER_DELIM + filename, std::ios::in);
 
     if (!infile.is_open()) {
         cerr << "readProfile() failed to open the file at " << filepath << FOLDER_DELIM << filename;
@@ -91,7 +100,30 @@ Profile* Profile::readProfile(string filepath, string filename) {
     return new Profile(name, type, data);
 }
 
+/* PRIVATE FUNCTIONS */
+void Profile::updateTrainStats() {
+    // means
+    trainStats.means[M] = data.getMean(M);
+    trainStats.means[DU] = data.getMean(DU);
+    trainStats.means[UD] = data.getMean(UD);
+    trainStats.means[DD] = data.getMean(DD);
+    trainStats.means[UU] = data.getMean(UU);
+
+
+    // variances
+    trainStats.variances[M] = data.getVariance(M);
+    trainStats.variances[DU] = data.getVariance(DU);
+    trainStats.variances[UD] = data.getVariance(UD);
+    trainStats.variances[DD] = data.getVariance(DD);
+    trainStats.variances[UU] = data.getVariance(UU);
+}
+
 /* MUTATORS */
+
+// Updates the FixedModelData with the specific graph times (overwrites existing)
+void Profile::setDataGraph(graphType type, unordered_map<string, Graph> graph) {
+    data.setGraph(type, graph);
+}
 
 // Updates the data in this Profile with the provided FixedModelData
 void Profile::setData(const FixedModelData newData) { data = newData; }
@@ -99,43 +131,31 @@ void Profile::setData(const FixedModelData newData) { data = newData; }
 // Updates the password in this Profile's FixedModelData
 void Profile::setPassword(const string newPassword) { data.password = newPassword; }
 
-// Updates the weights in this Profile's FixedModelData
-void Profile::setWeights(const float newWeights[]) { 
-    for(int i = 0; i < NUM_WEIGHTS; i++) {
-        data.weights[i] = newWeights[i]; 
-    }
-}
-// Updates the numTrainings in this Profile's FixedModelData
-void Profile::setNumTrainings(const int newTrainings) { data.numTrainings = newTrainings; }
-
 // Updates the threshold in this Profile's FixedModelData
 void Profile::setThreshold(const float newThreshold) { data.threshold = newThreshold; }
 
 /* ACCESSORS */
 
+// Returns the most updated version of TrainStats
+GraphStats Profile::getTrainStats() { 
+    updateTrainStats();
+    return trainStats; 
+}
+
 // Returns this profile's data struct
 FixedModelData Profile::getData() { return data; }
 
-// Returns an array of length NUM_WEIGHTS, whose contents are a copy of this Profile's FixedModelData.weights
-float* Profile::getWeights() {
-    float *weights = new float[NUM_WEIGHTS];
-    for(int i = 0; i < NUM_WEIGHTS; i++) {
-        weights[i] = data.weights[i];
-    }
-    return weights;
-}
-
 // Returns this Profile's password, as held in FixedModelData
 string Profile::getPassword() { return data.password; }
-
-// Returns the number of times that this Profile has been trained, as held in FixedModelData
-int Profile::getNumTrainings() { return data.numTrainings; }
 
 // Returns the threshold for this profile, as held in FixedModelData
 float Profile::getThreshold() { return data.threshold; }
 
 // Returns the name of this profile
 string Profile::getName() { return name; }
+
+// return the type of this profile
+ModelType Profile::getType() { return type; }
 
 /* OVERLOADS */
 // Overloads the << operator (essentially toString())

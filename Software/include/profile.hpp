@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/19/2022 
+   Last Edited: 11/2/2022 
    Purpose: This file defines the Profile class
 */
 
@@ -16,7 +16,9 @@
 #include <fstream>
 #include <filesystem>
 #include <sys/stat.h>
+#include <unordered_map>
 #include "modelType.hpp"
+#include "graphStats.hpp"
 #include "fixedModelData.hpp"
 
 /* NAMESPACES */
@@ -28,6 +30,7 @@ using std::ostream;
 using std::getline;
 using std::ofstream;
 using std::ifstream;
+using std::unordered_map;
 
 class Profile {
     public:
@@ -36,28 +39,30 @@ class Profile {
         Profile(string newName); // Creates a Profile with given name, using Fixed text
         Profile(string newName, ModelType newType); // Creates a profile with the given name and ModelType
         Profile(string newName, ModelType newType, FixedModelData newData); // creates a profile with specified options
+        Profile(Profile *p); // copy constructor
 
         /* FUNCTIONS */
         void clearData(); // clear this profile's data
         void resetData(); // clear this profile's data, keeping the old password
-        void incrementNumTrainings(); // increment the number of trainings for this profile
         void writeProfile(const string filepath, const string filename); // writes this profile to a .txt file
-        static Profile* readProfile(string filepath, string filename);
+        static Profile* readProfile(string filepath, string filename); // reads a profile.txt file
+
+        /* FUNCTIONS FOR ALGORITHMS */
+        
 
         /* MUTATORS */
+        void setDataGraph(graphType type, unordered_map<string, Graph> graph); // set the graph data in this profile's FixedModelData
         void setData(const FixedModelData newData);  // update the data held in this profile
         void setPassword(const string newPassword); // update the password for this profile
-        void setWeights(const float newWeights[]); // update the weights for this profile
-        void setNumTrainings(const int newTrainings); // set the number of trainings for this model
         void setThreshold(const float newThreshold); // set a new threshold for this profile 
 
         /* ACCESSORS */
+        GraphStats getTrainStats(); // returns the most updated version of TrainStats()
         FixedModelData getData(); // get the FixedModelData struct for this profile
-        float* getWeights(); // get the weights for this profile
         string getPassword(); // get the password for this model
-        int getNumTrainings(); // get the number of trainings for this profile
         float getThreshold(); // get the threshold for this profile
         string getName(); // get the name of this profile
+        ModelType getType(); // get the type of this profile
 
         /* OVERLOADS */
         friend ostream& operator<<(ostream& os, const Profile& profile);
@@ -65,9 +70,14 @@ class Profile {
         /* DESTRUCTOR */
         ~Profile();
     private:
+        /* MEMBERS */
         string name; // The name of the profile
         FixedModelData data; // the data contained by this profile 
-        ModelType type;
+        GraphStats trainStats; // trained model mean, variance
+        ModelType type; // the type of the model (Fixed, Free)
+
+        /* FUNCTIONS */
+        void updateTrainStats(); // update the trainStats graph 
 };
 
 #endif

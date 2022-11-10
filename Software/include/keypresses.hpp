@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/20/2022 
+   Last Edited: 11/8/2022 
    Purpose: This file describes the Keypresses class.
 */
 
@@ -9,23 +9,33 @@
 
 /* DEFINES */
 #define DEFAULT_SIZE 20
+#define KEY_PRESSED false
+#define KEY_RELEASED true
+#define BACKSPACE 65288
+#define L_SHIFT 65505
+#define R_SHIFT 65506
+#define ENTER 65293
+#define GRAPH_TIMEOUT 0.5f // if a graph is greater than .5 seconds, ignore it 
 
 /* INCLUDES */
-#include <cmath>
+#include <string>
 #include <vector>
-#include <numeric>
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
+#include "graph.hpp"
 #include "keypress.hpp"
 
 /* NAMESPACE */
 using std::abs;
 using std::sort;
 using std::endl;
+using std::string;
 using std::vector;
 using std::ostream;
 using std::iterator;
-using std::accumulate;
+using std::to_string;
+using std::unordered_map;
 
 class Keypresses {
     public:
@@ -36,18 +46,18 @@ class Keypresses {
         /* FUNCTIONS */
         vector<Keypress> getDownstrokes(); // returns a vector of all downstrokes 
         vector<Keypress> getUpstrokes(); // returns a vector of all upstrokes
-        vector<float> mean(); // returns the average of the DU, UD, DD, UU times
+        unordered_map<string, Graph> calcM(); // calculate M times from keystrokes
+        unordered_map<string, Graph> calcDU(); // calculate DU times from keystrokes 
+        unordered_map<string, Graph> calcUD(); // calculate UD times from keystrokes 
+        unordered_map<string, Graph> calcDD(); // calculate DD times from keystrokes
+        unordered_map<string, Graph> calcUU(); // calculate UU times from keystrokes
+        // vector<float> mean(); // returns the average of the DU, UD, DD, UU times
 
         /* OVERLOADS */
         friend ostream& operator<<(ostream& os, const Keypresses& presses); // overloads <<
 
         /* ACCESSORS */
         vector<Keypress> getKeystrokes(); // return a copy of the keystrokes vector
-        vector<float> getM();  // returns the monograph times
-        vector<float> getDU(); // returns the down-up times
-        vector<float> getUD(); // returns the up-down times
-        vector<float> getDD(); // returns the up-down times
-        vector<float> getUU(); // returns the up-down times
 
         /* MUTATORS */
         void clearData(); // clears all vectors, returning them to DEFAULT_SIZE
@@ -55,20 +65,8 @@ class Keypresses {
         void appendKeypress(Keypress& keypress); // appends the keypress to keystrokes
 
     private:
-        /* FUNCTIONS */
-        void calcM(); // calculate M times from keystrokes into m
-        void calcDU(); // calculate DU times from keystrokes into du
-        void calcUD(); // calculate DU times from keystrokes into ud
-        void calcDD(); // calculate DU times from keystrokes into dd
-        void calcUU(); // calculate DU times from keystrokes into uu
-
         /* MEMBERS */
         vector<Keypress> keystrokes; // collection of keystrokes
-        vector<float> m;  // collection of monograph times
-        vector<float> du; // collection of down-up times
-        vector<float> ud; // collection of up-down times
-        vector<float> dd; // collection of down-down times
-        vector<float> uu; // collection of up-up times 
 };
 
 #endif
