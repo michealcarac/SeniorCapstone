@@ -46,13 +46,12 @@ Keylogger::Keylogger() {
 }
 
 /* FUNCTIONS */
+/* NO LONGER APPLICABLE 
 void Keylogger::runAuthPi() {
     if(currentProfile >= profiles.size()) {
         cerr << "Error in runAuthPi(): select a valid profile." << endl;
         return;
     }
-
-    createWindow();
 
     // set up time
     double lastTime, time = 0, start;
@@ -105,7 +104,7 @@ void Keylogger::runAuthPi() {
                 break;
             } case KeyRelease: {
                 if (was_it_auto_repeat(d, &event, KeyRelease, KeyPress)) {
-                    XNextEvent(d, &event); /* Consume the extra event so we can ignore it. */
+                    XNextEvent(d, &event); // Consume the extra event so we can ignore it.
                 } else {
                     received = XLookupKeysym(&event.xkey, 0);
                     if(received == BACKSPACE) {
@@ -176,7 +175,10 @@ void Keylogger::runAuthPi() {
     XCloseDisplay(d);
 }
 
+*/
+
 // run the training algorithm
+/*
 void Keylogger::runTrainPi() {
     ofstream outfile;
     outfile.open("/dev/ttyUSB0", std::ios::out);\
@@ -250,7 +252,7 @@ void Keylogger::runTrainPi() {
                 break;
             } case KeyRelease: {
                 if (was_it_auto_repeat(d, &event, KeyRelease, KeyPress)) {
-                    XNextEvent(d, &event); /* Consume the extra event so we can ignore it. */
+                    XNextEvent(d, &event); // Consume the extra event so we can ignore it. 
                 } else {
                     received = XLookupKeysym(&event.xkey, 0);
                     if(received == BACKSPACE) {
@@ -310,6 +312,8 @@ void Keylogger::runTrainPi() {
     XDestroyWindow(d, win);
     XCloseDisplay(d);
 }
+
+*/
 
 // Move to the next mode in the sequence
 void Keylogger::nextMode() {
@@ -380,6 +384,14 @@ void Keylogger::saveAllProfiles() {
         string filename = "profile" + to_string(currentProfile) + ".txt";
         profiles.at(currentProfile).writeProfile("./profiles", filename);
     }
+}
+
+void Keylogger::appendKeypress(Keypress *k) {
+    presses->appendKeypress(*k);
+}
+
+void Keylogger::clearKeypresses() {
+    presses->clearData();
 }
 
 /* ACCESSORS */
@@ -468,28 +480,6 @@ Profile* Keylogger::buildProfile() {
     }
 
     return p;
-}
-
-// detection of held keys
-bool Keylogger::was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_type) {
-    /*  Holding down a key will cause 'autorepeat' to send fake keyup/keydown events, but we want to ignore these: '*/
-    if (event->type == current_type && XEventsQueued(d, QueuedAfterReading)) {
-        XEvent nev;
-        XPeekEvent(d, &nev);
-        return (nev.type == next_type && nev.xkey.time == event->xkey.time && nev.xkey.keycode == event->xkey.keycode);
-    }
-    return false;
-}
-
-// create a window
-void Keylogger::createWindow() {
-    d = XOpenDisplay(NULL);
-    win = XCreateSimpleWindow(d, RootWindow(d, 0), 1, 1, 400, 300, 0, BlackPixel(d, 0), BlackPixel(d, 0));
-    XSelectInput(d, win, KeyPressMask | KeyReleaseMask | ClientMessage);
-    XMapWindow(d, win);
-    XFlush(d);
-    closeMessage = XInternAtom(d, "WM_DELETE_WINDOW", True);
-    XSetWMProtocols(d, win, &closeMessage, 1);
 }
 
 /* DESTRUCTOR */

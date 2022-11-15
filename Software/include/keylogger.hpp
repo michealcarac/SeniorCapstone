@@ -23,13 +23,6 @@
 #include "keypresses.hpp"
 #include "i2cControl.hpp"
 
-/* FOR USE WITH PI */
-#include <X11/Xlib.h>
-#include <X11/Xutil.h>
-#include <X11/Xos.h>
-#include <X11/Xatom.h>
-#include <X11/keysym.h>
-
 /* DEFINES */
 #define LCD_ADDRESS 0x27
 #define TOP 1
@@ -60,6 +53,8 @@ class Keylogger {
         void nextMode(); // moves to the next mode
         void nextProfile(); // moves to the next profile, including entries for "New" and "Delete"
         void saveAllProfiles(); // save all possible profiles
+        void appendKeypress(Keypress *k); // append a keypress to the current input 
+        void clearKeypresses(); // clear all entries in presses
 
         /* ACCESSORS */
         void printProfileNames(); // print the names of every available profile
@@ -84,16 +79,9 @@ class Keylogger {
         float scoreAuth(); // score authentication
 
         /* FOR USE WITH PI */
-        Display *d;
-        Window win;
-        Atom closeMessage;
-        XEvent event;
-
         I2cControl *i2c;
         LcdDriver *lcd;
 
-        bool was_it_auto_repeat(Display *d, XEvent *event, int current_type, int next_type); // checks is a keypress in the global window was held down
-        void createWindow(); // creates a X11 window for keypress receipt, requires global vars
         static Profile* buildProfile(); // Prompts the user for the creation of a file 
         static char intToSpecial(long received); // converts a long from the keyboard into a special character
 };
