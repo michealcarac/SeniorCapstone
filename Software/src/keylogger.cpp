@@ -406,33 +406,12 @@ void Keylogger::nextProfile() {
         // prompt for removal of profile
         lcd->setLine(BOTTOM, "Delete Profile");
         currentProfile++;
-        /*string input;
-        cout << "Would you like to delete a profile (y/n)? ";
-        cin >> input;
-        if(input == "y") {
-            cout << "Enter the number of the profile to delete." << endl;
-            printProfileNames();
-            cin >> input;
-            profiles.erase(profiles.begin() + stoi(input));
-            currentProfile--; // staying in the same "delete" listing
-        } else {
-            currentProfile++;
-        } */
         return;
     } else { 
         // prompt for a new profile
         string input;
         lcd->setLine(BOTTOM, "Create Profile");
         currentProfile = -1;
-        /*cout << "Would you like to create a profile (y/n)? ";
-        cin >> input;
-        if(input == "y") {
-            Profile *p = Keylogger::buildProfile();
-            profiles.insert(profiles.begin(), p); // add the profile, if it was created
-        }
-        currentProfile = 0;
-        lcd->clearLine(BOTTOM);
-        lcd->setLine(BOTTOM, profiles.at(currentProfile).getName());*/
         return;
     }
 
