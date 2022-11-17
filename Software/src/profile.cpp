@@ -33,9 +33,9 @@ Profile::Profile(string newName, ModelType newType) {
 }
 
 // Creates a profile will all specified options
-Profile::Profile(string newName, ModelType newType, FixedModelData newData) {
+Profile::Profile(string newName, ModelType newType, FixedModelData *newData) {
     name = newName;
-    data = newData;
+    data = *newData;
     type = newType;
     updateTrainStats();
 }
@@ -97,7 +97,7 @@ Profile* Profile::readProfile(string filepath, string filename) {
 
     infile.close();
 
-    return new Profile(name, type, data);
+    return new Profile(name, type, &data);
 }
 
 /* PRIVATE FUNCTIONS */

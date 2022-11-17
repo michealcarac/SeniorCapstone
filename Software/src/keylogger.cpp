@@ -45,6 +45,38 @@ Keylogger::Keylogger() {
     system("stty -F /dev/ttyUSB0 115200");
 }
 
+// updates the text on the LCD with the given inputs
+void Keylogger::updateLcdText(int line, string text) {
+    lcd->clearLine(line);
+    lcd->setLine(line, text);
+}
+
+// removes the profile at currentProfile
+void Keylogger::removeCurrentProfile() {
+    profiles.erase(profiles.begin() + currentProfile);
+    currentProfile = 0; // staying in the same "delete" listing
+}
+
+// adds and selects a new profile
+void Keylogger::addProfile(Profile *p) {
+    profiles.push_back(p);
+    currentProfile = profiles.size() - 1;
+}
+
+// run the training algorithm on current information in presses
+void Keylogger::runTrain() {
+    // give user statistics
+    profiles.at(currentProfile).setDataGraph(M, presses->calcM());
+    profiles.at(currentProfile).setDataGraph(DU, presses->calcDU());
+    profiles.at(currentProfile).setDataGraph(UD, presses->calcUD());
+    profiles.at(currentProfile).setDataGraph(DD, presses->calcDD());
+    profiles.at(currentProfile).setDataGraph(UU, presses->calcUU());
+
+    GraphStats stats = profiles.at(currentProfile).getTrainStats();
+    cout << "Got Stats: " << endl;
+    cout << stats << endl;
+}
+
 /* FUNCTIONS */
 /* NO LONGER APPLICABLE 
 void Keylogger::runAuthPi() {
@@ -471,7 +503,7 @@ Profile* Keylogger::buildProfile() {
         cin >> password;
 
         FixedModelData data = FixedModelData(password);
-        p = new Profile(name, Fixed, data);
+        p = new Profile(name, Fixed, &data);
 
         cout << "Creating profile: " << endl << *p << endl;
         cout << "Correct (y/n)? ";
