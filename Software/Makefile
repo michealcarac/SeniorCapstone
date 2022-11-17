@@ -3,18 +3,22 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out keyloggerTest.out lcdTest.out
+all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out keyloggerTest.out lcdTest.out buttonTest.out
 #all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
 CPPC = g++ -std=c++11
-CPPFLAGS = -I./include -I/opt/X11/include
-LDFLAGS = -g -L/opt/X11/lib -lX11
+CPPFLAGS = -I./include -I/opt/X11/include -I/usr/local/include
+LDFLAGS = -g -L/opt/X11/lib -lX11 -L/usr/local/lib -lwiringPi
 
 # Directory locations
 BUILDDIR = ./build
 BINDIR = ./bin
 PROFDIR = ./profiles
+
+# Create the buttonTest
+buttonTest.out: buttonTest.cpp
+	$(CPPC) $(CPPFLAGS)  -o ./bin/buttonTest.out ./*/buttonTest.cpp $(LDFLAGS)
 
 # Create the lcdTest
 lcdTest.out: lcdTest.o i2cControl.o lcdDriver.o
