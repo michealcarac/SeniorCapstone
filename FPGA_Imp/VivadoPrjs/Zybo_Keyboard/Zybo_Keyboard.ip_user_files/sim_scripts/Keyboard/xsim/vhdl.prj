@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/Keyboard/ip/Keyboard_rst_clk_100M_0/sim/Keyboard_rst_clk_100M_0.vhd" \
+"../../../bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
+"../../../bd/Keyboard/ipshared/c140/src/debounce.vhd" \
+"../../../bd/Keyboard/ipshared/c140/src/ps2_keyboard.vhd" \
+"../../../bd/Keyboard/ipshared/c140/src/ps2_keyboard_ascii_timer.vhd" \
+"../../../bd/Keyboard/ipshared/c140/src/timer.vhd" \
+"../../../bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
+"../../../bd/Keyboard/ip/Keyboard_AXI_PS2_Keyboard_0_0/sim/Keyboard_AXI_PS2_Keyboard_0_0.vhd" \
+"../../../bd/Keyboard/ip/Keyboard_ila_0_0/sim/Keyboard_ila_0_0.vhd" \
+"../../../bd/Keyboard/sim/Keyboard.vhd" \
+"../../../bd/Keyboard/ip/Keyboard_edgedetector_0_0/sim/Keyboard_edgedetector_0_0.vhd" \
+
+nosort

@@ -1,0 +1,73 @@
+// Big thanks to k0nze, the original creator of most of the interrupt code: https://github.com/k0nze/zedboard_pl_to_ps_interrupt_example
+
+
+
+#include "PS2.hpp"
+
+void Keyboard_InterruptHandler(void *intc_inst_ptr){
+	char break_data[2];
+	u32 ascii_data = Xil_In32(PS2_Keyboard_Base) & PS2_Data_Mask;
+	itoa(Xil_In32(PS2_Keyboard_Base) >> PS2_Break_Shift,break_data,2);
+	// Print ASCII Character
+	xil_printf("ascii: %c \n\r",ascii_data);
+	xil_printf("break: %s \n\r",break_data);
+	xil_printf("time: %d \n\r",Xil_In32(PS2_Keyboard_Base+4));
+}
+
+int PS2_IntSetup() {
+
+    int Status;
+    XScuGic *IntcInstancePtr = &InterruptController;
+    XScuGic_Config *intc_config;
+
+    // get config for interrupt controller
+    intc_config = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+    if (NULL == intc_config) {
+        return XST_FAILURE;
+    }
+
+    // initialize the interrupt controller driver
+    Status = XScuGic_CfgInitialize(IntcInstancePtr, intc_config, intc_config->CpuBaseAddress);
+
+    if (Status != XST_SUCCESS) {
+        return Status;
+    }
+
+    // set the priority of IRQ_F2P[0:0] to 0xA0 (highest 0xF8, lowest 0x00) and a trigger for a rising edge 0x3.
+    XScuGic_SetPriorityTriggerType(IntcInstancePtr, INT_INTERRUPT_ID_0, 0xA0, 0x3);
+
+    // connect the interrupt service routine isr0 to the interrupt controller
+    Status = XScuGic_Connect(IntcInstancePtr, INT_INTERRUPT_ID_0, (Xil_ExceptionHandler)Keyboard_InterruptHandler, (void *)&InterruptController);
+
+    if (Status != XST_SUCCESS) {
+        return Status;
+    }
+
+    // enable interrupts for IRQ_F2P[0:0]
+    XScuGic_Enable(IntcInstancePtr, INT_INTERRUPT_ID_0);
+
+// EXAMPLE FOR A 2ND INPUT
+//    // set the priority of IRQ_F2P[1:1] to 0xA8 (highest 0xF8, lowest 0x00) and a trigger for a rising edge 0x3.
+//    XScuGic_SetPriorityTriggerType(intc_instance_ptr, INTC_INTERRUPT_ID_1, 0xA8, 0x3);
+//
+//    // connect the interrupt service routine isr1 to the interrupt controller
+//    result = XScuGic_Connect(intc_instance_ptr, INTC_INTERRUPT_ID_1, (Xil_ExceptionHandler)isr1, (void *)&intc);
+//
+//    if (Status != XST_SUCCESS) {
+//        return Status;
+//    }
+//
+//    // enable interrupts for IRQ_F2P[1:1]
+//    XScuGic_Enable(intc_instance_ptr, INTC_INTERRUPT_ID_1);
+
+    // initialize the exception table and register the interrupt controller handler with the exception table
+    Xil_ExceptionInit();
+
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, IntcInstancePtr);
+
+    // enable non-critical exceptions
+    Xil_ExceptionEnable();
+
+    return XST_SUCCESS;
+}
+

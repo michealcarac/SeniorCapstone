@@ -1,0 +1,7 @@
+Running: xsim.dir/Keyboard_wrapper_behav/xsimk -simmode gui -wdb Keyboard_wrapper_behav.wdb -simrunnum 0 -socket 39037
+Design successfully loaded
+Design Loading Memory Usage: 44636 KB (Peak: 44636 KB)
+Design Loading CPU Usage: 70 ms
+Simulation completed
+Simulation Memory Usage: 142484 KB (Peak: 183904 KB)
+Simulation CPU Usage: 120 ms

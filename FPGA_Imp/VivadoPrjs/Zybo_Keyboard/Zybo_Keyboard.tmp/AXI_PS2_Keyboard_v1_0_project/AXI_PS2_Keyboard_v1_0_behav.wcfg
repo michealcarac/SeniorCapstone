@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AXI_PS2_Keyboard_v1_0_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AXI_PS2_Keyboard_v1_0" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="2,985.000001 us"></ZoomEndTime>
+      <Cursor1Time time="2,005.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="211"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="52" />
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/break_o">
+      <obj_property name="ElementShortName">break_o</obj_property>
+      <obj_property name="ObjectShortName">break_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2_clk">
+      <obj_property name="ElementShortName">ps2_clk</obj_property>
+      <obj_property name="ObjectShortName">ps2_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2_data">
+      <obj_property name="ElementShortName">ps2_data</obj_property>
+      <obj_property name="ObjectShortName">ps2_data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ascii_new">
+      <obj_property name="ElementShortName">ascii_new</obj_property>
+      <obj_property name="ObjectShortName">ascii_new</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/ascii">
+      <obj_property name="ElementShortName">ascii[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ascii[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/timer_en">
+      <obj_property name="ElementShortName">timer_en</obj_property>
+      <obj_property name="ObjectShortName">timer_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/timer_reset">
+      <obj_property name="ElementShortName">timer_reset</obj_property>
+      <obj_property name="ObjectShortName">timer_reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/timer">
+      <obj_property name="ElementShortName">timer[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/timer_data">
+      <obj_property name="ElementShortName">timer_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/timer_o">
+      <obj_property name="ElementShortName">timer_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/timer_o">
+      <obj_property name="ElementShortName">timer_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/prev_ascii_new_temp">
+      <obj_property name="ElementShortName">prev_ascii_new_temp</obj_property>
+      <obj_property name="ObjectShortName">prev_ascii_new_temp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/ascii_new_temp">
+      <obj_property name="ElementShortName">ascii_new_temp</obj_property>
+      <obj_property name="ObjectShortName">ascii_new_temp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/ascii_new_reg">
+      <obj_property name="ElementShortName">ascii_new_reg</obj_property>
+      <obj_property name="ObjectShortName">ascii_new_reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/ascii_new">
+      <obj_property name="ElementShortName">ascii_new</obj_property>
+      <obj_property name="ObjectShortName">ascii_new</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/prev_ps2_code_new">
+      <obj_property name="ElementShortName">prev_ps2_code_new</obj_property>
+      <obj_property name="ObjectShortName">prev_ps2_code_new</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/ps2_code_new">
+      <obj_property name="ElementShortName">ps2_code_new</obj_property>
+      <obj_property name="ObjectShortName">ps2_code_new</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/break_o">
+      <obj_property name="ElementShortName">break_o</obj_property>
+      <obj_property name="ObjectShortName">break_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/break_prev">
+      <obj_property name="ElementShortName">break_prev</obj_property>
+      <obj_property name="ObjectShortName">break_prev</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/ps2/break">
+      <obj_property name="ElementShortName">break</obj_property>
+      <obj_property name="ObjectShortName">break</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_aclk">
+      <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_aresetn">
+      <obj_property name="ElementShortName">s00_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_awaddr">
+      <obj_property name="ElementShortName">s00_axi_awaddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awaddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_awprot">
+      <obj_property name="ElementShortName">s00_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_awvalid">
+      <obj_property name="ElementShortName">s00_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_awready">
+      <obj_property name="ElementShortName">s00_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_wdata">
+      <obj_property name="ElementShortName">s00_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_wstrb">
+      <obj_property name="ElementShortName">s00_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_wvalid">
+      <obj_property name="ElementShortName">s00_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_wready">
+      <obj_property name="ElementShortName">s00_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_wready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_bresp">
+      <obj_property name="ElementShortName">s00_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_bvalid">
+      <obj_property name="ElementShortName">s00_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_bready">
+      <obj_property name="ElementShortName">s00_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_bready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_araddr">
+      <obj_property name="ElementShortName">s00_axi_araddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_araddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_arprot">
+      <obj_property name="ElementShortName">s00_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_arvalid">
+      <obj_property name="ElementShortName">s00_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_arready">
+      <obj_property name="ElementShortName">s00_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_rdata">
+      <obj_property name="ElementShortName">s00_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_rresp">
+      <obj_property name="ElementShortName">s00_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_rvalid">
+      <obj_property name="ElementShortName">s00_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/AXI_PS2_Keyboard_v1_0/s00_axi_rready">
+      <obj_property name="ElementShortName">s00_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/ascii_temp">
+      <obj_property name="ElementShortName">ascii_temp[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ascii_temp[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/command_reg">
+      <obj_property name="ElementShortName">command_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">command_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/data_reg0">
+      <obj_property name="ElementShortName">data_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/AXI_PS2_Keyboard_v1_0/data_reg1">
+      <obj_property name="ElementShortName">data_reg1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/AXI_PS2_Keyboard_v1_0/PS2_CLK_FREQ">
+      <obj_property name="ElementShortName">PS2_CLK_FREQ</obj_property>
+      <obj_property name="ObjectShortName">PS2_CLK_FREQ</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/AXI_PS2_Keyboard_v1_0/PS2_DEBOUNCE_COUNTER_SIZE">
+      <obj_property name="ElementShortName">PS2_DEBOUNCE_COUNTER_SIZE</obj_property>
+      <obj_property name="ObjectShortName">PS2_DEBOUNCE_COUNTER_SIZE</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/AXI_PS2_Keyboard_v1_0/TIMER_OUTPUT_WIDTH">
+      <obj_property name="ElementShortName">TIMER_OUTPUT_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">TIMER_OUTPUT_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/AXI_PS2_Keyboard_v1_0/TIMER_CLOCK_DIVIDER">
+      <obj_property name="ElementShortName">TIMER_CLOCK_DIVIDER</obj_property>
+      <obj_property name="ObjectShortName">TIMER_CLOCK_DIVIDER</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/AXI_PS2_Keyboard_v1_0/C_S00_AXI_DATA_WIDTH">
+      <obj_property name="ElementShortName">C_S00_AXI_DATA_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">C_S00_AXI_DATA_WIDTH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/AXI_PS2_Keyboard_v1_0/C_S00_AXI_ADDR_WIDTH">
+      <obj_property name="ElementShortName">C_S00_AXI_ADDR_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">C_S00_AXI_ADDR_WIDTH</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/ec67/hdl" --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/5765/hdl" --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/1b7e/hdl/verilog" --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/122e/hdl/verilog" --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/b205/hdl/verilog" --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/fd26/hdl/verilog" \
+"../../../bd/Keyboard/ip/Keyboard_processing_system7_0_0/sim/Keyboard_processing_system7_0_0.v" \
+"../../../bd/Keyboard/ip/Keyboard_auto_pc_0/sim/Keyboard_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

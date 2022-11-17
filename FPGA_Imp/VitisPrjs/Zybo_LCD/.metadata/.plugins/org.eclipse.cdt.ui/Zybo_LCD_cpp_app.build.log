@@ -1,10 +1,10 @@
-04:16:37 **** Incremental Build of configuration Debug for project Zybo_LCD_cpp_app ****
+17:46:46 **** Incremental Build of configuration Debug for project Zybo_LCD_cpp_app ****
 make all 
 Generating bif file for the system project
-Executing command '::scw::generate_bif -xpfm /home/cekp/Desktop/GitHub/SeniorCapstone/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/Zybo_LCD.xpfm -domains standalone_ps7_cortexa9_0 -bifpath /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/Debug/system.bif' on XSCT
-sdcard_gen --xpfm /home/cekp/Desktop/GitHub/SeniorCapstone/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/Zybo_LCD.xpfm --sys_config Zybo_LCD --bif /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/Debug/system.bif --bitstream /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit --elf /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf,ps7_cortexa9_0
-creating BOOT.BIN using /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit
-Running /tools/Xilinx/Vitis/2022.1/bin/bootgen  -image /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+Executing command '::scw::generate_bif -xpfm /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/Zybo_LCD.xpfm -domains standalone_ps7_cortexa9_0 -bifpath /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/Zybo_LCD.xpfm --sys_config Zybo_LCD --bif /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/Debug/system.bif --bitstream /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit --elf /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf,ps7_cortexa9_0
+creating BOOT.BIN using /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit
+Running /tools/Xilinx/Vitis/2022.1/bin/bootgen  -image /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-04:16:43 Build Finished (took 6s.263ms)
+17:46:52 Build Finished (took 6s.289ms)
 

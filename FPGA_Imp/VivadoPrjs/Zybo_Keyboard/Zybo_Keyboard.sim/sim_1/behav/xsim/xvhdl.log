@@ -1,0 +1,24 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_rst_clk_100M_0/sim/Keyboard_rst_clk_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Keyboard_rst_clk_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AXI_PS2_Keyboard_v1_0_S00_AXI'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/ps2_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ps2_keyboard'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/ps2_keyboard_ascii_timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ps2_keyboard_ascii_timer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AXI_PS2_Keyboard_v1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_AXI_PS2_Keyboard_0_0/sim/Keyboard_AXI_PS2_Keyboard_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Keyboard_AXI_PS2_Keyboard_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_ila_0_0/sim/Keyboard_ila_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Keyboard_ila_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/sim/Keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 's00_couplers_imp_U1FOPD'
+INFO: [VRFC 10-3107] analyzing entity 'Keyboard_ps7_0_axi_periph_0'
+INFO: [VRFC 10-3107] analyzing entity 'Keyboard'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/hdl/Keyboard_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Keyboard_wrapper'

@@ -1,0 +1,61 @@
+/* Interrupt Init */
+int Int_Init(XScuGic *IntInstancePtr, u32 *InstancePtr, u32 IntDeviceId, u32 KBDeviceId){
+	/* Initialize Status */
+	XScuGic_Config *IntcConfig;
+	int Status;
+
+	/* Initialize Interrupt Controller */
+	IntcConfig = XScuGic_LookupConfig(IntDeviceId);
+	Status = XScuGic_CfgInitialize(IntInstancePtr,IntcConfig,IntcConfig->CpuBaseAddress);
+
+	/* print fail if Timer does not initialize */
+	if (Status != XST_SUCCESS) {
+		printf("INT INIT FAIL");
+		return XST_FAILURE;
+	}
+
+	Status = InterruptSystemSetup(IntInstancePtr,GpioInstancePtr, GpioDeviceId);
+
+	/* print fail if Timer does not initialize */
+	if (Status != XST_SUCCESS) {
+		printf("INT INIT FAIL");
+		return XST_FAILURE;
+	}
+
+	// Connect interrupt to KB
+	Int_Connect_to_KB(IntInstancePtr,InstancePtr,IntDeviceId, KBDeviceId);
+
+	return XST_SUCCESS;
+}
+
+
+int Int_Connect_to_KB(XScuGic *IntInstancePtr, u32 *InstancePtr, u32 IntDeviceId, u32 KBDeviceId){
+	int Status;
+
+	// Connect KB interrupt to handler
+	Status = XScuGic_Connect(IntInstancePtr,KB_INT,(Xil_ExceptionHandler)Keyboard_InterruptHandler,(void*)InstancePtr);
+
+	/* print fail if Timer does not initialize */
+	if (Status != XST_SUCCESS) {
+		printf("INT INIT FAIL");
+		return XST_FAILURE;
+	}
+
+	// Enable GPIO interrupts interrupt
+	XGpio_InterruptEnable(GpioInstancePtr,XGPIO_IR_CH1_MASK);
+	XGpio_InterruptGlobalEnable(GpioInstancePtr);
+
+	// Enable GPIO interrupts in the controller
+	XScuGic_Enable(IntInstancePtr,INTC_GPIO_INTERRUPT_ID);
+
+	return XST_SUCCESS;
+}
+
+int InterruptSystemSetup(XScuGic *XScuGicInstancePtr, XGpio *GpioInstancePtr, u32 GpioDeviceId){
+	// Enable Interrupt
+	XGpio_InterruptEnable(GpioInstancePtr,GpioDeviceId);
+	XGpio_InterruptGlobalEnable(GpioInstancePtr);
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler) XScuGic_InterruptHandler,XScuGicInstancePtr);
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}

@@ -265,3 +265,14 @@ timestamp=[2022-11-06 18:39:14], mode=PLATFORM_GENERATION, duration=0:00:06.978,
 timestamp=[2022-11-06 18:39:25], mode=BUILD, duration=0:00:00.701, duration_ms=701, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
 timestamp=[2022-11-06 18:39:39], mode=BUILD, duration=0:00:00.784, duration_ms=784, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
 timestamp=[2022-11-06 18:47:55], mode=BUILD, duration=0:00:00.956, duration_ms=956, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-10 17:29:30], mode=WORKBENCH_START, duration=0:00:06.263, duration_ms=6263, data={}
+timestamp=[2022-11-10 17:29:31], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.727, duration_ms=727, data={}
+timestamp=[2022-11-10 17:29:31], mode=WORKBENCH_UI_INIT, duration=0:00:00.987, duration_ms=987, data={editors_count=11, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_LCD,Zybo_LCD_cpp,Zybo_LCD_cpp_app}
+timestamp=[2022-11-10 17:30:36], mode=PLATFORM_GENERATION, duration=0:00:15.497, duration_ms=15497, data={name=Zybo_LCD}
+timestamp=[2022-11-10 17:31:36], mode=BUILD, duration=0:00:01.156, duration_ms=1156, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-10 17:31:43], mode=BUILD, duration=0:00:06.345, duration_ms=6345, data={name=Zybo_LCD_cpp_app, configuration=Debug, clean_build=false}
+timestamp=[2022-11-10 17:32:52], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-10 17:37:00], mode=BUILD, duration=0:00:00.730, duration_ms=730, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-10 17:45:31], mode=BUILD, duration=0:00:00.736, duration_ms=736, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-10 17:46:45], mode=BUILD, duration=0:00:00.175, duration_ms=175, data={name=Zybo_LCD_cpp, configuration=Debug, clean_build=false}
+timestamp=[2022-11-10 17:46:52], mode=BUILD, duration=0:00:06.292, duration_ms=6292, data={name=Zybo_LCD_cpp_app, configuration=Debug, clean_build=false}

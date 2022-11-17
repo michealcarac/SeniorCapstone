@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
+"../../../../../../../02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/src/debounce.vhd" \
+"../../../../../../../02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/src/ps2_keyboard.vhd" \
+"../../../../../../../02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/src/ps2_keyboard_ascii_timer.vhd" \
+"../../../../../../../02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/src/timer.vhd" \
+"../../../../../../../02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_processing_system7_0_0/sim/Keyboard_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Keyboard_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_auto_pc_0/sim/Keyboard_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Keyboard_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

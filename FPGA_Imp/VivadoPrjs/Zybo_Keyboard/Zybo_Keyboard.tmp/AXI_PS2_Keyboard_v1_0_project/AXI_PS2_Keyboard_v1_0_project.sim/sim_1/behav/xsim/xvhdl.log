@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/src/ps2_keyboard_ascii_timer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ps2_keyboard_ascii_timer'

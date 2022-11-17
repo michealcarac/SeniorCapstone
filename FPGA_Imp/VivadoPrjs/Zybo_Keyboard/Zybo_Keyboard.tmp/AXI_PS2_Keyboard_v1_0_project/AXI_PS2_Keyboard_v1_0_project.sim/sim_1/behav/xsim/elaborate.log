@@ -1,0 +1,23 @@
+Vivado Simulator v2022.1.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot AXI_PS2_Keyboard_v1_0_behav xil_defaultlib.AXI_PS2_Keyboard_v1_0 -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 4294967295 is out of target constraint range -2147483648 to 2147483647 [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/02_IPRepository/ip_repo/ip_repo/AXI_PS2_Keyboard_1.0/src/timer.vhd:22]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture arch_imp of entity xil_defaultlib.AXI_PS2_Keyboard_v1_0_S00_AXI [axi_ps2_keyboard_v1_0_s00_axi_de...]
+Compiling architecture arch of entity xil_defaultlib.timer [timer_default]
+Compiling architecture logic of entity xil_defaultlib.debounce [\debounce(counter_size=2)\]
+Compiling architecture logic of entity xil_defaultlib.ps2_keyboard [\ps2_keyboard(clk_freq=100000000...]
+Compiling architecture behavior of entity xil_defaultlib.ps2_keyboard_ascii_timer [ps2_keyboard_ascii_timer_default]
+Compiling architecture arch_imp of entity xil_defaultlib.axi_ps2_keyboard_v1_0
+Built simulation snapshot AXI_PS2_Keyboard_v1_0_behav

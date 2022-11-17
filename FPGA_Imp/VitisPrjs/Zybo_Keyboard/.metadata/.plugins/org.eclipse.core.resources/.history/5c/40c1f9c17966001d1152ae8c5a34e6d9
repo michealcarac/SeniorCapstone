@@ -1,0 +1,5 @@
+// Interrupts
+#define KB_INT XPS_IRQ_INT_ID
+#define INT_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
+XScuGic InterruptController;      /* Instance of interrupt controller*/
+static XScuGic_Config *GicConfig; /* Config params of the controller */

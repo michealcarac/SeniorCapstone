@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "AXI_PS2_Keyboard_v1_0_behav" "xil_defaultlib.AXI_PS2_Keyboard_v1_0" -log "elaborate.log" 

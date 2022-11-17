@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/ec67/hdl" --include "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/5765/hdl" --include "/tools/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_processing_system7_0_0/sim/Keyboard_processing_system7_0_0.v" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_auto_pc_0/sim/Keyboard_auto_pc_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

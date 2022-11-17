@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_rst_clk_100M_0/sim/Keyboard_rst_clk_100M_0.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/debounce.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/ps2_keyboard.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/ps2_keyboard_ascii_timer.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/src/timer.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_AXI_PS2_Keyboard_0_0/sim/Keyboard_AXI_PS2_Keyboard_0_0.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/ip/Keyboard_ila_0_0/sim/Keyboard_ila_0_0.vhd" \
+"../../../../Zybo_Keyboard.ip_user_files/bd/Keyboard/sim/Keyboard.vhd" \
+"../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/hdl/Keyboard_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

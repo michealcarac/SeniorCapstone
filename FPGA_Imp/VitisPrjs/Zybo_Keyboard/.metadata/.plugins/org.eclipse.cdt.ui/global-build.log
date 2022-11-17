@@ -1,0 +1,28 @@
+Nothing to build in platform 'Zybo_Keyboard'
+
+11:24:27 **** Incremental Build of configuration Debug for project Zybo_Keyboard_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/main.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/sw/Zybo_Keyboard/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/main.cpp:1:
+../src/PS2.hpp:23:16: warning: 'InterruptController' defined but not used [-Wunused-variable]
+   23 | static XScuGic InterruptController;      /* Instance of interrupt controller*/
+      |                ^~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Zybo_Keyboard_app.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/sw/Zybo_Keyboard/standalone_ps7_cortexa9_0/bsplib/lib -o "Zybo_Keyboard_app.elf"  ./src/PS2.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: Zybo_Keyboard_app.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Zybo_Keyboard_app.elf  |tee "Zybo_Keyboard_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 553429	   3612	  29176	 586217	  8f1e9	Zybo_Keyboard_app.elf
+Finished building: Zybo_Keyboard_app.elf.size
+ 
