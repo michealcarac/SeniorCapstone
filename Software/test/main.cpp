@@ -262,7 +262,7 @@ void runModes(Modes currentMode) {
             runningInput = "";
             break;
         case FixedTest:
-            /*numTries++;
+            numTries++;
             float score = logger->runAuth();
             float threshold = logger->getCurrentThreshold();
             scores.push_back(score);
@@ -274,7 +274,7 @@ void runModes(Modes currentMode) {
             } else {
                 keyboardEnable = false;
                 cout << ", Entry denied" << endl;
-            } */
+            }
             break;
     }
 }

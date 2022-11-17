@@ -75,6 +75,34 @@ void Keylogger::runTrain() {
     GraphStats stats = profiles.at(currentProfile).getTrainStats();
     cout << "Got Stats: " << endl;
     cout << stats << endl;
+
+    presses->clearData();
+}
+
+// run the authentication algorithm on current information in presses
+float Keylogger::runAuth() {
+    unordered_map<string, Graph> attemptM = presses->calcM();// get M stats from keypresses
+    unordered_map<string, Graph> attemptDU = presses->calcDU();// get DU stats from keypresses
+    unordered_map<string, Graph> attemptUD = presses->calcUD();// get UD stats from keypresses
+    unordered_map<string, Graph> attemptDD = presses->calcDD();// get DD stats from keypresses
+    unordered_map<string, Graph> attemptUU = presses->calcUU();// get UU stats from keypresses
+
+    float score = 0.0f;
+    // score += profiles.at(currentProfile).getData().calcScore(M, attemptM); // generate score, get value for threshold
+    // score += profiles.at(currentProfile).getData().calcScore(DU, attemptDU); // generate score, get value for threshold
+    // score += profiles.at(currentProfile).getData().calcScore(UD, attemptUD); // generate score, get value for threshold
+    score += profiles.at(currentProfile).getData().calcScore(DD, attemptDD); // generate score, get value for threshold
+    // score += profiles.at(currentProfile).getData().calcScore(UU, attemptUU); // generate score, get value for threshold
+
+    presses->clearData();
+
+    return score;
+}
+
+// get the threshold for the current password
+float Keylogger::getCurrentThreshold() {
+    float threshold = (float) (profiles.at(currentProfile).getPassword().length() - 1); // threshold is 1 * numGraphs
+    return threshold;
 }
 
 /* FUNCTIONS */
@@ -377,7 +405,8 @@ void Keylogger::nextProfile() {
     } else if (currentProfile == ((int) profiles.size() - 1)) { // if we are at the last profile
         // prompt for removal of profile
         lcd->setLine(BOTTOM, "Delete Profile");
-        string input;
+        currentProfile++;
+        /*string input;
         cout << "Would you like to delete a profile (y/n)? ";
         cin >> input;
         if(input == "y") {
@@ -388,13 +417,14 @@ void Keylogger::nextProfile() {
             currentProfile--; // staying in the same "delete" listing
         } else {
             currentProfile++;
-        }
+        } */
         return;
     } else { 
         // prompt for a new profile
         string input;
         lcd->setLine(BOTTOM, "Create Profile");
-        cout << "Would you like to create a profile (y/n)? ";
+        currentProfile = -1;
+        /*cout << "Would you like to create a profile (y/n)? ";
         cin >> input;
         if(input == "y") {
             Profile *p = Keylogger::buildProfile();
@@ -402,7 +432,7 @@ void Keylogger::nextProfile() {
         }
         currentProfile = 0;
         lcd->clearLine(BOTTOM);
-        lcd->setLine(BOTTOM, profiles.at(currentProfile).getName());
+        lcd->setLine(BOTTOM, profiles.at(currentProfile).getName());*/
         return;
     }
 
@@ -437,7 +467,7 @@ Profile* Keylogger::getCurrentProfile() {
         return p;
     }
 
-    if (currentProfile == ((int) profiles.size() - 1)) { // if we are at the last profile
+    if (currentProfile == ((int) profiles.size())) { // if we are at the last profile
         return new Profile("Delete Profile");
     }
     
