@@ -74,6 +74,10 @@ int main() {
     wiringPiISR(23, INT_EDGE_FALLING, btn2);
     wiringPiISR(24, INT_EDGE_FALLING, btn3);
 
+    // set up LED
+    pinMode(25, OUTPUT);
+    digitalWrite(25, 0); // led is off
+
     // set up com port 
     comport.open("/dev/ttyUSB0", std::ios::out);
 
@@ -117,6 +121,7 @@ int main() {
                 } else if (received == ENTER) {
                     cout << endl; // built-in flush
                     if(keyboardEnable) writeToCom('\r');
+                    runningInput = "";
                     break;
                 } else if (received == CAPS) {
                     upper = !upper;
@@ -132,6 +137,8 @@ int main() {
                 }
 
                 if(keyboardEnable) writeToCom(receivedChar);
+                if(runningInput.length() == logger->getCurrentProfile()->getPassword().length() && runningInput.length() != 0 && logger->getCurrentMode() == FixedTest && !deleteActive && !createActiveName && !createActivePassword) 
+                    runningInput = runningInput.substr(1, runningInput.length()); //remove first and append
                 runningInput += receivedChar; // add the input key to the runningInput
                 cout << receivedChar;
                 cout.flush();
@@ -177,6 +184,7 @@ int main() {
     }
 
     // give stats
+    cout << "runningInput is: " << runningInput << endl << endl;
     cout << "Allowed " << numAllowed << " of " << numTries << " attempts. Percentage allowed: " << round(((double) numAllowed) / numTries * 1000) / 10.0 << "%" << endl;
     cout << "Average score: " << accumulate(scores.begin(), scores.end(), 0.0f) / scores.size() << endl;
 
@@ -193,6 +201,7 @@ int main() {
 // handle button interrupts
 void btn0() {
     keyboardEnable = true;
+    digitalWrite(25, 0); // led is off
 }
 
 void btn1() {
@@ -205,6 +214,8 @@ void btn1() {
 
 void btn2() { 
     logger->nextProfile();
+    logger->clearKeypresses();
+    runningInput = "";
 }
 
 void btn3() {
@@ -273,6 +284,7 @@ void runModes(Modes currentMode) {
                 cout << ", Entry allowed" << endl;
             } else {
                 keyboardEnable = false;
+                digitalWrite(25, 1); // led is off
                 cout << ", Entry denied" << endl;
             }
             break;
