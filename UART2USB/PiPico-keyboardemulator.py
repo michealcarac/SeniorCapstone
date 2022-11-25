@@ -388,7 +388,4 @@ while True:
         elif data == b'.':
             keyboard.press(Keycode.PERIOD) #abcd
             keyboard.release_all()
-            
-        else:
-            print("Fuck this project")
 
