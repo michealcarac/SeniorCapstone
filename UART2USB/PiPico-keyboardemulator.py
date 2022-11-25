@@ -17,7 +17,7 @@ from adafruit_hid.keycode import Keycode
 
 time.sleep(1)
 keyboard = Keyboard(usb_hid.devices)
-keyboard_layout = KeyboardLayoutUS(keyboard)  # We're in the US :)
+keyboard_layout = KeyboardLayoutUS(keyboard)
 
 # instantiate the uart
 uart = busio.UART(board.GP16, board.GP17, baudrate=115200)
