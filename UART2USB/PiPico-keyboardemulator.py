@@ -1,20 +1,10 @@
  #
-# Keyboard Emulator Using Maker Pi Pico and CircuitPython
+# Keyboard Emulator Using a Pi Pico and CircuitPython
 #
-# References and credit to
+# References 
 # - https://learn.adafruit.com/circuitpython-essentials/circuitpython-hid-keyboard-and-mouse
 #
-# Raspberry Pi Pico
-# - [Maker Pi Pico] https://my.cytron.io/p-maker-pi-pico?tracking=idris
 #
-# Additional Libraries
-# - adafruit_hid
-# AAAAAAAAAAAA
-# Update:
-# 12 Feb 2021 - Tested with CircuitPython Pico 6.2.0-beta.2
-#
-# to-do
-# take a char from the serial terminal and turn it into a keystroke.
 
 import time
 import board
