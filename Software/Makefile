@@ -3,7 +3,7 @@
 VPATH = src:test:include:build:bin
 
 # default target
-all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out fullTest.out keyloggerTest.out lcdTest.out buttonTest.out
+all: directories fixedModelDataTest.out profileTest.out profileReadTest.out keypressTest.out keypressesTest.out keyboardTest.out lcdTest.out buttonTest.out main.out #keyloggerTest.out fullTest.out
 #all: directories fixedModelDataTest.out keypressTest.out keypressesTest.out keyboardTest.out
 
 # Flags, compiler, etc.
@@ -15,6 +15,13 @@ LDFLAGS = -g -L/opt/X11/lib -lX11 -L/usr/local/lib -lwiringPi
 BUILDDIR = ./build
 BINDIR = ./bin
 PROFDIR = ./profiles
+
+# Create main
+main.out:  main.o profile.o fixedModelData.o graph.o keypress.o keypresses.o graphStats.o keylogger.o i2cControl.o lcdDriver.o
+	$(CPPC)  -o ./bin/main.out ./build/main.o ./build/profile.o ./build/fixedModelData.o ./build/graph.o ./build/keypress.o ./build/keypresses.o ./build/graphStats.o ./build/keylogger.o ./build/i2cControl.o ./build/lcdDriver.o $(LDFLAGS)
+
+main.o: main.cpp
+	$(CPPC) $(CPPFLAGS) -c -o ./build/main.o ./*/main.cpp
 
 # Create the buttonTest
 buttonTest.out: buttonTest.cpp

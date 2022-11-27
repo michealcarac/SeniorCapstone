@@ -38,7 +38,7 @@ class Profile {
         Profile(); // default constructor, sets name to "UNNAMED", using Fixed text
         Profile(string newName); // Creates a Profile with given name, using Fixed text
         Profile(string newName, ModelType newType); // Creates a profile with the given name and ModelType
-        Profile(string newName, ModelType newType, FixedModelData newData); // creates a profile with specified options
+        Profile(string newName, ModelType newType, FixedModelData *newData); // creates a profile with specified options
         Profile(Profile *p); // copy constructor
 
         /* FUNCTIONS */

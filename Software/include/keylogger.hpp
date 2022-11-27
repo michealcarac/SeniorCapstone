@@ -47,20 +47,29 @@ class Keylogger {
         Keylogger(); // constructor
 
         /* FUNCTIONS */
-        void runAuthPi();  // runs the authentication algorithm
-        void runTrainPi(); // runs the training algorithm
-        void runDisablePi(); // runs the "disabled" mode
+        // void runAuthPi();  // runs the authentication algorithm
+        // void runTrainPi(); // runs the training algorithm
+        // void runDisablePi(); // runs the "disabled" mode
+
+        void runTrain(); // run training algorithm on current input
+        float runAuth(); // run training algorithm on current input
+
         void nextMode(); // moves to the next mode
         void nextProfile(); // moves to the next profile, including entries for "New" and "Delete"
         void saveAllProfiles(); // save all possible profiles
         void appendKeypress(Keypress *k); // append a keypress to the current input 
         void clearKeypresses(); // clear all entries in presses
 
+        void updateLcdText(int line, string text); // update the text on the selected row of the lcd
+        void removeCurrentProfile(); // delete the currently selected profile
+        void addProfile(Profile *p); // adds and selects a new profile
+
         /* ACCESSORS */
         void printProfileNames(); // print the names of every available profile
         Modes getCurrentMode(); // returns the current mode
         Profile* getCurrentProfile(); // returns the current Profile object 
         string getModeAsString(); // returns the current mode as a string
+        float getCurrentThreshold(); // get the current threshold value
 
         /* MUTATORS */
         void setCurrentMode(Modes newMode); // sets the system to the requested mode
@@ -82,8 +91,9 @@ class Keylogger {
         I2cControl *i2c;
         LcdDriver *lcd;
 
+        char intToSpecial(long received);
+
         static Profile* buildProfile(); // Prompts the user for the creation of a file 
-        static char intToSpecial(long received); // converts a long from the keyboard into a special character
 };
 
 #endif

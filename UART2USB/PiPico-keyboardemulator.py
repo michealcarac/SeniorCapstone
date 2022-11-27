@@ -1,20 +1,10 @@
+ #
+# Keyboard Emulator Using a Pi Pico and CircuitPython
 #
-# Keyboard Emulator Using Maker Pi Pico and CircuitPython
-#
-# References and credit to
+# References 
 # - https://learn.adafruit.com/circuitpython-essentials/circuitpython-hid-keyboard-and-mouse
 #
-# Raspberry Pi Pico
-# - [Maker Pi Pico] https://my.cytron.io/p-maker-pi-pico?tracking=idris
 #
-# Additional Libraries
-# - adafruit_hid
-# AAAAAAAAAAAA
-# Update:
-# 12 Feb 2021 - Tested with CircuitPython Pico 6.2.0-beta.2
-#
-# to-do
-# take a char from the serial terminal and turn it into a keystroke.
 
 import time
 import board
@@ -25,9 +15,9 @@ from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 from adafruit_hid.keycode import Keycode
 
-time.sleep(1)  
+time.sleep(1)
 keyboard = Keyboard(usb_hid.devices)
-keyboard_layout = KeyboardLayoutUS(keyboard)  # We're in the US :)
+keyboard_layout = KeyboardLayoutUS(keyboard)
 
 # instantiate the uart
 uart = busio.UART(board.GP16, board.GP17, baudrate=115200)
@@ -38,8 +28,10 @@ while True:
     data = uart.read(1) # set data to uart.read(1); 1 indicates that one byte is read at a time. This is important to better represent a keypress.
 
     if data:
-        decoded_data = data.decode("utf-8") # decoded data
-        print(data)
+        try: # try to decode the data
+            decoded_data = data.decode("utf-8") # decoded data
+        except: # if it can't, continue through
+            continue
 
         #added the lowercase characters for the alphabet
         if decoded_data == 'a':
@@ -318,6 +310,47 @@ while True:
             keyboard.press(Keycode.SPACE)
             keyboard.release_all()
 
+        # Added Numbers
+        elif data == b'1':
+            keyboard.press(Keycode.ONE)
+            keyboard.release_all()
+
+        elif data == b'2':
+            keyboard.press(Keycode.TWO)
+            keyboard.release_all()
+
+        elif data == b'3':
+            keyboard.press(Keycode.THREE)
+            keyboard.release_all()
+
+        elif data == b'4':
+            keyboard.press(Keycode.FOUR)
+            keyboard.release_all()
+
+        elif data == b'5':
+            keyboard.press(Keycode.FIVE)
+            keyboard.release_all()
+
+        elif data == b'6':
+            keyboard.press(Keycode.SIX)
+            keyboard.release_all()
+
+        elif data == b'7':
+            keyboard.press(Keycode.SEVEN) #abcd
+            keyboard.release_all()
+
+        elif data == b'8':
+            keyboard.press(Keycode.EIGHT) #abcd
+            keyboard.release_all()
+
+        elif data == b'9':
+            keyboard.press(Keycode.NINE) #abcd
+            keyboard.release_all()
+
+        elif data == b'0':
+            keyboard.press(Keycode.ZERO) #abcd
+            keyboard.release_all()
+
         # Added typical special characters used with passwords
 
         elif data == b'!':
@@ -344,4 +377,15 @@ while True:
             keyboard.press(Keycode.LEFT_SHIFT, Keycode.SEVEN) #abcd
             keyboard.release_all()
 
+        elif data == b'(':
+            keyboard.press(Keycode.LEFT_SHIFT, Keycode.NINE) #abcd
+            keyboard.release_all()
+
+        elif data == b')':
+            keyboard.press(Keycode.LEFT_SHIFT, Keycode.ZERO) #abcd
+            keyboard.release_all()
+
+        elif data == b'.':
+            keyboard.press(Keycode.PERIOD) #abcd
+            keyboard.release_all()
 
