@@ -18,9 +18,7 @@
         }
       },
       "rst_clk_100M": "",
-      "ila_0": "",
-      "AXI_PS2_Keyboard_0": "",
-      "edgedetector_eitheredge": ""
+      "AXI_PS2_Keyboard_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1495,75 +1493,11 @@
         "xci_path": "ip/Keyboard_rst_clk_100M_0/Keyboard_rst_clk_100M_0.xci",
         "inst_hier_path": "rst_clk_100M"
       },
-      "ila_0": {
-        "vlnv": "xilinx.com:ip:ila:6.2",
-        "xci_name": "Keyboard_ila_0_0",
-        "xci_path": "ip/Keyboard_ila_0_0/Keyboard_ila_0_0.xci",
-        "inst_hier_path": "ila_0",
-        "parameters": {
-          "C_ADV_TRIGGER": {
-            "value": "false"
-          },
-          "C_ENABLE_ILA_AXI_MON": {
-            "value": "false"
-          },
-          "C_MONITOR_TYPE": {
-            "value": "Native"
-          },
-          "C_NUM_OF_PROBES": {
-            "value": "3"
-          },
-          "C_PROBE1_WIDTH": {
-            "value": "32"
-          },
-          "C_TRIGIN_EN": {
-            "value": "true"
-          }
-        }
-      },
       "AXI_PS2_Keyboard_0": {
         "vlnv": "empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0",
         "xci_name": "Keyboard_AXI_PS2_Keyboard_0_0",
         "xci_path": "ip/Keyboard_AXI_PS2_Keyboard_0_0/Keyboard_AXI_PS2_Keyboard_0_0.xci",
         "inst_hier_path": "AXI_PS2_Keyboard_0"
-      },
-      "edgedetector_eitheredge": {
-        "vlnv": "xilinx.com:module_ref:edgedetector:1.0",
-        "xci_name": "Keyboard_edgedetector_0_0",
-        "xci_path": "ip/Keyboard_edgedetector_0_0/Keyboard_edgedetector_0_0.xci",
-        "inst_hier_path": "edgedetector_eitheredge",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "edgedetector",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "Keyboard_clk",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "sig": {
-            "direction": "I"
-          },
-          "sig_o": {
-            "direction": "O"
-          },
-          "pulse": {
-            "direction": "O",
-            "parameters": {
-              "PortWidth": {
-                "value": "1",
-                "value_src": "default_prop"
-              }
-            }
-          }
-        }
       }
     },
     "interface_nets": {
@@ -1596,28 +1530,19 @@
       "AXI_PS2_Keyboard_0_ascii": {
         "ports": [
           "AXI_PS2_Keyboard_0/ascii",
-          "ascii",
-          "ila_0/probe0"
-        ]
-      },
-      "AXI_PS2_Keyboard_0_ascii_new": {
-        "ports": [
-          "AXI_PS2_Keyboard_0/ascii_new",
-          "ila_0/trig_in"
+          "ascii"
         ]
       },
       "AXI_PS2_Keyboard_0_break_o": {
         "ports": [
           "AXI_PS2_Keyboard_0/break_o",
-          "break_o",
-          "ila_0/probe2",
-          "edgedetector_eitheredge/sig"
+          "break_o"
         ]
       },
-      "AXI_PS2_Keyboard_0_timer": {
+      "AXI_PS2_Keyboard_0_int_o": {
         "ports": [
-          "AXI_PS2_Keyboard_0/timer",
-          "ila_0/probe1"
+          "AXI_PS2_Keyboard_0/int_o",
+          "processing_system7_0/IRQ_F2P"
         ]
       },
       "M_AXI_GP0_ACLK_0_1": {
@@ -1628,15 +1553,7 @@
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/S00_ACLK",
           "rst_clk_100M/slowest_sync_clk",
-          "ila_0/clk",
-          "AXI_PS2_Keyboard_0/s00_axi_aclk",
-          "edgedetector_eitheredge/clk"
-        ]
-      },
-      "edgedetector_0_pulse": {
-        "ports": [
-          "edgedetector_eitheredge/pulse",
-          "processing_system7_0/IRQ_F2P"
+          "AXI_PS2_Keyboard_0/s00_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

@@ -6,5 +6,5 @@ eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Debugger_Zybo_LCD_-Default/activeLaunchMode=embrun
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_LCD__app/activeLaunchMode=systemrun
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_LCD__app/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
-org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_LCD_cpp_app/activeLaunchMode=systemrun
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_LCD_cpp_app/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_LCD_cpp_app/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

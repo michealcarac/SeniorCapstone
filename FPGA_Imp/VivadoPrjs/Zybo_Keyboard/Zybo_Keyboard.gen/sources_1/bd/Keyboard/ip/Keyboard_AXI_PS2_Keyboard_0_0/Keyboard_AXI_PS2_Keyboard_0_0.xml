@@ -599,11 +599,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 17 09:59:48 UTC 2022</spirit:value>
+            <spirit:value>Sun Nov 27 11:54:38 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:19ab0a67</spirit:value>
+            <spirit:value>9:80ee202c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -614,7 +614,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:19ab0a67</spirit:value>
+            <spirit:value>9:80ee202c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -630,11 +630,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 17 09:59:48 UTC 2022</spirit:value>
+            <spirit:value>Sun Nov 27 11:54:38 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:19ab0a67</spirit:value>
+            <spirit:value>9:80ee202c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -650,11 +650,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 17 09:59:48 UTC 2022</spirit:value>
+            <spirit:value>Sun Nov 27 11:54:38 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:81123307</spirit:value>
+            <spirit:value>9:777e3707</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -670,11 +670,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 17 09:59:48 UTC 2022</spirit:value>
+            <spirit:value>Sun Nov 27 11:54:38 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:81123307</spirit:value>
+            <spirit:value>9:777e3707</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -688,11 +688,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Nov 17 09:59:48 UTC 2022</spirit:value>
+            <spirit:value>Sun Nov 27 11:54:38 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:19ab0a67</spirit:value>
+            <spirit:value>9:80ee202c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -773,6 +773,19 @@
       </spirit:port>
       <spirit:port>
         <spirit:name>break_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>int_o</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -1149,27 +1162,27 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/debounce.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/debounce.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/ps2_keyboard.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/ps2_keyboard.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/ps2_keyboard_ascii_timer.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/ps2_keyboard_ascii_timer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/timer.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/timer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1184,27 +1197,27 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/debounce.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/debounce.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/ps2_keyboard.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/ps2_keyboard.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/ps2_keyboard_ascii_timer.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/ps2_keyboard_ascii_timer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/src/timer.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/src/timer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1324,7 +1337,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>AXI PS2 Keyboard v1.0</xilinx:displayName>
-      <xilinx:coreRevision>20</xilinx:coreRevision>
+      <xilinx:coreRevision>34</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -1372,8 +1385,8 @@
       <xilinx:xilinxVersion>2022.1.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="83069a96"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="0c5f8906"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="894435fb"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="776e17e5"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d6bfadf3"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="8bb02a5f"/>
     </xilinx:packagingInfo>

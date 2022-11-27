@@ -1,0 +1,9 @@
+#include "xscugic.h"   /* GIC Control */
+#include "xgpio.h"     /* GPIO COntrol */
+#include "xil_exception.h" /* Exceptions */
+#include "PS2.hpp"
+#include "GPIO.hpp"
+
+int Interrupt_Init(u32 PS2_INT_ID,u32 GPIO_INT_ID,u32 GPIO_INT_CHANNEL); /* Interrupt Initialization */
+void Keyboard_InterruptHandler(void *IntcInstancePtr); /* Keyboard Interrupt Handler */
+void GPIO_InterruptHandler(void *IntcInstancePtr); /* GPIO Interrupt Handler */

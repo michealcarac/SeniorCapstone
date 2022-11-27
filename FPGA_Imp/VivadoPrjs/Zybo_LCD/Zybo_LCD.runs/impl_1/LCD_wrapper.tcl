@@ -132,7 +132,7 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.cache/wt [current_project]
   set_property parent.project_path /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.xpr [current_project]
-  set_property ip_repo_paths /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/IPRepository/ip_repo [current_project]
+  set_property ip_repo_paths /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/02_IPRepository [current_project]
   update_ip_catalog
   set_property ip_output_repo /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
@@ -145,7 +145,7 @@ OPTRACE "add files" START { }
   add_files /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/sources_1/bd/LCD/LCD.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/ConstraintFiles/Zybo_LCD.xdc
+  read_xdc /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/constrs_1/new/Zybo_LCD.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

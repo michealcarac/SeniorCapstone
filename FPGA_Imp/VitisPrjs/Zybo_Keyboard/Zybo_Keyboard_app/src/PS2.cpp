@@ -2,9 +2,17 @@
 
 #include "PS2.hpp"
 
+static XScuGic InterruptController;      /* Instance of interrupt controller*/
 
+// Easy initialization of PS2
+void PS2_Init(u32 baseAddr) {
+	/* Enable Timer */
+	PS2_EnableTimer(baseAddr);
+	/* Enable Keyboard output */
+	PS2_EnableKeyboard(baseAddr);
+}
 
-
+// Read Keyboard data register in ASCII format
 char* PS2_ReadDataASCII(u32 baseAddr) {
 	// Store ascii + \0, static to keep off stack
 	static char buf[8];
@@ -13,21 +21,25 @@ char* PS2_ReadDataASCII(u32 baseAddr) {
 	return buf;
 }
 
+// Read Keyboard full data register
 u32 PS2_ReadDataU32(u32 baseAddr){
 	// Read the key data
 	return (Xil_In32(baseAddr) & PS2_Data_Mask);
 }
 
+// Read make/break signal from Keyboard
 u32 PS2_ReadBreak(u32 baseAddr){
 	// Shift the break signal out
 	return (Xil_In32(baseAddr) >> PS2_Break_Shift);
 }
 
+// Read current time of PS2 Timer
 u32 PS2_ReadTime(u32 baseAddr) {
 	// Read the entire timer register
 	return (Xil_In32(baseAddr+4));
 }
 
+// Read the time in a normalized fashion (time*resolution of time to put in terms of seconds)
 double PS2_ReadTimeNormalized(u32 baseAddr, double resolution) {
 	// Normalize the timer register data
 	return (double)PS2_ReadTime(baseAddr)*resolution;
@@ -38,12 +50,15 @@ void PS2_EnableTimer(u32 baseAddr){
 	// Enable timer by setting enable bit high
 	Xil_Out32(baseAddr+8,Xil_In32(baseAddr+8) | 0x1);
 }
+
 // Currently not implemented, enable is hard set to 'on'
 void PS2_DisableTimer(u32 baseAddr){
 	// Disable timer by setting enable bit low
 	Xil_Out32(baseAddr+8,Xil_In32(baseAddr+8) & ~0x1);
 }
 
+
+// Reset PS2 Timer to 0
 void PS2_ResetTimer(u32 baseAddr) {
 	// Set reset bit high
 	Xil_Out32(baseAddr+8,Xil_In32(baseAddr+8) | 0x2);
@@ -51,20 +66,36 @@ void PS2_ResetTimer(u32 baseAddr) {
 	Xil_Out32(baseAddr+8,Xil_In32(baseAddr+8) & ~0x2);
 }
 
-
-void Keyboard_InterruptHandler(void *intc_inst_ptr){
-	char break_data[2];
-	u32 ascii_data = Xil_In32(PS2_Keyboard_Base) & PS2_Data_Mask;
-	itoa(Xil_In32(PS2_Keyboard_Base) >> PS2_Break_Shift,break_data,2);
-	// Print ASCII Character
-	xil_printf("ascii: %c \n\r",ascii_data);
-	xil_printf("break: %s \n\r",break_data);
-	xil_printf("time: %d \n\r",Xil_In32(PS2_Keyboard_Base+4));
+// Enables Keyboard Output
+void PS2_EnableKeyboard(u32 baseAddr){
+	// Enable keyboard output by setting enable bit high
+	Xil_Out32(baseAddr+8,Xil_In32(baseAddr+8) | 0x4);
+}
+// Disables Keyboard output
+void PS2_DisableKeyboard(u32 baseAddr){
+	// Disable keyboard by setting enable bit low
+	Xil_Out32(baseAddr+8,Xil_In32(baseAddr+8) & ~0x4);
 }
 
 
+//////////////////////////////// INTERRUPT HANDLERS ///////////////////////////////////////////
+
+
+// Change this to decide what happens when a key is pressed.
+void Keyboard_InterruptHandler(void *intc_inst_ptr){
+	//char break_data[2];
+	//u32 ascii_data = Xil_In32(PS2_Keyboard_Base) & PS2_Data_Mask;
+	//itoa(Xil_In32(PS2_Keyboard_Base) >> PS2_Break_Shift,break_data,2);
+	// Print ASCII Character
+	xil_printf("ascii: %s \n\r",PS2_ReadDataASCII(PS2_Keyboard_Base));
+	xil_printf("break: %d \n\r",(int)PS2_ReadBreak(PS2_Keyboard_Base));
+	xil_printf("time: %d \n\r",PS2_ReadTime(PS2_Keyboard_Base));
+}
+
+// Set up Interrupts for PS2
+// priority = 0x00 to 0xF8, 0x00 highest, trigger = 0x3 -> rising edge. Unknown others atm
 int PS2_IntSetup(u32 PS2_INT_ID, u32 priority,u32 trigger) {
-	// default priority = 0xF8, trigger = 0x3
+
     int Status;
     XScuGic *IntcInstancePtr = &InterruptController;
     XScuGic_Config *intc_config;

@@ -1,0 +1,9 @@
+
+#include "xscugic.h"   /* GIC Control */
+#include "xgpio.h"     /* GPIO COntrol */
+
+/* GPIO Usage */
+#define BTN_DEVICE_ID 			XPAR_AXI_GPIO_0_DEVICE_ID   // GPIO 0
+#define INTC_GPIO_INTERRUPT_ID  XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+
+int GPIO_Init(XGpio *InstancePtr, u32 DeviceId); /* Initialize GPIO */

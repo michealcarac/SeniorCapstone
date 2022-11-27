@@ -10,7 +10,7 @@
 
 source LCD_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/IPRepository/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/02_IPRepository'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
 Command: read_checkpoint -auto_incremental -incremental /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/utils_1/imports/synth_1/LCD_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/utils_1/imports/synth_1/LCD_wrapper.dcp for incremental synthesis
@@ -24,9 +24,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 48678
+INFO: [Synth 8-7075] Helper process launched with PID 1103183
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2903.387 ; gain = 0.000 ; free physical = 6526 ; free virtual = 10656
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2903.391 ; gain = 0.000 ; free physical = 2487 ; free virtual = 9806
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'LCD_wrapper' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/hdl/LCD_wrapper.vhd:45]
 INFO: [Synth 8-3491] module 'LCD' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/synth/LCD.vhd:591' bound to instance 'LCD_i' of component 'LCD' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/hdl/LCD_wrapper.vhd:77]
@@ -37,24 +37,24 @@ INFO: [Synth 8-638] synthesizing module 'LCD_AXI_I2C_LCD_Transmit_0_0' [/home/ce
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter LCD_CLK bound to: 100000000 - type: integer 
 	Parameter LCD_I2C_BUS_CLK bound to: 100000 - type: integer 
-INFO: [Synth 8-3491] module 'AXI_I2C_LCD_Transmitter_v1_0' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:5' bound to instance 'U0' of component 'AXI_I2C_LCD_Transmitter_v1_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_AXI_I2C_LCD_Transmit_0_0/synth/LCD_AXI_I2C_LCD_Transmit_0_0.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:52]
+INFO: [Synth 8-3491] module 'AXI_I2C_LCD_Transmitter_v1_0' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:5' bound to instance 'U0' of component 'AXI_I2C_LCD_Transmitter_v1_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_AXI_I2C_LCD_Transmit_0_0/synth/LCD_AXI_I2C_LCD_Transmit_0_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:52]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-3491] module 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:5' bound to instance 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI_inst' of component 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:89]
-INFO: [Synth 8-3491] module 'i2c_user_lcd' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/i2c_user_lcd.vhd:6' bound to instance 'lcd' of component 'i2c_user_lcd' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:479]
-INFO: [Synth 8-638] synthesizing module 'i2c_user_lcd' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/i2c_user_lcd.vhd:23]
+INFO: [Synth 8-3491] module 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:5' bound to instance 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI_inst' of component 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-3491] module 'i2c_user_lcd' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/i2c_user_lcd.vhd:6' bound to instance 'lcd' of component 'i2c_user_lcd' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:479]
+INFO: [Synth 8-638] synthesizing module 'i2c_user_lcd' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/i2c_user_lcd.vhd:23]
 	Parameter input_clk bound to: 100000000 - type: integer 
 	Parameter bus_clk bound to: 100000 - type: integer 
-INFO: [Synth 8-3491] module 'i2c_master' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/I2C_Master.vhd:36' bound to instance 'Inst_i2c_master' of component 'i2c_master' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/i2c_user_lcd.vhd:71]
-INFO: [Synth 8-638] synthesizing module 'i2c_master' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/I2C_Master.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'i2c_master' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/I2C_Master.vhd:54]
-WARNING: [Synth 8-614] signal 'first_line' is read in the process but is not in the sensitivity list [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/i2c_user_lcd.vhd:194]
-WARNING: [Synth 8-614] signal 'second_line' is read in the process but is not in the sensitivity list [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/i2c_user_lcd.vhd:194]
-INFO: [Synth 8-256] done synthesizing module 'i2c_user_lcd' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/src/i2c_user_lcd.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:89]
-INFO: [Synth 8-256] done synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:52]
+INFO: [Synth 8-3491] module 'i2c_master' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/I2C_Master.vhd:36' bound to instance 'Inst_i2c_master' of component 'i2c_master' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/i2c_user_lcd.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'i2c_master' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/I2C_Master.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/I2C_Master.vhd:54]
+WARNING: [Synth 8-614] signal 'first_line' is read in the process but is not in the sensitivity list [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/i2c_user_lcd.vhd:194]
+WARNING: [Synth 8-614] signal 'second_line' is read in the process but is not in the sensitivity list [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/i2c_user_lcd.vhd:194]
+INFO: [Synth 8-256] done synthesizing module 'i2c_user_lcd' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/src/i2c_user_lcd.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0_S00_AXI' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'AXI_I2C_LCD_Transmitter_v1_0' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd:52]
 INFO: [Synth 8-256] done synthesizing module 'LCD_AXI_I2C_LCD_Transmit_0_0' (0#1) [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_AXI_I2C_LCD_Transmit_0_0/synth/LCD_AXI_I2C_LCD_Transmit_0_0.vhd:85]
 INFO: [Synth 8-3491] module 'LCD_processing_system7_0_0' declared at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_processing_system7_0_0/synth/LCD_processing_system7_0_0.v:53' bound to instance 'processing_system7_0' of component 'LCD_processing_system7_0_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/synth/LCD.vhd:891]
 INFO: [Synth 8-6157] synthesizing module 'LCD_processing_system7_0_0' [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_processing_system7_0_0/synth/LCD_processing_system7_0_0.v:53]
@@ -306,18 +306,18 @@ WARNING: [Synth 8-7129] Port s_arlen[3] in module axi_protocol_converter_v2_1_26
 WARNING: [Synth 8-7129] Port s_arlen[2] in module axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2903.387 ; gain = 0.000 ; free physical = 6526 ; free virtual = 10710
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2903.391 ; gain = 0.000 ; free physical = 1891 ; free virtual = 9211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2903.387 ; gain = 0.000 ; free physical = 6526 ; free virtual = 10710
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2903.391 ; gain = 0.000 ; free physical = 1885 ; free virtual = 9206
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2903.387 ; gain = 0.000 ; free physical = 6526 ; free virtual = 10710
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2903.391 ; gain = 0.000 ; free physical = 1885 ; free virtual = 9206
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2903.387 ; gain = 0.000 ; free physical = 6522 ; free virtual = 10706
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2903.391 ; gain = 0.000 ; free physical = 1944 ; free virtual = 9265
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -332,9 +332,9 @@ Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Z
 Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_rst_sysclk_100Mhz_100M_0/LCD_rst_sysclk_100Mhz_100M_0_board.xdc] for cell 'LCD_i/rst_sysclk_100Mhz_100M/U0'
 Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_rst_sysclk_100Mhz_100M_0/LCD_rst_sysclk_100Mhz_100M_0.xdc] for cell 'LCD_i/rst_sysclk_100Mhz_100M/U0'
 Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_rst_sysclk_100Mhz_100M_0/LCD_rst_sysclk_100Mhz_100M_0.xdc] for cell 'LCD_i/rst_sysclk_100Mhz_100M/U0'
-Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/ConstraintFiles/Zybo_LCD.xdc]
-Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/ConstraintFiles/Zybo_LCD.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/ConstraintFiles/Zybo_LCD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LCD_wrapper_propImpl.xdc].
+Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/constrs_1/new/Zybo_LCD.xdc]
+Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/constrs_1/new/Zybo_LCD.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/constrs_1/new/Zybo_LCD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LCD_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/LCD_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.runs/synth_1/dont_touch.xdc]
@@ -342,24 +342,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/LCD_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2998.230 ; gain = 0.000 ; free physical = 6437 ; free virtual = 10621
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3008.234 ; gain = 0.000 ; free physical = 1731 ; free virtual = 9053
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2998.230 ; gain = 0.000 ; free physical = 6437 ; free virtual = 10621
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3008.234 ; gain = 0.000 ; free physical = 1731 ; free virtual = 9053
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2998.230 ; gain = 94.844 ; free physical = 6496 ; free virtual = 10698
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3008.234 ; gain = 104.844 ; free physical = 960 ; free virtual = 8287
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2998.230 ; gain = 94.844 ; free physical = 6496 ; free virtual = 10698
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 3008.234 ; gain = 104.844 ; free physical = 960 ; free virtual = 8287
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -373,7 +373,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for LCD_i/ps7_0_axi_periph. (constrai
 Applied set_property KEEP_HIERARCHY = SOFT for LCD_i/rst_sysclk_100Mhz_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for LCD_i/AXI_I2C_LCD_Transmitter_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2998.230 ; gain = 94.844 ; free physical = 6496 ; free virtual = 10697
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3008.234 ; gain = 104.844 ; free physical = 912 ; free virtual = 8238
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_26_b2s_wr_cmd_fsm'
@@ -411,7 +411,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_26_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2998.230 ; gain = 94.844 ; free physical = 6485 ; free virtual = 10687
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 3008.234 ; gain = 104.844 ; free physical = 793 ; free virtual = 8121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -500,19 +500,19 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2998.230 ; gain = 94.844 ; free physical = 6465 ; free virtual = 10672
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3008.234 ; gain = 104.844 ; free physical = 603 ; free virtual = 7960
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2998.230 ; gain = 94.844 ; free physical = 6199 ; free virtual = 10406
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 3008.234 ; gain = 104.844 ; free physical = 374 ; free virtual = 7733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2998.230 ; gain = 94.844 ; free physical = 6168 ; free virtual = 10379
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 3008.234 ; gain = 104.844 ; free physical = 363 ; free virtual = 7722
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -520,7 +520,7 @@ Start Technology Mapping
 INFO: [Synth 8-3332] Sequential element (U0/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI_inst/lcd/Inst_i2c_master/FSM_onehot_state_reg[7]) is unused and will be removed from module LCD_AXI_I2C_LCD_Transmit_0_0.
 INFO: [Synth 8-3332] Sequential element (U0/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI_inst/lcd/Inst_i2c_master/FSM_onehot_state_reg[6]) is unused and will be removed from module LCD_AXI_I2C_LCD_Transmit_0_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6167 ; free virtual = 10378
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 360 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -538,37 +538,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6167 ; free virtual = 10378
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 361 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6167 ; free virtual = 10378
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 361 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6166 ; free virtual = 10378
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 361 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6166 ; free virtual = 10378
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 361 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6166 ; free virtual = 10378
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 361 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6166 ; free virtual = 10378
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 361 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -627,18 +627,18 @@ Report Cell Usage:
 |23    |OBUFT   |     1|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.254 ; gain = 108.867 ; free physical = 6166 ; free virtual = 10378
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.250 ; gain = 108.859 ; free physical = 361 ; free virtual = 7720
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 135 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 3012.254 ; gain = 14.023 ; free physical = 6224 ; free virtual = 10435
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.262 ; gain = 108.867 ; free physical = 6224 ; free virtual = 10435
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 3012.250 ; gain = 4.016 ; free physical = 417 ; free virtual = 7777
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3012.258 ; gain = 108.859 ; free physical = 417 ; free virtual = 7777
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3016.223 ; gain = 0.000 ; free physical = 6310 ; free virtual = 10521
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3015.219 ; gain = 0.000 ; free physical = 508 ; free virtual = 7867
 INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3059.145 ; gain = 0.000 ; free physical = 6245 ; free virtual = 10456
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3058.141 ; gain = 0.000 ; free physical = 442 ; free virtual = 7801
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   FDR => FDRE: 4 instances
@@ -649,7 +649,7 @@ Synth Design complete, checksum: d114205b
 INFO: [Common 17-83] Releasing license: Synthesis
 165 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:38 . Memory (MB): peak = 3059.145 ; gain = 155.758 ; free physical = 6611 ; free virtual = 10823
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:41 . Memory (MB): peak = 3058.141 ; gain = 154.750 ; free physical = 809 ; free virtual = 8168
 INFO: [Common 17-1381] The checkpoint '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.runs/synth_1/LCD_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file LCD_wrapper_utilization_synth.rpt -pb LCD_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Nov  6 18:28:23 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 27 06:54:10 2022...

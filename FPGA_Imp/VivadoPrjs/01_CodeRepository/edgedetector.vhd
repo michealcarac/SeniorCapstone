@@ -11,7 +11,7 @@ ENTITY edgedetector IS
   PORT(
     clk     : IN  STD_LOGIC;  --input clock
     sig     : IN  STD_LOGIC;  -- To be checked
-    sig_o   : OUT STD_LOGIC;
+    sig_o   : OUT STD_LOGIC;  -- passthrough signal
     pulse   : OUT STD_LOGIC); --debounced signal
 END edgedetector;
 

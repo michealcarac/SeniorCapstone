@@ -1,0 +1,11 @@
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xil_types.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+
+/* GPIO Usage */
+#define BTN_DEVICE_ID 			XPAR_AXI_GPIO_0_DEVICE_ID   // GPIO 0
+#define INTC_GPIO_INTERRUPT_ID  XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR

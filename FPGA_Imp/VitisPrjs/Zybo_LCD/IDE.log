@@ -5970,3 +5970,217 @@ con
 
 17:47:25 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/_ide/scripts/systemdebugger_zybo_lcd_cpp_app_standalone.tcl'
 17:55:37 INFO  : Disconnected from the channel tcfchan#7.
+11:45:28 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/IDE.log'.
+11:45:28 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/temp_xsdb_launch_script.tcl
+11:45:30 INFO  : Registering command handlers for Vitis TCF services
+11:45:30 INFO  : Platform repository initialization has completed.
+11:45:30 INFO  : XSCT server has started successfully.
+11:45:31 INFO  : plnx-install-location is set to ''
+11:45:31 INFO  : Successfully done setting XSCT server connection channel  
+11:45:31 INFO  : Successfully done query RDI_DATADIR 
+11:45:31 INFO  : Successfully done setting workspace for the tool. 
+11:45:31 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+11:48:03 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_LCD_cpp'...
+11:48:08 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa is already opened
+
+11:49:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:41 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+11:49:41 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+11:49:41 INFO  : 'jtag frequency' command is executed.
+11:49:41 INFO  : Context for 'APU' is selected.
+11:49:42 INFO  : System reset is completed.
+11:49:45 INFO  : 'after 3000' command is executed.
+11:49:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+11:49:48 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit"
+11:49:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:48 INFO  : Context for 'APU' is selected.
+11:49:48 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa'.
+11:49:48 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+11:49:48 INFO  : 'configparams force-mem-access 1' command is executed.
+11:49:48 INFO  : Context for 'APU' is selected.
+11:49:48 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl' is done.
+11:49:54 INFO  : 'ps7_init' command is executed.
+11:49:54 INFO  : 'ps7_post_config' command is executed.
+11:49:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:11 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:50:12 INFO  : 'configparams force-mem-access 0' command is executed.
+11:50:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:50:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+11:50:12 INFO  : 'jtag frequency' command is executed.
+11:50:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:12 INFO  : Context for 'APU' is selected.
+11:50:12 INFO  : 'con' command is executed.
+11:50:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:50:12 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/_ide/scripts/systemdebugger_zybo_lcd_cpp_app_standalone.tcl'
+11:50:12 INFO  : System reset is completed.
+11:50:15 INFO  : 'after 3000' command is executed.
+11:50:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+11:50:18 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit"
+11:50:18 INFO  : Context for 'APU' is selected.
+11:50:18 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa'.
+11:50:18 INFO  : 'configparams force-mem-access 1' command is executed.
+11:50:18 INFO  : Context for 'APU' is selected.
+11:50:18 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl' is done.
+11:50:25 INFO  : 'ps7_init' command is executed.
+11:50:25 INFO  : 'ps7_post_config' command is executed.
+11:50:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:41 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:50:42 INFO  : 'configparams force-mem-access 0' command is executed.
+11:50:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:50:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:50:42 INFO  : 'con' command is executed.
+11:50:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:50:42 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/_ide/scripts/systemdebugger_zybo_lcd_cpp_app_standalone.tcl'
+11:51:41 INFO  : Disconnected from the channel tcfchan#2.
+11:51:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:51:41 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+11:51:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+11:51:42 INFO  : 'jtag frequency' command is executed.
+11:51:42 INFO  : Context for 'APU' is selected.
+11:51:42 INFO  : System reset is completed.
+11:51:45 INFO  : 'after 3000' command is executed.
+11:51:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+11:51:48 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit"
+11:51:48 INFO  : Context for 'APU' is selected.
+11:51:50 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa'.
+11:51:50 INFO  : 'configparams force-mem-access 1' command is executed.
+11:51:50 INFO  : Context for 'APU' is selected.
+11:51:50 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl' is done.
+11:51:56 INFO  : 'ps7_init' command is executed.
+11:51:56 INFO  : 'ps7_post_config' command is executed.
+11:51:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:13 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:52:13 INFO  : 'configparams force-mem-access 0' command is executed.
+11:52:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:52:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:52:14 INFO  : 'con' command is executed.
+11:52:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:52:14 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/_ide/scripts/systemdebugger_zybo_lcd_cpp_app_standalone.tcl'
+11:52:38 INFO  : Disconnected from the channel tcfchan#3.
+06:56:31 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/IDE.log'.
+06:56:31 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/temp_xsdb_launch_script.tcl
+06:56:33 INFO  : Registering command handlers for Vitis TCF services
+06:56:33 INFO  : Platform repository initialization has completed.
+06:56:33 INFO  : XSCT server has started successfully.
+06:56:33 INFO  : Successfully done setting XSCT server connection channel  
+06:56:34 INFO  : plnx-install-location is set to ''
+06:56:34 INFO  : Successfully done setting workspace for the tool. 
+06:56:34 INFO  : Successfully done query RDI_DATADIR 
+06:56:34 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+06:58:12 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_LCD_cpp'...
+06:58:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:58:18 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+06:58:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+06:58:18 INFO  : 'jtag frequency' command is executed.
+06:58:19 INFO  : Context for 'APU' is selected.
+06:58:19 INFO  : System reset is completed.
+06:58:22 INFO  : 'after 3000' command is executed.
+06:58:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+06:58:25 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit"
+06:58:25 INFO  : Context for 'APU' is selected.
+06:58:25 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa'.
+06:58:25 INFO  : 'configparams force-mem-access 1' command is executed.
+06:58:25 INFO  : Context for 'APU' is selected.
+06:58:25 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl' is done.
+06:58:31 INFO  : 'ps7_init' command is executed.
+06:58:31 INFO  : 'ps7_post_config' command is executed.
+06:58:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:58:47 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+06:58:48 INFO  : 'configparams force-mem-access 0' command is executed.
+06:58:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/Debug/Zybo_LCD_cpp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+06:58:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:58:48 INFO  : 'con' command is executed.
+06:58:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+06:58:48 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp_app/_ide/scripts/systemdebugger_zybo_lcd_cpp_app_standalone.tcl'
+06:59:51 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Exports/Zybo_LCD.ide.zip'
+07:00:36 INFO  : Disconnected from the channel tcfchan#1.

@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
---Date        : Thu Nov 17 05:28:07 2022
+--Date        : Sun Nov 27 06:54:38 2022
 --Host        : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
 --Command     : generate_target Keyboard.bd
 --Design      : Keyboard
@@ -618,7 +618,7 @@ entity Keyboard is
     ps2_data : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Keyboard : entity is "Keyboard,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Keyboard,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=6,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=1,synth_mode=Global}";
+  attribute CORE_GENERATION_INFO of Keyboard : entity is "Keyboard,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Keyboard,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Keyboard : entity is "Keyboard.hwdef";
 end Keyboard;
@@ -708,16 +708,6 @@ architecture STRUCTURE of Keyboard is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component Keyboard_rst_clk_100M_0;
-  component Keyboard_ila_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    trig_in : in STD_LOGIC;
-    trig_in_ack : out STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component Keyboard_ila_0_0;
   component Keyboard_AXI_PS2_Keyboard_0_0 is
   port (
     ps2_clk : in STD_LOGIC;
@@ -726,6 +716,7 @@ architecture STRUCTURE of Keyboard is
     ascii : out STD_LOGIC_VECTOR ( 6 downto 0 );
     timer : out STD_LOGIC_VECTOR ( 31 downto 0 );
     break_o : out STD_LOGIC;
+    int_o : out STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -749,20 +740,10 @@ architecture STRUCTURE of Keyboard is
     s00_axi_rready : in STD_LOGIC
   );
   end component Keyboard_AXI_PS2_Keyboard_0_0;
-  component Keyboard_edgedetector_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    sig : in STD_LOGIC;
-    sig_o : out STD_LOGIC;
-    pulse : out STD_LOGIC
-  );
-  end component Keyboard_edgedetector_0_0;
   signal AXI_PS2_Keyboard_0_ascii : STD_LOGIC_VECTOR ( 6 downto 0 );
-  signal AXI_PS2_Keyboard_0_ascii_new : STD_LOGIC;
   signal AXI_PS2_Keyboard_0_break_o : STD_LOGIC;
-  signal AXI_PS2_Keyboard_0_timer : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal AXI_PS2_Keyboard_0_int_o : STD_LOGIC;
   signal M_AXI_GP0_ACLK_0_1 : STD_LOGIC;
-  signal edgedetector_0_pulse : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -845,8 +826,8 @@ architecture STRUCTURE of Keyboard is
   signal ps7_0_axi_periph_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_clk_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_edgedetector_eitheredge_sig_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_ila_0_trig_in_ack_UNCONNECTED : STD_LOGIC;
+  signal NLW_AXI_PS2_Keyboard_0_ascii_new_UNCONNECTED : STD_LOGIC;
+  signal NLW_AXI_PS2_Keyboard_0_timer_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_processing_system7_0_FCLK_CLK0_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -890,8 +871,9 @@ begin
 AXI_PS2_Keyboard_0: component Keyboard_AXI_PS2_Keyboard_0_0
      port map (
       ascii(6 downto 0) => AXI_PS2_Keyboard_0_ascii(6 downto 0),
-      ascii_new => AXI_PS2_Keyboard_0_ascii_new,
+      ascii_new => NLW_AXI_PS2_Keyboard_0_ascii_new_UNCONNECTED,
       break_o => AXI_PS2_Keyboard_0_break_o,
+      int_o => AXI_PS2_Keyboard_0_int_o,
       ps2_clk => ps2_clk_0_1,
       ps2_data => ps2_data_0_1,
       s00_axi_aclk => M_AXI_GP0_ACLK_0_1,
@@ -915,23 +897,7 @@ AXI_PS2_Keyboard_0: component Keyboard_AXI_PS2_Keyboard_0_0
       s00_axi_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       s00_axi_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      timer(31 downto 0) => AXI_PS2_Keyboard_0_timer(31 downto 0)
-    );
-edgedetector_eitheredge: component Keyboard_edgedetector_0_0
-     port map (
-      clk => M_AXI_GP0_ACLK_0_1,
-      pulse => edgedetector_0_pulse,
-      sig => AXI_PS2_Keyboard_0_break_o,
-      sig_o => NLW_edgedetector_eitheredge_sig_o_UNCONNECTED
-    );
-ila_0: component Keyboard_ila_0_0
-     port map (
-      clk => M_AXI_GP0_ACLK_0_1,
-      probe0(6 downto 0) => AXI_PS2_Keyboard_0_ascii(6 downto 0),
-      probe1(31 downto 0) => AXI_PS2_Keyboard_0_timer(31 downto 0),
-      probe2(0) => AXI_PS2_Keyboard_0_break_o,
-      trig_in => AXI_PS2_Keyboard_0_ascii_new,
-      trig_in_ack => NLW_ila_0_trig_in_ack_UNCONNECTED
+      timer(31 downto 0) => NLW_AXI_PS2_Keyboard_0_timer_UNCONNECTED(31 downto 0)
     );
 processing_system7_0: component Keyboard_processing_system7_0_0
      port map (
@@ -954,7 +920,7 @@ processing_system7_0: component Keyboard_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => NLW_processing_system7_0_FCLK_CLK0_UNCONNECTED,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
-      IRQ_F2P(0) => edgedetector_0_pulse,
+      IRQ_F2P(0) => AXI_PS2_Keyboard_0_int_o,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => M_AXI_GP0_ACLK_0_1,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),

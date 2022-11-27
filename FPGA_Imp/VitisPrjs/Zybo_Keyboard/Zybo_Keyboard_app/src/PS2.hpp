@@ -20,7 +20,6 @@
 #define PS2_INT_DEVICE_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define PS2_INT_INTERRUPT_ID  61 // IRQ_F2P[0], From Vivado. Interrupts [15:0] for IDs [91:84] [68:61]
 
-static XScuGic InterruptController;      /* Instance of interrupt controller*/
 
 // Interrupt setup, INT_ID = Interrupt ID from Vivado, Priority = 0xF8 to 0x00, where 0x00 is highest priority.
 // Trigger = 0x3 -> rising edge. View xsugic.c for more info.
@@ -29,6 +28,7 @@ void Keyboard_InterruptHandler(void *InstancePtr);
 
 
 // Keyboard Helper Functions
+void PS2_Init(u32 baseAddr);
 char* PS2_ReadDataASCII(u32 baseAddr);
 u32 PS2_ReadDataU32(u32 baseAddr);
 u32 PS2_ReadBreak(u32 baseAddr);
@@ -37,3 +37,5 @@ double PS2_ReadTimeNormalized(u32 baseAddr, double resolution);
 void PS2_ResetTimer(u32 baseAddr);
 void PS2_EnableTimer(u32 baseAddr);
 void PS2_DisableTimer(u32 baseAddr);
+void PS2_EnableKeyboard(u32 baseAddr);
+void PS2_DisableKeyboard(u32 baseAddr);

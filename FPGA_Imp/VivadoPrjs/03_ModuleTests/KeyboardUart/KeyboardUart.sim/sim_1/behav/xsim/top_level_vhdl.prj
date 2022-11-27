@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../KeyboardUart.srcs/sources_1/imports/test/debounce.vhd" \
+"../../../../KeyboardUart.srcs/sources_1/imports/test/ps2_keyboard.vhd" \
+"../../../../KeyboardUart.srcs/sources_1/imports/test/ps2_keyboard_to_ascii.vhd" \
+"../../../../KeyboardUart.srcs/sources_1/imports/test/uart.vhd" \
+"../../../../KeyboardUart.srcs/sources_1/imports/test/uart_user.vhd" \
+"../../../../KeyboardUart.srcs/sources_1/imports/test/top_level.vhd" \
+
+# Do not sort compile order
+nosort

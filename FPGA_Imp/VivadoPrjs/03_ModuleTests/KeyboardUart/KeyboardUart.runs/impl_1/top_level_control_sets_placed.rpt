@@ -1,0 +1,87 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 07:53:59 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    29 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           17 |
+| No           | No                    | Yes                    |              15 |            7 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              31 |           11 |
+| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | Yes                   | No                     |              13 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+--------------+
+|                    Clock Signal                    |                        Enable Signal                       |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+--------------+
+|  clk_100Mhz_IBUF_BUFG                              | Inst_Uart/Inst_uart_master/tx_count[3]_i_1_n_0             | Inst_Uart/Inst_uart_master/tx_state_i_2_n_0         |                1 |              4 |         4.00 |
+|  clk_100Mhz_IBUF_BUFG                              | Inst_keyboard/ps2_keyboard_0/FSM_sequential_state_reg[0]_0 |                                                     |                4 |              7 |         1.75 |
+|  clk_100Mhz_IBUF_BUFG                              | Inst_keyboard/ascii_code[6]_i_1_n_0                        |                                                     |                1 |              7 |         7.00 |
+|  clk_100Mhz_IBUF_BUFG                              | Inst_keyboard/ps2_keyboard_0/ps2_code_new0                 |                                                     |                4 |              8 |         2.00 |
+|  clk_100Mhz_IBUF_BUFG                              | Inst_Uart/Inst_uart_master/tx_buffer[9]_i_1_n_0            |                                                     |                2 |              9 |         4.50 |
+| ~Inst_keyboard/ps2_keyboard_0/debounce_ps2_clk/CLK |                                                            |                                                     |                4 |             11 |         2.75 |
+|  clk_100Mhz_IBUF_BUFG                              | Inst_keyboard/ps2_keyboard_0/sel                           | Inst_keyboard/ps2_keyboard_0/debounce_ps2_clk/clear |                4 |             13 |         3.25 |
+|  clk_100Mhz_IBUF_BUFG                              |                                                            | Inst_Uart/Inst_uart_master/tx_state_i_2_n_0         |                7 |             15 |         2.14 |
+|  clk_100Mhz_IBUF_BUFG                              |                                                            |                                                     |               13 |             33 |         2.54 |
++----------------------------------------------------+------------------------------------------------------------+-----------------------------------------------------+------------------+----------------+--------------+
+
+

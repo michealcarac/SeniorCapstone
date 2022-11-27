@@ -1,0 +1,10 @@
+0.7
+2020.2
+Aug  5 2022
+22:59:05
+/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/debounce.vhd,1667528235,vhdl,,,,debounce,,,,,,,,
+/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/ps2_keyboard.vhd,1667528235,vhdl,,,,ps2_keyboard,,,,,,,,
+/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/ps2_keyboard_to_ascii.vhd,1667528235,vhdl,,,,ps2_keyboard_to_ascii,,,,,,,,
+/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/top_level.vhd,1669462063,vhdl,,,,top_level,,,,,,,,
+/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/uart.vhd,1667528235,vhdl,,,,uart,,,,,,,,
+/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/uart_user.vhd,1669179082,vhdl,,,,uart_user,,,,,,,,

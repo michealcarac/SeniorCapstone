@@ -2639,3 +2639,399 @@ con
 
 11:25:28 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
 11:31:07 INFO  : Disconnected from the channel tcfchan#57.
+03:37:23 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/IDE.log'.
+03:37:23 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/temp_xsdb_launch_script.tcl
+03:37:25 INFO  : Registering command handlers for Vitis TCF services
+03:37:25 INFO  : Platform repository initialization has completed.
+03:37:25 INFO  : XSCT server has started successfully.
+03:37:25 INFO  : plnx-install-location is set to ''
+03:37:26 INFO  : Successfully done setting XSCT server connection channel  
+03:37:26 INFO  : Successfully done query RDI_DATADIR 
+03:37:26 INFO  : Successfully done setting workspace for the tool. 
+08:10:31 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/IDE.log'.
+08:10:32 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/temp_xsdb_launch_script.tcl
+08:10:34 INFO  : Registering command handlers for Vitis TCF services
+08:10:34 INFO  : Platform repository initialization has completed.
+08:10:34 INFO  : XSCT server has started successfully.
+08:10:35 INFO  : plnx-install-location is set to ''
+08:10:35 INFO  : Successfully done setting XSCT server connection channel  
+08:10:35 INFO  : Successfully done query RDI_DATADIR 
+08:10:35 INFO  : Successfully done setting workspace for the tool. 
+11:02:19 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/IDE.log'.
+11:02:20 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/temp_xsdb_launch_script.tcl
+11:02:21 INFO  : Registering command handlers for Vitis TCF services
+11:02:21 INFO  : Platform repository initialization has completed.
+11:02:22 INFO  : XSCT server has started successfully.
+11:02:22 INFO  : Successfully done setting XSCT server connection channel  
+11:02:22 INFO  : plnx-install-location is set to ''
+11:02:22 INFO  : Successfully done setting workspace for the tool. 
+11:02:22 INFO  : Successfully done query RDI_DATADIR 
+11:02:22 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+11:38:07 INFO  : Hardware specification for platform project 'Zybo_Keyboard' is updated.
+11:38:34 INFO  : Result from executing command 'getProjects': Zybo_Keyboard
+11:38:34 INFO  : Result from executing command 'getPlatforms': Zybo_Keyboard|/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/Zybo_Keyboard.xpfm;xilinx_vck190_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+11:38:52 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+11:38:56 INFO  : The hardware specification used by project 'Zybo_Keyboard_app' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+11:38:56 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit' stored in project is removed.
+11:38:56 INFO  : The updated bitstream files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream' in project 'Zybo_Keyboard_app'.
+11:38:56 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' stored in project is removed.
+11:39:02 INFO  : The updated ps init files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit' in project 'Zybo_Keyboard_app'.
+11:39:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:09 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+11:39:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+11:39:12 INFO  : 'jtag frequency' command is executed.
+11:39:12 INFO  : Context for 'APU' is selected.
+11:39:12 INFO  : System reset is completed.
+11:39:15 INFO  : 'after 3000' command is executed.
+11:39:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+11:39:18 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit"
+11:39:18 INFO  : Context for 'APU' is selected.
+11:39:18 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa'.
+11:39:18 INFO  : 'configparams force-mem-access 1' command is executed.
+11:39:18 INFO  : Context for 'APU' is selected.
+11:39:18 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' is done.
+11:39:25 INFO  : 'ps7_init' command is executed.
+11:39:25 INFO  : 'ps7_post_config' command is executed.
+11:39:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:42 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:39:43 INFO  : 'configparams force-mem-access 0' command is executed.
+11:39:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:39:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:43 INFO  : 'con' command is executed.
+11:39:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:39:43 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
+11:40:28 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+11:40:32 INFO  : Disconnected from the channel tcfchan#3.
+11:40:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:32 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+11:40:33 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+11:40:33 INFO  : 'jtag frequency' command is executed.
+11:40:33 INFO  : Context for 'APU' is selected.
+11:40:33 INFO  : System reset is completed.
+11:40:36 INFO  : 'after 3000' command is executed.
+11:40:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+11:40:39 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit"
+11:40:39 INFO  : Context for 'APU' is selected.
+11:40:39 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa'.
+11:40:39 INFO  : 'configparams force-mem-access 1' command is executed.
+11:40:39 INFO  : Context for 'APU' is selected.
+11:40:39 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' is done.
+11:40:46 INFO  : 'ps7_init' command is executed.
+11:40:46 INFO  : 'ps7_post_config' command is executed.
+11:40:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:41:02 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:41:03 INFO  : 'configparams force-mem-access 0' command is executed.
+11:41:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:41:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:41:03 INFO  : 'con' command is executed.
+11:41:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:41:03 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
+11:41:24 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+11:41:35 INFO  : Disconnected from the channel tcfchan#4.
+11:41:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:41:35 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+11:41:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+11:41:36 INFO  : 'jtag frequency' command is executed.
+11:41:36 INFO  : Context for 'APU' is selected.
+11:41:36 INFO  : System reset is completed.
+11:41:39 INFO  : 'after 3000' command is executed.
+11:41:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+11:41:42 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit"
+11:41:42 INFO  : Context for 'APU' is selected.
+11:41:42 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa'.
+11:41:42 INFO  : 'configparams force-mem-access 1' command is executed.
+11:41:42 INFO  : Context for 'APU' is selected.
+11:41:42 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' is done.
+11:41:49 INFO  : 'ps7_init' command is executed.
+11:41:49 INFO  : 'ps7_post_config' command is executed.
+11:41:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:06 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:42:06 INFO  : 'configparams force-mem-access 0' command is executed.
+11:42:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:42:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:06 INFO  : 'con' command is executed.
+11:42:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:42:06 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
+11:42:21 INFO  : Disconnected from the channel tcfchan#6.
+11:42:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:42:21 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+11:42:24 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+11:42:24 INFO  : 'jtag frequency' command is executed.
+11:42:24 INFO  : Context for 'APU' is selected.
+11:42:24 INFO  : System reset is completed.
+11:42:27 INFO  : 'after 3000' command is executed.
+11:42:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+11:42:30 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit"
+11:42:30 INFO  : Context for 'APU' is selected.
+11:42:30 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa'.
+11:42:30 INFO  : 'configparams force-mem-access 1' command is executed.
+11:42:30 INFO  : Context for 'APU' is selected.
+11:42:30 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' is done.
+11:42:37 INFO  : 'ps7_init' command is executed.
+11:42:37 INFO  : 'ps7_post_config' command is executed.
+11:42:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:53 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:42:54 INFO  : 'configparams force-mem-access 0' command is executed.
+11:42:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:42:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:42:54 INFO  : 'con' command is executed.
+11:42:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:42:54 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
+11:43:58 INFO  : Disconnected from the channel tcfchan#7.
+06:24:43 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/IDE.log'.
+06:24:44 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/temp_xsdb_launch_script.tcl
+06:24:46 INFO  : Registering command handlers for Vitis TCF services
+06:24:46 INFO  : XSCT server has started successfully.
+06:24:46 INFO  : Successfully done setting XSCT server connection channel  
+06:24:46 INFO  : plnx-install-location is set to ''
+06:24:46 INFO  : Platform repository initialization has completed.
+06:24:47 INFO  : Successfully done setting workspace for the tool. 
+06:24:47 INFO  : Successfully done query RDI_DATADIR 
+06:24:47 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+06:29:20 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+06:29:56 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+06:30:16 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+06:30:24 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+06:30:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:30:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+06:30:58 INFO  : 'jtag frequency' command is executed.
+06:30:58 INFO  : Context for 'APU' is selected.
+06:30:58 INFO  : System reset is completed.
+06:31:01 INFO  : 'after 3000' command is executed.
+06:31:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+06:31:04 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit"
+06:31:04 INFO  : Context for 'APU' is selected.
+06:31:05 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa'.
+06:31:05 INFO  : 'configparams force-mem-access 1' command is executed.
+06:31:05 INFO  : Context for 'APU' is selected.
+06:31:05 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' is done.
+06:31:11 INFO  : 'ps7_init' command is executed.
+06:31:11 INFO  : 'ps7_post_config' command is executed.
+06:31:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:31:27 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+06:31:27 INFO  : 'configparams force-mem-access 0' command is executed.
+06:31:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+06:31:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:31:28 INFO  : 'con' command is executed.
+06:31:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+06:31:28 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
+06:31:47 INFO  : Disconnected from the channel tcfchan#1.
+07:00:44 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/IDE.log'.
+07:00:45 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/temp_xsdb_launch_script.tcl
+07:00:47 INFO  : Registering command handlers for Vitis TCF services
+07:00:47 INFO  : Platform repository initialization has completed.
+07:00:47 INFO  : XSCT server has started successfully.
+07:00:47 INFO  : plnx-install-location is set to ''
+07:00:47 INFO  : Successfully done setting XSCT server connection channel  
+07:00:47 INFO  : Successfully done query RDI_DATADIR 
+07:00:47 INFO  : Successfully done setting workspace for the tool. 
+07:00:47 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+07:01:52 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+07:02:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:02:02 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+07:02:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+07:02:02 INFO  : 'jtag frequency' command is executed.
+07:02:02 INFO  : Context for 'APU' is selected.
+07:02:02 INFO  : System reset is completed.
+07:02:05 INFO  : 'after 3000' command is executed.
+07:02:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+07:02:08 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit"
+07:02:08 INFO  : Context for 'APU' is selected.
+07:02:08 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa'.
+07:02:09 INFO  : 'configparams force-mem-access 1' command is executed.
+07:02:09 INFO  : Context for 'APU' is selected.
+07:02:09 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' is done.
+07:02:15 INFO  : 'ps7_init' command is executed.
+07:02:15 INFO  : 'ps7_post_config' command is executed.
+07:02:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:02:31 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:02:31 INFO  : 'configparams force-mem-access 0' command is executed.
+07:02:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+07:02:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:02:32 INFO  : 'con' command is executed.
+07:02:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+07:02:32 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
+07:03:00 INFO  : Disconnected from the channel tcfchan#1.
+07:03:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:03:00 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+07:03:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+07:03:00 INFO  : 'jtag frequency' command is executed.
+07:03:00 INFO  : Context for 'APU' is selected.
+07:03:01 INFO  : System reset is completed.
+07:03:04 INFO  : 'after 3000' command is executed.
+07:03:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+07:03:07 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit"
+07:03:07 INFO  : Context for 'APU' is selected.
+07:03:08 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa'.
+07:03:08 INFO  : 'configparams force-mem-access 1' command is executed.
+07:03:08 INFO  : Context for 'APU' is selected.
+07:03:08 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' is done.
+07:03:15 INFO  : 'ps7_init' command is executed.
+07:03:15 INFO  : 'ps7_post_config' command is executed.
+07:03:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:03:31 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:03:32 INFO  : 'configparams force-mem-access 0' command is executed.
+07:03:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/hw/Zybo_Keyboard.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/Debug/Zybo_Keyboard_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+07:03:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:03:32 INFO  : 'con' command is executed.
+07:03:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+07:03:32 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_system/_ide/scripts/systemdebugger_zybo_keyboard_system_standalone.tcl'
+07:04:47 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_Keyboard.ide.zip'
+07:04:51 INFO  : Disconnected from the channel tcfchan#2.

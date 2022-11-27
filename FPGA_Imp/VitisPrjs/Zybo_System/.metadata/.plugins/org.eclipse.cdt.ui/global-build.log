@@ -1,0 +1,24 @@
+Nothing to build in platform 'Zybo_System'
+
+06:09:10 **** Incremental Build of configuration Debug for project Zybo_System_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/main.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
+ 
+Building target: Zybo_System_app.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bsplib/lib -o "Zybo_System_app.elf"  ./src/GPIO.o ./src/Interrupts.o ./src/LCD.o ./src/PS2.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: Zybo_System_app.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Zybo_System_app.elf  |tee "Zybo_System_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 563719	   3644	  29208	 596571	  91a5b	Zybo_System_app.elf
+Finished building: Zybo_System_app.elf.size
+ 

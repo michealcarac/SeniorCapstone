@@ -36,10 +36,10 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/LCD/ip/LCD_rst_sysclk_100Mhz_100M_0/sim/LCD_rst_sysclk_100Mhz_100M_0.vhd" \
-  "../../../bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd" \
-  "../../../../Zybo_LCD.gen/sources_1/bd/src/I2C_Master.vhd" \
-  "../../../../Zybo_LCD.gen/sources_1/bd/src/i2c_user_lcd.vhd" \
-  "../../../bd/LCD/ipshared/2cd2/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd" \
+  "../../../bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd" \
+  "../../../bd/LCD/ipshared/e983/src/I2C_Master.vhd" \
+  "../../../bd/LCD/ipshared/e983/src/i2c_user_lcd.vhd" \
+  "../../../bd/LCD/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd" \
   "../../../bd/LCD/ip/LCD_AXI_I2C_LCD_Transmit_0_0/sim/LCD_AXI_I2C_LCD_Transmit_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \

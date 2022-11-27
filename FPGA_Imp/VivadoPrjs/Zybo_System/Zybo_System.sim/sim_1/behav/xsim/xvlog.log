@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.ip_user_files/bd/System/ip/System_processing_system7_0_0/sim/System_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module System_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.ip_user_files/bd/System/ip/System_xlconcat_0_0/sim/System_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module System_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.ip_user_files/bd/System/ip/System_xlconstant_0_0/sim/System_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module System_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.ip_user_files/bd/System/ip/System_auto_pc_0/sim/System_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module System_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

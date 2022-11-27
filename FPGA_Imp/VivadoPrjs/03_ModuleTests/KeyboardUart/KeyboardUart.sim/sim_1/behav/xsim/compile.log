@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/ps2_keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ps2_keyboard'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/ps2_keyboard_to_ascii.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ps2_keyboard_to_ascii'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/uart_user.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_user'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/sources_1/imports/test/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_level'

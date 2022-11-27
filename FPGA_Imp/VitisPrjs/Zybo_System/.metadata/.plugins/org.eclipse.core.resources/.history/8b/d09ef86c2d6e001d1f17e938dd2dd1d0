@@ -1,0 +1,14 @@
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "xil_types.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include "xscugic.h"   /* GIC Control */
+#include "xgpio.h"     /* GPIO COntrol */
+
+/* GPIO Usage */
+#define BTN_DEVICE_ID 			XPAR_AXI_GPIO_0_DEVICE_ID   // GPIO 0
+#define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+#define INTC_GPIO_INTERRUPT_ID  XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR

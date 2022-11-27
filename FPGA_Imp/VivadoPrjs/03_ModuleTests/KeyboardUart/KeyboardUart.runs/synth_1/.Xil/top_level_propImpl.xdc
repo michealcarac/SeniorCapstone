@@ -1,0 +1,13 @@
+set_property SRC_FILE_INFO {cfile:/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.srcs/constrs_1/imports/new/Zybo_System.xdc rfile:../../../KeyboardUart.srcs/constrs_1/imports/new/Zybo_System.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { clk_100Mhz }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
+set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN P15   IOSTANDARD LVCMOS33 } [get_ports { uart_reset_n }]; #IO_L24P_T3_34 Sch=sw[1]
+set_property src_info {type:XDC file:1 line:55 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V8    IOSTANDARD LVCMOS33     } [get_ports { uart_rx }]; #IO_L15P_T2_DQS_13 Sch=jb_p[1]
+set_property src_info {type:XDC file:1 line:56 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W8    IOSTANDARD LVCMOS33     } [get_ports { uart_tx }]; #IO_L15N_T2_DQS_13 Sch=jb_n[1]
+set_property src_info {type:XDC file:1 line:66 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V15   IOSTANDARD LVCMOS33     } [get_ports { ps2_data }]; #IO_L10P_T1_34 Sch=jc_p[1]
+set_property src_info {type:XDC file:1 line:68 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33     } [get_ports { ps2_clk }]; #IO_L1P_T0_34 Sch=jc_p[2]

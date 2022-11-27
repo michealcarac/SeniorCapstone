@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
---Date        : Sun Nov  6 18:27:18 2022
+--Date        : Sun Nov 27 06:52:57 2022
 --Host        : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
 --Command     : generate_target LCD_wrapper.bd
 --Design      : LCD_wrapper

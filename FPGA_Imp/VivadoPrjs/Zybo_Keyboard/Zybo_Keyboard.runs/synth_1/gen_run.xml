@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1668680892" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/KB_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1669550110" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/KB_wrapper.dcp">
   <File Type="VDS-TIMING-PB" Name="Keyboard_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Keyboard_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="Keyboard_wrapper.dcp"/>
@@ -11,12 +11,6 @@
   <File Type="PA-TCL" Name="Keyboard_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/edgedetector.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/Keyboard/Keyboard.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -63,7 +57,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

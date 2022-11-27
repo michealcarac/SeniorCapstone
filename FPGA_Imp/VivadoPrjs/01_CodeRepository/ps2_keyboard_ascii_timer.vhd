@@ -34,19 +34,27 @@ ENTITY ps2_keyboard_ascii_timer IS
       clk        : IN  STD_LOGIC;                     --system clock input
       ps2_clk    : IN  STD_LOGIC;                     --clock signal from PS2 keyboard
       ps2_data   : IN  STD_LOGIC;                     --data signal from PS2 keyboard
-      ascii_new  : OUT STD_LOGIC;                     --output flag indicating new ASCII value
+      -- MC -> 
+      -- ASCII code: Outputs the translated ASCII code every Make or Break, originally only on make, which can lead to issues if a key is pressed but not released before another one is pressed.
+      -- ASCII New: Outputs a pulse every MAKE
+      -- Break code: Stays high after a translation with a break code until a make code is translated
+      -- Interrupt: Outputs a pulse every MAKE or BREAK
+      -- Timer: Outputs a timer value that constantly increments, but is only outputted on every MAKE or BREAK 
+      -- Timer Reset: Reset Timer with a pulse of '1'
+      -- Timer Enable: Hold '1' to keep timer enabled.
       ascii_code : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);   --ASCII value
-      -- Break/Make Code
-      break_o    : OUT STD_LOGIC;
-      -- TIMER
-      timer_reset    : IN  STD_LOGIC;    -- '1' to reset TIMER
-      timer_en       : IN  STD_LOGIC;    -- '1' to enable TIMER
-      timer_o        : OUT STD_LOGIC_VECTOR(TIMER_OUTPUT_WIDTH-1 downto 0)  -- Data of timer, changes upon new ascii character
+      ascii_new  : OUT STD_LOGIC; -- ASCII name
+      break_o    : OUT STD_LOGIC; -- Break
+      int_o      : OUT STD_LOGIC; -- Interrupt
+      timer_o    : OUT STD_LOGIC_VECTOR(TIMER_OUTPUT_WIDTH-1 downto 0);  -- Timer
+      timer_rs   : IN  STD_LOGIC;    -- Timer Reset
+      timer_en   : IN  STD_LOGIC    -- Timer Enable
+      
       ); 
 END ps2_keyboard_ascii_timer;
 
 ARCHITECTURE behavior OF ps2_keyboard_ascii_timer IS
-  TYPE machine IS(ready, new_code, translate, output);              --needed states
+  TYPE machine IS(ready, new_code, translate, done_translate, output);              --needed states
   SIGNAL state             : machine;                               --state machine
   SIGNAL ps2_code_new      : STD_LOGIC;                             --new PS2 code flag from ps2_keyboard component
   SIGNAL ps2_code          : STD_LOGIC_VECTOR(7 DOWNTO 0);          --PS2 code input form ps2_keyboard component
@@ -62,10 +70,10 @@ ARCHITECTURE behavior OF ps2_keyboard_ascii_timer IS
   -- USER LOGIC START  ----
   SIGNAL ascii_new_prev         : STD_LOGIC := '0';
   SIGNAL ascii_new_reg          : STD_LOGIC := '0';
-  SIGNAL ascii_new_temp         : STD_LOGIC := '0';
-  SIGNAL break_prev             : STD_LOGIC := '0';
-  SIGNAL break_temp             : STD_LOGIC := '0';
+  SIGNAL int_reg                : STD_LOGIC := '0';
+  SIGNAL break_reg              : STD_LOGIC := '0';
   -- TIMER
+  SIGNAL timer_reg         : STD_LOGIC_VECTOR(TIMER_OUTPUT_WIDTH-1 downto 0) := (others => '0');
   SIGNAL timer_data        : STD_LOGIC_VECTOR(TIMER_OUTPUT_WIDTH-1 downto 0) := (others=> '0');
   
   -- declare timer interface component
@@ -97,50 +105,33 @@ ARCHITECTURE behavior OF ps2_keyboard_ascii_timer IS
 
 BEGIN
 
-  -- USER LOGIC START  ----
-  -- Ascii New buffering, pulses
-  ascii_new <= ascii_new_reg;
+  -- Push signals out
+  break_o <= break_reg; -- Break
+  timer_o <= timer_reg; -- Timer
+  int_o <= int_reg;
+  timer_reg <= timer_data when state = done_translate else -- Only output timer data when done translating some data
+               timer_reg;
+  -- Create ascii_new as a pulse 
   process(clk)
-  begin
-      if rising_edge(clk) then
-          ascii_new_temp <= ascii_new_prev;
-          -- Falling edge to say new data
-          if ascii_new_prev = '0' AND ascii_new_temp = '1'  then
-              ascii_new_reg <= '1'; -- signal new data
-          else
-              ascii_new_reg <= '0'; 
-          end if;
-      end if;
-  end process;
-  -- Push Break Signal out, Latched
-  break <= break_prev      when ascii_new_reg = '1';
-  break_o <= break;
-  
-  -- Push Timer signal out when break is changed, Latched
-  process(clk)
-  begin
-    if rising_edge(clk) then
-        break_temp <= break;
-        -- If break signal has flipped, send timer data out latched
-        if break_temp = NOT break then
-            timer_o <= timer_data;
+  BEGIN
+    if rising_edge(clk) THEN
+        ascii_new_reg <= ascii_new_prev;
+        if ascii_new_reg = '0' and ascii_new_prev = '1' THEN -- rising edge
+            ascii_new <= '1';
+        else
+            ascii_new <= '0';
         end if;
     end if;
-  end process;  
-  -- USER LOGIC END ----
-  
-  
- -- Instanitiate Timer Interface
+  end process;
+
+  -- Instanitiate Timer Interface
   ps2_timer_0: timer
     GENERIC MAP(OUTPUT_WIDTH => TIMER_OUTPUT_WIDTH, CLOCK_DIVIDER => TIMER_CLOCK_DIVIDER)
-    PORT MAP(clk => clk, reset => timer_reset,en => timer_en, q => timer_data);
-  -- USER LOGIC END  ----
-  
+    PORT MAP(clk => clk, reset => timer_rs,en => timer_en, q => timer_data);
   --instantiate PS2 keyboard interface logic
   ps2_keyboard_0:  ps2_keyboard
     GENERIC MAP(clk_freq => clk_freq, debounce_counter_size => ps2_debounce_counter_size)
     PORT MAP(clk => clk, ps2_clk => ps2_clk, ps2_data => ps2_data, ps2_code_new => ps2_code_new, ps2_code => ps2_code);
-
   
   PROCESS(clk)
   BEGIN
@@ -150,6 +141,7 @@ BEGIN
       
         --ready state: wait for a new PS2 code to be received
         WHEN ready =>
+          int_reg <= '0'; -- MC -> Set interrupt low. This will be pulsed for twice every key press. Once for press down, once for let go
           IF(prev_ps2_code_new = '0' AND ps2_code_new = '1') THEN --new PS2 code received
             ascii_new_prev <= '0';                                       --reset new ASCII code indicator
             state <= new_code;                                      --proceed to new_code state
@@ -160,7 +152,7 @@ BEGIN
         --new_code state: determine what to do with the new PS2 code  
         WHEN new_code =>
           IF(ps2_code = x"F0") THEN    --code indicates that next command is break
-            break_prev <= '1';                --set break flag
+            break <= '1';                --set break flag
             state <= ready;              --return to ready state to await next PS2 code
           ELSIF(ps2_code = x"E0") THEN --code indicates multi-key command
             e0_code <= '1';              --set multi-code command flag
@@ -172,25 +164,25 @@ BEGIN
 
         --translate state: translate PS2 code to ASCII value
         WHEN translate =>
-            break_prev <= '0';    --reset break flag. happens on next cycle
+            --break <= '0';    --reset break flag. happens on next cycle
             e0_code <= '0';  --reset multi-code command flag, happens on next cycle
             
             --handle codes for control, shift, and caps lock
             CASE ps2_code IS
               WHEN x"58" =>                   --caps lock code
-                IF(break_prev = '0') THEN            --if make command
+                IF(break = '0') THEN            --if make command
                   caps_lock <= NOT caps_lock;     --toggle caps lock
                 END IF;
               WHEN x"14" =>                   --code for the control keys
                 IF(e0_code = '1') THEN          --code for right control
-                  control_r <= NOT break_prev;         --update right control flag
+                  control_r <= NOT break;         --update right control flag
                 ELSE                            --code for left control
-                  control_l <= NOT break_prev;         --update left control flag
+                  control_l <= NOT break;         --update left control flag
                 END IF;
               WHEN x"12" =>                   --left shift code
-                shift_l <= NOT break_prev;           --update left shift flag
+                shift_l <= NOT break;           --update left shift flag
               WHEN x"59" =>                   --right shift code
-                shift_r <= NOT break_prev;           --update right shift flag
+                shift_r <= NOT break;           --update right shift flag
               WHEN OTHERS => NULL;
             END CASE;
         
@@ -366,22 +358,33 @@ BEGIN
               END IF;
               
             END IF;
-            
-            -- MC -> Output whether break or not. 
-            state <= output;
---          IF(break_prev = '0') THEN  --the code is a make
---            state <= output;      --proceed to output state
---          ELSE                  --code is a break
---            state <= ready;       --return to ready state to await next PS2 code
---          END IF;
-        
+
+            state <= done_translate; -- Next state
+
+        -- MC -> Intermediate state to create extra signals
+        WHEN done_translate =>
+            break <= '0'; -- on next cycle reset break
+            int_reg <= '1';  -- MC -> Set interrupt high. This will be pulsed for twice every key press. Once for press down, once for let go
+            -- MC -> outputting ascii code on mark or break
+            if(ascii(7) = '0') then --ps2 code has an ascii output
+                ascii_code <= ascii(6 DOWNTO 0);   --output the ASCII value, theoretical output on make and break
+            end if;
+            -- MC -> Moved this logic from last state
+            IF(break = '0') THEN  --the code is a make
+                break_reg <= '0'; -- MC -> Make, To stay low until next translation with a break
+                state <= output;      --proceed to output state
+            ELSE                  --code is a break
+                break_reg <= '1'; -- MC -> Break, To stay high until next translation with a make
+                state <= ready;       --return to ready state to await next PS2 code
+            END IF;
         --output state: verify the code is valid and output the ASCII value
         WHEN output =>
-          IF(ascii(7) = '0') THEN              --the PS2 code has an ASCII output
-            ascii_new_prev <= '1';        --set flag indicating new ASCII output
-            ascii_code <= ascii(6 DOWNTO 0);   --output the ASCII value
-          END IF;
-          state <= ready;                      --return to ready state to await next PS2 code
+            int_reg <= '0';
+            IF(ascii(7) = '0') THEN              --the PS2 code has an ASCII output
+                ascii_new_prev <= '1';        --set flag indicating new ASCII output
+                --ascii_code <= ascii(6 DOWNTO 0);   --output the ASCII value
+            END IF;
+            state <= ready;                      --return to ready state to await next PS2 code
 
       END CASE;
     END IF;

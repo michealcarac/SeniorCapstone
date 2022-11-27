@@ -20,3 +20,6 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform active {Zybo_Keyboard}
+platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.xsa}
+platform generate

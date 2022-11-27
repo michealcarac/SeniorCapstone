@@ -1,6 +1,27 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sun Nov 27 06:52:53 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'LCD_AXI_I2C_LCD_Transmit_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of LCD_AXI_I2C_LCD_Transmit_0_0 (empyrea.dev:AXICommunication:AXI_I2C_LCD_Transmitter:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
 | Date         : Sun Nov  6 18:27:13 2022
 | Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
 | Command      : upgrade_ip

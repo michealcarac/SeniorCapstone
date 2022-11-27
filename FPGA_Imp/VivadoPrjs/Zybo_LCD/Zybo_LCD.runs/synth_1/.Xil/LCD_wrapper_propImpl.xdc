@@ -1,5 +1,5 @@
 set_property SRC_FILE_INFO {cfile:/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_processing_system7_0_0/LCD_processing_system7_0_0.xdc rfile:../../../Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_processing_system7_0_0/LCD_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:LCD_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VivadoPrjs/ConstraintFiles/Zybo_LCD.xdc rfile:../../../../../../../SeniorCapstone_ZyboDev/VivadoPrjs/ConstraintFiles/Zybo_LCD.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/constrs_1/new/Zybo_LCD.xdc rfile:../../../Zybo_LCD.srcs/constrs_1/new/Zybo_LCD.xdc id:2} [current_design]
 current_instance LCD_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.6

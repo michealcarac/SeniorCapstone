@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/ec67/hdl" --include "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/5765/hdl" --include "/tools/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_processing_system7_0_0/sim/System_processing_system7_0_0.v" \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_xlconcat_0_0/sim/System_xlconcat_0_0.v" \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_xlconstant_0_0/sim/System_xlconstant_0_0.v" \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_auto_pc_0/sim/System_auto_pc_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -40,11 +40,12 @@ int main() {
 //	LCD_Refresh(LCD_I2C_Base);
 
 	string string3;
+	std::cout << "Write to LCD from Serial Window" << std::endl;
 	while(1){
 		// Data from UART 115200
 		std::cin >> string3;
 		LCD_Write32(LCD_I2C_Base,string3);
-		LCD_Refresh(LCD_I2C_Base);
+		//LCD_Refresh(LCD_I2C_Base); // Now has refresh built into writes
 	}
 
 

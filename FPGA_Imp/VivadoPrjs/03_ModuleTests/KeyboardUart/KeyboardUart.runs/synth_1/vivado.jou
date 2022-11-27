@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.2 (64-bit)
+# SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
+# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+# Start of session at: Sat Nov 26 07:52:47 2022
+# Process ID: 523697
+# Current directory: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.runs/synth_1
+# Command line: vivado -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.runs/synth_1/top_level.vds
+# Journal file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/KeyboardUart/KeyboardUart.runs/synth_1/vivado.jou
+# Running On: UbuntuSeniorLab, OS: Linux, CPU Frequency: 3493.438 MHz, CPU Physical cores: 12, Host memory: 16776 MB
+#-----------------------------------------------------------
+source top_level.tcl -notrace

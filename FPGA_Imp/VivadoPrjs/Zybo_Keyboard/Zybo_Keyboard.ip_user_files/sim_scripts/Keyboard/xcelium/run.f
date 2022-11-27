@@ -9,6 +9,13 @@
   "/tools/Xilinx/Vivado/2022.1/data/xilinx_vip/hdl/clk_vip_if.sv" \
   "/tools/Xilinx/Vivado/2022.1/data/xilinx_vip/hdl/rst_vip_if.sv" \
 -endlib
+-makelib xcelium_lib/xpm -sv \
+  "/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib xcelium_lib/axi_infrastructure_v1_1_0 \
   "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 -endlib
@@ -29,16 +36,13 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/Keyboard/ip/Keyboard_rst_clk_100M_0/sim/Keyboard_rst_clk_100M_0.vhd" \
-  "../../../bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
-  "../../../bd/Keyboard/ipshared/c140/src/debounce.vhd" \
-  "../../../bd/Keyboard/ipshared/c140/src/ps2_keyboard.vhd" \
-  "../../../bd/Keyboard/ipshared/c140/src/ps2_keyboard_ascii_timer.vhd" \
-  "../../../bd/Keyboard/ipshared/c140/src/timer.vhd" \
-  "../../../bd/Keyboard/ipshared/c140/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
+  "../../../bd/Keyboard/ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
+  "../../../bd/Keyboard/ipshared/abad/src/debounce.vhd" \
+  "../../../bd/Keyboard/ipshared/abad/src/ps2_keyboard.vhd" \
+  "../../../bd/Keyboard/ipshared/abad/src/ps2_keyboard_ascii_timer.vhd" \
+  "../../../bd/Keyboard/ipshared/abad/src/timer.vhd" \
+  "../../../bd/Keyboard/ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
   "../../../bd/Keyboard/ip/Keyboard_AXI_PS2_Keyboard_0_0/sim/Keyboard_AXI_PS2_Keyboard_0_0.vhd" \
-  "../../../bd/Keyboard/ip/Keyboard_ila_0_0/sim/Keyboard_ila_0_0.vhd" \
-  "../../../bd/Keyboard/sim/Keyboard.vhd" \
-  "../../../bd/Keyboard/ip/Keyboard_edgedetector_0_0/sim/Keyboard_edgedetector_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../Zybo_Keyboard.gen/sources_1/bd/Keyboard/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -63,6 +67,9 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/Keyboard/ip/Keyboard_auto_pc_0/sim/Keyboard_auto_pc_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/Keyboard/sim/Keyboard.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

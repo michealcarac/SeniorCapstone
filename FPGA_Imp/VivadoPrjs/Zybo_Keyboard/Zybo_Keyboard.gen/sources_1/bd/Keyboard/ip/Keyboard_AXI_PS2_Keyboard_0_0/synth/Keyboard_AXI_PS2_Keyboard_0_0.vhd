@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0
--- IP Revision: 20
+-- IP Revision: 34
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -61,6 +61,7 @@ ENTITY Keyboard_AXI_PS2_Keyboard_0_0 IS
     ascii : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
     timer : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     break_o : OUT STD_LOGIC;
+    int_o : OUT STD_LOGIC;
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -104,6 +105,7 @@ ARCHITECTURE Keyboard_AXI_PS2_Keyboard_0_0_arch OF Keyboard_AXI_PS2_Keyboard_0_0
       ascii : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
       timer : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       break_o : OUT STD_LOGIC;
+      int_o : OUT STD_LOGIC;
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -175,6 +177,7 @@ BEGIN
       ascii => ascii,
       timer => timer,
       break_o => break_o,
+      int_o => int_o,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

@@ -70,11 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
-set_param chipscope.maxJobs 3
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -88,24 +83,17 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
-set_property ip_repo_paths /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/02_IPRepository/ip_repo/ip_repo [current_project]
+set_property ip_repo_paths /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/02_IPRepository [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {
-  /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.srcs/sources_1/new/edgedetector.vhd
-  /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/hdl/Keyboard_wrapper.vhd
-}
+read_vhdl -library xil_defaultlib /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/hdl/Keyboard_wrapper.vhd
 add_files /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.srcs/sources_1/bd/Keyboard/Keyboard.bd
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_processing_system7_0_0/Keyboard_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_rst_clk_100M_0/Keyboard_rst_clk_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_rst_clk_100M_0/Keyboard_rst_clk_100M_0.xdc]
-set_property used_in_synthesis false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_ila_0_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_ila_0_0/Keyboard_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/ip/Keyboard_auto_pc_0/Keyboard_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.gen/sources_1/bd/Keyboard/Keyboard_ooc.xdc]
 

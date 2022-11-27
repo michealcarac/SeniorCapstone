@@ -1,0 +1,11 @@
+#include "GPIO.hpp"
+#include "PS2.hpp"
+
+/* Interrupt Pointers */
+static XScuGic InterruptController;
+XScuGic *myInterruptPtr = &InterruptController;
+XScuGic_Config *myIntConfig;
+XGpio myGPIOInterruptPtr; /* don't question why this is not a pointer.. XGpio is dumb */
+
+
+int Interrupt_Init(u32 PS2_INT_ID,u32 GPIO_INT_ID,u32 GPIO_INT_CHANNEL);
