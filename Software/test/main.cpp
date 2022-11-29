@@ -207,6 +207,7 @@ void btn0() {
 void btn1() {
     if(logger->getCurrentMode() == FixedTrain && numEntries != 0) {
         logger->runTrain();
+        logger->saveAllProfiles();
         numEntries = 0;
     }
     logger->nextMode();
