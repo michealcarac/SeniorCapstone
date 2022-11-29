@@ -93,13 +93,13 @@ void LcdDriver::resetCursorPosition() {  lcdSendCommand(LCD_RESET_CURSOR_POSITIO
 void LcdDriver::scroll1CharRightAllLines() {  lcdSendCommand(LCD_SCROLL_1_CHAR_RIGHT_ALL_LINES); }
 void LcdDriver::scroll1CharLeftAllLines() {  lcdSendCommand(LCD_SCROLL_1_CHAR_LEFT_ALL_LINES); }
 
-void LcdDriver::setLine(int row, string text)
-{
-        setCursorPositionRowCol(row, 0);
+void LcdDriver::setLine(int row, string text) // created a setline function to allow for ease of row assignment
+{                                             // this function also writes a string to the LCD row selected
+        setCursorPositionRowCol(row, 0); // sets the row 
 
         for(int i = 0; i < text.length(); i++)
         {
-             lcdByte(text[i], LCD_CHR);
+             lcdByte(text[i], LCD_CHR);   // writes the string to the lcd character by character.
         }
 }
 
