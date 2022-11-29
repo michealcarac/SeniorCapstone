@@ -419,12 +419,14 @@ void Keylogger::nextProfile() {
 
 // saves all profiles
 void Keylogger::saveAllProfiles() {
+    int oldProfile = currentProfile;
     system("rm -f ./profiles/profile*");
     sleep_for(milliseconds(500)); // waiting for the shell above to finish
     for(currentProfile = 0; currentProfile < profiles.size(); currentProfile++) {
         string filename = "profile" + to_string(currentProfile) + ".txt";
         profiles.at(currentProfile).writeProfile("./profiles", filename);
     }
+    currentProfile = oldProfile;
 }
 
 void Keylogger::appendKeypress(Keypress *k) {

@@ -210,6 +210,7 @@ void btn1() {
         logger->saveAllProfiles();
         numEntries = 0;
     }
+    runningInput = "";
     logger->nextMode();
 }
 
@@ -265,7 +266,7 @@ void btn3() {
 
 // run modes
 void runModes(Modes currentMode) {
-    switch(currentMode) {
+    switch(currentMode) { 
         case Disable: break;
         case FixedTrain:
             sleep_for(milliseconds(500)); // sleep for .5 seconds, forcing a large digraph time
