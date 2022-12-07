@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/sim/System_rst_M_AXI_GP0_ACLK_0_100M_0.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/6307/uart.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/6307/uart_user.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_uart_0_0/sim/System_uart_0_0.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/a497/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/a497/src/debounce.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/a497/src/ps2_keyboard.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/a497/src/ps2_keyboard_ascii_timer.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/a497/src/timer.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ipshared/a497/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_AXI_PS2_Keyboard_0_0/sim/System_AXI_PS2_Keyboard_0_0.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/ip/System_ila_0_0/sim/System_ila_0_0.vhd" \
+"../../../../Zybo_System.ip_user_files/bd/System/sim/System.vhd" \
+"../../../../Zybo_System.gen/sources_1/bd/System/hdl/System_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

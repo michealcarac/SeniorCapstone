@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec  7 18:35:06 2022
+# Process ID: 10292
+# Current directory: C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.runs/synth_1
+# Command line: vivado.exe -log System_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source System_wrapper.tcl
+# Log file: C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.runs/synth_1/System_wrapper.vds
+# Journal file: C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.runs/synth_1\vivado.jou
+# Running On: DESKTOP-8DKIKNE, OS: Windows, CPU Frequency: 3493 MHz, CPU Physical cores: 32, Host memory: 34299 MB
+#-----------------------------------------------------------
+source System_wrapper.tcl -notrace

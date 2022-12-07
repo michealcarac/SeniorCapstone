@@ -1,0 +1,43 @@
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: System_wrapper.System_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+                   0 else checking line ......x
+WARNING: 1000 ns System_wrapper.System_i.processing_system7_0.inst.M_AXI_GP0.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+
+Time: 1010 ns Started: 1010 ns Scope: /System_wrapper/System_i/processing_system7_0/inst/M_AXI_GP0/master/IF/PC File: /wrk/ci/prod/2022.1.2/sw/continuous/178/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv Line:1981
+Fatal: AXI4_ERRS_WREADY_X: When not in reset, a value of X on WREADY is not permitted. Spec: section A3.2.2.
+Time: 1010 ns  Iteration: 0  Process: /System_wrapper/System_i/processing_system7_0/inst/M_AXI_GP0/master/IF/PC//System_wrapper/System_i/processing_system7_0/inst/M_AXI_GP0/master/IF/PC  Scope: System_wrapper.System_i.processing_system7_0.inst.M_AXI_GP0.master.IF.PC.arm_amba4_pc_msg_err  File: /wrk/ci/prod/2022.1.2/sw/continuous/178/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv Line: 727
+$finish called at time : 1010 ns
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
