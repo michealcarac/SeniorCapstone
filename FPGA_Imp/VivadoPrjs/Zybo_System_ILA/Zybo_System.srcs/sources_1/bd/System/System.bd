@@ -7,7 +7,7 @@
       "name": "System",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "None",
-      "tool_version": "2022.1",
+      "tool_version": "2022.1.2",
       "validated": "true"
     },
     "design_tree": {
@@ -28,7 +28,7 @@
       "axi_gpio_0": "",
       "xlconcat_1": "",
       "AXI_I2C_LCD_Transmit_0": "",
-      "AXI_PS2_Keyboard_0": "",
+      "AXI_PS2_Keyboard_DEB_0": "",
       "ila_0": ""
     },
     "interface_ports": {
@@ -167,7 +167,7 @@
       "processing_system7_0": {
         "vlnv": "xilinx.com:ip:processing_system7:5.5",
         "xci_name": "System_processing_system7_0_0",
-        "xci_path": "ip\\System_processing_system7_0_0\\System_processing_system7_0_0.xci",
+        "xci_path": "ip/System_processing_system7_0_0/System_processing_system7_0_0.xci",
         "inst_hier_path": "processing_system7_0",
         "parameters": {
           "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
@@ -1309,7 +1309,7 @@
       },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\System_ps7_0_axi_periph_3\\System_ps7_0_axi_periph_3.xci",
+        "xci_path": "ip/System_ps7_0_axi_periph_3/System_ps7_0_axi_periph_3.xci",
         "inst_hier_path": "ps7_0_axi_periph",
         "xci_name": "System_ps7_0_axi_periph_3",
         "parameters": {
@@ -1422,7 +1422,7 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "xci_name": "System_xbar_0",
-            "xci_path": "ip\\System_xbar_0\\System_xbar_0.xci",
+            "xci_path": "ip/System_xbar_0/System_xbar_0.xci",
             "inst_hier_path": "ps7_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
@@ -1498,7 +1498,7 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "xci_name": "System_auto_pc_0",
-                "xci_path": "ip\\System_auto_pc_0\\System_auto_pc_0.xci",
+                "xci_path": "ip/System_auto_pc_0/System_auto_pc_0.xci",
                 "inst_hier_path": "ps7_0_axi_periph/s00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -1801,13 +1801,13 @@
       "rst_M_AXI_GP0_ACLK_0_100M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "System_rst_M_AXI_GP0_ACLK_0_100M_0",
-        "xci_path": "ip\\System_rst_M_AXI_GP0_ACLK_0_100M_0\\System_rst_M_AXI_GP0_ACLK_0_100M_0.xci",
+        "xci_path": "ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/System_rst_M_AXI_GP0_ACLK_0_100M_0.xci",
         "inst_hier_path": "rst_M_AXI_GP0_ACLK_0_100M"
       },
       "uart_0": {
         "vlnv": "empyrea.dev:SerialCommunication:UARTTransciever:1.0",
         "xci_name": "System_uart_0_0",
-        "xci_path": "ip\\System_uart_0_0\\System_uart_0_0.xci",
+        "xci_path": "ip/System_uart_0_0/System_uart_0_0.xci",
         "inst_hier_path": "uart_0",
         "parameters": {
           "baud_rate": {
@@ -1827,13 +1827,13 @@
       "xlconcat_0": {
         "vlnv": "xilinx.com:ip:xlconcat:2.1",
         "xci_name": "System_xlconcat_0_0",
-        "xci_path": "ip\\System_xlconcat_0_0\\System_xlconcat_0_0.xci",
+        "xci_path": "ip/System_xlconcat_0_0/System_xlconcat_0_0.xci",
         "inst_hier_path": "xlconcat_0"
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "System_xlconstant_0_0",
-        "xci_path": "ip\\System_xlconstant_0_0\\System_xlconstant_0_0.xci",
+        "xci_path": "ip/System_xlconstant_0_0/System_xlconstant_0_0.xci",
         "inst_hier_path": "xlconstant_0",
         "parameters": {
           "CONST_VAL": {
@@ -1844,7 +1844,7 @@
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "xci_name": "System_axi_gpio_0_0",
-        "xci_path": "ip\\System_axi_gpio_0_0\\System_axi_gpio_0_0.xci",
+        "xci_path": "ip/System_axi_gpio_0_0/System_axi_gpio_0_0.xci",
         "inst_hier_path": "axi_gpio_0",
         "parameters": {
           "C_ALL_INPUTS": {
@@ -1861,38 +1861,25 @@
       "xlconcat_1": {
         "vlnv": "xilinx.com:ip:xlconcat:2.1",
         "xci_name": "System_xlconcat_1_0",
-        "xci_path": "ip\\System_xlconcat_1_0\\System_xlconcat_1_0.xci",
+        "xci_path": "ip/System_xlconcat_1_0/System_xlconcat_1_0.xci",
         "inst_hier_path": "xlconcat_1"
       },
       "AXI_I2C_LCD_Transmit_0": {
         "vlnv": "empyrea.dev:AXICommunication:AXI_I2C_LCD_Transmitter:1.0",
         "xci_name": "System_AXI_I2C_LCD_Transmit_0_0",
-        "xci_path": "ip\\System_AXI_I2C_LCD_Transmit_0_0\\System_AXI_I2C_LCD_Transmit_0_0.xci",
-        "inst_hier_path": "AXI_I2C_LCD_Transmit_0",
-        "parameters": {
-          "LCD_CLK": {
-            "value": "125000000"
-          }
-        }
+        "xci_path": "ip/System_AXI_I2C_LCD_Transmit_0_0/System_AXI_I2C_LCD_Transmit_0_0.xci",
+        "inst_hier_path": "AXI_I2C_LCD_Transmit_0"
       },
-      "AXI_PS2_Keyboard_0": {
-        "vlnv": "empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0",
-        "xci_name": "System_AXI_PS2_Keyboard_0_0",
-        "xci_path": "ip\\System_AXI_PS2_Keyboard_0_0\\System_AXI_PS2_Keyboard_0_0.xci",
-        "inst_hier_path": "AXI_PS2_Keyboard_0",
-        "parameters": {
-          "PS2_CLK_FREQ": {
-            "value": "125000000"
-          },
-          "TIMER_CLOCK_DIVIDER": {
-            "value": "6250"
-          }
-        }
+      "AXI_PS2_Keyboard_DEB_0": {
+        "vlnv": "empyrea.dev:AXICommunications:AXI_PS2_Keyboard_DEBUG:1.0",
+        "xci_name": "System_AXI_PS2_Keyboard_DEB_0_0",
+        "xci_path": "ip/System_AXI_PS2_Keyboard_DEB_0_0/System_AXI_PS2_Keyboard_DEB_0_0.xci",
+        "inst_hier_path": "AXI_PS2_Keyboard_DEB_0"
       },
       "ila_0": {
         "vlnv": "xilinx.com:ip:ila:6.2",
         "xci_name": "System_ila_0_0",
-        "xci_path": "ip\\System_ila_0_0\\System_ila_0_0.xci",
+        "xci_path": "ip/System_ila_0_0/System_ila_0_0.xci",
         "inst_hier_path": "ila_0",
         "parameters": {
           "C_ENABLE_ILA_AXI_MON": {
@@ -1935,7 +1922,7 @@
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
-          "AXI_PS2_Keyboard_0/S00_AXI"
+          "AXI_PS2_Keyboard_DEB_0/S00_AXI"
         ]
       },
       "ps7_0_axi_periph_M01_AXI": {
@@ -1952,38 +1939,38 @@
       }
     },
     "nets": {
-      "AXI_PS2_Keyboard_0_ascii": {
+      "AXI_PS2_Keyboard_DEB_0_ascii": {
         "ports": [
-          "AXI_PS2_Keyboard_0/ascii",
-          "ascii",
+          "AXI_PS2_Keyboard_DEB_0/ascii",
           "xlconcat_0/In0",
+          "ascii",
           "ila_0/probe1"
         ]
       },
-      "AXI_PS2_Keyboard_0_ascii_new": {
+      "AXI_PS2_Keyboard_DEB_0_ascii_new": {
         "ports": [
-          "AXI_PS2_Keyboard_0/ascii_new",
+          "AXI_PS2_Keyboard_DEB_0/ascii_new",
           "uart_0/en",
           "ila_0/probe0"
         ]
       },
-      "AXI_PS2_Keyboard_0_break_o": {
+      "AXI_PS2_Keyboard_DEB_0_break_o": {
         "ports": [
-          "AXI_PS2_Keyboard_0/break_o",
+          "AXI_PS2_Keyboard_DEB_0/break_o",
           "break_o",
           "ila_0/probe3"
         ]
       },
-      "AXI_PS2_Keyboard_0_int_o": {
+      "AXI_PS2_Keyboard_DEB_0_int_o": {
         "ports": [
-          "AXI_PS2_Keyboard_0/int_o",
+          "AXI_PS2_Keyboard_DEB_0/int_o",
           "xlconcat_1/In0",
           "ila_0/probe4"
         ]
       },
-      "AXI_PS2_Keyboard_0_timer": {
+      "AXI_PS2_Keyboard_DEB_0_timer": {
         "ports": [
-          "AXI_PS2_Keyboard_0/timer",
+          "AXI_PS2_Keyboard_DEB_0/timer",
           "ila_0/probe2"
         ]
       },
@@ -2000,7 +1987,7 @@
           "axi_gpio_0/s_axi_aclk",
           "ps7_0_axi_periph/M02_ACLK",
           "AXI_I2C_LCD_Transmit_0/s00_axi_aclk",
-          "AXI_PS2_Keyboard_0/s00_axi_aclk",
+          "AXI_PS2_Keyboard_DEB_0/s00_axi_aclk",
           "ila_0/clk"
         ]
       },
@@ -2034,16 +2021,16 @@
           "rst_M_AXI_GP0_ACLK_0_100M/ext_reset_in"
         ]
       },
-      "ps2_clk_0_1": {
+      "ps2_clk_1": {
         "ports": [
           "ps2_clk",
-          "AXI_PS2_Keyboard_0/ps2_clk"
+          "AXI_PS2_Keyboard_DEB_0/ps2_clk"
         ]
       },
-      "ps2_data_0_1": {
+      "ps2_data_1": {
         "ports": [
           "ps2_data",
-          "AXI_PS2_Keyboard_0/ps2_data"
+          "AXI_PS2_Keyboard_DEB_0/ps2_data"
         ]
       },
       "reset_n_0_1": {
@@ -2062,7 +2049,7 @@
           "axi_gpio_0/s_axi_aresetn",
           "ps7_0_axi_periph/M02_ARESETN",
           "AXI_I2C_LCD_Transmit_0/s00_axi_aresetn",
-          "AXI_PS2_Keyboard_0/s00_axi_aresetn"
+          "AXI_PS2_Keyboard_DEB_0/s00_axi_aresetn"
         ]
       },
       "transcieve_rx_0_1": {
@@ -2108,8 +2095,8 @@
                 "offset_base_param": "C_S00_AXI_BASEADDR",
                 "offset_high_param": "C_S00_AXI_HIGHADDR"
               },
-              "SEG_AXI_PS2_Keyboard_0_S00_AXI_reg": {
-                "address_block": "/AXI_PS2_Keyboard_0/S00_AXI/S00_AXI_reg",
+              "SEG_AXI_PS2_Keyboard_DEB_0_S00_AXI_reg": {
+                "address_block": "/AXI_PS2_Keyboard_DEB_0/S00_AXI/S00_AXI_reg",
                 "offset": "0x43C00000",
                 "range": "64K",
                 "offset_base_param": "C_S00_AXI_BASEADDR",

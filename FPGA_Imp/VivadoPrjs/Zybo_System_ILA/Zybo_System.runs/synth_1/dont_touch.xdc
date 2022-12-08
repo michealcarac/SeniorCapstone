@@ -36,40 +36,40 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_xlco
 # IP: bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/System_AXI_I2C_LCD_Transmit_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_AXI_I2C_LCD_Transmit_0_0 || ORIG_REF_NAME==System_AXI_I2C_LCD_Transmit_0_0} -quiet] -quiet
 
-# IP: bd/System/ip/System_AXI_PS2_Keyboard_0_0/System_AXI_PS2_Keyboard_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_AXI_PS2_Keyboard_0_0 || ORIG_REF_NAME==System_AXI_PS2_Keyboard_0_0} -quiet] -quiet
-
-# IP: bd/System/ip/System_auto_pc_0/System_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_auto_pc_0 || ORIG_REF_NAME==System_auto_pc_0} -quiet] -quiet
+# IP: bd/System/ip/System_AXI_PS2_Keyboard_DEB_0_0/System_AXI_PS2_Keyboard_DEB_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_AXI_PS2_Keyboard_DEB_0_0 || ORIG_REF_NAME==System_AXI_PS2_Keyboard_DEB_0_0} -quiet] -quiet
 
 # IP: bd/System/ip/System_ila_0_0/System_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_ila_0_0 || ORIG_REF_NAME==System_ila_0_0} -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc
+# IP: bd/System/ip/System_auto_pc_0/System_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_auto_pc_0 || ORIG_REF_NAME==System_auto_pc_0} -quiet] -quiet
+
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==System_processing_system7_0_0 || ORIG_REF_NAME==System_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/System_rst_M_AXI_GP0_ACLK_0_100M_0_board.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/System_rst_M_AXI_GP0_ACLK_0_100M_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==System_rst_M_AXI_GP0_ACLK_0_100M_0 || ORIG_REF_NAME==System_rst_M_AXI_GP0_ACLK_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/System_rst_M_AXI_GP0_ACLK_0_100M_0.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/System_rst_M_AXI_GP0_ACLK_0_100M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==System_rst_M_AXI_GP0_ACLK_0_100M_0 || ORIG_REF_NAME==System_rst_M_AXI_GP0_ACLK_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_board.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==System_axi_gpio_0_0 || ORIG_REF_NAME==System_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_ooc.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_ooc.xdc
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==System_axi_gpio_0_0 || ORIG_REF_NAME==System_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_auto_pc_0/System_auto_pc_0_ooc.xdc
-
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_ila_0_0/ila_v6_2/constraints/ila_impl.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_ila_0_0/ila_v6_2/constraints/ila_impl.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==System_ila_0_0 || ORIG_REF_NAME==System_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_ila_0_0/ila_v6_2/constraints/ila.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_ila_0_0/ila_v6_2/constraints/ila.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==System_ila_0_0 || ORIG_REF_NAME==System_ila_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_ila_0_0/System_ila_0_0_ooc.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_ila_0_0/System_ila_0_0_ooc.xdc
 
-# XDC: c:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/System_ooc.xdc
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/ip/System_auto_pc_0/System_auto_pc_0_ooc.xdc
+
+# XDC: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.gen/sources_1/bd/System/System_ooc.xdc

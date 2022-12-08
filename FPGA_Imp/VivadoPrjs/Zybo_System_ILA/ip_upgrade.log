@@ -1,0 +1,397 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sun Nov 27 02:35:26 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 33) to (Rev. 34)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 18:42:12 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 12:44:42 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_I2C_LCD_Transmit_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_I2C_LCD_Transmit_0_0 (empyrea.dev:AXICommunication:AXI_I2C_LCD_Transmitter:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 10:47:30 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 31) to (Rev. 32)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'System_AXI_PS2_Keyboard_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ascii_new_test'
+
+-Upgrade has removed port 'break_test'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 08:36:21 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 30) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 05:59:35 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 29) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 04:45:20 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 28) to (Rev. 29)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'System_AXI_PS2_Keyboard_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'break_test'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 04:30:08 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 04:15:43 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 25) to (Rev. 27)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'System_AXI_PS2_Keyboard_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ascii_new_test'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 03:49:58 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 03:46:37 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Sat Nov 26 01:36:01 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 22) to (Rev. 23)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'System_AXI_PS2_Keyboard_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'int_o'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Wed Nov 23 01:04:39 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Wed Nov 23 00:37:29 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_AXI_PS2_Keyboard_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of System_AXI_PS2_Keyboard_0_0 (empyrea.dev:AXICommunication:AXI_PS2_Keyboard:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
+| Date         : Wed Nov 23 00:08:05 2022
+| Host         : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'System_uart_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of System_uart_0_0 from user.org:user:uart:1.0 (Rev. 2) to empyrea.dev:SerialCommunication:UARTTransciever:1.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'System_uart_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'clk'
+
+-Upgrade has removed port 'rx'
+
+-Upgrade has removed port 'rx_busy'
+
+-Upgrade has removed port 'rx_data'
+
+-Upgrade has removed port 'rx_error'
+
+-Upgrade has removed port 'tx'
+
+-Upgrade has removed port 'tx_busy'
+
+-Upgrade has removed port 'tx_data'
+
+-Upgrade has removed port 'tx_ena'
+
+-Upgrade has added port 'clk_i'
+
+-Upgrade has added port 'data_i'
+
+-Upgrade has added port 'data_o'
+
+-Upgrade has added port 'en'
+
+-Upgrade has added port 'rx_new'
+
+-Upgrade has added port 'transcieve_rx'
+
+-Upgrade has added port 'transcieve_tx'
+
+

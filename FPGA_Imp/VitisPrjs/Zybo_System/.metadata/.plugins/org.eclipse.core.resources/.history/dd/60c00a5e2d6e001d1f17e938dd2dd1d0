@@ -1,9 +1,0 @@
-#include "xparameters.h"
-#include "xil_printf.h"
-#include "xil_io.h"
-#include "xil_types.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <iostream>
-#include "xscugic.h"   /* GIC Control */
-#include "xgpio.h"     /* GPIO COntrol */

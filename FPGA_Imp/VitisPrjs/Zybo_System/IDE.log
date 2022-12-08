@@ -3227,3 +3227,67 @@ con
 
 06:09:43 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_system/_ide/scripts/systemdebugger_zybo_system_system_standalone.tcl'
 06:24:13 INFO  : Disconnected from the channel tcfchan#43.
+21:27:01 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/IDE.log'.
+21:27:03 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/temp_xsdb_launch_script.tcl
+21:27:05 INFO  : Registering command handlers for Vitis TCF services
+21:27:06 INFO  : Platform repository initialization has completed.
+21:27:06 INFO  : XSCT server has started successfully.
+21:27:06 INFO  : plnx-install-location is set to ''
+21:27:06 INFO  : Successfully done setting XSCT server connection channel  
+21:27:06 INFO  : Successfully done setting workspace for the tool. 
+21:27:06 INFO  : Successfully done query RDI_DATADIR 
+21:27:06 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+21:27:06 INFO  : Restoring local repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+21:27:56 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_System_app'...
+21:28:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa is already opened
+
+21:28:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:28:13 WARN  : IDE version '2022.1.2' doesn't match hw_server version '2022.1.0'. Some debug features may not work.
+21:28:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+21:28:17 INFO  : 'jtag frequency' command is executed.
+21:28:17 INFO  : Context for 'APU' is selected.
+21:28:18 INFO  : System reset is completed.
+21:28:21 INFO  : 'after 3000' command is executed.
+21:28:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+21:28:24 INFO  : Device configured successfully with "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream/Zybo_System.bit"
+21:28:24 INFO  : Context for 'APU' is selected.
+21:28:24 INFO  : Hardware design and registers information is loaded from '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+21:28:24 INFO  : 'configparams force-mem-access 1' command is executed.
+21:28:24 INFO  : Context for 'APU' is selected.
+21:28:24 INFO  : Sourcing of '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit/ps7_init.tcl' is done.
+21:28:32 INFO  : 'ps7_init' command is executed.
+21:28:32 INFO  : 'ps7_post_config' command is executed.
+21:28:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:28:50 INFO  : The application '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/Debug/Zybo_System_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:28:51 INFO  : 'configparams force-mem-access 0' command is executed.
+21:28:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/Debug/Zybo_System_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:28:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:28:51 INFO  : 'con' command is executed.
+21:28:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:28:51 INFO  : Launch script is exported to file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_system/_ide/scripts/systemdebugger_zybo_system_system_standalone.tcl'
+23:44:20 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_System.ide.zip'
+23:44:26 INFO  : Disconnected from the channel tcfchan#2.
