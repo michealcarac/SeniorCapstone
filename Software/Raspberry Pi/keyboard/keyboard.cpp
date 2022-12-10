@@ -1,9 +1,12 @@
 /*  Dependencies:
+  Purpose: This file tests the use of a real keyboard for input to the system.
+    Use this to get X11 codes for special characters (see defines in other files)
+  Adapted From: https://blog.robertelder.org/detect-keyup-event-linux-terminal/
 
-    sudo apt-get install libx11-dev
+  sudo apt-get install libx11-dev
 
-    I used the following command to compile and run this code:
-    g++ main.cpp -g -L/usr/X11/lib -lX11 && ./a.out
+  I used the following command to compile and run this code:
+  g++ main.cpp -g -L/usr/X11/lib -lX11 && ./a.out
 */
 
 #include "keylogger.hpp"

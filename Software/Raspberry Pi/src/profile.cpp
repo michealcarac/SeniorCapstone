@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/8/2022 
+   Last Edited: 12/10/2022 
    Purpose: This file implements the Profile class 
 */
 
@@ -60,11 +60,11 @@ void Profile::resetData() {
     data = FixedModelData(data.password);
 }
 
-// Writes this profile to [filename] file using a standard format
+// Writes this profile to [filepath/filename] file using a standard format
 void Profile::writeProfile(const string filepath, const string filename) {
     ofstream outfile;
     outfile.open(filepath + FOLDER_DELIM + filename, std::ios::out);
-    outfile << *this << endl; // overloaded operator handles the formatt
+    outfile << *this << endl; // overloaded operator handles the format
     outfile.close();
 }
 
@@ -101,6 +101,7 @@ Profile* Profile::readProfile(string filepath, string filename) {
 }
 
 /* PRIVATE FUNCTIONS */
+// get the GraphStats for this profile.  
 void Profile::updateTrainStats() {
     // means
     trainStats.means[M] = data.getMean(M);
@@ -108,7 +109,6 @@ void Profile::updateTrainStats() {
     trainStats.means[UD] = data.getMean(UD);
     trainStats.means[DD] = data.getMean(DD);
     trainStats.means[UU] = data.getMean(UU);
-
 
     // variances
     trainStats.variances[M] = data.getVariance(M);
@@ -136,7 +136,8 @@ void Profile::setThreshold(const float newThreshold) { data.threshold = newThres
 
 /* ACCESSORS */
 
-// Returns the most updated version of TrainStats
+// Returns the most updated version of trainStats
+// re-calculates trainStats automatically 
 GraphStats Profile::getTrainStats() { 
     updateTrainStats();
     return trainStats; 

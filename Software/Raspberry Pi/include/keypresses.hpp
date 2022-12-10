@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/8/2022 
+   Last Edited: 12/10/2022 
    Purpose: This file describes the Keypresses class.
 */
 
@@ -16,7 +16,7 @@
 #define R_SHIFT 65506
 #define ENTER 65293
 #define CAPS 65509
-#define GRAPH_TIMEOUT 0.5f // if a graph is greater than .5 seconds, ignore it 
+#define GRAPH_TIMEOUT 0.5f // if a graph is greater than GRAPH_TIMEOUT, ignore it 
 
 /* INCLUDES */
 #include <string>
@@ -52,7 +52,6 @@ class Keypresses {
         unordered_map<string, Graph> calcUD(); // calculate UD times from keystrokes 
         unordered_map<string, Graph> calcDD(); // calculate DD times from keystrokes
         unordered_map<string, Graph> calcUU(); // calculate UU times from keystrokes
-        // vector<float> mean(); // returns the average of the DU, UD, DD, UU times
 
         /* OVERLOADS */
         friend ostream& operator<<(ostream& os, const Keypresses& presses); // overloads <<

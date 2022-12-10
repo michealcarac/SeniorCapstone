@@ -1,13 +1,13 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/3/2022 
+   Last Edited: 12/10/2022 
    Purpose: This file implements the FixedModelData struct.
 */
 
 /* INCLUDES */
 #include "fixedModelData.hpp"
 
-/* CONSTRUCTOR */
+/* CONSTRUCTORS */
 FixedModelData::FixedModelData() {
     password = "password";
     threshold = -1;
@@ -49,6 +49,7 @@ FixedModelData::FixedModelData(string newPassword, float newThreshold, unordered
 }
 
 /* FUNCTIONS */
+// adds a new graph time to the chosen graphType dictionary
 void FixedModelData::addGraph(graphType type, string graphCode, float duration) {
     unordered_map<string, Graph> *currentMap;
 
@@ -230,7 +231,7 @@ float FixedModelData::calcScore(graphType type, unordered_map<string, Graph> ins
 
 /* MUTATORS */
 
-// Overwrites DD with specified map
+// Overwrites chosen graphType with specified map
 void FixedModelData::setGraph(graphType type, unordered_map<string, Graph> graph) {
     switch(type) {
         case M:
@@ -257,6 +258,7 @@ void FixedModelData::setGraph(graphType type, unordered_map<string, Graph> graph
 /* OVERLOAD */
 
 // Overloads the << operator (essentially toString())
+// changes here must be mirrored in parseFixedModelData
 ostream& operator<<(ostream& os, const FixedModelData& data) {
     os << "{" << data.password; // output password
     os << ", " << data.threshold; // output threshold 

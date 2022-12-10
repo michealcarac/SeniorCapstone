@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/2/2022 
+   Last Edited: 12/10/2022 
    Purpose: This file defines the Profile class
 */
 
@@ -46,9 +46,6 @@ class Profile {
         void resetData(); // clear this profile's data, keeping the old password
         void writeProfile(const string filepath, const string filename); // writes this profile to a .txt file
         static Profile* readProfile(string filepath, string filename); // reads a profile.txt file
-
-        /* FUNCTIONS FOR ALGORITHMS */
-        
 
         /* MUTATORS */
         void setDataGraph(graphType type, unordered_map<string, Graph> graph); // set the graph data in this profile's FixedModelData

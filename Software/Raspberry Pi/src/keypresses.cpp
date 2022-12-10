@@ -103,6 +103,7 @@ void Keypresses::appendKeypress(Keypress& keypress) {
 unordered_map<string, Graph> Keypresses::calcM() {
     unordered_map<string, Graph> m;
 
+    // get downstrokes/upstrokes only vectors, and sort by time 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
@@ -113,7 +114,7 @@ unordered_map<string, Graph> Keypresses::calcM() {
 
     m.reserve(downstrokes.size()); // create space 
 
-    for(int j = 0; j < downstrokes.size(); j++) { 
+    for(int j = 0; j < downstrokes.size(); j++) { // for each downstroke
         int i;
         
         for(i = 0; i < upstrokes.size(); i++) { // get the closest upstroke to the current downstroke
@@ -144,6 +145,7 @@ unordered_map<string, Graph> Keypresses::calcM() {
 unordered_map<string, Graph> Keypresses::calcDU() {
     unordered_map<string, Graph> du;
 
+    // get discrete downstrokes/upstrokes vectors, sorted by time 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
@@ -152,7 +154,7 @@ unordered_map<string, Graph> Keypresses::calcDU() {
 
     if(downstrokes.size() < 2 || upstrokes.size() < 2) return du; // not valid for finding du graphs
 
-    for(int j = 0; j < downstrokes.size(); j++) { 
+    for(int j = 0; j < downstrokes.size(); j++) { // for each downstroke 
         int i;
         
         for(i = 0; i < upstrokes.size(); i++) { // get the closest upstroke to the current downstroke
@@ -184,6 +186,7 @@ unordered_map<string, Graph> Keypresses::calcDU() {
 unordered_map<string, Graph> Keypresses::calcUD() {
     unordered_map<string, Graph> ud;
 
+    // get discrete downstokes.upstrokes vectors 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
@@ -224,6 +227,7 @@ unordered_map<string, Graph> Keypresses::calcUD() {
 unordered_map<string, Graph> Keypresses::calcDD() {
     unordered_map<string, Graph> dd;
 
+    // get downstrokes 
     vector<Keypress> downstrokes = getDownstrokes();
     sort(downstrokes.begin(), downstrokes.end(), Keypress::sortByTime);
 
@@ -231,7 +235,7 @@ unordered_map<string, Graph> Keypresses::calcDD() {
 
     dd.reserve(downstrokes.size() - 1);
 
-    for(int i = 0; i < downstrokes.size() - 1; i++) {
+    for(int i = 0; i < downstrokes.size() - 1; i++) { 
         float time = abs(downstrokes.at(i).time - downstrokes.at(i + 1).time);
         if(time > GRAPH_TIMEOUT) continue; // ignore graphs that are too long
         string code;
@@ -251,6 +255,7 @@ unordered_map<string, Graph> Keypresses::calcDD() {
 unordered_map<string, Graph> Keypresses::calcUU() {
     unordered_map<string, Graph> uu;
 
+    // get upstrokes
     vector<Keypress> upstrokes = getUpstrokes();
     sort(upstrokes.begin(), upstrokes.end(), Keypress::sortByTime);
 

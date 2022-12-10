@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 11/2/2022 
+   Last Edited: 12/10/2022 
    Purpose: This file implements the Graph struct.
 */
 
@@ -59,6 +59,7 @@ float Graph::calculateVariance() {
     return 0.001f;
 }
 
+// converts the graphType enum to a string for printing 
 string Graph::graphTypeAsString(graphType type) {
     switch(type) {
         case M: 

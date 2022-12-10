@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/25/2022 
+   Last Edited: 12/10/2022 
    Purpose: This file describes the Keylogger class.
 */
 
@@ -47,10 +47,6 @@ class Keylogger {
         Keylogger(); // constructor
 
         /* FUNCTIONS */
-        // void runAuthPi();  // runs the authentication algorithm
-        // void runTrainPi(); // runs the training algorithm
-        // void runDisablePi(); // runs the "disabled" mode
-
         void runTrain(); // run training algorithm on current input
         float runAuth(); // run training algorithm on current input
 
@@ -80,7 +76,7 @@ class Keylogger {
 
     private:
         Modes currentMode;
-        int currentProfile;
+        int currentProfile; // the index to the current profile.  allowed to go outside of the valid index of profiles for create/delete profile
         vector<Profile> profiles;
         Keypresses *presses;
 

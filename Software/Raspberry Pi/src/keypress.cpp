@@ -1,6 +1,6 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 10/20/2022 
+   Last Edited: 12/10/2022 
    Purpose: This file implements the keypress struct 
 */
 
@@ -26,10 +26,12 @@ ostream& operator<<(ostream& os, const Keypress& keypress) {
 }
 
 /* FUNCTIONS */
+//  sorts in ascending order by time 
 bool Keypress::sortByTime(const Keypress& press1, const Keypress& press2) {
     return press1.time < press2.time;
 }
 
+// sorts by D/U
 bool Keypress::sortByDirection(const Keypress& press1, const Keypress& press2) {
     return (press1.upDown && !press2.upDown);
 }
