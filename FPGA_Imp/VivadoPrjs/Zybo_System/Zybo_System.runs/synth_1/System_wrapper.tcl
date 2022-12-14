@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -93,12 +92,12 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/hdl/System_wrapper.vhd
 add_files /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.srcs/sources_1/bd/System/System.bd
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_auto_pc_0/System_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/System_rst_M_AXI_GP0_ACLK_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/System_rst_M_AXI_GP0_ACLK_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/ip/System_auto_pc_0/System_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.gen/sources_1/bd/System/System_ooc.xdc]
 
 OPTRACE "Adding files" END { }

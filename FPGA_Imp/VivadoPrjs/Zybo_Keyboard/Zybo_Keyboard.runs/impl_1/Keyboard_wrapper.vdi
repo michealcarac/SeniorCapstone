@@ -2,22 +2,22 @@
 # Vivado v2022.1.2 (64-bit)
 # SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
 # IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
-# Start of session at: Tue Dec 13 17:29:14 2022
-# Process ID: 84564
+# Start of session at: Wed Dec 14 01:25:03 2022
+# Process ID: 188765
 # Current directory: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.runs/impl_1
 # Command line: vivado -log Keyboard_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Keyboard_wrapper.tcl -notrace
 # Log file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.runs/impl_1/Keyboard_wrapper.vdi
 # Journal file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.runs/impl_1/vivado.jou
-# Running On: UbuntuSeniorLab, OS: Linux, CPU Frequency: 3493.440 MHz, CPU Physical cores: 12, Host memory: 16776 MB
+# Running On: UbuntuSeniorLab, OS: Linux, CPU Frequency: 3493.438 MHz, CPU Physical cores: 12, Host memory: 16776 MB
 #-----------------------------------------------------------
 source Keyboard_wrapper.tcl -notrace
 Command: open_checkpoint Keyboard_wrapper_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2903.367 ; gain = 0.000 ; free physical = 5413 ; free virtual = 11639
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2909.305 ; gain = 0.000 ; free physical = 5016 ; free virtual = 12110
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2903.391 ; gain = 0.000 ; free physical = 5031 ; free virtual = 11259
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2909.328 ; gain = 0.000 ; free physical = 4526 ; free virtual = 11623
 INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.1.2
@@ -29,15 +29,15 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2967.422 ; gain = 0.000 ; free physical = 4499 ; free virtual = 10726
-Restored from archive | CPU: 0.210000 secs | Memory: 2.809013 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2967.422 ; gain = 0.000 ; free physical = 4499 ; free virtual = 10726
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2967.422 ; gain = 0.000 ; free physical = 4499 ; free virtual = 10727
+Read XDEF Files: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2973.359 ; gain = 0.000 ; free physical = 3941 ; free virtual = 11039
+Restored from archive | CPU: 0.190000 secs | Memory: 2.809013 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2973.359 ; gain = 0.000 ; free physical = 3941 ; free virtual = 11039
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2973.359 ; gain = 0.000 ; free physical = 3941 ; free virtual = 11039
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2022.1.2 (64-bit) build 3605665
-open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2967.422 ; gain = 64.055 ; free physical = 4499 ; free virtual = 10727
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2973.359 ; gain = 69.992 ; free physical = 3941 ; free virtual = 11039
 Command: write_bitstream -force Keyboard_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -61,5 +61,5 @@ INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT dev
 INFO: [Common 17-83] Releasing license: Implementation
 22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3442.977 ; gain = 475.555 ; free physical = 4442 ; free virtual = 10674
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 13 17:29:49 2022...
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3441.977 ; gain = 468.617 ; free physical = 3848 ; free virtual = 10949
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 14 01:25:35 2022...

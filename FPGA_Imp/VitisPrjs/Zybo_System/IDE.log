@@ -3315,3 +3315,57 @@ con
 19:00:32 INFO  : The updated ps init files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit' in project 'Zybo_System_app'.
 19:13:44 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_System.zip'
 19:14:26 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_System.ide.zip'
+01:24:43 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/IDE.log'.
+01:24:43 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/temp_xsdb_launch_script.tcl
+01:24:44 INFO  : Registering command handlers for Vitis TCF services
+01:24:45 INFO  : Platform repository initialization has completed.
+01:24:45 INFO  : XSCT server has started successfully.
+01:24:45 INFO  : plnx-install-location is set to ''
+01:24:45 INFO  : Successfully done setting XSCT server connection channel  
+01:24:45 INFO  : Successfully done query RDI_DATADIR 
+01:24:45 INFO  : Successfully done setting workspace for the tool. 
+01:24:45 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+01:24:45 INFO  : Restoring local repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+01:25:21 INFO  : Hardware specification for platform project 'Zybo_System' is updated.
+01:25:37 INFO  : Result from executing command 'getProjects': Zybo_System
+01:25:37 INFO  : Result from executing command 'getPlatforms': Zybo_System|/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/Zybo_System.xpfm;xilinx_vck190_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+01:25:53 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_System_app'...
+01:28:33 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_System.ide.zip'
+01:30:07 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/IDE.log'.
+01:30:08 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/temp_xsdb_launch_script.tcl
+01:30:09 INFO  : Registering command handlers for Vitis TCF services
+01:30:09 INFO  : Platform repository initialization has completed.
+01:30:10 INFO  : XSCT server has started successfully.
+01:30:10 INFO  : plnx-install-location is set to ''
+01:30:10 INFO  : Successfully done setting XSCT server connection channel  
+01:30:10 INFO  : Successfully done query RDI_DATADIR 
+01:30:10 INFO  : Successfully done setting workspace for the tool. 
+01:30:10 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+01:30:10 INFO  : Restoring local repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+01:31:39 INFO  : Hardware specification for platform project 'Zybo_System' is updated.
+01:31:57 INFO  : Result from executing command 'getProjects': Zybo_System
+01:31:57 INFO  : Result from executing command 'getPlatforms': Zybo_System|/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/Zybo_System.xpfm;xilinx_vck190_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+01:33:16 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_System_app'...
+01:33:19 INFO  : The hardware specification used by project 'Zybo_System_app' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:33:19 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream/Zybo_System.bit' stored in project is removed.
+01:33:19 INFO  : The updated bitstream files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream' in project 'Zybo_System_app'.
+01:33:19 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit/ps7_init.tcl' stored in project is removed.
+01:33:24 INFO  : The updated ps init files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit' in project 'Zybo_System_app'.
+01:34:29 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_System.ide.zip'
+01:41:39 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/IDE.log'.
+01:41:39 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/temp_xsdb_launch_script.tcl
+01:41:40 INFO  : Registering command handlers for Vitis TCF services
+01:41:40 INFO  : Platform repository initialization has completed.
+01:41:41 INFO  : XSCT server has started successfully.
+01:41:41 INFO  : Successfully done setting XSCT server connection channel  
+01:41:41 INFO  : plnx-install-location is set to ''
+01:41:41 INFO  : Successfully done setting workspace for the tool. 
+01:41:41 INFO  : Successfully done query RDI_DATADIR 
+01:41:41 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+01:41:41 INFO  : Restoring local repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository

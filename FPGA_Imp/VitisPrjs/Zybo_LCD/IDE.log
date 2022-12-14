@@ -6207,3 +6207,24 @@ con
 20:11:26 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_LCD_cpp'...
 21:15:07 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_LCD_cpp'...
 23:23:06 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Exports/Zybo_LCD.ide.zip'
+01:42:06 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/IDE.log'.
+01:42:07 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/temp_xsdb_launch_script.tcl
+01:42:08 INFO  : Registering command handlers for Vitis TCF services
+01:42:08 INFO  : Platform repository initialization has completed.
+01:42:09 INFO  : XSCT server has started successfully.
+01:42:09 INFO  : Successfully done setting XSCT server connection channel  
+01:42:09 INFO  : plnx-install-location is set to ''
+01:42:09 INFO  : Successfully done query RDI_DATADIR 
+01:42:09 INFO  : Successfully done setting workspace for the tool. 
+01:42:09 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+01:42:59 INFO  : Hardware specification for platform project 'Zybo_LCD' is updated.
+01:43:08 INFO  : Result from executing command 'getProjects': Zybo_LCD
+01:43:08 INFO  : Result from executing command 'getPlatforms': Zybo_LCD|/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/Zybo_LCD.xpfm;Zybo_LCD|/home/cekp/Desktop/GitHub/SeniorCapstone_ZyboDev/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/Zybo_LCD.xpfm;xilinx_vck190_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+01:44:17 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_LCD_cpp'...
+01:44:20 INFO  : The hardware specification used by project 'Zybo_LCD_cpp' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:44:20 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream/Zybo_LCD.bit' stored in project is removed.
+01:44:20 INFO  : The updated bitstream files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream' in project 'Zybo_LCD_cpp'.
+01:44:20 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit/ps7_init.tcl' stored in project is removed.
+01:44:25 INFO  : The updated ps init files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit' in project 'Zybo_LCD_cpp'.
+01:44:45 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_LCD.ide.zip'

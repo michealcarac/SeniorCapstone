@@ -9385,3 +9385,420 @@ java.io.FileNotFoundException: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp
 	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2333)
 	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:509)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2022-12-14 01:41:56.900 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:41:57.356
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:41:57.385
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2022-12-14 01:42:05.341
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.231
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.232
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.232
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.284
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.285
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.285
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.285
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.286
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.1/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.286
+!MESSAGE XSCT Command: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD], Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.287
+!MESSAGE XSCT command with result: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD], Result: [null, ]. Thread: Thread-24
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.292
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:09.298
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:51.270
+!MESSAGE XSCT Command: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/platform.spr}], Thread: Worker-2: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:52.816
+!MESSAGE XSCT command with result: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/platform.spr}], Result: [null, ]. Thread: Worker-2: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:52.842
+!MESSAGE XSCT Command: [platform active {Zybo_LCD}], Thread: Worker-2: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:52.843
+!MESSAGE XSCT command with result: [platform active {Zybo_LCD}], Result: [null, ]. Thread: Worker-2: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:56.105
+!MESSAGE XSCT Command: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.xsa}], Thread: Worker-0: Updating hardware platform
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:42:56.183
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:42:56.183
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:42:56.183
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:42:59.194
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.xsa}], Result: [null, ]. Thread: Worker-0: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:17.949
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:19.440
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:19.445
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:19.447
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:19.448
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:19.449
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-14 01:44:19.450
+!MESSAGE Generating MD5 hash for file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:19.455
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:19.456
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/sw/Zybo_LCD/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:20.932
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:20.933
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:20.935
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream}], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:20.951
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/bitstream}], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:20.953
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:20.956
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Sun Nov 27 06:52:58 2022",
+"vivado_version": "2022.1.2",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:20.957
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit} -quiet], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:25.670
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD_cpp/_ide/psinit} -quiet], Result: [null, ]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:25.675
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:44:25.685
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/Zybo_LCD/export/Zybo_LCD/hw/Zybo_LCD.xsa], Result: [null, {"AXI_I2C_LCD_Transmitter_0": {"hier_name": "AXI_I2C_LCD_Transmitter_0",
+"type": "AXI_I2C_LCD_Transmitter",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_sysclk_100Mhz_100M": {"hier_name": "rst_sysclk_100Mhz_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-3: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-14 01:44:32.477
+!MESSAGE Opening file dialog using preferences. Current path: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Exports, Local preference: sdx_export_archive_directory, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-14 01:44:32.477
+!MESSAGE Preference loaded using local preference: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Exports
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-14 01:44:32.478
+!MESSAGE Workspace path used is: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD
+
+!ENTRY org.eclipse.core.resources 4 568 2022-12-14 01:44:43.965
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1846)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 568 2022-12-14 01:44:45.468
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:158)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1765)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1846)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1202)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-12-14 01:47:46.007
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2022-12-14 01:47:46.007
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2022-12-14 01:47:46.007
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_LCD/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1657)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSave(SaveManager.java:1736)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1177)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2333)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:509)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)

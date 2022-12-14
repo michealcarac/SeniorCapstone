@@ -26,3 +26,6 @@ platform generate
 platform active {Zybo_Keyboard}
 platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.xsa}
 platform generate -domains 
+platform active {Zybo_Keyboard}
+platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_Keyboard/Zybo_Keyboard.xsa}
+platform generate -domains 

@@ -35,3 +35,6 @@ platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl
 platform active {Zybo_LCD}
 platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.xsa}
 platform generate -domains 
+platform active {Zybo_LCD}
+platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.xsa}
+platform generate -domains 

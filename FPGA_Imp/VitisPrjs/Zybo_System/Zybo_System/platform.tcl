@@ -33,3 +33,9 @@ platform generate -domains
 platform active {Zybo_System}
 platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}
 platform generate -domains 
+platform active {Zybo_System}
+platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}
+platform generate -domains 
+platform active {Zybo_System}
+platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}
+platform generate -domains 

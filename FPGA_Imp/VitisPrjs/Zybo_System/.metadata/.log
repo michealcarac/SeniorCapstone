@@ -12733,3 +12733,809 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.launchbar.core 2 0 2022-12-13 19:13:45.238
 !MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2022-12-14 01:19:31.796 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:19:32.299
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:19:32.321
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2022-12-14 01:24:41.927
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.884
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.885
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.885
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.950
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.951
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.951
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.951
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.953
+!MESSAGE XSCT Command: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.953
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.1/data]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.954
+!MESSAGE XSCT command with result: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.962
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.969
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.970
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:24:45.976
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Result: [null, ]. Thread: Worker-5: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:12.445
+!MESSAGE XSCT Command: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/platform.spr}], Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:14.097
+!MESSAGE XSCT command with result: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/platform.spr}], Result: [null, ]. Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:14.121
+!MESSAGE XSCT Command: [platform active {Zybo_System}], Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:14.122
+!MESSAGE XSCT command with result: [platform active {Zybo_System}], Result: [null, ]. Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:17.961
+!MESSAGE XSCT Command: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}], Thread: Worker-1: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:21.116
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}], Result: [null, ]. Thread: Worker-1: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:53.666
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:55.154
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:55.159
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:55.161
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:55.162
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:55.164
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-14 01:25:55.165
+!MESSAGE Generating MD5 hash for file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:55.170
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:55.171
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:57.263
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:25:57.274
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Result: [null, {"AXI_I2C_LCD_Transmit_0": {"hier_name": "AXI_I2C_LCD_Transmit_0",
+"type": "AXI_I2C_LCD_Transmitter",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"AXI_PS2_Keyboard_0": {"hier_name": "AXI_PS2_Keyboard_0",
+"type": "AXI_PS2_Keyboard",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_M_AXI_GP0_ACLK_0_100M": {"hier_name": "rst_M_AXI_GP0_ACLK_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"uart_0": {"hier_name": "uart_0",
+"type": "UARTTransciever",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_1": {"hier_name": "xlconcat_1",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-5: Build Project
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:28:33.542
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:28:33.542
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:28:33.542
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2022-12-14 01:30:01.154 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:30:01.620
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:30:01.647
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2022-12-14 01:30:06.359
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.233
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.233
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.233
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.236
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.289
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.289
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.289
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.290
+!MESSAGE XSCT Command: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System], Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.291
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.1/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.291
+!MESSAGE XSCT command with result: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System], Result: [null, ]. Thread: Thread-25
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.297
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.303
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.304
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:10.309
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:26.600
+!MESSAGE XSCT Command: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/platform.spr}], Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:28.249
+!MESSAGE XSCT command with result: [platform read {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/platform.spr}], Result: [null, ]. Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:28.272
+!MESSAGE XSCT Command: [platform active {Zybo_System}], Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:30:28.273
+!MESSAGE XSCT command with result: [platform active {Zybo_System}], Result: [null, ]. Thread: Worker-7: Reading platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:31:35.647
+!MESSAGE XSCT Command: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}], Thread: Worker-3: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:31:39.004
+!MESSAGE XSCT command with result: [platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}], Result: [null, ]. Thread: Worker-3: Updating hardware platform
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:16.411
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:17.836
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:17.842
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss ], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:17.844
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:17.845
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:17.846
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.7",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-12-14 01:33:17.847
+!MESSAGE Generating MD5 hash for file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:17.852
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:17.852
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:19.931
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:19.932
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:19.935
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream}], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:19.956
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream}], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:19.957
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:19.959
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Tue Dec 13 17:45:04 2022",
+"vivado_version": "2022.1.2",
+"part": "xc7z020clg400-1",
+}]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:19.960
+!MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit} -quiet], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:24.049
+!MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit} -quiet], Result: [null, ]. Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:24.054
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Thread: Worker-6: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:33:24.065
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa], Result: [null, {"AXI_I2C_LCD_Transmit_0": {"hier_name": "AXI_I2C_LCD_Transmit_0",
+"type": "AXI_I2C_LCD_Transmitter",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"AXI_PS2_Keyboard_0": {"hier_name": "AXI_PS2_Keyboard_0",
+"type": "AXI_PS2_Keyboard",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_M_AXI_GP0_ACLK_0_100M": {"hier_name": "rst_M_AXI_GP0_ACLK_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"uart_0": {"hier_name": "uart_0",
+"type": "UARTTransciever",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_1": {"hier_name": "xlconcat_1",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-6: Build Project
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:33:30.150
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:33:30.151
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-12-14 01:33:30.151
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2022-12-14 01:41:26.838 -----------------------------------------------
+eclipse.buildId=2021.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:41:27.291
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2022-12-14 01:41:27.321
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2022-12-14 01:41:37.654
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.520
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.520
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.521
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.524
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.525
+!MESSAGE XSCT Command: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System], Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.575
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.575
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.575
+!MESSAGE XSCT command with result: [setws /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System], Result: [null, ]. Thread: Thread-26
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.614
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.615
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /tools/Xilinx/Vitis/2022.1/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.620
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.626
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.627
+!MESSAGE XSCT Command: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-12-14 01:41:41.633
+!MESSAGE XSCT command with result: [::hsi::utils::add_repo "/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository"], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories

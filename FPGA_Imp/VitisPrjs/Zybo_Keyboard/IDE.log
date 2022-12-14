@@ -3056,3 +3056,24 @@ con
 19:21:43 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' stored in project is removed.
 19:21:48 INFO  : The updated ps init files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit' in project 'Zybo_Keyboard_app'.
 19:23:01 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_Keyboard.ide.zip'
+01:35:30 DEBUG : Logs will be stored at '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/IDE.log'.
+01:35:31 INFO  : Launching XSCT server: xsct -n  -interactive /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/temp_xsdb_launch_script.tcl
+01:35:32 INFO  : Registering command handlers for Vitis TCF services
+01:35:33 INFO  : Platform repository initialization has completed.
+01:35:33 INFO  : XSCT server has started successfully.
+01:35:33 INFO  : Successfully done setting XSCT server connection channel  
+01:35:33 INFO  : plnx-install-location is set to ''
+01:35:33 INFO  : Successfully done setting workspace for the tool. 
+01:35:33 INFO  : Successfully done query RDI_DATADIR 
+01:35:33 INFO  : Restoring global repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository
+01:38:47 INFO  : Hardware specification for platform project 'Zybo_Keyboard' is updated.
+01:38:55 INFO  : Result from executing command 'getProjects': Zybo_Keyboard
+01:38:55 INFO  : Result from executing command 'getPlatforms': Zybo_Keyboard|/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard/export/Zybo_Keyboard/Zybo_Keyboard.xpfm;xilinx_vck190_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+01:39:01 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_Keyboard_app'...
+01:39:04 INFO  : The hardware specification used by project 'Zybo_Keyboard_app' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+01:39:04 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream/Zybo_Keyboard.bit' stored in project is removed.
+01:39:04 INFO  : The updated bitstream files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/bitstream' in project 'Zybo_Keyboard_app'.
+01:39:04 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit/ps7_init.tcl' stored in project is removed.
+01:39:09 INFO  : The updated ps init files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Keyboard/Zybo_Keyboard_app/_ide/psinit' in project 'Zybo_Keyboard_app'.
+01:41:13 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_Keyboard.ide.zip'

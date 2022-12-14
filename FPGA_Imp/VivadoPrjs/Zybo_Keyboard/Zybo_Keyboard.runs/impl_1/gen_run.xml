@@ -39,13 +39,13 @@
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Keyboard_wrapper_bus_skew_routed.rpx"/>
   <File Type="BITSTR-RBT" Name="Keyboard_wrapper.rbt"/>
   <File Type="BITSTR-NKY" Name="Keyboard_wrapper.nky"/>
+  <File Type="ROUTE-CLK" Name="Keyboard_wrapper_clock_utilization_routed.rpt"/>
   <File Type="BITSTR-BMM" Name="Keyboard_wrapper_bd.bmm"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Keyboard_wrapper_bus_skew_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="Keyboard_wrapper.mmi"/>
   <File Type="BITSTR-SYSDEF" Name="Keyboard_wrapper.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Keyboard_wrapper.ltx"/>
-  <File Type="ROUTE-CLK" Name="Keyboard_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Keyboard_wrapper_bus_skew_routed.rpt"/>
   <File Type="OPT-DCP" Name="Keyboard_wrapper_opt.dcp"/>
   <File Type="PLACE-DCP" Name="Keyboard_wrapper_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="Keyboard_wrapper_pwropt.dcp"/>

@@ -638,3 +638,63 @@ INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3919.219 ; gain = 227.074 ; free physical = 7541 ; free virtual = 12273
 INFO: [Common 17-206] Exiting Vivado at Tue Dec 13 18:51:21 2022...
+
+*** Running vivado
+    with args -log LCD_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source LCD_wrapper.tcl -notrace
+
+
+****** Vivado v2022.1.2 (64-bit)
+  **** SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
+  **** IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source LCD_wrapper.tcl -notrace
+Command: open_checkpoint LCD_wrapper_routed.dcp
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2903.391 ; gain = 0.000 ; free physical = 5861 ; free virtual = 12950
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2967.422 ; gain = 0.000 ; free physical = 5115 ; free virtual = 12203
+Restored from archive | CPU: 0.220000 secs | Memory: 3.238396 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2967.422 ; gain = 0.000 ; free physical = 5115 ; free virtual = 12203
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2967.422 ; gain = 0.000 ; free physical = 5115 ; free virtual = 12204
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2022.1.2 (64-bit) build 3605665
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2967.422 ; gain = 64.055 ; free physical = 5115 ; free virtual = 12204
+Command: write_bitstream -force LCD_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./LCD_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3445.977 ; gain = 478.555 ; free physical = 3253 ; free virtual = 10355
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 14 01:35:35 2022...
