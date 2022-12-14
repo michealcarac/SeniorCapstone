@@ -1,7 +1,7 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 12/10/2022 
-   Purpose: This file implements the Keylogger class.
+   Last Edited: 12/14/2022 
+   Purpose: This file implements the Keylogger class.  Use this version with the FPGA.
 */
 
 /* INCLUDES */
@@ -21,7 +21,7 @@ Keylogger::Keylogger() {
     currentProfile = 0;
     presses = new Keypresses();
 
-    while(true) { // get possible profiles
+    while(true && saveProfiles) { // get possible profiles
         // try to open file    
         string filepath =  "./profiles/profile" + std::to_string(currentProfile++) + ".txt"; 
         ifstream infile;
@@ -35,22 +35,6 @@ Keylogger::Keylogger() {
     }
 
     currentProfile = 0; // select the first profile
-
-    // create LCD 
-    I2cControl *i2c = new I2cControl(1); //Using software i2c
-    lcd = new LcdDriver(LCD_ADDRESS, i2c);
-    lcd->setDisplayOnCursorOff();
-    lcd->setLine(TOP, getModeAsString());
-    lcd->setLine(BOTTOM, getCurrentProfile()->getName());
-
-    // set up com port
-    system("stty -F /dev/ttyUSB0 115200");
-}
-
-// updates the text on the LCD with the given inputs
-void Keylogger::updateLcdText(int line, string text) {
-    lcd->clearLine(line);
-    lcd->setLine(line, text);
 }
 
 // removes the profile at currentProfile
@@ -103,6 +87,7 @@ float Keylogger::runAuth() {
 }
 
 // get the threshold for the current password
+// TODO: Generate this upon training and save in Profile
 float Keylogger::getCurrentThreshold() {
     float threshold = (float) (profiles.at(currentProfile).getPassword().length() - 1); // threshold is 1 * numGraphs
     return threshold;
@@ -124,39 +109,33 @@ void Keylogger::nextMode() {
         default:
             currentMode = Disable;
     }
-    lcd->clearLine(TOP);
-    lcd->setLine(TOP, getModeAsString());
 }
 
 // Move to the next profile in the sequence
 // Handle delete/create profile option display
-void Keylogger::nextProfile() {
-    lcd->clearLine(BOTTOM);
-
+// Returns: the text to display on the LCD
+string Keylogger::nextProfile() {
     if(currentProfile < ((int) profiles.size() - 1)) { // if we can just increment
         currentProfile++; // do it
-        lcd->setLine(BOTTOM, profiles.at(currentProfile).getName());
-        return;
+        return profiles.at(currentProfile).getName();
     } else if (currentProfile == ((int) profiles.size() - 1)) { // if we are at the last profile
-        // prompt for removal of profile
-        lcd->setLine(BOTTOM, "Delete Profile");
         currentProfile++;
-        return;
+        return "Delete Profile";
     } else { 
         // prompt for a new profile
         string input;
-        lcd->setLine(BOTTOM, "Create Profile");
         currentProfile = -1;
-        return;
+        return "Create Profile";
     }
 
 }
 
 // saves all profiles to ./profiles
 void Keylogger::saveAllProfiles() {
+    if(!saveProfiles) return; // do nothing if the filesystem doesn't work
     int oldProfile = currentProfile;
     system("rm -f ./profiles/profile*");
-    sleep_for(milliseconds(500)); // waiting for the shell above to finish
+    // TODO: sleep(.5); // waiting for the shell above to finish
     for(currentProfile = 0; currentProfile < profiles.size(); currentProfile++) {
         string filename = "profile" + to_string(currentProfile) + ".txt";
         profiles.at(currentProfile).writeProfile("./profiles", filename);
@@ -220,28 +199,9 @@ void Keylogger::setCurrentProfile(int newProfile) {
     currentProfile = newProfile;
 }
 
-/* PRIVATE FUNCTIONS */
-// convert the X11 code (long) to a char (for UART sending, etc.)
-// more special characters are added here and in the pico 
-char Keylogger::intToSpecial(long received) {
-    switch(received) {
-        case 48: return ')';
-        case 49: return '!';
-        case 50: return '@';
-        case 51: return '#';
-        case 52: return '$';
-        case 53: return '%';
-        case 54: return '^';
-        case 55: return '&';
-        case 56: return '*';
-        case 57: return '(';
-    }
-    return ' ';
-}
-
 /* PRIVATE FUNCTIONS FOR PI */
 // Prompts the user for the creation of a profile
-// no longer used
+// DEPRECATED 
 Profile* Keylogger::buildProfile() {
     string name, input, password;
     Profile* p;
@@ -269,9 +229,4 @@ Profile* Keylogger::buildProfile() {
 Keylogger::~Keylogger() {
     saveAllProfiles();
     if(presses) delete presses;
-    if(i2c) delete i2c;
-    if(lcd) {
-        lcd->clearDisplayClearMem();
-        delete lcd;
-    }
 }

@@ -1,7 +1,7 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 12/10/2022 
-   Purpose: This file implements the Profile class 
+   Last Edited: 12/14/2022 
+   Purpose: This file implements the Profile class.  Use this version with the FPGA
 */
 
 /* INCLUDES */
@@ -46,7 +46,6 @@ Profile::Profile(Profile *p) {
     data = p->getData();
     trainStats = p->getTrainStats();
     type = p->getType();
-
 }
 
 /* FUNCTIONS */
@@ -62,6 +61,7 @@ void Profile::resetData() {
 
 // Writes this profile to [filepath/filename] file using a standard format
 void Profile::writeProfile(const string filepath, const string filename) {
+    if(!saveProfiles) return;
     ofstream outfile;
     outfile.open(filepath + FOLDER_DELIM + filename, std::ios::out);
     outfile << *this << endl; // overloaded operator handles the format
@@ -70,6 +70,7 @@ void Profile::writeProfile(const string filepath, const string filename) {
 
 // Reads a profile from the file at [filepath]/[filename]
 Profile* Profile::readProfile(string filepath, string filename) {
+    if(!saveProfiles) return;
     ifstream infile;
     if(filename == "") infile.open(filepath, std::ios::in);
     else infile.open(filepath + FOLDER_DELIM + filename, std::ios::in);

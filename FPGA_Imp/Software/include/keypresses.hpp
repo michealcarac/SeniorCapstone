@@ -1,21 +1,21 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 12/10/2022 
-   Purpose: This file describes the Keypresses class.
+   Last Edited: 12/14/2022 
+   Purpose: This file describes the Keypresses class.  Use this version on the FPGA.
 */
 
 #ifndef KEYPRESSES_H
 #define KEYPRESSES_H
 
+/* CONSTANTS */
+const bool saveProfiles = false; // enable this if the filesystem works 
+
 /* DEFINES */
 #define DEFAULT_SIZE 20
 #define KEY_PRESSED false
 #define KEY_RELEASED true
-#define BACKSPACE 65288
-#define L_SHIFT 65505
-#define R_SHIFT 65506
-#define ENTER 65293
-#define CAPS 65509
+#define BACKSPACE '\b'
+#define ENTER '\r'
 #define GRAPH_TIMEOUT 0.5f // if a graph is greater than GRAPH_TIMEOUT, ignore it 
 
 /* INCLUDES */

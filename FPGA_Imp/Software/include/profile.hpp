@@ -1,7 +1,7 @@
 /* Project: Clarkson University Capstone 
    Writer(s): Aaron R. Jones
-   Last Edited: 12/10/2022 
-   Purpose: This file defines the Profile class
+   Last Edited: 12/14/2022 
+   Purpose: This file defines the Profile class.  Use this version with the FPGA
 */
 
 #ifndef PROFILE_H
@@ -14,10 +14,10 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <filesystem>
 #include <sys/stat.h>
 #include <unordered_map>
 #include "modelType.hpp"
+#include "keylogger.hpp"
 #include "graphStats.hpp"
 #include "fixedModelData.hpp"
 
