@@ -129,3 +129,9 @@ timestamp=[2022-11-27 07:00:46], mode=WORKBENCH_START, duration=0:00:05.293, dur
 timestamp=[2022-11-27 07:00:47], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.376, duration_ms=376, data={}
 timestamp=[2022-11-27 07:00:47], mode=WORKBENCH_UI_INIT, duration=0:00:01.059, duration_ms=1059, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_Keyboard,Zybo_Keyboard_app,Zybo_Keyboard_system}
 timestamp=[2022-11-27 07:01:53], mode=BUILD, duration=0:00:00.241, duration_ms=241, data={name=Zybo_Keyboard_app, configuration=Debug, clean_build=false}
+timestamp=[2022-12-13 19:15:05], mode=WORKBENCH_START, duration=0:00:05.220, duration_ms=5220, data={}
+timestamp=[2022-12-13 19:15:06], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.394, duration_ms=394, data={}
+timestamp=[2022-12-13 19:15:06], mode=WORKBENCH_UI_INIT, duration=0:00:01.091, duration_ms=1091, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_Keyboard,Zybo_Keyboard_app,Zybo_Keyboard_system}
+timestamp=[2022-12-13 19:21:32], mode=PLATFORM_GENERATION, duration=0:00:07.006, duration_ms=7006, data={name=Zybo_Keyboard}
+timestamp=[2022-12-13 19:21:43], mode=BUILD, duration=0:00:01.056, duration_ms=1056, data={name=Zybo_Keyboard_app, configuration=Debug, clean_build=false}
+timestamp=[2022-12-13 19:21:54], mode=BUILD, duration=0:00:06.356, duration_ms=6356, data={name=Zybo_Keyboard_system, configuration=Debug, clean_build=false}

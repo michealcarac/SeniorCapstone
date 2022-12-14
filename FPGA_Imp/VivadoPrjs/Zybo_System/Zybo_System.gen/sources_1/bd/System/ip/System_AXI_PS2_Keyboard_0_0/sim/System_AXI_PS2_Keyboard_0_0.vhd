@@ -164,7 +164,7 @@ BEGIN
       PS2_CLK_FREQ => 125000000,
       PS2_DEBOUNCE_COUNTER_SIZE => 2,
       TIMER_OUTPUT_WIDTH => 32,
-      TIMER_CLOCK_DIVIDER => 5000
+      TIMER_CLOCK_DIVIDER => 6250
     )
     PORT MAP (
       ps2_clk => ps2_clk,

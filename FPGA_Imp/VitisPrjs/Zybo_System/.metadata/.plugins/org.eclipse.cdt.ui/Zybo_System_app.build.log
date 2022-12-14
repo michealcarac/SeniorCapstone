@@ -1,18 +1,33 @@
-21:27:59 **** Incremental Build of configuration Debug for project Zybo_System_app ****
+19:00:25 **** Incremental Build of configuration Debug for project Zybo_System_app ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
  
 make --no-print-directory main-build
+Building file: ../src/GPIO.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -o "src/GPIO.o" "../src/GPIO.cpp"
+Finished building: ../src/GPIO.cpp
+ 
 Building file: ../src/Interrupts.cpp
 Invoking: ARM v7 g++ compiler
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Interrupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/Interrupts.d" -MT"src/Interrupts.o" -o "src/Interrupts.o" "../src/Interrupts.cpp"
 Finished building: ../src/Interrupts.cpp
  
+Building file: ../src/LCD.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LCD.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/LCD.d" -MT"src/LCD.o" -o "src/LCD.o" "../src/LCD.cpp"
+Finished building: ../src/LCD.cpp
+ 
 Building file: ../src/PS2.cpp
 Invoking: ARM v7 g++ compiler
 arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PS2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/PS2.d" -MT"src/PS2.o" -o "src/PS2.o" "../src/PS2.cpp"
 Finished building: ../src/PS2.cpp
+ 
+Building file: ../src/main.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+Finished building: ../src/main.cpp
  
 Building target: Zybo_System_app.elf
 Invoking: ARM v7 g++ linker
@@ -26,5 +41,5 @@ arm-none-eabi-size Zybo_System_app.elf  |tee "Zybo_System_app.elf.size"
 Finished building: Zybo_System_app.elf.size
  
 
-21:28:00 Build Finished (took 1s.729ms)
+19:00:26 Build Finished (took 1s.912ms)
 

@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
---Date        : Sun Nov 27 06:21:55 2022
+--Date        : Tue Dec 13 17:45:04 2022
 --Host        : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
 --Command     : generate_target System_wrapper.bd
 --Design      : System_wrapper
@@ -58,6 +58,12 @@ architecture STRUCTURE of System_wrapper is
     uart_reset_n : in STD_LOGIC;
     uart_rx : in STD_LOGIC;
     uart_tx : out STD_LOGIC;
+    lcd_reset_n : in STD_LOGIC;
+    LCD_SDA : inout STD_LOGIC;
+    LCD_SCL : inout STD_LOGIC;
+    break_o : out STD_LOGIC;
+    ascii : out STD_LOGIC_VECTOR ( 6 downto 0 );
+    btn_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -78,13 +84,7 @@ architecture STRUCTURE of System_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    lcd_reset_n : in STD_LOGIC;
-    LCD_SDA : inout STD_LOGIC;
-    LCD_SCL : inout STD_LOGIC;
-    btn_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    break_o : out STD_LOGIC;
-    ascii : out STD_LOGIC_VECTOR ( 6 downto 0 )
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component System;
 begin

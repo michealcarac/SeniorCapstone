@@ -1874,7 +1874,15 @@
         "vlnv": "empyrea.dev:AXICommunications:AXI_PS2_Keyboard_DEBUG:1.0",
         "xci_name": "System_AXI_PS2_Keyboard_DEB_0_0",
         "xci_path": "ip/System_AXI_PS2_Keyboard_DEB_0_0/System_AXI_PS2_Keyboard_DEB_0_0.xci",
-        "inst_hier_path": "AXI_PS2_Keyboard_DEB_0"
+        "inst_hier_path": "AXI_PS2_Keyboard_DEB_0",
+        "parameters": {
+          "PS2_CLK_FREQ": {
+            "value": "125000000"
+          },
+          "TIMER_CLOCK_DIVIDER": {
+            "value": "6250"
+          }
+        }
       },
       "ila_0": {
         "vlnv": "xilinx.com:ip:ila:6.2",

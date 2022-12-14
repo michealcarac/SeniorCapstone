@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1669549997">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1670975349">
   <File Type="PA-TCL" Name="LCD_wrapper.tcl"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="LCD_wrapper_bus_skew_routed.pb"/>
   <File Type="REPORTS-TCL" Name="LCD_wrapper_reports.tcl"/>
@@ -127,9 +127,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

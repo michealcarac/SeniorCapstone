@@ -9,6 +9,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System || O
 # IP: bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_processing_system7_0_0 || ORIG_REF_NAME==System_processing_system7_0_0} -quiet] -quiet
 
+# IP: bd/System/ip/System_xbar_0/System_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_xbar_0 || ORIG_REF_NAME==System_xbar_0} -quiet] -quiet
+
 # IP: bd/System/ip/System_ps7_0_axi_periph_3/System_ps7_0_axi_periph_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_ps7_0_axi_periph_3 || ORIG_REF_NAME==System_ps7_0_axi_periph_3} -quiet] -quiet
 
@@ -24,20 +27,17 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_xlco
 # IP: bd/System/ip/System_xlconstant_0_0/System_xlconstant_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_xlconstant_0_0 || ORIG_REF_NAME==System_xlconstant_0_0} -quiet] -quiet
 
-# IP: bd/System/ip/System_AXI_PS2_Keyboard_0_0/System_AXI_PS2_Keyboard_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_AXI_PS2_Keyboard_0_0 || ORIG_REF_NAME==System_AXI_PS2_Keyboard_0_0} -quiet] -quiet
-
-# IP: bd/System/ip/System_xbar_0/System_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_xbar_0 || ORIG_REF_NAME==System_xbar_0} -quiet] -quiet
-
-# IP: bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/System_AXI_I2C_LCD_Transmit_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_AXI_I2C_LCD_Transmit_0_0 || ORIG_REF_NAME==System_AXI_I2C_LCD_Transmit_0_0} -quiet] -quiet
-
 # IP: bd/System/ip/System_axi_gpio_0_0/System_axi_gpio_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_axi_gpio_0_0 || ORIG_REF_NAME==System_axi_gpio_0_0} -quiet] -quiet
 
 # IP: bd/System/ip/System_xlconcat_1_0/System_xlconcat_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_xlconcat_1_0 || ORIG_REF_NAME==System_xlconcat_1_0} -quiet] -quiet
+
+# IP: bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/System_AXI_I2C_LCD_Transmit_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_AXI_I2C_LCD_Transmit_0_0 || ORIG_REF_NAME==System_AXI_I2C_LCD_Transmit_0_0} -quiet] -quiet
+
+# IP: bd/System/ip/System_AXI_PS2_Keyboard_0_0/System_AXI_PS2_Keyboard_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_AXI_PS2_Keyboard_0_0 || ORIG_REF_NAME==System_AXI_PS2_Keyboard_0_0} -quiet] -quiet
 
 # IP: bd/System/ip/System_auto_pc_0/System_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==System_auto_pc_0 || ORIG_REF_NAME==System_auto_pc_0} -quiet] -quiet

@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.94574",
-   "Default View_TopLeft":"748,303",
+   "Default View_TopLeft":"303,303",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
@@ -30,12 +30,19 @@ preplace inst xlconcat_1 -pg 1 -lvl 2 -x 790 -y 500 -defaultsOSRD
 preplace inst AXI_I2C_LCD_Transmit_0 -pg 1 -lvl 3 -x 1210 -y 470 -defaultsOSRD
 preplace inst AXI_PS2_Keyboard_DEB_0 -pg 1 -lvl 2 -x 790 -y 780 -defaultsOSRD
 preplace inst ila_0 -pg 1 -lvl 3 -x 1210 -y 680 -defaultsOSRD
+preplace netloc AXI_PS2_Keyboard_DEB_0_ascii 1 2 3 980 820 1420J 540 N
+preplace netloc AXI_PS2_Keyboard_DEB_0_ascii_new 1 2 2 1000 790 1410
+preplace netloc AXI_PS2_Keyboard_DEB_0_break_o 1 2 3 950 810 N 810 1700
+preplace netloc AXI_PS2_Keyboard_DEB_0_int_o 1 1 2 460 570 940J
+preplace netloc AXI_PS2_Keyboard_DEB_0_timer 1 2 1 970 690n
 preplace netloc M_AXI_GP0_ACLK_0_1 1 0 4 10 380 410 100 980 560 1430
 preplace netloc Net 1 3 2 NJ 460 NJ
 preplace netloc Net1 1 3 2 NJ 480 NJ
 preplace netloc axi_gpio_0_ip2intc_irpt 1 1 3 450 30 NJ 30 1430
 preplace netloc lcd_reset_n_0_1 1 0 3 NJ 580 NJ 580 960J
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 20 40 NJ 40 NJ 40 1410
+preplace netloc ps2_clk_1 1 0 2 NJ 700 390
+preplace netloc ps2_data_1 1 0 2 NJ 680 400
 preplace netloc reset_n_0_1 1 0 4 NJ 620 NJ 620 970J 570 1410J
 preplace netloc rst_M_AXI_GP0_ACLK_0_100M_peripheral_aresetn 1 1 2 420 430 1010
 preplace netloc transcieve_rx_0_1 1 0 4 10J 690 430J 680 960J 800 1430J
@@ -43,20 +50,13 @@ preplace netloc uart_0_transcieve_tx 1 4 1 NJ 620
 preplace netloc xlconcat_0_dout 1 3 1 1440 660n
 preplace netloc xlconcat_1_dout 1 2 1 950 160n
 preplace netloc xlconstant_0_dout 1 2 1 980J 910n
-preplace netloc AXI_PS2_Keyboard_DEB_0_ascii_new 1 2 2 1000 790 1410
-preplace netloc AXI_PS2_Keyboard_DEB_0_ascii 1 2 3 980 820 1420J 540 N
-preplace netloc AXI_PS2_Keyboard_DEB_0_break_o 1 2 3 950 810 N 810 1700
-preplace netloc AXI_PS2_Keyboard_DEB_0_int_o 1 1 2 460 570 940J
-preplace netloc ps2_clk_1 1 0 2 NJ 700 390
-preplace netloc ps2_data_1 1 0 2 NJ 680 400
-preplace netloc AXI_PS2_Keyboard_DEB_0_timer 1 2 1 970 690n
 preplace netloc axi_gpio_0_GPIO 1 3 2 1440J 290 NJ
 preplace netloc processing_system7_0_DDR 1 3 2 NJ 100 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 3 2 NJ 120 NJ
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 440 20 NJ 20 1420
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 2 440 420 940
 preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 1000 260n
 preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 990 280n
-preplace netloc ps7_0_axi_periph_M00_AXI 1 1 2 440 420 940
 levelinfo -pg 1 -10 210 790 1210 1570 1720
 pagesize -pg 1 -db -bbox -sgen -150 -70 1840 980
 "

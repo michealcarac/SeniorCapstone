@@ -1877,6 +1877,9 @@
         "parameters": {
           "PS2_CLK_FREQ": {
             "value": "125000000"
+          },
+          "TIMER_CLOCK_DIVIDER": {
+            "value": "6250"
           }
         }
       }

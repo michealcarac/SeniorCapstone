@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
---Date        : Sun Nov 27 06:21:55 2022
+--Date        : Tue Dec 13 17:45:04 2022
 --Host        : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
 --Command     : generate_target System.bd
 --Design      : System
@@ -1765,7 +1765,7 @@ architecture STRUCTURE of System is
   attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
-  attribute X_INTERFACE_INFO of btn_tri_i : signal is "xilinx.com:interface:gpio:1.0 btn ";
+  attribute X_INTERFACE_INFO of btn_tri_i : signal is "xilinx.com:interface:gpio:1.0 btn TRI_I";
 begin
   M_AXI_GP0_ACLK_0_1 <= clk_125Mhz;
   ascii(6 downto 0) <= AXI_PS2_Keyboard_0_ascii(6 downto 0);
