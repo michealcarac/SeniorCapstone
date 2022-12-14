@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1670991309" LaunchIncrCheckpoint="$PPRDIR/../Zybo_System/Zybo_System.srcs/utils_1/imports/synth_1/System_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1671002788" LaunchIncrCheckpoint="$PPRDIR/../Zybo_System/Zybo_System.srcs/utils_1/imports/synth_1/System_wrapper.dcp">
+  <File Type="VDS-TIMING-PB" Name="System_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="System_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="System_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="System_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="System_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="System_wrapper_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="System_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="System_wrapper_reports.tcl"/>
   <File Type="PA-TCL" Name="System_wrapper.tcl"/>
-  <File Type="RDS-DCP" Name="System_wrapper.dcp"/>
-  <File Type="RDS-UTIL" Name="System_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="System_wrapper_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/System/System.bd">

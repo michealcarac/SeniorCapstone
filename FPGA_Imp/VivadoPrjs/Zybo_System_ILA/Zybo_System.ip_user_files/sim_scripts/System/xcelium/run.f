@@ -97,7 +97,6 @@
   "../../../bd/System/ipshared/e983/src/i2c_user_lcd.vhd" \
   "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd" \
   "../../../bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/sim/System_AXI_I2C_LCD_Transmit_0_0.vhd" \
-  "../../../bd/System/sim/System.vhd" \
   "../../../bd/System/ipshared/d148/hdl/AXI_PS2_Keyboard_DEBUG_v1_0.vhd" \
   "../../../bd/System/ipshared/d148/hdl/AXI_PS2_Keyboard_DEBUG_v1_0_S00_AXI.vhd" \
   "../../../bd/System/ipshared/d148/src/ps2_keyboard_ascii_timer.vhd" \
@@ -112,6 +111,9 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/System/ip/System_auto_pc_0/sim/System_auto_pc_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/System/sim/System.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

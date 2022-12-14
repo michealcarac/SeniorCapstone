@@ -28,39 +28,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/System/ip/System_processing_system7_0_0/sim/System_processing_system7_0_0.v" \
 -endlib
--makelib xcelium_lib/lib_cdc_v1_0_2 \
-  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
--endlib
--makelib xcelium_lib/proc_sys_reset_v5_0_13 \
-  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/sim/System_rst_M_AXI_GP0_ACLK_0_100M_0.vhd" \
-  "../../../bd/System/ipshared/6307/uart.vhd" \
-  "../../../bd/System/ipshared/6307/uart_user.vhd" \
-  "../../../bd/System/ip/System_uart_0_0/sim/System_uart_0_0.vhd" \
--endlib
--makelib xcelium_lib/xlconcat_v2_1_4 \
-  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/System/ip/System_xlconcat_0_0/sim/System_xlconcat_0_0.v" \
--endlib
--makelib xcelium_lib/xlconstant_v1_1_7 \
-  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/System/ip/System_xlconstant_0_0/sim/System_xlconstant_0_0.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/System/ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
-  "../../../bd/System/ipshared/abad/src/debounce.vhd" \
-  "../../../bd/System/ipshared/abad/src/ps2_keyboard.vhd" \
-  "../../../bd/System/ipshared/abad/src/ps2_keyboard_ascii_timer.vhd" \
-  "../../../bd/System/ipshared/abad/src/timer.vhd" \
-  "../../../bd/System/ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
-  "../../../bd/System/ip/System_AXI_PS2_Keyboard_0_0/sim/System_AXI_PS2_Keyboard_0_0.vhd" \
--endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 -endlib
@@ -85,12 +52,29 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/System/ip/System_xbar_0/sim/System_xbar_0.v" \
 -endlib
+-makelib xcelium_lib/lib_cdc_v1_0_2 \
+  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/proc_sys_reset_v5_0_13 \
+  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+-endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd" \
-  "../../../bd/System/ipshared/e983/src/I2C_Master.vhd" \
-  "../../../bd/System/ipshared/e983/src/i2c_user_lcd.vhd" \
-  "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd" \
-  "../../../bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/sim/System_AXI_I2C_LCD_Transmit_0_0.vhd" \
+  "../../../bd/System/ip/System_rst_M_AXI_GP0_ACLK_0_100M_0/sim/System_rst_M_AXI_GP0_ACLK_0_100M_0.vhd" \
+  "../../../bd/System/ipshared/6307/uart.vhd" \
+  "../../../bd/System/ipshared/6307/uart_user.vhd" \
+  "../../../bd/System/ip/System_uart_0_0/sim/System_uart_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xlconcat_v2_1_4 \
+  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/System/ip/System_xlconcat_0_0/sim/System_xlconcat_0_0.v" \
+-endlib
+-makelib xcelium_lib/xlconstant_v1_1_7 \
+  "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/System/ip/System_xlconstant_0_0/sim/System_xlconstant_0_0.v" \
 -endlib
 -makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
   "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -108,13 +92,27 @@
   "../../../bd/System/ip/System_xlconcat_1_0/sim/System_xlconcat_1_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/System/sim/System.vhd" \
+  "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd" \
+  "../../../bd/System/ipshared/e983/src/I2C_Master.vhd" \
+  "../../../bd/System/ipshared/e983/src/i2c_user_lcd.vhd" \
+  "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd" \
+  "../../../bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/sim/System_AXI_I2C_LCD_Transmit_0_0.vhd" \
+  "../../../bd/System/ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0_S00_AXI.vhd" \
+  "../../../bd/System/ipshared/abad/src/debounce.vhd" \
+  "../../../bd/System/ipshared/abad/src/ps2_keyboard.vhd" \
+  "../../../bd/System/ipshared/abad/src/ps2_keyboard_ascii_timer.vhd" \
+  "../../../bd/System/ipshared/abad/src/timer.vhd" \
+  "../../../bd/System/ipshared/abad/hdl/AXI_PS2_Keyboard_v1_0.vhd" \
+  "../../../bd/System/ip/System_AXI_PS2_Keyboard_0_0/sim/System_AXI_PS2_Keyboard_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_26 \
   "../../../../Zybo_System.gen/sources_1/bd/System/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/System/ip/System_auto_pc_0/sim/System_auto_pc_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/System/sim/System.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

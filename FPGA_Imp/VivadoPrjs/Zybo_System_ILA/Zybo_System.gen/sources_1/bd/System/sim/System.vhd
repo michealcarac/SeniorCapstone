@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
---Date        : Tue Dec 13 23:15:07 2022
+--Date        : Wed Dec 14 02:25:38 2022
 --Host        : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
 --Command     : generate_target System.bd
 --Design      : System
@@ -1534,34 +1534,16 @@ architecture STRUCTURE of System is
     dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component System_xlconcat_1_0;
-  component System_AXI_I2C_LCD_Transmit_0_0 is
+  component System_ila_0_0 is
   port (
-    LCD_SDA : inout STD_LOGIC;
-    LCD_SCL : inout STD_LOGIC;
-    lcd_reset_n : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component System_AXI_I2C_LCD_Transmit_0_0;
+  end component System_ila_0_0;
   component System_AXI_PS2_Keyboard_DEB_0_0 is
   port (
     ps2_clk : in STD_LOGIC;
@@ -1594,16 +1576,34 @@ architecture STRUCTURE of System is
     s00_axi_rready : in STD_LOGIC
   );
   end component System_AXI_PS2_Keyboard_DEB_0_0;
-  component System_ila_0_0 is
+  component System_AXI_I2C_LCD_Transmit_0_0 is
   port (
-    clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe1 : in STD_LOGIC_VECTOR ( 6 downto 0 );
-    probe2 : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    LCD_SDA : inout STD_LOGIC;
+    LCD_SCL : inout STD_LOGIC;
+    lcd_reset_n : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC
   );
-  end component System_ila_0_0;
+  end component System_AXI_I2C_LCD_Transmit_0_0;
   signal AXI_PS2_Keyboard_DEB_0_ascii : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal AXI_PS2_Keyboard_DEB_0_ascii_new : STD_LOGIC;
   signal AXI_PS2_Keyboard_DEB_0_break_o : STD_LOGIC;

@@ -167,3 +167,10 @@ timestamp=[2022-12-14 01:33:30], mode=BUILD, duration=0:00:06.127, duration_ms=6
 timestamp=[2022-12-14 01:41:40], mode=WORKBENCH_START, duration=0:00:04.395, duration_ms=4395, data={}
 timestamp=[2022-12-14 01:41:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.352, duration_ms=352, data={}
 timestamp=[2022-12-14 01:41:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.685, duration_ms=685, data={editors_count=10, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_System,Zybo_System_app,Zybo_System_system}
+timestamp=[2022-12-14 02:16:05], mode=WORKBENCH_START, duration=0:00:04.311, duration_ms=4311, data={}
+timestamp=[2022-12-14 02:16:06], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.349, duration_ms=349, data={}
+timestamp=[2022-12-14 02:16:06], mode=WORKBENCH_UI_INIT, duration=0:00:00.667, duration_ms=667, data={editors_count=10, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Zybo_System,Zybo_System_app,Zybo_System_system}
+timestamp=[2022-12-14 02:17:06], mode=PLATFORM_GENERATION, duration=0:00:13.933, duration_ms=13933, data={name=Zybo_System}
+timestamp=[2022-12-14 02:37:37], mode=PLATFORM_GENERATION, duration=0:00:07.180, duration_ms=7180, data={name=Zybo_System}
+timestamp=[2022-12-14 02:37:41], mode=BUILD, duration=0:00:01.659, duration_ms=1659, data={name=Zybo_System_app, configuration=Debug, clean_build=false}
+timestamp=[2022-12-14 02:37:52], mode=BUILD, duration=0:00:06.235, duration_ms=6235, data={name=Zybo_System_system, configuration=Debug, clean_build=false}

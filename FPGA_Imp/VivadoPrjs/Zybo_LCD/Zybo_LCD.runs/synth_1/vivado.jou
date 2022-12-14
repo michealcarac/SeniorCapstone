@@ -2,8 +2,8 @@
 # Vivado v2022.1.2 (64-bit)
 # SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
 # IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
-# Start of session at: Tue Dec 13 18:49:12 2022
-# Process ID: 51406
+# Start of session at: Wed Dec 14 02:32:43 2022
+# Process ID: 295301
 # Current directory: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.runs/synth_1
 # Command line: vivado -log LCD_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LCD_wrapper.tcl
 # Log file: /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.runs/synth_1/LCD_wrapper.vds

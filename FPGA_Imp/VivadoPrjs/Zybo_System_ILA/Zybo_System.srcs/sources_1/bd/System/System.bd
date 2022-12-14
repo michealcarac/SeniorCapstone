@@ -27,9 +27,9 @@
       "xlconstant_0": "",
       "axi_gpio_0": "",
       "xlconcat_1": "",
-      "AXI_I2C_LCD_Transmit_0": "",
+      "ila_0": "",
       "AXI_PS2_Keyboard_DEB_0": "",
-      "ila_0": ""
+      "AXI_I2C_LCD_Transmit_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1864,26 +1864,6 @@
         "xci_path": "ip/System_xlconcat_1_0/System_xlconcat_1_0.xci",
         "inst_hier_path": "xlconcat_1"
       },
-      "AXI_I2C_LCD_Transmit_0": {
-        "vlnv": "empyrea.dev:AXICommunication:AXI_I2C_LCD_Transmitter:1.0",
-        "xci_name": "System_AXI_I2C_LCD_Transmit_0_0",
-        "xci_path": "ip/System_AXI_I2C_LCD_Transmit_0_0/System_AXI_I2C_LCD_Transmit_0_0.xci",
-        "inst_hier_path": "AXI_I2C_LCD_Transmit_0"
-      },
-      "AXI_PS2_Keyboard_DEB_0": {
-        "vlnv": "empyrea.dev:AXICommunications:AXI_PS2_Keyboard_DEBUG:1.0",
-        "xci_name": "System_AXI_PS2_Keyboard_DEB_0_0",
-        "xci_path": "ip/System_AXI_PS2_Keyboard_DEB_0_0/System_AXI_PS2_Keyboard_DEB_0_0.xci",
-        "inst_hier_path": "AXI_PS2_Keyboard_DEB_0",
-        "parameters": {
-          "PS2_CLK_FREQ": {
-            "value": "125000000"
-          },
-          "TIMER_CLOCK_DIVIDER": {
-            "value": "6250"
-          }
-        }
-      },
       "ila_0": {
         "vlnv": "xilinx.com:ip:ila:6.2",
         "xci_name": "System_ila_0_0",
@@ -1900,6 +1880,26 @@
             "value": "5"
           }
         }
+      },
+      "AXI_PS2_Keyboard_DEB_0": {
+        "vlnv": "empyrea.dev:AXICommunications:AXI_PS2_Keyboard_DEBUG:1.0",
+        "xci_name": "System_AXI_PS2_Keyboard_DEB_0_0",
+        "xci_path": "ip/System_AXI_PS2_Keyboard_DEB_0_0/System_AXI_PS2_Keyboard_DEB_0_0.xci",
+        "inst_hier_path": "AXI_PS2_Keyboard_DEB_0",
+        "parameters": {
+          "PS2_CLK_FREQ": {
+            "value": "125000000"
+          },
+          "TIMER_CLOCK_DIVIDER": {
+            "value": "6250"
+          }
+        }
+      },
+      "AXI_I2C_LCD_Transmit_0": {
+        "vlnv": "empyrea.dev:AXICommunication:AXI_I2C_LCD_Transmitter:1.0",
+        "xci_name": "System_AXI_I2C_LCD_Transmit_0_0",
+        "xci_path": "ip/System_AXI_I2C_LCD_Transmit_0_0/System_AXI_I2C_LCD_Transmit_0_0.xci",
+        "inst_hier_path": "AXI_I2C_LCD_Transmit_0"
       }
     },
     "interface_nets": {
@@ -1994,9 +1994,9 @@
           "ps7_0_axi_periph/M01_ACLK",
           "axi_gpio_0/s_axi_aclk",
           "ps7_0_axi_periph/M02_ACLK",
-          "AXI_I2C_LCD_Transmit_0/s00_axi_aclk",
+          "ila_0/clk",
           "AXI_PS2_Keyboard_DEB_0/s00_axi_aclk",
-          "ila_0/clk"
+          "AXI_I2C_LCD_Transmit_0/s00_axi_aclk"
         ]
       },
       "Net": {
@@ -2056,8 +2056,8 @@
           "ps7_0_axi_periph/M01_ARESETN",
           "axi_gpio_0/s_axi_aresetn",
           "ps7_0_axi_periph/M02_ARESETN",
-          "AXI_I2C_LCD_Transmit_0/s00_axi_aresetn",
-          "AXI_PS2_Keyboard_DEB_0/s00_axi_aresetn"
+          "AXI_PS2_Keyboard_DEB_0/s00_axi_aresetn",
+          "AXI_I2C_LCD_Transmit_0/s00_axi_aresetn"
         ]
       },
       "transcieve_rx_0_1": {

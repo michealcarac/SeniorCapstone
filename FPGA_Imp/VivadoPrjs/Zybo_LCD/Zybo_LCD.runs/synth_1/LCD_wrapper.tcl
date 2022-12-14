@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -93,9 +92,9 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/hdl/LCD_wrapper.vhd
 add_files /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.srcs/sources_1/bd/LCD/LCD.bd
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_processing_system7_0_0/LCD_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_auto_pc_0/LCD_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_rst_sysclk_100Mhz_100M_0/LCD_rst_sysclk_100Mhz_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_rst_sysclk_100Mhz_100M_0/LCD_rst_sysclk_100Mhz_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/ip/LCD_auto_pc_0/LCD_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_LCD/Zybo_LCD.gen/sources_1/bd/LCD/LCD_ooc.xdc]
 
 OPTRACE "Adding files" END { }

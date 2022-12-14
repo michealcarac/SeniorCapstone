@@ -140,7 +140,6 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/System/ipshared/e983/src/i2c_user_lcd.vhd" \
 "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd" \
 "../../../bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/sim/System_AXI_I2C_LCD_Transmit_0_0.vhd" \
-"../../../bd/System/sim/System.vhd" \
 "../../../bd/System/ipshared/d148/hdl/AXI_PS2_Keyboard_DEBUG_v1_0.vhd" \
 "../../../bd/System/ipshared/d148/hdl/AXI_PS2_Keyboard_DEBUG_v1_0_S00_AXI.vhd" \
 "../../../bd/System/ipshared/d148/src/ps2_keyboard_ascii_timer.vhd" \
@@ -155,6 +154,9 @@ vlog -work axi_protocol_converter_v2_1_26 -64 -incr -mfcu "+incdir+../../../../Z
 
 vlog -work xil_defaultlib -64 -incr -mfcu "+incdir+../../../../Zybo_System.gen/sources_1/bd/System/ipshared/ec67/hdl" "+incdir+../../../../Zybo_System.gen/sources_1/bd/System/ipshared/5765/hdl" "+incdir+../../../../Zybo_System.gen/sources_1/bd/System/ipshared/1b7e/hdl/verilog" "+incdir+../../../../Zybo_System.gen/sources_1/bd/System/ipshared/122e/hdl/verilog" "+incdir+../../../../Zybo_System.gen/sources_1/bd/System/ipshared/b205/hdl/verilog" "+incdir+../../../../Zybo_System.gen/sources_1/bd/System/ipshared/fd26/hdl/verilog" "+incdir+/tools/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
 "../../../bd/System/ip/System_auto_pc_0/sim/System_auto_pc_0.v" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/System/sim/System.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
