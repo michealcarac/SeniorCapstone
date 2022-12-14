@@ -1,4 +1,4 @@
- #
+#
 # Keyboard Emulator Using a Pi Pico and CircuitPython
 #
 # References 
@@ -388,4 +388,3 @@ while True:
         elif data == b'.':
             keyboard.press(Keycode.PERIOD) #abcd
             keyboard.release_all()
-
