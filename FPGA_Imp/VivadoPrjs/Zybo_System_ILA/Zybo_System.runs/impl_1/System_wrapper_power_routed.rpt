@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2022.1.2 (lin64) Build 3605665 Fri Aug  5 22:52:02 MDT 2022
-| Date             : Wed Dec 14 02:29:32 2022
-| Host             : UbuntuSeniorLab running 64-bit Ubuntu 20.04.5 LTS
+| Tool Version     : Vivado v.2022.1.2 (win64) Build 3605665 Fri Aug  5 22:53:37 MDT 2022
+| Date             : Wed Dec 14 20:54:33 2022
+| Host             : DESKTOP-8DKIKNE running 64-bit major release  (build 9200)
 | Command          : report_power -file System_wrapper_power_routed.rpt -pb System_wrapper_power_summary_routed.pb -rpx System_wrapper_power_routed.rpx
 | Design           : System_wrapper
 | Device           : xc7z020clg400-1
@@ -36,8 +36,8 @@ Table of Contents
 | Dynamic (W)              | 1.424        |
 | Device Static (W)        | 0.141        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 67.0         |
-| Junction Temperature (C) | 43.0         |
+| Max Ambient (C)          | 66.9         |
+| Junction Temperature (C) | 43.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.014 |        5 |       --- |             --- |
-| Slice Logic              |     0.003 |     7260 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     2256 |     53200 |            4.24 |
-|   Register               |    <0.001 |     3584 |    106400 |            3.37 |
+| Slice Logic              |     0.003 |     7264 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     2260 |     53200 |            4.25 |
+|   Register               |    <0.001 |     3585 |    106400 |            3.37 |
 |   CARRY4                 |    <0.001 |       86 |     13300 |            0.65 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     17400 |            0.14 |
 |   LUT as Shift Register  |    <0.001 |      176 |     17400 |            1.01 |
 |   F7/F8 Muxes            |    <0.001 |       65 |     53200 |            0.12 |
 |   Others                 |     0.000 |      474 |       --- |             --- |
-| Signals                  |     0.004 |     5369 |       --- |             --- |
+| Signals                  |     0.004 |     5363 |       --- |             --- |
 | Block RAM                |     0.001 |      1.5 |       140 |            1.07 |
 | I/O                      |     0.002 |       20 |       125 |           16.00 |
 | PS7                      |     1.401 |        1 |       --- |             --- |
@@ -160,8 +160,8 @@ Table of Contents
 |       U0                   |     0.002 |
 |     AXI_PS2_Keyboard_DEB_0 |     0.002 |
 |       U0                   |     0.002 |
-|     ila_0                  |     0.008 |
-|       U0                   |     0.008 |
+|     ila_0                  |     0.009 |
+|       U0                   |     0.009 |
 |     processing_system7_0   |     1.401 |
 |       inst                 |     1.401 |
 |     ps7_0_axi_periph       |     0.005 |

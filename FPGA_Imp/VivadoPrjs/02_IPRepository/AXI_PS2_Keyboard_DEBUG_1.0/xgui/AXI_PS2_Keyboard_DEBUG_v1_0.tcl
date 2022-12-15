@@ -5,11 +5,11 @@ proc init_gui { IPINST } {
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   ipgui::add_param $IPINST -name "C_S00_AXI_BASEADDR" -parent ${Page_0}
   ipgui::add_param $IPINST -name "C_S00_AXI_HIGHADDR" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "PS2_CLK_FREQ" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "PS2_DEBOUNCE_COUNTER_SIZE" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "TIMER_OUTPUT_WIDTH" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "TIMER_CLOCK_DIVIDER" -parent ${Page_0}
 
-  ipgui::add_param $IPINST -name "PS2_CLK_FREQ"
-  ipgui::add_param $IPINST -name "PS2_DEBOUNCE_COUNTER_SIZE"
-  ipgui::add_param $IPINST -name "TIMER_OUTPUT_WIDTH"
-  ipgui::add_param $IPINST -name "TIMER_CLOCK_DIVIDER"
 
 }
 

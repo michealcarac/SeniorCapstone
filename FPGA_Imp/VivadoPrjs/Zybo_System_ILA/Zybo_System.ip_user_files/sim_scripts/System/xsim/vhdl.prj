@@ -4,19 +4,19 @@ vhdl xil_defaultlib  \
 "../../../bd/System/ipshared/6307/uart_user.vhd" \
 "../../../bd/System/ip/System_uart_0_0/sim/System_uart_0_0.vhd" \
 "../../../bd/System/ip/System_axi_gpio_0_0/sim/System_axi_gpio_0_0.vhd" \
+"../../../bd/System/ip/System_ila_0_0/sim/System_ila_0_0.vhd" \
+"../../../bd/System/ipshared/0d35/hdl/AXI_PS2_Keyboard_DEBUG_v1_0_S00_AXI.vhd" \
+"../../../bd/System/ipshared/0d35/src/debounce.vhd" \
+"../../../bd/System/ipshared/0d35/src/ps2_keyboard.vhd" \
+"../../../bd/System/ipshared/0d35/src/ps2_keyboard_ascii_timer.vhd" \
+"../../../bd/System/ipshared/0d35/src/timer.vhd" \
+"../../../bd/System/ipshared/0d35/hdl/AXI_PS2_Keyboard_DEBUG_v1_0.vhd" \
+"../../../bd/System/ip/System_AXI_PS2_Keyboard_DEB_0_0/sim/System_AXI_PS2_Keyboard_DEB_0_0.vhd" \
 "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0_S00_AXI.vhd" \
 "../../../bd/System/ipshared/e983/src/I2C_Master.vhd" \
 "../../../bd/System/ipshared/e983/src/i2c_user_lcd.vhd" \
 "../../../bd/System/ipshared/e983/hdl/AXI_I2C_LCD_Transmitter_v1_0.vhd" \
 "../../../bd/System/ip/System_AXI_I2C_LCD_Transmit_0_0/sim/System_AXI_I2C_LCD_Transmit_0_0.vhd" \
-"../../../bd/System/ipshared/d148/hdl/AXI_PS2_Keyboard_DEBUG_v1_0.vhd" \
-"../../../bd/System/ipshared/d148/hdl/AXI_PS2_Keyboard_DEBUG_v1_0_S00_AXI.vhd" \
-"../../../bd/System/ipshared/d148/src/ps2_keyboard_ascii_timer.vhd" \
-"../../../bd/System/ipshared/d148/src/ps2_keyboard.vhd" \
-"../../../bd/System/ipshared/d148/src/debounce.vhd" \
-"../../../bd/System/ipshared/d148/src/timer.vhd" \
-"../../../bd/System/ip/System_AXI_PS2_Keyboard_DEB_0_0/sim/System_AXI_PS2_Keyboard_DEB_0_0.vhd" \
-"../../../bd/System/ip/System_ila_0_0/sim/System_ila_0_0.vhd" \
 "../../../bd/System/sim/System.vhd" \
 
 nosort

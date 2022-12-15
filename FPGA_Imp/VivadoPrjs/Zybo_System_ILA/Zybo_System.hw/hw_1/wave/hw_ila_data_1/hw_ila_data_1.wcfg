@@ -3,24 +3,24 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System_ILA/Zybo_System.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="1,100"></ZoomEndTime>
-      <Cursor1Time time="1,024"></Cursor1Time>
+      <ZoomEndTime time="1,024"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="156"></NameColumnWidth>
-      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+      <NameColumnWidth column_width="149"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="5" />
    <wave_markers>
    </wave_markers>
-   <wvobject type="array" fp_name="System_i/AXI_PS2_Keyboard_DEB_0_ascii">
+   <wvobject fp_name="System_i/AXI_PS2_Keyboard_DEB_0_ascii" type="array">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">System_i/AXI_PS2_Keyboard_DEB_0_ascii[6:0]</obj_property>
       <obj_property name="ObjectShortName">AXI_PS2_Keyboard_DEB_0_ascii[6:0]</obj_property>
@@ -29,7 +29,7 @@
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       <obj_property name="label">PS2 {ascii[6:0]}</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="System_i/AXI_PS2_Keyboard_DEB_0_ascii_new">
+   <wvobject fp_name="System_i/AXI_PS2_Keyboard_DEB_0_ascii_new" type="logic">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">System_i/AXI_PS2_Keyboard_DEB_0_ascii_new</obj_property>
       <obj_property name="ObjectShortName">AXI_PS2_Keyboard_DEB_0_ascii_new</obj_property>
@@ -37,7 +37,7 @@
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       <obj_property name="label">PS2 {ascii_new}</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="System_i/AXI_PS2_Keyboard_DEB_0_break_o">
+   <wvobject fp_name="System_i/AXI_PS2_Keyboard_DEB_0_break_o" type="logic">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">System_i/AXI_PS2_Keyboard_DEB_0_break_o</obj_property>
       <obj_property name="ObjectShortName">AXI_PS2_Keyboard_DEB_0_break_o</obj_property>
@@ -45,7 +45,7 @@
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       <obj_property name="label">PS2 {break_o}</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="System_i/AXI_PS2_Keyboard_DEB_0_int_o">
+   <wvobject fp_name="System_i/AXI_PS2_Keyboard_DEB_0_int_o" type="logic">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">System_i/AXI_PS2_Keyboard_DEB_0_int_o</obj_property>
       <obj_property name="ObjectShortName">AXI_PS2_Keyboard_DEB_0_int_o</obj_property>
@@ -53,7 +53,7 @@
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       <obj_property name="label">PS2 {int_o}</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="System_i/AXI_PS2_Keyboard_DEB_0_timer">
+   <wvobject fp_name="System_i/AXI_PS2_Keyboard_DEB_0_timer" type="array">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">System_i/AXI_PS2_Keyboard_DEB_0_timer[31:0]</obj_property>
       <obj_property name="ObjectShortName">AXI_PS2_Keyboard_DEB_0_timer[31:0]</obj_property>

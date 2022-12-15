@@ -15,7 +15,7 @@ OBJECTS = $(addsuffix .o, $(basename $(wildcard *.c)))
 ASSEMBLY_OBJECTS = $(addsuffix .o, $(basename $(wildcard *.S)))
 
 libs:
-	echo "Compiling AXI_PS2_Keyboard_DEBUG..."
+	echo "Compiling AXI_I2C_LCD_Transmitter..."
 	$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
 	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OBJECTS} ${ASSEMBLY_OBJECTS}
 	make clean

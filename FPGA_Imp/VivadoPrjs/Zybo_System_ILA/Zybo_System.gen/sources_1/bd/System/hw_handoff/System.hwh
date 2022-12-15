@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec 14 02:25:39 2022" VIVADOVERSION="2022.1.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec 14 20:49:37 2022" VIVADOVERSION="2022.1.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="System" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -26,8 +26,8 @@
         <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aclk"/>
         <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ACLK"/>
         <CONNECTION INSTANCE="ila_0" PORT="clk"/>
-        <CONNECTION INSTANCE="AXI_PS2_Keyboard_DEB_0" PORT="s00_axi_aclk"/>
         <CONNECTION INSTANCE="AXI_I2C_LCD_Transmit_0" PORT="s00_axi_aclk"/>
+        <CONNECTION INSTANCE="AXI_PS2_Keyboard_DEB_0" PORT="s00_axi_aclk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="uart_reset_n" SIGIS="undef" SIGNAME="External_Ports_uart_reset_n">
@@ -431,7 +431,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/AXI_PS2_Keyboard_DEB_0" HWVERSION="1.0" INSTANCE="AXI_PS2_Keyboard_DEB_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PS2_Keyboard_DEBUG" VLNV="empyrea.dev:AXICommunications:AXI_PS2_Keyboard_DEBUG:1.0">
+    <MODULE COREREVISION="2" FULLNAME="/AXI_PS2_Keyboard_DEB_0" HWVERSION="1.0" INSTANCE="AXI_PS2_Keyboard_DEB_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_PS2_Keyboard_DEBUG" VLNV="empyrea.dev:AXICommunications:AXI_PS2_Keyboard_DEBUG:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -6582,8 +6582,8 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ARESETN"/>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M02_ARESETN"/>
-            <CONNECTION INSTANCE="AXI_PS2_Keyboard_DEB_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="AXI_I2C_LCD_Transmit_0" PORT="s00_axi_aresetn"/>
+            <CONNECTION INSTANCE="AXI_PS2_Keyboard_DEB_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

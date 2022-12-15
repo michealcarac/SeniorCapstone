@@ -39,16 +39,11 @@
       <data key="VT">AC</data>
     </node>
     <node id="n1">
-      <data key="VH">2</data>
-      <data key="VM">System</data>
-      <data key="VT">VR</data>
-    </node>
-    <node id="n2">
       <data key="TU">active</data>
       <data key="VH">2</data>
       <data key="VT">PM</data>
     </node>
-    <node id="n3">
+    <node id="n2">
       <data key="BA">0x43C10000</data>
       <data key="BP">C_S00_AXI_BASEADDR</data>
       <data key="HA">0x43C1FFFF</data>
@@ -65,6 +60,11 @@
       <data key="SV">empyrea.dev:AXICommunication:AXI_I2C_LCD_Transmitter:1.0</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
+    </node>
+    <node id="n3">
+      <data key="VH">2</data>
+      <data key="VM">System</data>
+      <data key="VT">VR</data>
     </node>
     <node id="n4">
       <data key="VM">System</data>
@@ -88,15 +88,15 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <edge id="e0" source="n4" target="n1"/>
-    <edge id="e1" source="n1" target="n2"/>
-    <edge id="e2" source="n3" target="n2">
+    <edge id="e0" source="n4" target="n3"/>
+    <edge id="e1" source="n3" target="n1"/>
+    <edge id="e2" source="n2" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n5" target="n2">
+    <edge id="e3" source="n5" target="n1">
       <data key="EH">2</data>
     </edge>
-    <edge id="e4" source="n0" target="n2">
+    <edge id="e4" source="n0" target="n1">
       <data key="EH">2</data>
     </edge>
   </graph>

@@ -1,0 +1,3 @@
+When developing on an Ubuntu machine to package AXI IP cores in Vivado, a makefile is generated that looks like below:  
+
+![OriginalMakeFile](./Images/OriginalMakeFile.PNG)  

@@ -6,10 +6,14 @@
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/lin64:/tools/Xilinx/Vivado/2022.1/bin
+  PATH=F:/Xilinx/Vitis/2022.1/bin;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.1/bin
 else
-  PATH=/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/lin64:/tools/Xilinx/Vivado/2022.1/bin:$PATH
+  PATH=F:/Xilinx/Vitis/2022.1/bin;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.1/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.runs/synth_1'
+HD_PWD='C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

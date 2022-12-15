@@ -3,6 +3,6 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
 configDescList=org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_System_system_2,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_System_system_1,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_System_system
 eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_System_system/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_System_system/activeLaunchMode=systemrun
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_System_system/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_Zybo_System_system_1/activeLaunchMode=run

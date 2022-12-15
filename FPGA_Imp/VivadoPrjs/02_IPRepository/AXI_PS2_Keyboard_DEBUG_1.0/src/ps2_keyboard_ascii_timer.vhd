@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 --
---   FileName:         ps2_keyboard_to_ascii.vhd
+--   FileName:         ps2_keyboard_to_ascii_timer.vhd
 --   Dependencies:     ps2_keyboard.vhd, debounce.vhd
 --   Design Software:  Quartus II 32-bit Version 12.1 Build 177 SJ Full Version
 --
@@ -17,6 +17,8 @@
 --   Version History
 --   Version 1.0 11/29/2013 Scott Larson
 --     Initial Public Release
+--   Version 2.0 12/14/2022 Micheal Caracciolo
+--     Added extra functionality + a timer
 --    
 --------------------------------------------------------------------------------
 
@@ -72,6 +74,7 @@ ARCHITECTURE behavior OF ps2_keyboard_ascii_timer IS
   SIGNAL ascii_new_reg          : STD_LOGIC := '0';
   SIGNAL int_reg                : STD_LOGIC := '0';
   SIGNAL break_reg              : STD_LOGIC := '0';
+  SIGNAL skip_int               : STD_LOGIC := '0';
   -- TIMER
   SIGNAL timer_reg         : STD_LOGIC_VECTOR(TIMER_OUTPUT_WIDTH-1 downto 0) := (others => '0');
   SIGNAL timer_data        : STD_LOGIC_VECTOR(TIMER_OUTPUT_WIDTH-1 downto 0) := (others=> '0');
@@ -170,18 +173,22 @@ BEGIN
             --handle codes for control, shift, and caps lock
             CASE ps2_code IS
               WHEN x"58" =>                   --caps lock code
+                skip_int <= '1';
                 IF(break = '0') THEN            --if make command
                   caps_lock <= NOT caps_lock;     --toggle caps lock
                 END IF;
               WHEN x"14" =>                   --code for the control keys
+                skip_int <= '1';
                 IF(e0_code = '1') THEN          --code for right control
                   control_r <= NOT break;         --update right control flag
                 ELSE                            --code for left control
                   control_l <= NOT break;         --update left control flag
                 END IF;
               WHEN x"12" =>                   --left shift code
+                skip_int <= '1';
                 shift_l <= NOT break;           --update left shift flag
               WHEN x"59" =>                   --right shift code
+                skip_int <= '1';
                 shift_r <= NOT break;           --update right shift flag
               WHEN OTHERS => NULL;
             END CASE;
@@ -364,7 +371,10 @@ BEGIN
         -- MC -> Intermediate state to create extra signals
         WHEN done_translate =>
             break <= '0'; -- on next cycle reset break
-            int_reg <= '1';  -- MC -> Set interrupt high. This will be pulsed for twice every key press. Once for press down, once for let go
+            if skip_int = '0' then -- To not interrupt on shift or Cap lock keys. 
+                int_reg <= '1';  -- MC -> Set interrupt high. This will be pulsed for twice every key press. Once for press down, once for let go
+            end if;          
+            skip_int <= '0'; -- Back to default value
             -- MC -> outputting ascii code on mark or break
             if(ascii(7) = '0') then --ps2 code has an ascii output
                 ascii_code <= ascii(6 DOWNTO 0);   --output the ASCII value, theoretical output on make and break

@@ -44,3 +44,7 @@ platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/Viv
 platform generate
 platform config -updatehw {/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}
 platform generate -domains 
+platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {Zybo_System}
+platform config -updatehw {C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa}
+platform generate -domains 

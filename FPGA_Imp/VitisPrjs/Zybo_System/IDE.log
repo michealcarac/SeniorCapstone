@@ -3395,3 +3395,94 @@ con
 02:37:41 INFO  : The file '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit/ps7_init.tcl' stored in project is removed.
 02:37:46 INFO  : The updated ps init files are copied from platform to folder '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit' in project 'Zybo_System_app'.
 02:39:57 INFO  : Projects exported to '/home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/01_Exports/Zybo_System.ide.zip'
+02:51:40 DEBUG : Logs will be stored at 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/IDE.log'.
+02:51:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_System\temp_xsdb_launch_script.tcl
+02:51:42 INFO  : XSCT server has started successfully.
+02:51:42 INFO  : plnx-install-location is set to ''
+02:51:42 INFO  : Successfully done setting XSCT server connection channel  
+02:51:42 INFO  : Successfully done setting workspace for the tool. 
+02:51:43 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+02:51:43 INFO  : Platform repository initialization has completed.
+02:51:43 INFO  : Successfully done query RDI_DATADIR 
+02:51:43 INFO  : Restoring local repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository:
+02:51:43 WARN  : Invalid repository path /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository:.
+02:51:43 INFO  : Registering command handlers for Vitis TCF services
+02:52:16 INFO  : Result from executing command 'getProjects': Zybo_System
+02:52:16 INFO  : Result from executing command 'getPlatforms': 
+02:55:12 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_System_app'...
+02:55:14 INFO  : Updating application flags with new BSP settings...
+02:55:15 INFO  : Successfully updated application flags for project Zybo_System_app.
+02:55:54 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_System_app'...
+21:59:14 DEBUG : Logs will be stored at 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/IDE.log'.
+21:59:15 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_System\temp_xsdb_launch_script.tcl
+21:59:17 INFO  : XSCT server has started successfully.
+21:59:17 INFO  : Successfully done setting XSCT server connection channel  
+21:59:17 INFO  : plnx-install-location is set to ''
+21:59:17 INFO  : Successfully done setting workspace for the tool. 
+21:59:18 INFO  : Platform repository initialization has completed.
+21:59:18 INFO  : Registering command handlers for Vitis TCF services
+21:59:20 INFO  : Successfully done query RDI_DATADIR 
+21:59:20 INFO  : Restoring local repository preferences: 
+		 /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository:
+21:59:20 WARN  : Invalid repository path /home/cekp/Desktop/GitHub/SeniorCapstone/FPGA_Imp/VitisPrjs/02_CodeRepository:.
+22:00:02 INFO  : Hardware specification for platform project 'Zybo_System' is updated.
+22:00:48 INFO  : Result from executing command 'getProjects': Zybo_System
+22:00:48 INFO  : Result from executing command 'getPlatforms': Zybo_System|C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/Zybo_System.xpfm
+22:01:36 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_System_app'...
+22:01:42 INFO  : The hardware specification used by project 'Zybo_System_app' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+22:01:42 INFO  : The file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_System\Zybo_System_app\_ide\bitstream\Zybo_System.bit' stored in project is removed.
+22:01:42 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_System\Zybo_System_app\_ide\bitstream' in project 'Zybo_System_app'.
+22:01:42 INFO  : The file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_System\Zybo_System_app\_ide\psinit\ps7_init.tcl' stored in project is removed.
+22:01:48 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_System\Zybo_System_app\_ide\psinit' in project 'Zybo_System_app'.
+23:38:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:38:36 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+23:38:36 INFO  : 'jtag frequency' command is executed.
+23:38:36 INFO  : Context for 'APU' is selected.
+23:38:36 INFO  : System reset is completed.
+23:38:39 INFO  : 'after 3000' command is executed.
+23:38:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+23:38:41 INFO  : Device configured successfully with "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream/Zybo_System.bit"
+23:38:41 INFO  : Context for 'APU' is selected.
+23:38:42 INFO  : Hardware design and registers information is loaded from 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+23:38:42 INFO  : 'configparams force-mem-access 1' command is executed.
+23:38:42 INFO  : Context for 'APU' is selected.
+23:38:42 INFO  : Sourcing of 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit/ps7_init.tcl' is done.
+23:38:42 INFO  : 'ps7_init' command is executed.
+23:38:42 INFO  : 'ps7_post_config' command is executed.
+23:38:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:38:43 INFO  : The application 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/Debug/Zybo_System_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:38:43 INFO  : 'configparams force-mem-access 0' command is executed.
+23:38:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_System/Zybo_System_app/Debug/Zybo_System_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:38:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:38:43 INFO  : 'con' command is executed.
+23:38:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:38:43 INFO  : Launch script is exported to file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_System\Zybo_System_system\_ide\scripts\systemdebugger_zybo_system_system_standalone.tcl'
+23:40:54 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_System_app'...
+23:41:37 INFO  : Projects exported to 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\01_Exports\Zybo_System.ide.zip'
+00:18:59 INFO  : Disconnected from the channel tcfchan#3.
