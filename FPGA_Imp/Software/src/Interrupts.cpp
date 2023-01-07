@@ -33,16 +33,20 @@ void GPIO_InterruptHandler(void *IntcInstancePtr){
 	}
 	btn_value = XGpio_DiscreteRead(&myGPIOInterruptPtr, 1); // Channel 1
 	if (btn_value == 1) {   // Case 0
-		std::cout<<"BTN1"<<std::endl;
+		btn0();
+		// std::cout<<"BTN1"<<std::endl;
 	}
 	else if (btn_value == 2) { // Case 1
-		std::cout<<"BTN2"<<std::endl;
+		btn1();
+		// std::cout<<"BTN2"<<std::endl;
 	}
 	else if (btn_value == 4) { // Case 2
-		std::cout<<"BTN3"<<std::endl;
+		btn2();
+		// std::cout<<"BTN3"<<std::endl;
 	}
 	else if (btn_value == 8) { // Case 3
-		std::cout<<"BTN4"<<std::endl;
+		btn3();
+		// std::cout<<"BTN4"<<std::endl;
 	}
 	(void) XGpio_InterruptClear(&myGPIOInterruptPtr, XGPIO_IR_CH1_MASK);
 	// Enable GPIO interrupts
@@ -56,9 +60,10 @@ void Keyboard_InterruptHandler(void *IntcInstancePtr){
 	//u32 ascii_data = Xil_In32(PS2_Keyboard_Base) & PS2_Data_Mask;
 	//itoa(Xil_In32(PS2_Keyboard_Base) >> PS2_Break_Shift,break_data,2);
 	// Print ASCII Character
-	xil_printf("ascii: %s \n\r",PS2_ReadDataASCII(PS2_Keyboard_Base));
-	xil_printf("break: %d \n\r",(int)PS2_ReadBreak(PS2_Keyboard_Base));
-	xil_printf("time: %d \n\r",PS2_ReadTime(PS2_Keyboard_Base));
+	keyboard();
+	// xil_printf("ascii: %s \n\r",PS2_ReadDataASCII(PS2_Keyboard_Base));
+	// xil_printf("break: %d \n\r",(int)PS2_ReadBreak(PS2_Keyboard_Base));
+	// xil_printf("time: %d \n\r",PS2_ReadTime(PS2_Keyboard_Base));
 }
 
 
