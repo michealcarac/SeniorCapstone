@@ -15,8 +15,8 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include "modes.hpp"
 #include "profile.hpp"
+#include "modes.hpp"
 #include "keypresses.hpp"
 
 /* NAMESPACES */
@@ -40,7 +40,7 @@ class Keylogger {
         void nextMode(); // moves to the next mode
         string nextProfile(); // moves to the next profile, including entries for "New" and "Delete"
         void saveAllProfiles(); // save all possible profiles
-        void appendKeypress(Keypress *k); // append a keypress to the current input 
+        void appendKeypress(Keypress *k); // append a keypress to the current input
         void clearKeypresses(); // clear all entries in presses
 
         void removeCurrentProfile(); // delete the currently selected profile
@@ -49,7 +49,7 @@ class Keylogger {
         /* ACCESSORS */
         void printProfileNames(); // print the names of every available profile
         Modes getCurrentMode(); // returns the current mode
-        Profile* getCurrentProfile(); // returns the current Profile object 
+        Profile* getCurrentProfile(); // returns the current Profile object
         string getModeAsString(); // returns the current mode as a string
         float getCurrentThreshold(); // get the current threshold value
 
@@ -69,7 +69,7 @@ class Keylogger {
         /* PRIVATE FUNCTIONS */
         float scoreAuth(); // score authentication
 
-        static Profile* buildProfile(); // Prompts the user for the creation of a file 
+        static Profile* buildProfile(); // Prompts the user for the creation of a file
 };
 
 #endif

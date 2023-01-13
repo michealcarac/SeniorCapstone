@@ -7,11 +7,10 @@
 #ifndef KEYPRESSES_H
 #define KEYPRESSES_H
 
-/* CONSTANTS */
-const bool saveProfiles = false; // enable this if the filesystem works 
 
 /* DEFINES */
-#define DEFAULT_SIZE 20
+#define DEFAULT_SIZE 2000
+#define MAX_SIZE     64
 #define KEY_PRESSED false
 #define KEY_RELEASED true
 #define BACKSPACE '\b'

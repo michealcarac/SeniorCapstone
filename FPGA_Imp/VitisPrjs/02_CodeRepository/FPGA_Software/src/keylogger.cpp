@@ -1,6 +1,6 @@
-/* Project: Clarkson University Capstone 
+/* Project: Clarkson University Capstone
    Writer(s): Aaron R. Jones
-   Last Edited: 12/14/2022 
+   Last Edited: 12/14/2022
    Purpose: This file implements the Keylogger class.  Use this version with the FPGA.
 */
 
@@ -14,7 +14,7 @@
 //      currentProfile: 0
 //      profiles: loaded from ./profiles
 //      presses: Empty Keypresses object
-//      sets lcd to the current mode and profile 
+//      sets lcd to the current mode and profile
 //      configures UART connection
 Keylogger::Keylogger() {
     currentMode = Disable;
@@ -22,19 +22,25 @@ Keylogger::Keylogger() {
     presses = new Keypresses();
 
     while(true && saveProfiles) { // get possible profiles
-        // try to open file    
-        string filepath =  "./profiles/profile" + std::to_string(currentProfile++) + ".txt"; 
+        // try to open file
+        string filepath =  "./profiles/profile" + std::to_string(currentProfile++) + ".txt";
         ifstream infile;
         infile.open(filepath, std::ios::in);
-        
+
         if(infile.is_open() != true) break;  // exit if there are no more files
 
         // load profiles
         Profile *p = Profile::readProfile(filepath, "");
         profiles.push_back(*p);
     }
-
-    currentProfile = 0; // select the first profile
+    if(!saveProfiles){
+    	currentProfile = -1;
+    }
+    else
+    {
+    	currentProfile = 0;
+    }
+    //currentProfile = 0; // select the first profile
 }
 
 // removes the profile at currentProfile
@@ -100,7 +106,7 @@ void Keylogger::nextMode() {
         case FixedTrain:
             currentMode = FixedTest;
             break;
-        case FixedTest: 
+        case FixedTest:
             currentMode = Disable;
             break;
         case Disable:
@@ -121,7 +127,7 @@ string Keylogger::nextProfile() {
     } else if (currentProfile == ((int) profiles.size() - 1)) { // if we are at the last profile
         currentProfile++;
         return "Delete Profile";
-    } else { 
+    } else {
         // prompt for a new profile
         string input;
         currentProfile = -1;
@@ -159,6 +165,11 @@ Modes Keylogger::getCurrentMode() { return currentMode; }
 
 // Returns a copy of the current Profile object
 Profile* Keylogger::getCurrentProfile() {
+	//cout << "Retrieving current profile" << endl;
+	if (profiles.size()==0) {
+		return new Profile("Create Profile");
+	}
+
     if(currentProfile < profiles.size()) {
         Profile *p = new Profile(profiles.at(currentProfile));
         return p;
@@ -167,7 +178,7 @@ Profile* Keylogger::getCurrentProfile() {
     if (currentProfile == ((int) profiles.size())) { // if we are at the last profile
         return new Profile("Delete Profile");
     }
-    
+
     return new Profile("Create Profile");
 }
 
@@ -181,7 +192,7 @@ string Keylogger::getModeAsString() {
     return "UnknownMode";
 }
 
-// prints all profile names 
+// prints all profile names
 void Keylogger::printProfileNames() {
     for(int i = 0; i < profiles.size(); i++) {
         cout << i << ": " << profiles.at(i).getName() << endl;
@@ -201,7 +212,7 @@ void Keylogger::setCurrentProfile(int newProfile) {
 
 /* PRIVATE FUNCTIONS FOR PI */
 // Prompts the user for the creation of a profile
-// DEPRECATED 
+// DEPRECATED
 Profile* Keylogger::buildProfile() {
     string name, input, password;
     Profile* p;

@@ -17,7 +17,6 @@
 #include <sys/stat.h>
 #include <unordered_map>
 #include "modelType.hpp"
-#include "keylogger.hpp"
 #include "graphStats.hpp"
 #include "fixedModelData.hpp"
 
@@ -31,6 +30,9 @@ using std::getline;
 using std::ofstream;
 using std::ifstream;
 using std::unordered_map;
+
+/* CONSTANTS */
+const bool saveProfiles = false; // enable this if the filesystem works
 
 class Profile {
     public:

@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "xparameters.h"
-#include "xgpio.h"     /* GPIO COntrol */
+#include "xgpio.h"     /* GPIO Control */
 
 /* GPIO Usage */
 #define GPIO_0_DEVICE_ID 			XPAR_AXI_GPIO_0_DEVICE_ID   // GPIO 0

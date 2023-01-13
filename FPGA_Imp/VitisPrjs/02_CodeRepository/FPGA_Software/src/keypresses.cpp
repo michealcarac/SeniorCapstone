@@ -6,7 +6,7 @@
 
 /* INCLUDES */
 #include "keypresses.hpp"
-
+using namespace std;
 /* CONSTRUCTORS */
 // Default constructor
 Keypresses::Keypresses() {
@@ -94,7 +94,11 @@ void Keypresses::clearData(int newSize) {
 
 // Adds keyprses to keystrokes.  Does not run DU, etc. calculations
 void Keypresses::appendKeypress(Keypress& keypress) {
-    keystrokes.push_back(keypress);
+//	if (keystrokes.size() == MAX_SIZE){ // Prevent Memory Leaks -> not needed after increasing Vitis Memory usage.
+//		keystrokes.erase(keystrokes.begin());
+//	}
+	keystrokes.push_back(keypress);
+
 }
 
 /* PRIVATE FUNCTIONS */

@@ -8,7 +8,7 @@
 #define GRAPH_H
 
 /* DEFINES */
-#define DEFAULT_SIZE 20
+#define DEFAULT_SIZE 64
 
 /* INCLUDES */
 #include <cmath>

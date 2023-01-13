@@ -70,7 +70,7 @@ void Profile::writeProfile(const string filepath, const string filename) {
 
 // Reads a profile from the file at [filepath]/[filename]
 Profile* Profile::readProfile(string filepath, string filename) {
-    if(!saveProfiles) return;
+    if(!saveProfiles) return NULL;
     ifstream infile;
     if(filename == "") infile.open(filepath, std::ios::in);
     else infile.open(filepath + FOLDER_DELIM + filename, std::ios::in);
@@ -154,7 +154,9 @@ string Profile::getPassword() { return data.password; }
 float Profile::getThreshold() { return data.threshold; }
 
 // Returns the name of this profile
-string Profile::getName() { return name; }
+string Profile::getName() {
+	return name;
+}
 
 // return the type of this profile
 ModelType Profile::getType() { return type; }
