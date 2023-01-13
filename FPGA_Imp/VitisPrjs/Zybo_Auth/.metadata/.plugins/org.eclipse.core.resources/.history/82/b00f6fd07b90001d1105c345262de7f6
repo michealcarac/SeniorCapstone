@@ -1,0 +1,34 @@
+/* INCLUDES */
+#include "keylogger.hpp"
+#include "Interrupts.hpp"
+#include "GPIO.hpp"
+#include "LCD.hpp"
+
+/* NAMESPACE */
+using std::cout;
+using std::endl;
+
+/* FUNCTIONS */
+void runModes(Modes currentMode); // determines which algorithms to run
+
+/* INTERRUPTS */
+void btn0(); // button 0 interrupt
+void btn1(); // button 1 interrupt
+void btn2(); // button 2 interrupt
+void btn3(); // button 3 interrupt
+void keyboard(); // keyboard interrupt
+
+/* INPUT TRACKING VARIABLES */
+int numAllowed = 0;
+int numTries = 0;
+int numEntries = 0;
+bool lastDirection = KEY_PRESSED;
+bool deleteActive = false;
+bool createActiveName = false, createActivePassword = false;
+string newName;
+string newPassword;
+string runningInput;
+
+/* KEYLOGGER VARIABLES */
+vector<float> scores;
+Keylogger *logger;

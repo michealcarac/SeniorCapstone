@@ -1,0 +1,1316 @@
+TRACE::2023-01-09.18:19:56::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:56::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:56::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:56::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:19:56::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:56::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:19:56::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-01-09.18:19:58::SCWPlatform::Opened new HwDB with name System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2023-01-09.18:19:58::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System"
+		}]
+}
+TRACE::2023-01-09.18:19:58::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System"
+		}]
+}
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:19:58::SCWDomain::checking for install qemu data   : 
+TRACE::2023-01-09.18:19:58::SCWDomain:: Using the QEMU Data from install at  : F:/Xilinx/Vitis/2022.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2023-01-09.18:19:58::SCWDomain:: Using the QEMU args  from install at  : F:/Xilinx/Vitis/2022.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:19:58::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:19:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:19:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:19:58::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:19:58::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-01-09.18:19:58::SCWMssOS::No sw design opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:19:58::SCWMssOS::mss does not exists at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:19:58::SCWMssOS::Creating sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:19:58::SCWMssOS::Adding the swdes entry, created swdb C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:19:58::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:19:58::SCWMssOS::Writing mss at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:19:58::SCWMssOS::Completed writing the mss file at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-01-09.18:19:58::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2023-01-09.18:19:58::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2023-01-09.18:19:58::SCWMssOS::Completed writing the mss file at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-01-09.18:19:58::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2023-01-09.18:20:01::SCWMssOS::Saving the mss changes C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system
+TRACE::2023-01-09.18:20:01::SCWMssOS::Writing the mss file completed C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::Commit changes completed.
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:01::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:01::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:01::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:01::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:01::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:01::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"7d181a7b78844e3fac29c03228ab1670",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-01-09.18:20:01::SCWPlatform::Started generating the artifacts platform Zybo_System
+TRACE::2023-01-09.18:20:01::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-01-09.18:20:01::SCWPlatform::Started generating the artifacts for system configuration Zybo_System
+LOG::2023-01-09.18:20:01::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2023-01-09.18:20:01::SCWSystem::Not a boot domain 
+LOG::2023-01-09.18:20:01::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2023-01-09.18:20:01::SCWDomain::Generating domain artifcats
+TRACE::2023-01-09.18:20:01::SCWMssOS::Generating standalone artifcats
+TRACE::2023-01-09.18:20:01::SCWMssOS::Copying the qemu file from  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/qemu/
+TRACE::2023-01-09.18:20:01::SCWMssOS::Copying the qemu file from  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/qemu/
+TRACE::2023-01-09.18:20:01::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:01::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:01::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::Completed writing the mss file at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-01-09.18:20:01::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-01-09.18:20:01::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-01-09.18:20:01::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2023-01-09.18:20:01::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-01-09.18:20:01::SCWMssOS::Copying to export directory.
+TRACE::2023-01-09.18:20:01::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-01-09.18:20:01::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2023-01-09.18:20:01::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2023-01-09.18:20:01::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2023-01-09.18:20:01::SCWSystem::Completed Processing the sysconfig Zybo_System
+LOG::2023-01-09.18:20:01::SCWPlatform::Completed generating the artifacts for system configuration Zybo_System
+TRACE::2023-01-09.18:20:01::SCWPlatform::Started preparing the platform 
+TRACE::2023-01-09.18:20:01::SCWSystem::Writing the bif file for system config Zybo_System
+TRACE::2023-01-09.18:20:01::SCWSystem::dir created 
+TRACE::2023-01-09.18:20:01::SCWSystem::Writing the bif 
+TRACE::2023-01-09.18:20:01::SCWPlatform::Started writing the spfm file 
+TRACE::2023-01-09.18:20:01::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-01-09.18:20:01::SCWPlatform::Completed generating the platform
+TRACE::2023-01-09.18:20:01::SCWMssOS::Saving the mss changes C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-01-09.18:20:01::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-01-09.18:20:01::SCWMssOS::Commit changes completed.
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:01::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:01::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:01::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:01::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:01::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:01::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:01::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:01::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"7d181a7b78844e3fac29c03228ab1670",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-01-09.18:20:01::SCWPlatform::updated the xpfm file.
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::Saving the mss changes C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-01-09.18:20:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-01-09.18:20:02::SCWMssOS::Commit changes completed.
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"7d181a7b78844e3fac29c03228ab1670",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::Saving the mss changes C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-01-09.18:20:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-01-09.18:20:02::SCWMssOS::Commit changes completed.
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"7d181a7b78844e3fac29c03228ab1670",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-01-09.18:20:02::SCWPlatform::Started generating the artifacts platform Zybo_System
+TRACE::2023-01-09.18:20:02::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-01-09.18:20:02::SCWPlatform::Started generating the artifacts for system configuration Zybo_System
+LOG::2023-01-09.18:20:02::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2023-01-09.18:20:02::SCWDomain::Generating domain artifcats
+TRACE::2023-01-09.18:20:02::SCWMssOS::Generating standalone artifcats
+TRACE::2023-01-09.18:20:02::SCWMssOS::Copying the qemu file from  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/qemu/
+TRACE::2023-01-09.18:20:02::SCWMssOS::Copying the qemu file from  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/qemu/
+TRACE::2023-01-09.18:20:02::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::Completed writing the mss file at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-01-09.18:20:02::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-01-09.18:20:02::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-01-09.18:20:02::SCWDomain::Building the domain as part of full build :  standalone_ps7_cortexa9_0
+TRACE::2023-01-09.18:20:02::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-01-09.18:20:02::SCWMssOS::Copying to export directory.
+TRACE::2023-01-09.18:20:02::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-01-09.18:20:02::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2023-01-09.18:20:02::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2023-01-09.18:20:02::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2023-01-09.18:20:02::SCWSystem::Completed Processing the sysconfig Zybo_System
+LOG::2023-01-09.18:20:02::SCWPlatform::Completed generating the artifacts for system configuration Zybo_System
+TRACE::2023-01-09.18:20:02::SCWPlatform::Started preparing the platform 
+TRACE::2023-01-09.18:20:02::SCWSystem::Writing the bif file for system config Zybo_System
+TRACE::2023-01-09.18:20:02::SCWSystem::dir created 
+TRACE::2023-01-09.18:20:02::SCWSystem::Writing the bif 
+TRACE::2023-01-09.18:20:02::SCWPlatform::Started writing the spfm file 
+TRACE::2023-01-09.18:20:02::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-01-09.18:20:02::SCWPlatform::Completed generating the platform
+TRACE::2023-01-09.18:20:02::SCWMssOS::Saving the mss changes C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-01-09.18:20:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-01-09.18:20:02::SCWMssOS::Commit changes completed.
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:20:02::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:20:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:20:02::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:20:02::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:20:02::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"7d181a7b78844e3fac29c03228ab1670",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-01-09.18:20:02::SCWPlatform::updated the xpfm file.
+LOG::2023-01-09.18:21:52::SCWPlatform::Started generating the artifacts platform Zybo_System
+TRACE::2023-01-09.18:21:52::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-01-09.18:21:52::SCWPlatform::Started generating the artifacts for system configuration Zybo_System
+LOG::2023-01-09.18:21:52::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2023-01-09.18:21:52::SCWSystem::Not a boot domain 
+LOG::2023-01-09.18:21:52::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2023-01-09.18:21:52::SCWDomain::Generating domain artifcats
+TRACE::2023-01-09.18:21:52::SCWMssOS::Generating standalone artifcats
+TRACE::2023-01-09.18:21:52::SCWMssOS::Copying the qemu file from  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/qemu/
+TRACE::2023-01-09.18:21:52::SCWMssOS::Copying the qemu file from  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt To C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/qemu/
+TRACE::2023-01-09.18:21:52::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-01-09.18:21:52::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:52::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:52::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:52::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:21:52::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:52::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:21:52::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:21:52::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:21:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:21:52::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:21:52::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:52::SCWMssOS::Completed writing the mss file at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2023-01-09.18:21:52::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:52::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-01-09.18:21:52::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-01-09.18:21:52::SCWDomain::Building the domain as part of full build :  standalone_ps7_cortexa9_0
+TRACE::2023-01-09.18:21:52::SCWMssOS::doing bsp build ... 
+TRACE::2023-01-09.18:21:52::SCWMssOS::System Command Ran  C: & cd  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp & make 
+TRACE::2023-01-09.18:21:52::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2023-01-09.18:21:52::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/AXI_I2C_LCD_Transmitter_v1_0/src"
+
+TRACE::2023-01-09.18:21:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AXI_I2C_LCD_Transmitter_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=
+TRACE::2023-01-09.18:21:52::SCWMssOS::arm-none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mflo
+TRACE::2023-01-09.18:21:52::SCWMssOS::at-abi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/AXI_PS2_Keyboard_v1_0/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AXI_PS2_Keyboard_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-non
+TRACE::2023-01-09.18:21:53::SCWMssOS::e-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2023-01-09.18:21:53::SCWMssOS::hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2023-01-09.18:21:53::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2023-01-09.18:21:53::SCWMssOS::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2023-01-09.18:21:53::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2023-01-09.18:21:53::SCWMssOS::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:53::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:53::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:53::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_16/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_16/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-01-09.18:21:53::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-01-09.18:21:53::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_9/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:53::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_9/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2023-01-09.18:21:53::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2023-01-09.18:21:53::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_9/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:53::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_7/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:53::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-01-09.18:21:53::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-01-09.18:21:53::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:53::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:53::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_14/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_14/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:53::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:53::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_7/src"
+
+TRACE::2023-01-09.18:21:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-01-09.18:21:53::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-01-09.18:21:53::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-01-09.18:21:54::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-01-09.18:21:54::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:54::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:54::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:54::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:54::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/AXI_I2C_LCD_Transmitter_v1_0/src"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AXI_I2C_LCD_Transmitter_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm
+TRACE::2023-01-09.18:21:54::SCWMssOS::-none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-
+TRACE::2023-01-09.18:21:54::SCWMssOS::abi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:54::SCWMssOS::"Compiling AXI_I2C_LCD_Transmitter..."
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/AXI_PS2_Keyboard_v1_0/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AXI_PS2_Keyboard_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2023-01-09.18:21:55::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2023-01-09.18:21:55::SCWMssOS::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Compiling AXI_PS2_Keyboard..."
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -j 30 --no-print-directory par_libs
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/AXI_I2C_LCD_Transmitter_v1_0/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AXI_I2C_LCD_Transmitter_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=
+TRACE::2023-01-09.18:21:55::SCWMssOS::arm-none-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mflo
+TRACE::2023-01-09.18:21:55::SCWMssOS::at-abi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/AXI_PS2_Keyboard_v1_0/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/AXI_PS2_Keyboard_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-non
+TRACE::2023-01-09.18:21:55::SCWMssOS::e-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2023-01-09.18:21:55::SCWMssOS::hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2023-01-09.18:21:55::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2023-01-09.18:21:55::SCWMssOS::ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
+TRACE::2023-01-09.18:21:55::SCWMssOS::abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
+TRACE::2023-01-09.18:21:55::SCWMssOS::d -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:55::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:55::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:55::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_8/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:55::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:55::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_16/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_16/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-01-09.18:21:55::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-01-09.18:21:55::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_9/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:55::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_9/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2023-01-09.18:21:55::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2023-01-09.18:21:55::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_9/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:55::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_7/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:55::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_4/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2023-01-09.18:21:55::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2023-01-09.18:21:55::SCWMssOS::startfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:55::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_14/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_14/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:55::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:55::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_7/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-01-09.18:21:55::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-01-09.18:21:55::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_11/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-01-09.18:21:55::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-01-09.18:21:55::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_7/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:55::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:55::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_6/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2023-01-09.18:21:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2023-01-09.18:21:55::SCWMssOS::artfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2023-01-09.18:21:55::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2023-01-09.18:21:55::SCWMssOS:: -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2023-01-09.18:21:55::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2023-01-09.18:21:55::SCWMssOS::nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_2/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2023-01-09.18:21:55::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2023-01-09.18:21:55::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_7/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2023-01-09.18:21:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2023-01-09.18:21:55::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_8/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2023-01-09.18:21:55::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2023-01-09.18:21:55::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_16/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_16/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2023-01-09.18:21:55::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2023-01-09.18:21:55::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_9/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2023-01-09.18:21:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2023-01-09.18:21:55::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_9/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2023-01-09.18:21:55::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2023-01-09.18:21:55::SCWMssOS::les -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_9/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2023-01-09.18:21:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2023-01-09.18:21:55::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_7/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2023-01-09.18:21:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2023-01-09.18:21:55::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_4/src"
+
+TRACE::2023-01-09.18:21:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2023-01-09.18:21:55::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2023-01-09.18:21:55::SCWMssOS::rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_4/src"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2023-01-09.18:21:56::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2023-01-09.18:21:56::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_14/src"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_14/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2023-01-09.18:21:56::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2023-01-09.18:21:56::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_7/src"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2023-01-09.18:21:56::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2023-01-09.18:21:56::SCWMssOS::tartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_11/src"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2023-01-09.18:21:56::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2023-01-09.18:21:56::SCWMssOS::tfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_7/src"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2023-01-09.18:21:56::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2023-01-09.18:21:56::SCWMssOS::iles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_6/src"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2023-01-09.18:21:56::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2023-01-09.18:21:56::SCWMssOS::files -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::make --no-print-directory archive
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::arm-none-eabi-ar -r  ps7_cortexa9_0/lib/libxil.a ps7_cortexa9_0/lib/xadcps_selftest.o ps7_cortexa9_0/lib/xplatform_info.o ps7_c
+TRACE::2023-01-09.18:21:56::SCWMssOS::ortexa9_0/lib/xil_mmu.o ps7_cortexa9_0/lib/_exit.o ps7_cortexa9_0/lib/xusbps_sinit.o ps7_cortexa9_0/lib/xdevcfg_hw.o ps7_cortex
+TRACE::2023-01-09.18:21:56::SCWMssOS::a9_0/lib/xil_sleeptimer.o ps7_cortexa9_0/lib/xgpio_sinit.o ps7_cortexa9_0/lib/xqspips_options.o ps7_cortexa9_0/lib/xdmaps_g.o p
+TRACE::2023-01-09.18:21:56::SCWMssOS::s7_cortexa9_0/lib/xscutimer_g.o ps7_cortexa9_0/lib/xsdps_options.o ps7_cortexa9_0/lib/xil_misc_psreset_api.o ps7_cortexa9_0/lib
+TRACE::2023-01-09.18:21:56::SCWMssOS::/xdmaps_sinit.o ps7_cortexa9_0/lib/xscutimer_sinit.o ps7_cortexa9_0/lib/xemacps_hw.o ps7_cortexa9_0/lib/inbyte.o ps7_cortexa9_0
+TRACE::2023-01-09.18:21:56::SCWMssOS::/lib/xdmaps_selftest.o ps7_cortexa9_0/lib/xscutimer_selftest.o ps7_cortexa9_0/lib/putnum.o ps7_cortexa9_0/lib/xqspips_hw.o ps7_
+TRACE::2023-01-09.18:21:56::SCWMssOS::cortexa9_0/lib/xgpiops_g.o ps7_cortexa9_0/lib/xsdps.o ps7_cortexa9_0/lib/close.o ps7_cortexa9_0/lib/xemacps_g.o ps7_cortexa9_0/
+TRACE::2023-01-09.18:21:56::SCWMssOS::lib/xgpiops_sinit.o ps7_cortexa9_0/lib/xgpiops_selftest.o ps7_cortexa9_0/lib/xgpio_g.o ps7_cortexa9_0/lib/xscuwdt.o ps7_cortexa
+TRACE::2023-01-09.18:21:56::SCWMssOS::9_0/lib/xil_clocking.o ps7_cortexa9_0/lib/xil_mem.o ps7_cortexa9_0/lib/time.o ps7_cortexa9_0/lib/xil_printf.o ps7_cortexa9_0/li
+TRACE::2023-01-09.18:21:56::SCWMssOS::b/kill.o ps7_cortexa9_0/lib/xadcps.o ps7_cortexa9_0/lib/xuartps_sinit.o ps7_cortexa9_0/lib/xuartps_selftest.o ps7_cortexa9_0/li
+TRACE::2023-01-09.18:21:56::SCWMssOS::b/xuartps_g.o ps7_cortexa9_0/lib/outbyte.o ps7_cortexa9_0/lib/lseek.o ps7_cortexa9_0/lib/xgpiops.o ps7_cortexa9_0/lib/xl2cc_cou
+TRACE::2023-01-09.18:21:56::SCWMssOS::nter.o ps7_cortexa9_0/lib/asm_vectors.o ps7_cortexa9_0/lib/abort.o ps7_cortexa9_0/lib/xscugic_intr.o ps7_cortexa9_0/lib/getpid.
+TRACE::2023-01-09.18:21:56::SCWMssOS::o ps7_cortexa9_0/lib/xil_testcache.o ps7_cortexa9_0/lib/xdevcfg_sinit.o ps7_cortexa9_0/lib/xdmaps.o ps7_cortexa9_0/lib/xscutime
+TRACE::2023-01-09.18:21:56::SCWMssOS::r.o ps7_cortexa9_0/lib/xdevcfg_selftest.o ps7_cortexa9_0/lib/xpm_counter.o ps7_cortexa9_0/lib/_sbrk.o ps7_cortexa9_0/lib/xemacp
+TRACE::2023-01-09.18:21:56::SCWMssOS::s_sinit.o ps7_cortexa9_0/lib/xqspips_g.o ps7_cortexa9_0/lib/xusbps.o ps7_cortexa9_0/lib/xusbps_endpoint.o ps7_cortexa9_0/lib/xu
+TRACE::2023-01-09.18:21:56::SCWMssOS::sbps_g.o ps7_cortexa9_0/lib/xsdps_sinit.o ps7_cortexa9_0/lib/xqspips_selftest.o ps7_cortexa9_0/lib/xil_exception.o ps7_cortexa9
+TRACE::2023-01-09.18:21:56::SCWMssOS::_0/lib/xgpio.o ps7_cortexa9_0/lib/xil_testmem.o ps7_cortexa9_0/lib/xemacps_control.o ps7_cortexa9_0/lib/open.o ps7_cortexa9_0/l
+TRACE::2023-01-09.18:21:56::SCWMssOS::ib/xil_assert.o ps7_cortexa9_0/lib/xusbps_intr.o ps7_cortexa9_0/lib/xsdps_host.o ps7_cortexa9_0/lib/xcoresightpsdcc.o ps7_corte
+TRACE::2023-01-09.18:21:56::SCWMssOS::xa9_0/lib/xscugic_hw.o ps7_cortexa9_0/lib/xuartps.o ps7_cortexa9_0/lib/sleep.o ps7_cortexa9_0/lib/cpputest_time.o ps7_cortexa9_
+TRACE::2023-01-09.18:21:56::SCWMssOS::0/lib/_open.o ps7_cortexa9_0/lib/fcntl.o ps7_cortexa9_0/lib/print.o ps7_cortexa9_0/lib/read.o ps7_cortexa9_0/lib/xdevcfg.o ps7_
+TRACE::2023-01-09.18:21:56::SCWMssOS::cortexa9_0/lib/xadcps_intr.o ps7_cortexa9_0/lib/xqspips.o ps7_cortexa9_0/lib/xemacps.o ps7_cortexa9_0/lib/xil_cache.o ps7_corte
+TRACE::2023-01-09.18:21:56::SCWMssOS::xa9_0/lib/xil_testio.o ps7_cortexa9_0/lib/unlink.o ps7_cortexa9_0/lib/xil_spinlock.o ps7_cortexa9_0/lib/translation_table.o ps7
+TRACE::2023-01-09.18:21:56::SCWMssOS::_cortexa9_0/lib/xusbps_hw.o ps7_cortexa9_0/lib/write.o ps7_cortexa9_0/lib/boot.o ps7_cortexa9_0/lib/xemacps_bdring.o ps7_cortex
+TRACE::2023-01-09.18:21:56::SCWMssOS::a9_0/lib/cpu_init.o ps7_cortexa9_0/lib/usleep.o ps7_cortexa9_0/lib/xil_sleepcommon.o ps7_cortexa9_0/lib/xscugic_g.o ps7_cortexa
+TRACE::2023-01-09.18:21:56::SCWMssOS::9_0/lib/xgpiops_intr.o ps7_cortexa9_0/lib/xscugic_sinit.o ps7_cortexa9_0/lib/xdevcfg_g.o ps7_cortexa9_0/lib/xscugic_selftest.o 
+TRACE::2023-01-09.18:21:56::SCWMssOS::ps7_cortexa9_0/lib/xinterrupt_wrap.o ps7_cortexa9_0/lib/xgpio_intr.o ps7_cortexa9_0/lib/xtime_l.o ps7_cortexa9_0/lib/xil_util.o
+TRACE::2023-01-09.18:21:56::SCWMssOS:: ps7_cortexa9_0/lib/xuartps_intr.o ps7_cortexa9_0/lib/xsdps_card.o ps7_cortexa9_0/lib/xdmaps_hw.o ps7_cortexa9_0/lib/sbrk.o ps7
+TRACE::2023-01-09.18:21:56::SCWMssOS::_cortexa9_0/lib/xgpiops_hw.o ps7_cortexa9_0/lib/xsdps_g.o ps7_cortexa9_0/lib/fstat.o ps7_cortexa9_0/lib/errno.o ps7_cortexa9_0/
+TRACE::2023-01-09.18:21:56::SCWMssOS::lib/xdevcfg_intr.o ps7_cortexa9_0/lib/xuartps_options.o ps7_cortexa9_0/lib/vectors.o ps7_cortexa9_0/lib/xscuwdt_g.o ps7_cortexa
+TRACE::2023-01-09.18:21:56::SCWMssOS::9_0/lib/xscuwdt_sinit.o ps7_cortexa9_0/lib/xemacps_intr.o ps7_cortexa9_0/lib/xscuwdt_selftest.o ps7_cortexa9_0/lib/xgpio_extra.
+TRACE::2023-01-09.18:21:56::SCWMssOS::o ps7_cortexa9_0/lib/isatty.o ps7_cortexa9_0/lib/xil-crt0.o ps7_cortexa9_0/lib/xscugic.o ps7_cortexa9_0/lib/xuartps_hw.o ps7_co
+TRACE::2023-01-09.18:21:56::SCWMssOS::rtexa9_0/lib/xadcps_g.o ps7_cortexa9_0/lib/xqspips_sinit.o ps7_cortexa9_0/lib/xadcps_sinit.o ps7_cortexa9_0/lib/xgpio_selftest.
+TRACE::2023-01-09.18:21:56::SCWMssOS::o
+
+TRACE::2023-01-09.18:21:56::SCWMssOS::'Finished building libraries'
+
+TRACE::2023-01-09.18:21:57::SCWMssOS::Copying to export directory.
+TRACE::2023-01-09.18:21:58::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-01-09.18:21:58::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2023-01-09.18:21:58::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2023-01-09.18:21:58::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2023-01-09.18:21:58::SCWSystem::Completed Processing the sysconfig Zybo_System
+LOG::2023-01-09.18:21:58::SCWPlatform::Completed generating the artifacts for system configuration Zybo_System
+TRACE::2023-01-09.18:21:58::SCWPlatform::Started preparing the platform 
+TRACE::2023-01-09.18:21:58::SCWSystem::Writing the bif file for system config Zybo_System
+TRACE::2023-01-09.18:21:58::SCWSystem::dir created 
+TRACE::2023-01-09.18:21:58::SCWSystem::Writing the bif 
+TRACE::2023-01-09.18:21:58::SCWPlatform::Started writing the spfm file 
+TRACE::2023-01-09.18:21:58::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-01-09.18:21:58::SCWPlatform::Completed generating the platform
+TRACE::2023-01-09.18:21:58::SCWMssOS::Saving the mss changes C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-01-09.18:21:58::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-01-09.18:21:58::SCWMssOS::Commit changes completed.
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:21:58::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:21:58::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:21:58::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:21:58::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:21:58::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:21:58::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWWriter::formatted JSON is {
+	"platformName":	"Zybo_System",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Zybo_System",
+	"platHandOff":	"C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VivadoPrjs/Zybo_System/Zybo_System.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Zybo_System.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Zybo_System",
+	"systems":	[{
+			"systemName":	"Zybo_System",
+			"systemDesc":	"Zybo_System",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Zybo_System",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/Zybo_System/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.7",
+					"mssFile":	"",
+					"md5Digest":	"7d181a7b78844e3fac29c03228ab1670",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-01-09.18:21:58::SCWPlatform::updated the xpfm file.
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to open the hw design at C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA given C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA absoulate path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform::DSA directory C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Platform Path C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/hw/Zybo_System.xsa
+TRACE::2023-01-09.18:21:58::SCWPlatform:: Unique name xilinx:zybo-z7-20::0.0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Trying to set the existing hwdb with name System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Opened existing hwdb System_wrapper_0
+TRACE::2023-01-09.18:21:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-01-09.18:21:58::SCWMssOS::Checking the sw design at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2023-01-09.18:21:58::SCWMssOS::DEBUG:  swdes dump  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2023-01-09.18:21:58::SCWMssOS::Sw design exists and opened at  C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss

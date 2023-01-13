@@ -1,0 +1,441 @@
+15:50:50 DEBUG : Logs will be stored at 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/IDE.log'.
+15:50:51 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\temp_xsdb_launch_script.tcl
+15:50:52 INFO  : Platform repository initialization has completed.
+15:50:52 INFO  : Registering command handlers for Vitis TCF services
+15:50:53 INFO  : XSCT server has started successfully.
+15:50:54 INFO  : Successfully done setting XSCT server connection channel  
+15:50:54 INFO  : plnx-install-location is set to ''
+15:50:54 INFO  : Successfully done query RDI_DATADIR 
+15:50:54 INFO  : Successfully done setting workspace for the tool. 
+15:54:41 INFO  : Result from executing command 'getProjects': Zybo_FileHandling
+15:54:41 INFO  : Result from executing command 'getPlatforms': 
+15:54:41 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:54:41 INFO  : Platform 'Zybo_FileHandling' is added to custom repositories.
+15:54:44 ERROR : 
+org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at org.eclipse.cdt.internal.core.settings.model.ExceptionFactory.createCoreException(ExceptionFactory.java:26) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin.mapCProjectOwner(CCorePlugin.java:890) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin$1.run(CCorePlugin.java:945) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin.createCProject(CCorePlugin.java:930) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createCProject(AppCreationHandler.java:92) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:67) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+Caused by: org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at org.eclipse.cdt.internal.core.CConfigBasedDescriptorManager.configure(CConfigBasedDescriptorManager.java:160) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	at org.eclipse.cdt.core.CCorePlugin.mapCProjectOwner(CCorePlugin.java:885) ~[org.eclipse.cdt.core_6.4.0.201802261533.jar:?]
+	... 20 more
+15:54:44 ERROR : Failed to create application project
+org.eclipse.core.runtime.CoreException: CDT Project already configured
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:150) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+15:55:57 INFO  : Result from executing command 'getProjects': Zybo_FileHandling
+15:55:57 INFO  : Result from executing command 'getPlatforms': 
+15:55:57 INFO  : Platform 'Zybo_FileHandling' is added to custom repositories.
+15:55:57 ERROR : 
+org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/Zybo_FileHandling'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createEmptyProject(AppCreationHandler.java:112) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:57) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+Caused by: java.lang.Exception: A resource exists with a different case: '/Zybo_FileHandling'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	... 22 more
+15:55:57 ERROR : Failed to create application project
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.cleanupProject(StandaloneProjectHandler.java:204) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:149) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.createApplication(AppCreationHandler.java:79) ~[?:?]
+	at com.xilinx.sdx.sdk.core.gen.AppCreationHandler.execute(AppCreationHandler.java:69) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:75) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+15:57:27 INFO  : Result from executing command 'getProjects': Zybo_FIleHandling
+15:57:27 INFO  : Result from executing command 'getPlatforms': 
+15:57:27 INFO  : Platform 'Zybo_FIleHandling' is added to custom repositories.
+15:57:27 ERROR : Failed to openhw "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FIleHandling/export/Zybo_FIleHandling/hw/Zybo_System.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+15:57:27 ERROR : Failed to create application project
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getCompilerType(SdkPlatformHelper.java:80) ~[?:?]
+	at com.xilinx.sdx.sdk.core.model.SdkProjectModel.init(SdkProjectModel.java:56) ~[?:?]
+	at com.xilinx.sdx.sdk.core.model.SdkProjectModel.newInstance(SdkProjectModel.java:35) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.executeInternal(SdkAppCreationHandler.java:74) ~[?:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.lambda$1(SdkAppCreationHandler.java:67) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2312) ~[org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at com.xilinx.sdx.sdk.core.SdkAppCreationHandler.execute(SdkAppCreationHandler.java:66) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.createApplicationProject(NewProjectCreationHandler.java:237) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler.internalExecute(NewProjectCreationHandler.java:385) ~[?:?]
+	at com.xilinx.sdx.npw.NewProjectCreationHandler$1.execute(NewProjectCreationHandler.java:100) ~[?:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110) ~[?:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122) [org.eclipse.jface_3.19.0.v20200218-1607.jar:?]
+16:21:33 DEBUG : Logs will be stored at 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/IDE.log'.
+16:21:34 INFO  : Platform repository initialization has completed.
+16:21:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\temp_xsdb_launch_script.tcl
+16:21:35 INFO  : Registering command handlers for Vitis TCF services
+16:21:36 INFO  : XSCT server has started successfully.
+16:21:36 INFO  : plnx-install-location is set to ''
+16:21:37 INFO  : Successfully done setting XSCT server connection channel  
+16:21:37 INFO  : Successfully done query RDI_DATADIR 
+16:21:37 INFO  : Successfully done setting workspace for the tool. 
+16:22:29 INFO  : Result from executing command 'getProjects': Zybo_System
+16:22:29 INFO  : Result from executing command 'getPlatforms': 
+16:22:29 WARN  : An unexpected exception occurred in the module 'platform project logging'
+16:22:30 INFO  : Platform 'Zybo_System' is added to custom repositories.
+16:22:37 INFO  : Platform 'Zybo_System' is added to custom repositories.
+16:24:03 INFO  : Result from executing command 'getProjects': Zybo_System
+16:24:03 INFO  : Result from executing command 'getPlatforms': Zybo_System|C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/Zybo_System.xpfm
+16:24:35 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:24:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa is already opened
+
+16:26:41 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:26:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa is already opened
+
+16:27:48 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:27:54 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:28:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:28:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+16:28:17 INFO  : 'jtag frequency' command is executed.
+16:28:17 INFO  : Context for 'APU' is selected.
+16:28:17 INFO  : System reset is completed.
+16:28:20 INFO  : 'after 3000' command is executed.
+16:28:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+16:28:23 INFO  : Device configured successfully with "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit"
+16:28:23 INFO  : Context for 'APU' is selected.
+16:28:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+16:28:23 INFO  : 'configparams force-mem-access 1' command is executed.
+16:28:23 INFO  : Context for 'APU' is selected.
+16:28:23 INFO  : Sourcing of 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl' is done.
+16:28:23 INFO  : 'ps7_init' command is executed.
+16:28:23 INFO  : 'ps7_post_config' command is executed.
+16:28:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:28:24 INFO  : The application 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:28:24 INFO  : 'configparams force-mem-access 0' command is executed.
+16:28:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:28:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:28:24 INFO  : 'con' command is executed.
+16:28:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:28:24 INFO  : Launch script is exported to file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling_system\_ide\scripts\systemdebugger_zybo_filehandling_system_standalone.tcl'
+16:29:53 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:30:19 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:30:30 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:30:43 INFO  : Disconnected from the channel tcfchan#4.
+16:30:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:43 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+16:30:43 INFO  : 'jtag frequency' command is executed.
+16:30:43 INFO  : Context for 'APU' is selected.
+16:30:44 INFO  : System reset is completed.
+16:30:47 INFO  : 'after 3000' command is executed.
+16:30:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+16:30:49 INFO  : Device configured successfully with "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit"
+16:30:49 INFO  : Context for 'APU' is selected.
+16:30:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+16:30:49 INFO  : 'configparams force-mem-access 1' command is executed.
+16:30:49 INFO  : Context for 'APU' is selected.
+16:30:49 INFO  : Sourcing of 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl' is done.
+16:30:49 INFO  : 'ps7_init' command is executed.
+16:30:49 INFO  : 'ps7_post_config' command is executed.
+16:30:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:50 INFO  : The application 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:30:50 INFO  : 'configparams force-mem-access 0' command is executed.
+16:30:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:30:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:51 INFO  : 'con' command is executed.
+16:30:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:30:51 INFO  : Launch script is exported to file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling_system\_ide\scripts\systemdebugger_zybo_filehandling_system_standalone.tcl'
+16:32:04 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:32:14 INFO  : Disconnected from the channel tcfchan#5.
+16:32:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:32:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+16:32:14 INFO  : 'jtag frequency' command is executed.
+16:32:14 INFO  : Context for 'APU' is selected.
+16:32:14 INFO  : System reset is completed.
+16:32:17 INFO  : 'after 3000' command is executed.
+16:32:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+16:32:20 INFO  : Device configured successfully with "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit"
+16:32:20 INFO  : Context for 'APU' is selected.
+16:32:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+16:32:20 INFO  : 'configparams force-mem-access 1' command is executed.
+16:32:20 INFO  : Context for 'APU' is selected.
+16:32:20 INFO  : Sourcing of 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl' is done.
+16:32:20 INFO  : 'ps7_init' command is executed.
+16:32:20 INFO  : 'ps7_post_config' command is executed.
+16:32:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:21 INFO  : The application 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:32:21 INFO  : 'configparams force-mem-access 0' command is executed.
+16:32:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:32:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:21 INFO  : 'con' command is executed.
+16:32:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:32:21 INFO  : Launch script is exported to file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling_system\_ide\scripts\systemdebugger_zybo_filehandling_system_standalone.tcl'
+16:36:50 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:37:12 INFO  : Disconnected from the channel tcfchan#6.
+16:37:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:37:12 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+16:37:12 INFO  : 'jtag frequency' command is executed.
+16:37:12 INFO  : Context for 'APU' is selected.
+16:37:12 INFO  : System reset is completed.
+16:37:15 INFO  : 'after 3000' command is executed.
+16:37:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+16:37:18 INFO  : Device configured successfully with "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit"
+16:37:18 INFO  : Context for 'APU' is selected.
+16:37:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+16:37:18 INFO  : 'configparams force-mem-access 1' command is executed.
+16:37:18 INFO  : Context for 'APU' is selected.
+16:37:18 INFO  : Sourcing of 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl' is done.
+16:37:18 INFO  : 'ps7_init' command is executed.
+16:37:18 INFO  : 'ps7_post_config' command is executed.
+16:37:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:18 INFO  : The application 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:37:18 INFO  : 'configparams force-mem-access 0' command is executed.
+16:37:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:37:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:37:18 INFO  : 'con' command is executed.
+16:37:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:37:18 INFO  : Launch script is exported to file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling_system\_ide\scripts\systemdebugger_zybo_filehandling_system_standalone.tcl'
+16:38:30 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:38:35 INFO  : Disconnected from the channel tcfchan#7.
+16:38:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:38:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+16:38:35 INFO  : 'jtag frequency' command is executed.
+16:38:35 INFO  : Context for 'APU' is selected.
+16:38:35 INFO  : System reset is completed.
+16:38:38 INFO  : 'after 3000' command is executed.
+16:38:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+16:38:40 INFO  : Device configured successfully with "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit"
+16:38:41 INFO  : Context for 'APU' is selected.
+16:38:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+16:38:41 INFO  : 'configparams force-mem-access 1' command is executed.
+16:38:41 INFO  : Context for 'APU' is selected.
+16:38:41 INFO  : Sourcing of 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl' is done.
+16:38:41 INFO  : 'ps7_init' command is executed.
+16:38:41 INFO  : 'ps7_post_config' command is executed.
+16:38:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:41 INFO  : The application 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:38:41 INFO  : 'configparams force-mem-access 0' command is executed.
+16:38:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:38:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:38:41 INFO  : 'con' command is executed.
+16:38:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:38:41 INFO  : Launch script is exported to file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling_system\_ide\scripts\systemdebugger_zybo_filehandling_system_standalone.tcl'
+16:39:16 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:39:45 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_FileHandling'...
+16:39:53 INFO  : Disconnected from the channel tcfchan#8.
+16:39:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:39:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351B481DFA' is selected.
+16:39:53 INFO  : 'jtag frequency' command is executed.
+16:39:53 INFO  : Context for 'APU' is selected.
+16:39:53 INFO  : System reset is completed.
+16:39:56 INFO  : 'after 3000' command is executed.
+16:39:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}' command is executed.
+16:39:59 INFO  : Device configured successfully with "C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit"
+16:39:59 INFO  : Context for 'APU' is selected.
+16:39:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa'.
+16:39:59 INFO  : 'configparams force-mem-access 1' command is executed.
+16:39:59 INFO  : Context for 'APU' is selected.
+16:39:59 INFO  : Sourcing of 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl' is done.
+16:39:59 INFO  : 'ps7_init' command is executed.
+16:39:59 INFO  : 'ps7_post_config' command is executed.
+16:39:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:39:59 INFO  : The application 'C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:39:59 INFO  : 'configparams force-mem-access 0' command is executed.
+16:39:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B481DFA" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B481DFA-23727093-0"}
+fpga -file C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/bitstream/Zybo_System.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/hw/Zybo_System.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_FileHandling/Debug/Zybo_FileHandling.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:39:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:40:00 INFO  : 'con' command is executed.
+16:40:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:40:00 INFO  : Launch script is exported to file 'C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling_system\_ide\scripts\systemdebugger_zybo_filehandling_system_standalone.tcl'
+18:09:45 INFO  : Disconnected from the channel tcfchan#9.

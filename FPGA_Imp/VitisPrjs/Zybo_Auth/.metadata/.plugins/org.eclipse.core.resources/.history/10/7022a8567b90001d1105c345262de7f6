@@ -1,0 +1,17 @@
+/* Interrupt Header File */
+// Vendor: empyrea.dev
+// Author: Micheal Caracciolo
+// Date: 11/27/2022
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include "xscugic.h"   /* GIC Control */
+#include "xgpio.h"     /* GPIO COntrol */
+#include "xil_exception.h" /* Exceptions */
+#include "PS2.hpp" /* Bring in all PS2 Stuff */
+#include "GPIO.hpp" /* Bring in all GPIO Stuff */
+#include "main.cpp"
+
+int Interrupt_Init(u32 PS2_INT_ID,u32 GPIO_INT_ID,u32 GPIO_DEVICE_ID, u32 GPIO_INT_CHANNEL); /* Interrupt Initialization */
+void Keyboard_InterruptHandler(void *IntcInstancePtr); /* Keyboard Interrupt Handler */
+void GPIO_InterruptHandler(void *IntcInstancePtr); /* GPIO Interrupt Handler */
+

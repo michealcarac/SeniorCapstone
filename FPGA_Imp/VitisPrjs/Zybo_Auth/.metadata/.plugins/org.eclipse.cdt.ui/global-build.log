@@ -1,0 +1,36 @@
+Nothing to build in platform 'Zybo_System'
+
+20:43:17 **** Incremental Build of configuration Debug for project Zybo_Auth ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/keylogger.hpp:20,
+                 from ../src/main.cpp:12:
+../src/keypresses.hpp:12: warning: "DEFAULT_SIZE" redefined
+   12 | #define DEFAULT_SIZE 2000
+      | 
+In file included from ../src/graphStats.hpp:15,
+                 from ../src/profile.hpp:20,
+                 from ../src/keylogger.hpp:18,
+                 from ../src/main.cpp:12:
+../src/graph.hpp:11: note: this is the location of the previous definition
+   11 | #define DEFAULT_SIZE 64
+      | 
+'Finished building: ../src/main.cpp'
+' '
+'Building target: Zybo_Auth.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_Auth/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bsplib/lib -o "Zybo_Auth.elf"  ./src/GPIO.o ./src/Interrupts.o ./src/LCD.o ./src/PS2.o ./src/fixedModelData.o ./src/graph.o ./src/graphStats.o ./src/keylogger.o ./src/keypress.o ./src/keypresses.o ./src/main.o ./src/profile.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Zybo_Auth.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Zybo_Auth.elf  |tee "Zybo_Auth.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 683055	   3652	1048588956	1049275663	3e8aad0f	Zybo_Auth.elf
+'Finished building: Zybo_Auth.elf.size'
+' '

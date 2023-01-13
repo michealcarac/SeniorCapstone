@@ -1,0 +1,32 @@
+16:39:45 **** Incremental Build of configuration Debug for project Zybo_FileHandling ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:14:31: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+   14 |                 for(int i=0; i<strlen(str); i++)
+      |                              ~^~~~~~~~~~~~
+../src/main.cpp:8:13: warning: unused variable 'c' [-Wunused-variable]
+    8 |         int c;
+      |             ^
+'Finished building: ../src/main.cpp'
+' '
+'Building target: Zybo_FileHandling.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/spixy/Documents/00_Github/SeniorCapstone/FPGA_Imp/VitisPrjs/Zybo_FileHandling/Zybo_System/export/Zybo_System/sw/Zybo_System/standalone_ps7_cortexa9_0/bsplib/lib -o "Zybo_FileHandling.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Zybo_FileHandling.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Zybo_FileHandling.elf  |tee "Zybo_FileHandling.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32924	   2184	  22632	  57740	   e18c	Zybo_FileHandling.elf
+'Finished building: Zybo_FileHandling.elf.size'
+' '
+
+16:39:46 Build Finished (took 601ms)
+

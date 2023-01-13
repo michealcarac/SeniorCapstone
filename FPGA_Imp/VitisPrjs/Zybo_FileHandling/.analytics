@@ -1,0 +1,28 @@
+timestamp=[2023-01-10 15:50:51], mode=WORKBENCH_START, duration=0:00:03.846, duration_ms=3846, data={}
+timestamp=[2023-01-10 15:50:51], mode=WORKBENCH_UI_INIT, duration=0:00:00.259, duration_ms=259, data={editors_count=0, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2023-01-10 15:50:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.024, duration_ms=24, data={}
+timestamp=[2023-01-10 15:54:44], mode=APP_CREATION, duration=0:00:07.921, duration_ms=7921, data={name=Zybo_FileHandling, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling\export\Zybo_FileHandling\Zybo_FileHandling.xpfm, application_type=application}
+timestamp=[2023-01-10 15:55:57], mode=APP_CREATION, duration=0:00:11.239, duration_ms=11239, data={name=Zybo_FIleHandling, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FileHandling\export\Zybo_FileHandling\Zybo_FileHandling.xpfm, application_type=application}
+timestamp=[2023-01-10 15:57:28], mode=APP_CREATION, duration=0:00:11.057, duration_ms=11057, data={name=Zybo_FIleHandling, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=C:\Users\spixy\Documents\00_Github\SeniorCapstone\FPGA_Imp\VitisPrjs\Zybo_FileHandling\Zybo_FIleHandling\export\Zybo_FIleHandling\Zybo_FIleHandling.xpfm, application_type=application}
+timestamp=[2023-01-10 16:21:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.040, duration_ms=40, data={}
+timestamp=[2023-01-10 16:21:34], mode=WORKBENCH_START, duration=0:00:04.348, duration_ms=4348, data={}
+timestamp=[2023-01-10 16:21:35], mode=WORKBENCH_UI_INIT, duration=0:00:00.408, duration_ms=408, data={editors_count=1, platform_editors_count=0, projects_count=1, platform_projects_count=0, active_platform_editor=false, projects=RemoteSystemsTempFiles}
+timestamp=[2023-01-10 16:22:37], mode=APP_CREATION, duration=0:00:13.110, duration_ms=13110, data={name=Zybo_FileHandling, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=Zybo_System, application_type=application}
+timestamp=[2023-01-10 16:24:04], mode=PLATFORM_GENERATION, duration=0:00:06.812, duration_ms=6812, data={name=Zybo_System}
+timestamp=[2023-01-10 16:24:37], mode=BUILD, duration=0:00:01.508, duration_ms=1508, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:24:42], mode=BUILD, duration=0:00:04.966, duration_ms=4966, data={name=Zybo_FileHandling_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:26:41], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:26:46], mode=BUILD, duration=0:00:04.493, duration_ms=4493, data={name=Zybo_FileHandling_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:27:48], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:27:48], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=Zybo_FileHandling_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:27:54], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:27:55], mode=BUILD, duration=0:00:00.098, duration_ms=98, data={name=Zybo_FileHandling_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:29:54], mode=BUILD, duration=0:00:00.737, duration_ms=737, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:30:20], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:30:31], mode=BUILD, duration=0:00:01.211, duration_ms=1211, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:32:05], mode=BUILD, duration=0:00:01.024, duration_ms=1024, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:36:51], mode=BUILD, duration=0:00:00.663, duration_ms=663, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:38:30], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:38:31], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=Zybo_FileHandling_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:39:16], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
+timestamp=[2023-01-10 16:39:46], mode=BUILD, duration=0:00:00.606, duration_ms=606, data={name=Zybo_FileHandling, configuration=Debug, clean_build=false}
